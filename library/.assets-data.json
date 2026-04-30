@@ -1,0 +1,571 @@
+{
+  "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a": {
+    "url": "db://assets/Game.scene",
+    "value": {
+      "depends": [
+        "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a",
+        "1ba6edf3-e479-42eb-b78f-160ccddcdd12"
+      ],
+      "dependScripts": [
+        "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8",
+        "CC3eba29-7abb-723a-f7ab-ae275e2277e8",
+        "1f9054db-351f-4e7a-8020-a416167b637e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d759301f-a610-40cc-b660-e4f693c1c41b": {
+    "url": "db://assets/resources",
+    "value": {},
+    "versionCode": 1
+  },
+  "9eb31a56-ed12-4146-8430-5f45a5042369": {
+    "url": "db://assets/Scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e68ed731-bd3a-4a87-8439-cb4faaf8ad78": {
+    "url": "db://assets/Scripts/UI",
+    "value": {},
+    "versionCode": 1
+  },
+  "1f9054db-351f-4e7a-8020-a416167b637e": {
+    "url": "db://assets/Scripts/UI/UIRoot.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "9659b73b-1bc4-4e6c-9066-dfef21069be8": {
+    "url": "db://assets/resources/Prefabs",
+    "value": {},
+    "versionCode": 1
+  },
+  "1ba6edf3-e479-42eb-b78f-160ccddcdd12": {
+    "url": "db://assets/resources/Prefabs/Loading_Scene.prefab",
+    "value": {
+      "depends": [
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "d7f6a3f3-28cd-4adc-854e-5a6cd1177c17@f9941",
+        "a0cd894c-437f-42a9-bd36-49e0e421130a@f9941",
+        "12877b56-b179-498d-b42f-56ff44b4760c@f9941",
+        "f862569d-a32a-4429-a5d3-c9316ab33733@f9941",
+        "51393b37-b725-4f6e-a42a-2aeeabf9e8bb@f9941",
+        "6461d683-e2b7-4cf7-8c06-5c46c4878951@f9941",
+        "11b35dfe-080b-41d8-9e67-14bc1a191675@f9941",
+        "54d0e20d-5f94-4cdf-9ed3-65f0516c1ee0",
+        "3ec58257-540b-45b4-8d2a-87d73396ca8b@f9941",
+        "7ba61a6b-11e4-454f-bd82-844057b810d6"
+      ],
+      "dependScripts": [
+        "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8",
+        "97ec7068-8675-4806-a9a4-b560f82e2ab7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4933dc62-71ca-446a-b835-dccbad1df2d1": {
+    "url": "db://assets/Scripts/UI/Scenes",
+    "value": {},
+    "versionCode": 1
+  },
+  "aaf475a1-05b2-45bd-a21b-7e8d29573a9d": {
+    "url": "db://assets/Scripts/UI/Scenes/Loading/LoadingScene.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c8e6f35f-7f5d-4295-bd93-413e95cad81f": {
+    "url": "db://assets/Scripts/UI/Scenes/Loading",
+    "value": {},
+    "versionCode": 1
+  },
+  "97ec7068-8675-4806-a9a4-b560f82e2ab7": {
+    "url": "db://assets/Scripts/UI/Scenes/Loading/LoadingScene.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "2f4f6299-fa66-4e3a-b6cb-22ab04c55670": {
+    "url": "db://assets/res",
+    "value": {},
+    "versionCode": 1
+  },
+  "a94e4394-81bc-4994-9cf7-e9eafd230927": {
+    "url": "db://assets/res/Textures/Loading",
+    "value": {},
+    "versionCode": 1
+  },
+  "d7f6a3f3-28cd-4adc-854e-5a6cd1177c17": {
+    "url": "db://assets/res/Textures/Loading/loading_bg.jpg",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d7f6a3f3-28cd-4adc-854e-5a6cd1177c17@6c48a": {
+    "url": "db://assets/res/Textures/Loading/loading_bg.jpg@6c48a",
+    "value": {
+      "depends": [
+        "d7f6a3f3-28cd-4adc-854e-5a6cd1177c17"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d7f6a3f3-28cd-4adc-854e-5a6cd1177c17@f9941": {
+    "url": "db://assets/res/Textures/Loading/loading_bg.jpg@f9941",
+    "value": {
+      "depends": [
+        "d7f6a3f3-28cd-4adc-854e-5a6cd1177c17@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7923c8fd-8b4a-43c8-ac27-24e82ea658de": {
+    "url": "db://assets/res/Textures",
+    "value": {},
+    "versionCode": 1
+  },
+  "431e8c74-e726-43db-aca0-2a34649e3890": {
+    "url": "db://assets/res/Textures/Logos",
+    "value": {},
+    "versionCode": 1
+  },
+  "a0cd894c-437f-42a9-bd36-49e0e421130a": {
+    "url": "db://assets/res/Textures/Logos/GE Logo.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a0cd894c-437f-42a9-bd36-49e0e421130a@6c48a": {
+    "url": "db://assets/res/Textures/Logos/GE Logo.png@6c48a",
+    "value": {
+      "depends": [
+        "a0cd894c-437f-42a9-bd36-49e0e421130a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a0cd894c-437f-42a9-bd36-49e0e421130a@f9941": {
+    "url": "db://assets/res/Textures/Logos/GE Logo.png@f9941",
+    "value": {
+      "depends": [
+        "a0cd894c-437f-42a9-bd36-49e0e421130a@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "12877b56-b179-498d-b42f-56ff44b4760c": {
+    "url": "db://assets/res/Textures/Logos/gameLOGO.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "12877b56-b179-498d-b42f-56ff44b4760c@6c48a": {
+    "url": "db://assets/res/Textures/Logos/gameLOGO.png@6c48a",
+    "value": {
+      "depends": [
+        "12877b56-b179-498d-b42f-56ff44b4760c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "12877b56-b179-498d-b42f-56ff44b4760c@f9941": {
+    "url": "db://assets/res/Textures/Logos/gameLOGO.png@f9941",
+    "value": {
+      "depends": [
+        "12877b56-b179-498d-b42f-56ff44b4760c@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f862569d-a32a-4429-a5d3-c9316ab33733": {
+    "url": "db://assets/res/Textures/Loading/WinUpTo_Logo.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f862569d-a32a-4429-a5d3-c9316ab33733@6c48a": {
+    "url": "db://assets/res/Textures/Loading/WinUpTo_Logo.png@6c48a",
+    "value": {
+      "depends": [
+        "f862569d-a32a-4429-a5d3-c9316ab33733"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f862569d-a32a-4429-a5d3-c9316ab33733@f9941": {
+    "url": "db://assets/res/Textures/Loading/WinUpTo_Logo.png@f9941",
+    "value": {
+      "depends": [
+        "f862569d-a32a-4429-a5d3-c9316ab33733@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "11b35dfe-080b-41d8-9e67-14bc1a191675": {
+    "url": "db://assets/res/Textures/Loading/progressbg.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "11b35dfe-080b-41d8-9e67-14bc1a191675@6c48a": {
+    "url": "db://assets/res/Textures/Loading/progressbg.png@6c48a",
+    "value": {
+      "depends": [
+        "11b35dfe-080b-41d8-9e67-14bc1a191675"
+      ]
+    },
+    "versionCode": 1
+  },
+  "11b35dfe-080b-41d8-9e67-14bc1a191675@f9941": {
+    "url": "db://assets/res/Textures/Loading/progressbg.png@f9941",
+    "value": {
+      "depends": [
+        "11b35dfe-080b-41d8-9e67-14bc1a191675@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "51393b37-b725-4f6e-a42a-2aeeabf9e8bb": {
+    "url": "db://assets/res/Textures/Loading/progresstog.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "51393b37-b725-4f6e-a42a-2aeeabf9e8bb@6c48a": {
+    "url": "db://assets/res/Textures/Loading/progresstog.png@6c48a",
+    "value": {
+      "depends": [
+        "51393b37-b725-4f6e-a42a-2aeeabf9e8bb"
+      ]
+    },
+    "versionCode": 1
+  },
+  "51393b37-b725-4f6e-a42a-2aeeabf9e8bb@f9941": {
+    "url": "db://assets/res/Textures/Loading/progresstog.png@f9941",
+    "value": {
+      "depends": [
+        "51393b37-b725-4f6e-a42a-2aeeabf9e8bb@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6461d683-e2b7-4cf7-8c06-5c46c4878951": {
+    "url": "db://assets/res/Textures/Loading/bar.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6461d683-e2b7-4cf7-8c06-5c46c4878951@6c48a": {
+    "url": "db://assets/res/Textures/Loading/bar.png@6c48a",
+    "value": {
+      "depends": [
+        "6461d683-e2b7-4cf7-8c06-5c46c4878951"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6461d683-e2b7-4cf7-8c06-5c46c4878951@f9941": {
+    "url": "db://assets/res/Textures/Loading/bar.png@f9941",
+    "value": {
+      "depends": [
+        "6461d683-e2b7-4cf7-8c06-5c46c4878951@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "995ae186-b997-44ef-8aa2-0ae759b5e803": {
+    "url": "db://assets/res/Spine",
+    "value": {},
+    "versionCode": 1
+  },
+  "50a14eab-511e-4e62-b372-b05c7c947d3f": {
+    "url": "db://assets/res/Spine/WinUpTo",
+    "value": {},
+    "versionCode": 1
+  },
+  "402d0f50-9fbb-491f-8ae9-11a192a220d8": {
+    "url": "db://assets/res/Spine/WinUpTo/blazing7s-WinUpTo_skeleton.atlas",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "54d0e20d-5f94-4cdf-9ed3-65f0516c1ee0": {
+    "url": "db://assets/res/Spine/WinUpTo/blazing7s-WinUpTo_skeleton.json",
+    "value": {
+      "depends": [
+        "6760b9d8-1464-4d8a-baae-9f9d5c54c45d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6760b9d8-1464-4d8a-baae-9f9d5c54c45d": {
+    "url": "db://assets/res/Spine/WinUpTo/blazing7s-WinUpTo_skeleton.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6760b9d8-1464-4d8a-baae-9f9d5c54c45d@6c48a": {
+    "url": "db://assets/res/Spine/WinUpTo/blazing7s-WinUpTo_skeleton.png@6c48a",
+    "value": {
+      "depends": [
+        "6760b9d8-1464-4d8a-baae-9f9d5c54c45d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6760b9d8-1464-4d8a-baae-9f9d5c54c45d@f9941": {
+    "url": "db://assets/res/Spine/WinUpTo/blazing7s-WinUpTo_skeleton.png@f9941",
+    "value": {
+      "depends": [
+        "6760b9d8-1464-4d8a-baae-9f9d5c54c45d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e188282b-3d22-443d-9195-877b191b0a4a": {
+    "url": "db://assets/res/Textures/Loading/WinUpToNoValue_Logo.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "e188282b-3d22-443d-9195-877b191b0a4a@6c48a": {
+    "url": "db://assets/res/Textures/Loading/WinUpToNoValue_Logo.png@6c48a",
+    "value": {
+      "depends": [
+        "e188282b-3d22-443d-9195-877b191b0a4a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e188282b-3d22-443d-9195-877b191b0a4a@f9941": {
+    "url": "db://assets/res/Textures/Loading/WinUpToNoValue_Logo.png@f9941",
+    "value": {
+      "depends": [
+        "e188282b-3d22-443d-9195-877b191b0a4a@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0e1cac4c-b911-4440-971c-1d26d2e81bea": {
+    "url": "db://assets/res/Textures/Loading/winupto.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "0e1cac4c-b911-4440-971c-1d26d2e81bea@6c48a": {
+    "url": "db://assets/res/Textures/Loading/winupto.png@6c48a",
+    "value": {
+      "depends": [
+        "0e1cac4c-b911-4440-971c-1d26d2e81bea"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0e1cac4c-b911-4440-971c-1d26d2e81bea@f9941": {
+    "url": "db://assets/res/Textures/Loading/winupto.png@f9941",
+    "value": {
+      "depends": [
+        "0e1cac4c-b911-4440-971c-1d26d2e81bea@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3ec58257-540b-45b4-8d2a-87d73396ca8b": {
+    "url": "db://assets/res/Textures/Loading/WinUpToNoValue_Logo.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3ec58257-540b-45b4-8d2a-87d73396ca8b@6c48a": {
+    "url": "db://assets/res/Textures/Loading/WinUpToNoValue_Logo.png@6c48a",
+    "value": {
+      "depends": [
+        "3ec58257-540b-45b4-8d2a-87d73396ca8b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3ec58257-540b-45b4-8d2a-87d73396ca8b@f9941": {
+    "url": "db://assets/res/Textures/Loading/WinUpToNoValue_Logo.png@f9941",
+    "value": {
+      "depends": [
+        "3ec58257-540b-45b4-8d2a-87d73396ca8b@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "83c067d3-9976-4874-8fef-2e3acab5757d": {
+    "url": "db://assets/res/Font",
+    "value": {},
+    "versionCode": 1
+  },
+  "42a5eac2-1bd1-4d02-89a9-8882ebc82c87": {
+    "url": "db://assets/res/Font/winup-font.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "42a5eac2-1bd1-4d02-89a9-8882ebc82c87@6c48a": {
+    "url": "db://assets/res/Font/winup-font.png@6c48a",
+    "value": {
+      "depends": [
+        "42a5eac2-1bd1-4d02-89a9-8882ebc82c87"
+      ]
+    },
+    "versionCode": 1
+  },
+  "42a5eac2-1bd1-4d02-89a9-8882ebc82c87@f9941": {
+    "url": "db://assets/res/Font/winup-font.png@f9941",
+    "value": {
+      "depends": [
+        "42a5eac2-1bd1-4d02-89a9-8882ebc82c87@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7ba61a6b-11e4-454f-bd82-844057b810d6": {
+    "url": "db://assets/res/Font/winup-font.fnt",
+    "value": {
+      "depends": [
+        "42a5eac2-1bd1-4d02-89a9-8882ebc82c87@f9941"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8": {
+    "url": "db://assets/Scripts/UI/Scenes/Loading/LoadingBar.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "a634653e-5cfc-4581-8d2c-75a7aae201f6": {
+    "url": "db://assets/Scripts/api/ApiCore.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "bf756d22-b2a0-46de-9985-5ec7099714ea": {
+    "url": "db://assets/Scripts/api/ApiError.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "95c97f05-13ac-4da2-a0f4-eb1c75f99849": {
+    "url": "db://assets/Scripts/api/ApiManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "214855fd-8a49-45dd-8a53-bc3feb318592": {
+    "url": "db://assets/Scripts/api/GameApi.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "d97f88f7-57a2-4519-8e00-24dc3e0dd242": {
+    "url": "db://assets/Scripts/api",
+    "value": {},
+    "versionCode": 1
+  },
+  "ee2c80c9-beb1-4a76-bef9-fc54c19d3e98": {
+    "url": "db://assets/Scripts/base/BasePanel.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6ab26c02-6c04-47c1-85ca-590d772c1c8d": {
+    "url": "db://assets/Scripts/base/BaseUI.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "b51af90a-b401-4809-b78b-f0a7f37e73cd": {
+    "url": "db://assets/Scripts/base",
+    "value": {},
+    "versionCode": 1
+  },
+  "70cf7a88-7d23-4294-8a5c-df908aaae676": {
+    "url": "db://assets/Scripts/data",
+    "value": {},
+    "versionCode": 1
+  },
+  "ec21142a-6664-4536-93c1-b788d3c63b00": {
+    "url": "db://assets/Scripts/eui",
+    "value": {},
+    "versionCode": 1
+  },
+  "ce6ac992-24fd-4ec5-9187-22af2ef85638": {
+    "url": "db://assets/Scripts/data/GameData.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "f12e768f-5a29-4c31-b14d-2c9c02ec024d": {
+    "url": "db://assets/Scripts/data/GameUserInfo.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "da869458-9fef-4fae-af59-fa9f421d0d63": {
+    "url": "db://assets/Scripts/data/TicketData.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "94e9e310-54c3-4d36-91dd-29c78d7c837e": {
+    "url": "db://assets/Scripts/eui/BGSize.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6056992d-e2ca-456f-a60c-41915d1a0806": {
+    "url": "db://assets/Scripts/eui/SingleButton.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "177745dd-e8ec-4d64-993d-f2e435270046": {
+    "url": "db://assets/Scripts/eui/UIHelper.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "06d40a44-f52c-4deb-b909-033d207500f6": {
+    "url": "db://assets/Scripts/eui/UIkeys.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6e0bf915-8eee-41b1-ac08-4f03095f0924": {
+    "url": "db://assets/Scripts/eui/UIRoot.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "fd1faf61-31c5-4ce0-8061-82b81b939ec2": {
+    "url": "db://assets/Scripts/PLK.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "86a82430-bb18-4b93-abcc-3bd46d46b38d": {
+    "url": "db://assets/Scripts/api",
+    "value": {},
+    "versionCode": 1
+  },
+  "962d3328-5850-4b4d-afb9-c507dd147724": {
+    "url": "db://assets/Scripts/Data",
+    "value": {},
+    "versionCode": 1
+  },
+  "e25dc671-1c9f-4bad-8697-75d6594cd86d": {
+    "url": "db://assets/Scripts/Data/GameData.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e8a67a97-c75a-49b3-9558-afadaa2f7a50": {
+    "url": "db://assets/Scripts/Data/GameData.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "3c2cdb23-0238-412c-a9c2-f0df80171dc3": {
+    "url": "db://assets/Scripts/Data/TicketItem.d.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "d0f4841b-e1c1-42da-95be-84a397ea4729": {
+    "url": "db://assets/Scripts/Data/TicketItem.ts",
+    "value": {},
+    "versionCode": 1
+  }
+}
