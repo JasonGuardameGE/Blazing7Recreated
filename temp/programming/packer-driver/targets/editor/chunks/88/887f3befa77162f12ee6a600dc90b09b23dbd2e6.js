@@ -45,9 +45,12 @@ System.register(["cc"], function (_export, _context) {
 
           _initializerDefineProperty(this, "progressTog", _descriptor4, this);
 
-          this.realProgress = 0;
-          this.isSceneLoading = false;
-          this.RealProgress = this.realProgress;
+          this._realProgress = 0;
+          this._isSceneLoading = false;
+        }
+
+        get RealProgress() {
+          return this._realProgress;
         }
 
         setEvtOnLoadingBarStartLoading(cb) {
@@ -68,21 +71,21 @@ System.register(["cc"], function (_export, _context) {
         }
 
         Reset() {
-          this.realProgress = 0;
+          this._realProgress = 0;
           this.UpdateBar();
         }
 
         update(deltaTime) {}
 
         SetProgress(newProgress) {
-          this.realProgress = newProgress;
+          this._realProgress = newProgress;
           this.UpdateBar();
         }
 
         UpdateBar() {
-          var _this$realProgress;
+          var _this$_realProgress;
 
-          const p = Math.min(Math.max((_this$realProgress = this.realProgress) != null ? _this$realProgress : 0, 0), 100);
+          const p = Math.min(Math.max((_this$_realProgress = this._realProgress) != null ? _this$_realProgress : 0, 0), 100);
           this.progressBar.progress = p / 100;
         }
 

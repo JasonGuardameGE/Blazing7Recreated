@@ -1,34 +1,42 @@
 import { _decorator, Component, Node } from 'cc';
+import SceneManager from '../Managers/SceneManager';
+import { Services } from '../Managers/Services';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('UIRoot')
 export class UIRoot extends Component {
 
     @property(Node)
-    private scene : Node;
-    @property(Node)
-    private popup : Node;
-    @property(Node)
-    private panel : Node;
-    @property(Node)
-    private toast : Node;
-    @property(Node)
-    private alert : Node;
-    @property(Node)
-    private loading : Node;
-    @property(Node)
-    private maskNode : Node;
-    @property(Node)
-    private apiLoading : Node;
+    scene: Node = null;
 
-    
-    start() {
+    @property(Node)
+    private popup: Node = null;
 
+    @property(Node)
+    private panel: Node = null;
+
+    @property(Node)
+    private toast: Node = null;
+
+    @property(Node)
+    private alert: Node = null;
+
+    @property(Node)
+    private loading: Node = null;
+
+    @property(Node)
+    private maskNode: Node = null;
+
+    @property(Node)
+    private apiLoading: Node = null;
+
+    public get SceneRoot(): Node {
+        return this.scene;
     }
 
-    update(deltaTime: number) {
-        
+    protected start(): void {
+        const sceneManager = Services.GetService(SceneManager);
+        sceneManager.Init(this);
     }
 }
-
-

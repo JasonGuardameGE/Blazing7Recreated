@@ -10,11 +10,17 @@ import {
 } from 'cc';
 
 import { LoadingBar } from './LoadingBar';
+import { Services } from '../../../Managers/Services';
+import SceneManager, { ScenePrefabPath } from '../../../Managers/SceneManager';
+import { GameManager } from '../../../Managers/GameManager';
+import { BaseEventListener } from '../../../EventListener/BaseEventListener';
 
 const { ccclass, property } = _decorator;
 
 @ccclass('Loading')
 export class LoadingScene extends Component {
+
+    private evtOnLoadingComplete = new BaseEventListener<() => void>();
 
     @property(LoadingBar)
     loadingBar: LoadingBar = null;
@@ -28,10 +34,24 @@ export class LoadingScene extends Component {
     @property(Node)
     winUpToSkeleton: Node = null;
 
+    private _sceneManager : SceneManager;
+    private _gameManager : GameManager;
+
     start() {
+        this.initialize();
         this.playWinUpToSkeletonAnimation();
         this.loadingBar.init();
         this.loadingBar.StartLoading();
+    }
+
+    private initialize() : void{
+        this._sceneManager = Services.GetService(SceneManager);
+        this._sceneManager.SetCurrentScene(this.node);
+        this.RegisterEvents();
+    }
+
+    private RegisterEvents(){
+        this.evtOnLoadingComplete.add(this.loadGameScene.bind(this));
     }
 
     protected onLoad() : void{
@@ -40,26 +60,35 @@ export class LoadingScene extends Component {
             return;
         }
 
-        this.loadingBar.setEvtOnLoadingBarStartLoading(this.startLoading);
+        this.loadingBar.setEvtOnLoadingBarStartLoading(this.startLoading.bind(this));
     }
 
-    update(deltaTime: number) {
-        
+    public AddEvtOnLoadingComplete(cb: () => void){
+        this.evtOnLoadingComplete.add(cb);
     }
 
     private async startLoading(): Promise<void> {
         try {
-            console.log("[Loading]");
+            console.log(`Test Start`);
+            console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
+
+            this._sceneManager.PreLoadScene(ScenePrefabPath.GAME_SCENE);
+
             // Note: Placeholder
             while (this.loadingBar.RealProgress < 100) {
                 const delay = this.randomRange(0.25, 1.0);
                 const increment = this.randomRange(3, 12);
-    
                 await this.sleep(delay);
     
                 const newProgressValue = Math.min(this.loadingBar.RealProgress + increment, 100);
-                    
+                //console.log(`[Loading] Progress: ${newProgressValue}%`);
+
                 this.loadingBar.SetProgress(newProgressValue);
+            }
+
+
+            if(this.evtOnLoadingComplete){
+                this.evtOnLoadingComplete.invoke();
             }
 
             //TODO: Add Initialization of WebSocket here
@@ -98,9 +127,14 @@ export class LoadingScene extends Component {
             // }
 
         } catch (err) {
+            console.error('[Loading] startLoading failed:', err);
             //logger.error('[Loading] ApiManager 初始化失败:', err);
             //this.showRetryOption();
         }
+    }
+
+    private loadGameScene(){
+        this._sceneManager.LoadScene(ScenePrefabPath.GAME_SCENE);
     }
 
     private playWinUpToSkeletonAnimation(): void {

@@ -18,11 +18,13 @@ export class LoadingBar extends Component {
     @property(Sprite)
     progressTog: Sprite = null;
 
-    private realProgress: number = 0;
-    private isSceneLoading = false;
+    private _realProgress: number = 0;
+    private _isSceneLoading = false;
 
-    public RealProgress: number = this.realProgress;
-    
+    public get RealProgress(): number {
+        return this._realProgress;
+    }
+
     public setEvtOnLoadingBarStartLoading(cb: () => Promise<void>){
         this.evtOnLoadingBarStartLoading = cb;
     }
@@ -41,7 +43,7 @@ export class LoadingBar extends Component {
     }
 
     public Reset(){
-        this.realProgress = 0;
+        this._realProgress = 0;
         this.UpdateBar();
     }
 
@@ -50,12 +52,12 @@ export class LoadingBar extends Component {
     }
 
     public SetProgress(newProgress: number){
-        this.realProgress = newProgress;
+        this._realProgress = newProgress;
         this.UpdateBar();
     }
 
     private UpdateBar() {
-        const p = Math.min(Math.max(this.realProgress ?? 0, 0), 100);
+        const p = Math.min(Math.max(this._realProgress ?? 0, 0), 100);
         this.progressBar.progress = p / 100;
     }
 }

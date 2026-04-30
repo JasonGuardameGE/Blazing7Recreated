@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 8585.7741,
+      "mTimestamp": 8362.3873,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 21043407.9839,
+      "mTimestamp": 2955459.4674,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -840,7 +840,7 @@
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingBar.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/EventListener/BaseEventListener.ts",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
@@ -849,35 +849,119 @@
             },
             "end": {
               "line": 5,
-              "column": 1267
+              "column": 1270
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts",
+          "resolved": "__unresolved_9",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1286
+            },
+            "end": {
+              "line": 5,
+              "column": 1373
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/ResourceManager.ts",
+          "resolved": "__unresolved_10",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1389
+            },
+            "end": {
+              "line": 5,
+              "column": 1480
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts",
+          "resolved": "__unresolved_11",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1496
+            },
+            "end": {
+              "line": 5,
+              "column": 1584
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts",
+          "resolved": "__unresolved_12",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1600
+            },
+            "end": {
+              "line": 5,
+              "column": 1684
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Game/ScrollingBackground.ts",
+          "resolved": "__unresolved_13",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1700
+            },
+            "end": {
+              "line": 5,
+              "column": 1801
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingBar.ts",
+          "resolved": "__unresolved_14",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1817
+            },
+            "end": {
+              "line": 5,
+              "column": 1912
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingScene.ts",
-          "resolved": "__unresolved_9",
+          "resolved": "__unresolved_15",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1283
+              "column": 1928
             },
             "end": {
               "line": 5,
-              "column": 1380
+              "column": 2025
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/UIRoot.ts",
-          "resolved": "__unresolved_10",
+          "resolved": "__unresolved_16",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1396
+              "column": 2041
             },
             "end": {
               "line": 5,
-              "column": 1472
+              "column": 2117
             }
           }
         }
@@ -937,6 +1021,48 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/TicketItem.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/EventListener/BaseEventListener.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/ResourceManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Game/ScrollingBackground.ts"
           },
           "messages": []
         },
@@ -1526,7 +1652,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1777505955212,
+      "mTimestamp": 1777540360721,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -1534,11 +1660,15 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/UIRoot.ts": {
       "mTimestamp": {
-        "mtime": 1777427263429.53,
+        "mtime": 1777543290192.037,
         "uuid": "1f9054db-351f-4e7a-8020-a416167b637e"
       },
       "chunkId": "ce221ae86ab9a3df4325b4b80cff91d56ea47b5a",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -1557,6 +1687,34 @@
               "column": 48
             }
           }
+        },
+        {
+          "value": "../Managers/SceneManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 25
+            },
+            "end": {
+              "line": 2,
+              "column": 51
+            }
+          }
+        },
+        {
+          "value": "../Managers/Services",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 25
+            },
+            "end": {
+              "line": 3,
+              "column": 47
+            }
+          }
         }
       ],
       "type": "esm",
@@ -1564,7 +1722,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "cce:/internal/x/cc"
+            "url": "cce:/internal/code-quality/cr.mjs"
           },
           "messages": []
         },
@@ -1579,6 +1737,27 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
           },
           "messages": []
         }
@@ -1690,7 +1869,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingScene.ts": {
       "mTimestamp": {
-        "mtime": 1777526996909.8022,
+        "mtime": 1777542725009.6108,
         "uuid": "97ec7068-8675-4806-a9a4-b560f82e2ab7"
       },
       "chunkId": "4648144d8513977ca708e25c94246bffd79fccb2",
@@ -1731,6 +1910,48 @@
               "column": 41
             }
           }
+        },
+        {
+          "value": "../../../Managers/Services",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 25
+            },
+            "end": {
+              "line": 13,
+              "column": 53
+            }
+          }
+        },
+        {
+          "value": "../../../Managers/SceneManager",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 46
+            },
+            "end": {
+              "line": 14,
+              "column": 78
+            }
+          }
+        },
+        {
+          "value": "../../../EventListener/BaseEventListener",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 34
+            },
+            "end": {
+              "line": 16,
+              "column": 76
+            }
+          }
         }
       ],
       "type": "esm",
@@ -1769,12 +1990,33 @@
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingBar.ts"
           },
           "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/EventListener/BaseEventListener.ts"
+          },
+          "messages": []
         }
       ]
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingBar.ts": {
       "mTimestamp": {
-        "mtime": 1777526146288.9663,
+        "mtime": 1777535919182.364,
         "uuid": "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8"
       },
       "chunkId": "887f3befa77162f12ee6a600dc90b09b23dbd2e6",
@@ -2891,7 +3133,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/GameData.ts": {
       "mTimestamp": {
-        "mtime": 1777526913145.4563,
+        "mtime": 1777527178107.1682,
         "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
       },
       "chunkId": "d9e989e3911e310821333903950c51538c2c38d9",
@@ -2943,7 +3185,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/TicketItem.ts": {
       "mTimestamp": {
-        "mtime": 1777526941153.8003,
+        "mtime": 1777527178108.1685,
         "uuid": "d0f4841b-e1c1-42da-95be-84a397ea4729"
       },
       "chunkId": "5b55b1ed4c4ca1c1eb5013362f49b651c3ef2f9d",
@@ -2964,6 +3206,544 @@
           },
           "messages": []
         },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Game/ScrollingBackground.ts": {
+      "mTimestamp": {
+        "mtime": 1777541344422.5828,
+        "uuid": "0385782a-d100-4ba9-872d-4fc138f9bb8b"
+      },
+      "chunkId": "54ed4532abed57c6974fa2b8d9e626c17649001c",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 72
+            },
+            "end": {
+              "line": 1,
+              "column": 76
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/UIManager.ts": {
+      "mTimestamp": {
+        "mtime": 1777534023249.4421,
+        "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
+      },
+      "chunkId": "3e489259675877bbdd10377d24b2a86702415949",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/SceneManager.ts": {
+      "mTimestamp": {
+        "mtime": 1777535472560.463,
+        "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
+      },
+      "chunkId": "5daa077bcd853216e0898c124333788d9979857d",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        },
+        {
+          "value": "../UIRoot",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 23
+            },
+            "end": {
+              "line": 2,
+              "column": 34
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/UIRoot.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts": {
+      "mTimestamp": {
+        "mtime": 1777543308097.8586,
+        "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
+      },
+      "chunkId": "a466d0397f6d8bdc7e2528816197d20815b0156a",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 33
+            },
+            "end": {
+              "line": 1,
+              "column": 37
+            }
+          }
+        },
+        {
+          "value": "./ResourceManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 28
+            },
+            "end": {
+              "line": 3,
+              "column": 47
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/ResourceManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/ResourceManager.ts": {
+      "mTimestamp": {
+        "mtime": 1777537226992.786,
+        "uuid": "7c7c227d-c13c-4882-a81a-43610dabcee4"
+      },
+      "chunkId": "da4d61e81047345ef6a6ce0b6e3eaeb3c3a5f135",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 76
+            },
+            "end": {
+              "line": 1,
+              "column": 80
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts": {
+      "mTimestamp": {
+        "mtime": 1777538042679.4485,
+        "uuid": "e4d83191-746a-4582-a47d-bd5cee6faf33"
+      },
+      "chunkId": "230468e673202193cdcb8daa6da43499b4f5b560",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts": {
+      "mTimestamp": {
+        "mtime": 1777541871188.3286,
+        "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
+      },
+      "chunkId": "ea54d85c17f7a85b3ce3bf934492b9dce719df1a",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 38
+            },
+            "end": {
+              "line": 1,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "./Services",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 25
+            },
+            "end": {
+              "line": 2,
+              "column": 37
+            }
+          }
+        },
+        {
+          "value": "./SceneManager",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 25
+            },
+            "end": {
+              "line": 3,
+              "column": 41
+            }
+          }
+        },
+        {
+          "value": "./ResourceManager",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 28
+            },
+            "end": {
+              "line": 4,
+              "column": 47
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/ResourceManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/EventListener.ts": {
+      "mTimestamp": {
+        "mtime": 1777541501582.758,
+        "uuid": "979d9765-b7ce-4f06-aa6f-83b8092b5d01"
+      },
+      "chunkId": "aad983baca2a79d38428652caf819f26800a7a4a",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/BaseEventListener.ts": {
+      "mTimestamp": {
+        "mtime": 1777541501582.758,
+        "uuid": "979d9765-b7ce-4f06-aa6f-83b8092b5d01"
+      },
+      "chunkId": "babb81724902aa448f460f31d15d5ccf3b544909",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/EventListener/BaseEventListener.ts": {
+      "mTimestamp": {
+        "mtime": 1777542480761.3794,
+        "uuid": "979d9765-b7ce-4f06-aa6f-83b8092b5d01"
+      },
+      "chunkId": "bbbdcacd06fb9983237841790f5fbeb491d9b6f5",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
         {
           "resolved": {
             "type": "module",

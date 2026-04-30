@@ -1,7 +1,7 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _crd, ccclass, property, UIRoot;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, SceneManager, Services, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _crd, ccclass, property, UIRoot;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -9,14 +9,28 @@ System.register(["cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
+  function _reportPossibleCrUseOfSceneManager(extras) {
+    _reporterNs.report("SceneManager", "../Managers/SceneManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfServices(extras) {
+    _reporterNs.report("Services", "../Managers/Services", _context.meta, extras);
+  }
+
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
       Component = _cc.Component;
       Node = _cc.Node;
+    }, function (_unresolved_2) {
+      SceneManager = _unresolved_2.default;
+    }, function (_unresolved_3) {
+      Services = _unresolved_3.Services;
     }],
     execute: function () {
       _crd = true;
@@ -51,50 +65,75 @@ System.register(["cc"], function (_export, _context) {
           _initializerDefineProperty(this, "apiLoading", _descriptor8, this);
         }
 
-        start() {}
+        get SceneRoot() {
+          return this.scene;
+        }
 
-        update(deltaTime) {}
+        start() {
+          var sceneManager = (_crd && Services === void 0 ? (_reportPossibleCrUseOfServices({
+            error: Error()
+          }), Services) : Services).GetService(_crd && SceneManager === void 0 ? (_reportPossibleCrUseOfSceneManager({
+            error: Error()
+          }), SceneManager) : SceneManager);
+          sceneManager.Init(this);
+        }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "scene", [_dec2], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "popup", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "panel", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "toast", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "alert", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "loading", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "maskNode", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "apiLoading", [_dec9], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       })), _class2)) || _class));
 
       _cclegacy._RF.pop();

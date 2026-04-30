@@ -1,10 +1,10 @@
 {
   "path": {
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.json": [
-      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.atlas"
-    ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.fnt": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.atlas"
     ]
   },
   "uuid": {

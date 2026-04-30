@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Loading_Scene",
+    "_name": "Loading-Scene",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Loading_Scene",
+    "_name": "Loading-Scene",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -1882,8 +1882,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": -51,
+      "y": -104,
       "z": 0
     },
     "_lrot": {
@@ -1895,8 +1895,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 3.5,
+      "y": 3.5,
       "z": 1
     },
     "_mobility": 0,
@@ -1964,7 +1964,7 @@
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",
-    "defaultAnimation": "",
+    "defaultAnimation": "blazing7s-WinUpTo_animation",
     "_premultipliedAlpha": true,
     "_timeScale": 1,
     "_preCacheMode": 0,
@@ -2018,8 +2018,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 6,
-      "y": 29.011999999999944,
+      "x": -28,
+      "y": 124,
       "z": 0
     },
     "_lrot": {
@@ -2154,16 +2154,16 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 6,
-      "y": -156.12800000000004,
+      "x": -25,
+      "y": -61,
       "z": 0
     },
     "_lrot": {
       "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": -0.02792163872356888,
+      "w": 0.9996101150403544
     },
     "_lscale": {
       "__type__": "cc.Vec3",
@@ -2177,7 +2177,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": -3.2
     },
     "_id": ""
   },
@@ -2487,7 +2487,9 @@
     "__prefab": {
       "__id__": 109
     },
-    "loadingBar": null,
+    "loadingBar": {
+      "__id__": 74
+    },
     "maskNode": {
       "__id__": 2
     },
@@ -2512,7 +2514,6 @@
       "__id__": 0
     },
     "fileId": "c46/YsCPVOJYA4mWEpNYRx",
-    "instance": null,
-    "targetOverrides": null
+    "targetOverrides": []
   }
 ]

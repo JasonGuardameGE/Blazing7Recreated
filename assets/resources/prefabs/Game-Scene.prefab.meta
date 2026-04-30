@@ -2,12 +2,12 @@
   "ver": "1.1.50",
   "importer": "prefab",
   "imported": true,
-  "uuid": "1ba6edf3-e479-42eb-b78f-160ccddcdd12",
+  "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "Loading_Scene"
+    "syncNodeName": "Game-Scene"
   }
 }

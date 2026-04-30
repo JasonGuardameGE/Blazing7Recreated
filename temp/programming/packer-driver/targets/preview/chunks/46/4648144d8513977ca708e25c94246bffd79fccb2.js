@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, sp, LoadingBar, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, LoadingScene;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, sp, LoadingBar, Services, SceneManager, ScenePrefabPath, BaseEventListener, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, LoadingScene;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -17,6 +17,26 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
     _reporterNs.report("LoadingBar", "./LoadingBar", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfServices(extras) {
+    _reporterNs.report("Services", "../../../Managers/Services", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfSceneManager(extras) {
+    _reporterNs.report("SceneManager", "../../../Managers/SceneManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfScenePrefabPath(extras) {
+    _reporterNs.report("ScenePrefabPath", "../../../Managers/SceneManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfGameManager(extras) {
+    _reporterNs.report("GameManager", "../../../Managers/GameManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfBaseEventListener(extras) {
+    _reporterNs.report("BaseEventListener", "../../../EventListener/BaseEventListener", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -30,6 +50,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       sp = _cc.sp;
     }, function (_unresolved_2) {
       LoadingBar = _unresolved_2.LoadingBar;
+    }, function (_unresolved_3) {
+      Services = _unresolved_3.Services;
+    }, function (_unresolved_4) {
+      SceneManager = _unresolved_4.default;
+      ScenePrefabPath = _unresolved_4.ScenePrefabPath;
+    }, function (_unresolved_5) {
+      BaseEventListener = _unresolved_5.BaseEventListener;
     }],
     execute: function () {
       _crd = true;
@@ -48,6 +75,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       }), LoadingBar) : LoadingBar), _dec3 = property(Node), _dec4 = property(Node), _dec5 = property(Node), _dec(_class = (_class2 = class LoadingScene extends Component {
         constructor() {
           super(...arguments);
+          this.evtOnLoadingComplete = new (_crd && BaseEventListener === void 0 ? (_reportPossibleCrUseOfBaseEventListener({
+            error: Error()
+          }), BaseEventListener) : BaseEventListener)();
 
           _initializerDefineProperty(this, "loadingBar", _descriptor, this);
 
@@ -56,12 +86,32 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           _initializerDefineProperty(this, "logoNode", _descriptor3, this);
 
           _initializerDefineProperty(this, "winUpToSkeleton", _descriptor4, this);
+
+          this._sceneManager = void 0;
+          this._gameManager = void 0;
         }
 
         start() {
+          this.initialize();
           this.playWinUpToSkeletonAnimation();
           this.loadingBar.init();
           this.loadingBar.StartLoading();
+        }
+
+        initialize() {
+          this._sceneManager = (_crd && Services === void 0 ? (_reportPossibleCrUseOfServices({
+            error: Error()
+          }), Services) : Services).GetService(_crd && SceneManager === void 0 ? (_reportPossibleCrUseOfSceneManager({
+            error: Error()
+          }), SceneManager) : SceneManager);
+
+          this._sceneManager.SetCurrentScene(this.node);
+
+          this.RegisterEvents();
+        }
+
+        RegisterEvents() {
+          this.evtOnLoadingComplete.add(this.loadGameScene.bind(this));
         }
 
         onLoad() {
@@ -70,17 +120,25 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             return;
           }
 
-          this.loadingBar.setEvtOnLoadingBarStartLoading(this.startLoading);
+          this.loadingBar.setEvtOnLoadingBarStartLoading(this.startLoading.bind(this));
         }
 
-        update(deltaTime) {}
+        AddEvtOnLoadingComplete(cb) {
+          this.evtOnLoadingComplete.add(cb);
+        }
 
         startLoading() {
           var _this = this;
 
           return _asyncToGenerator(function* () {
             try {
-              console.log("[Loading]"); // Note: Placeholder
+              console.log("Test Start");
+              console.log("Starting Loading: " + _this.loadingBar.RealProgress);
+
+              _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+                error: Error()
+              }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE); // Note: Placeholder
+
 
               while (_this.loadingBar.RealProgress < 100) {
                 var delay = _this.randomRange(0.25, 1.0);
@@ -88,9 +146,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                 var increment = _this.randomRange(3, 12);
 
                 yield _this.sleep(delay);
-                var newProgressValue = Math.min(_this.loadingBar.RealProgress + increment, 100);
+                var newProgressValue = Math.min(_this.loadingBar.RealProgress + increment, 100); //console.log(`[Loading] Progress: ${newProgressValue}%`);
 
                 _this.loadingBar.SetProgress(newProgressValue);
+              }
+
+              if (_this.evtOnLoadingComplete) {
+                _this.evtOnLoadingComplete.invoke();
               } //TODO: Add Initialization of WebSocket here
               //logger.log('[Loading] 初始化 ApiManager...');
               //await ApiManager.initialize();
@@ -123,10 +185,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               //     this.checkAndLoadScene('game');
               // }
 
-            } catch (err) {//logger.error('[Loading] ApiManager 初始化失败:', err);
+            } catch (err) {
+              console.error('[Loading] startLoading failed:', err); //logger.error('[Loading] ApiManager 初始化失败:', err);
               //this.showRetryOption();
             }
           })();
+        }
+
+        loadGameScene() {
+          this._sceneManager.LoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+            error: Error()
+          }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE);
         }
 
         playWinUpToSkeletonAnimation() {

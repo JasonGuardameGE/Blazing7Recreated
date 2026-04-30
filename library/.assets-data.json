@@ -7,7 +7,7 @@
         "1ba6edf3-e479-42eb-b78f-160ccddcdd12"
       ],
       "dependScripts": [
-        "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8",
+        "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb",
         "CC3eba29-7abb-723a-f7ab-ae275e2277e8",
         "1f9054db-351f-4e7a-8020-a416167b637e"
       ]
@@ -35,12 +35,12 @@
     "versionCode": 1
   },
   "9659b73b-1bc4-4e6c-9066-dfef21069be8": {
-    "url": "db://assets/resources/Prefabs",
+    "url": "db://assets/resources/prefabs",
     "value": {},
     "versionCode": 1
   },
   "1ba6edf3-e479-42eb-b78f-160ccddcdd12": {
-    "url": "db://assets/resources/Prefabs/Loading_Scene.prefab",
+    "url": "db://assets/resources/prefabs/Loading-Scene.prefab",
     "value": {
       "depends": [
         "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
@@ -565,6 +565,93 @@
   },
   "d0f4841b-e1c1-42da-95be-84a397ea4729": {
     "url": "db://assets/Scripts/Data/TicketItem.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "dafdd998-8f62-4f33-bdb0-adbead612ea2": {
+    "url": "db://assets/resources/prefabs/Game-Scene.prefab",
+    "value": {
+      "depends": [
+        "d3323390-90b0-4c59-90fd-c787fcc1a9b0@f9941"
+      ],
+      "dependScripts": [
+        "0385782a-d100-4ba9-872d-4fc138f9bb8b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e407b11e-18be-4ba4-a54e-8f2583f8d34a": {
+    "url": "db://assets/res/Textures/Background",
+    "value": {},
+    "versionCode": 1
+  },
+  "d3323390-90b0-4c59-90fd-c787fcc1a9b0": {
+    "url": "db://assets/res/Textures/Background/move_bg.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d3323390-90b0-4c59-90fd-c787fcc1a9b0@6c48a": {
+    "url": "db://assets/res/Textures/Background/move_bg.png@6c48a",
+    "value": {
+      "depends": [
+        "d3323390-90b0-4c59-90fd-c787fcc1a9b0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d3323390-90b0-4c59-90fd-c787fcc1a9b0@f9941": {
+    "url": "db://assets/res/Textures/Background/move_bg.png@f9941",
+    "value": {
+      "depends": [
+        "d3323390-90b0-4c59-90fd-c787fcc1a9b0@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a047a5f3-10c2-46b3-a286-76b50d1bf534": {
+    "url": "db://assets/Scripts/UI/Scenes/Game",
+    "value": {},
+    "versionCode": 1
+  },
+  "0385782a-d100-4ba9-872d-4fc138f9bb8b": {
+    "url": "db://assets/Scripts/UI/Scenes/Game/ScrollingBackground.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37": {
+    "url": "db://assets/Scripts/Managers/SceneManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "238c0e9e-457d-4287-82a9-e8d733becb7a": {
+    "url": "db://assets/Scripts/Managers",
+    "value": {},
+    "versionCode": 1
+  },
+  "7c7c227d-c13c-4882-a81a-43610dabcee4": {
+    "url": "db://assets/Scripts/Managers/ResourceManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e4d83191-746a-4582-a47d-bd5cee6faf33": {
+    "url": "db://assets/Scripts/Managers/Services.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb": {
+    "url": "db://assets/Scripts/Managers/GameManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "979d9765-b7ce-4f06-aa6f-83b8092b5d01": {
+    "url": "db://assets/Scripts/EventListener/BaseEventListener.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "991ae858-41d7-44de-aae9-63318426bcb5": {
+    "url": "db://assets/Scripts/EventListener",
     "value": {},
     "versionCode": 1
   }
