@@ -1,0 +1,11 @@
+{
+    "systemInfo": {
+        "arch": "x64",
+        "cpu": "12th Gen Intel(R) Core(TM) i5-12500",
+        "version": "Windows 10 Enterprise LTSC 2021"
+    },
+    "sceneListMap": {
+        "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene"
+    },
+    "deviceMd5": "bec3091e7d7d2bab164af7890f1c4f4e"
+}

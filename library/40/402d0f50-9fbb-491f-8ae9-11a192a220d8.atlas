@@ -1,0 +1,363 @@
+
+blazing7s-WinUpTo_skeleton.png
+size: 1888, 1888
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+spiral 11/winupto_fire_0000_Layer-51
+  rotate: true
+  xy: 2, 1586
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0001_Layer-50
+  rotate: true
+  xy: 2, 1284
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0002_Layer-49
+  rotate: true
+  xy: 2, 982
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0003_Layer-48
+  rotate: true
+  xy: 2, 680
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0004_Layer-47
+  rotate: true
+  xy: 2, 378
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0005_Layer-46
+  rotate: true
+  xy: 2, 76
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0006_Layer-45
+  rotate: false
+  xy: 228, 1662
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0007_Layer-44
+  rotate: false
+  xy: 530, 1662
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0008_Layer-43
+  rotate: false
+  xy: 832, 1662
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0009_Layer-42
+  rotate: false
+  xy: 1134, 1662
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0010_Layer-41
+  rotate: false
+  xy: 1436, 1662
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0011_Layer-40
+  rotate: true
+  xy: 228, 1360
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0012_Layer-39
+  rotate: true
+  xy: 228, 1058
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0013_Layer-38
+  rotate: true
+  xy: 228, 756
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0014_Layer-37
+  rotate: true
+  xy: 228, 454
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0015_Layer-36
+  rotate: true
+  xy: 228, 152
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0016_Layer-35
+  rotate: false
+  xy: 454, 1436
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0017_Layer-34
+  rotate: false
+  xy: 756, 1436
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0018_Layer-33
+  rotate: false
+  xy: 1058, 1436
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0019_Layer-32
+  rotate: false
+  xy: 1360, 1436
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0020_Layer-31
+  rotate: true
+  xy: 1662, 1360
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0021_Layer-30
+  rotate: false
+  xy: 454, 1210
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0022_Layer-29
+  rotate: false
+  xy: 756, 1210
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0023_Layer-28
+  rotate: false
+  xy: 756, 1210
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0024_Layer-27
+  rotate: false
+  xy: 1058, 1210
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0025_Layer-26
+  rotate: false
+  xy: 1360, 1210
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0026_Layer-25
+  rotate: true
+  xy: 1662, 1058
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0027_Layer-24
+  rotate: false
+  xy: 454, 984
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0028_Layer-23
+  rotate: false
+  xy: 756, 984
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0029_Layer-22
+  rotate: false
+  xy: 1058, 984
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0030_Layer-21
+  rotate: false
+  xy: 1360, 984
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0031_Layer-20
+  rotate: true
+  xy: 1662, 756
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0032_Layer-19
+  rotate: true
+  xy: 454, 454
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0033_Layer-18
+  rotate: false
+  xy: 454, 758
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0034_Layer-17
+  rotate: true
+  xy: 454, 152
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0035_Layer-16
+  rotate: true
+  xy: 454, 152
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0036_Layer-15
+  rotate: true
+  xy: 680, 456
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0037_Layer-14
+  rotate: false
+  xy: 756, 758
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0038_Layer-13
+  rotate: true
+  xy: 680, 154
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0039_Layer-12
+  rotate: false
+  xy: 906, 532
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0040_Layer-11
+  rotate: false
+  xy: 1058, 758
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0041_Layer-10
+  rotate: false
+  xy: 1360, 758
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0042_Layer-9
+  rotate: false
+  xy: 1208, 532
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0043_Layer-8
+  rotate: false
+  xy: 1510, 530
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0044_Layer-7
+  rotate: true
+  xy: 906, 230
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0045_Layer-6
+  rotate: false
+  xy: 1132, 306
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0046_Layer-5
+  rotate: false
+  xy: 906, 4
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0047_Layer-4
+  rotate: true
+  xy: 1208, 4
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0048_Layer-3
+  rotate: false
+  xy: 1434, 304
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0049_Layer-2
+  rotate: true
+  xy: 1434, 2
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1
+spiral 11/winupto_fire_0050_Layer-1
+  rotate: true
+  xy: 1660, 2
+  size: 300, 224
+  orig: 300, 224
+  offset: 0, 0
+  index: -1

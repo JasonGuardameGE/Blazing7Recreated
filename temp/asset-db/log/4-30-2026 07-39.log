@@ -1,0 +1,906 @@
+4-30-2026 07:39:18-debug: start **** info
+4-30-2026 07:39:19-log: Cannot access game frame or container.
+4-30-2026 07:39:19-debug: asset-db:require-engine-code (603ms)
+4-30-2026 07:39:19-log: meshopt wasm decoder initialized
+4-30-2026 07:39:19-log: [box2d]:box2d wasm lib loaded.
+4-30-2026 07:39:19-log: [bullet]:bullet wasm lib loaded.
+4-30-2026 07:39:19-log: Cocos Creator v3.8.5
+4-30-2026 07:39:19-log: Using legacy pipeline
+4-30-2026 07:39:19-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:31.06MB, end 79.21MB, increase: 48.15MB
+4-30-2026 07:39:19-log: Forward render pipeline initialized.
+4-30-2026 07:39:19-debug: [Assets Memory track]: asset-db-plugin-register: programming start:80.07MB, end 83.37MB, increase: 3.30MB
+4-30-2026 07:39:20-debug: [Assets Memory track]: asset-db-plugin-register: builder start:83.41MB, end 176.08MB, increase: 92.67MB
+4-30-2026 07:39:20-debug: [Assets Memory track]: asset-db-plugin-register: engine-extends start:176.32MB, end 179.45MB, increase: 3.13MB
+4-30-2026 07:39:20-debug: [Assets Memory track]: asset-db-plugin-register: project start:79.91MB, end 179.52MB, increase: 99.60MB
+4-30-2026 07:39:20-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:79.23MB, end 179.55MB, increase: 100.32MB
+4-30-2026 07:39:20-debug: run package(xiaomi-quick-game) handler(enable) start
+4-30-2026 07:39:20-debug: run package(xiaomi-quick-game) handler(enable) success!
+4-30-2026 07:39:20-debug: run package(cocos-service) handler(enable) success!
+4-30-2026 07:39:20-debug: run package(im-plugin) handler(enable) success!
+4-30-2026 07:39:20-debug: run package(cocos-service) handler(enable) start
+4-30-2026 07:39:20-debug: run package(placeholder) handler(enable) start
+4-30-2026 07:39:20-debug: run package(placeholder) handler(enable) success!
+4-30-2026 07:39:20-debug: run package(im-plugin) handler(enable) start
+4-30-2026 07:39:20-debug: asset-db:worker-init: initPlugin (1288ms)
+4-30-2026 07:39:20-debug: [Assets Memory track]: asset-db:worker-init start:31.05MB, end 175.07MB, increase: 144.02MB
+4-30-2026 07:39:20-debug: Run asset db hook programming:beforePreStart ...
+4-30-2026 07:39:20-debug: Run asset db hook programming:beforePreStart success!
+4-30-2026 07:39:20-debug: Run asset db hook engine-extends:beforePreStart ...
+4-30-2026 07:39:20-debug: Run asset db hook engine-extends:beforePreStart success!
+4-30-2026 07:39:22-debug: asset-db:worker-init (3851ms)
+4-30-2026 07:39:22-debug: asset-db-hook-programming-beforePreStart (1872ms)
+4-30-2026 07:39:22-debug: asset-db-hook-engine-extends-beforePreStart (1873ms)
+4-30-2026 07:39:23-debug: Preimport db internal success
+4-30-2026 07:39:23-debug: Preimport db assets success
+4-30-2026 07:39:23-debug: starting packer-driver...
+4-30-2026 07:39:23-debug: Run asset db hook programming:afterPreStart ...
+4-30-2026 07:39:24-debug: initialize scripting environment...
+4-30-2026 07:39:24-debug: [[Executor]] prepare before lock
+4-30-2026 07:39:24-debug: Set detail map pack:///resolution-detail-map.json: {}
+4-30-2026 07:39:24-debug: [[Executor]] prepare after unlock
+4-30-2026 07:39:24-debug: Run asset db hook programming:afterPreStart success!
+4-30-2026 07:39:24-debug: Run asset db hook engine-extends:afterPreStart success!
+4-30-2026 07:39:24-debug: [Assets Memory track]: asset-db:worker-init: preStart start:175.08MB, end 177.45MB, increase: 2.37MB
+4-30-2026 07:39:24-debug: Run asset db hook engine-extends:afterPreStart ...
+4-30-2026 07:39:24-debug: Start up the 'internal' database...
+4-30-2026 07:39:25-debug: asset-db-hook-programming-afterPreStart (1511ms)
+4-30-2026 07:39:25-debug: asset-db:worker-effect-data-processing (1196ms)
+4-30-2026 07:39:25-debug: asset-db-hook-engine-extends-afterPreStart (1197ms)
+4-30-2026 07:39:25-debug: [Assets Memory track]: asset-db:worker-startup-database[internal] start:175.16MB, end 191.62MB, increase: 16.45MB
+4-30-2026 07:39:25-debug: Start up the 'assets' database...
+4-30-2026 07:39:25-debug: asset-db:worker-startup-database[internal] (4501ms)
+4-30-2026 07:39:25-debug: [Assets Memory track]: asset-db:worker-init: startup start:177.46MB, end 192.21MB, increase: 14.75MB
+4-30-2026 07:39:25-debug: [Assets Memory track]: asset-db:worker-startup-database[assets] start:181.20MB, end 192.19MB, increase: 10.99MB
+4-30-2026 07:39:25-debug: lazy register asset handler *
+4-30-2026 07:39:25-debug: lazy register asset handler directory
+4-30-2026 07:39:25-debug: lazy register asset handler spine-data
+4-30-2026 07:39:25-debug: lazy register asset handler dragonbones
+4-30-2026 07:39:25-debug: lazy register asset handler dragonbones-atlas
+4-30-2026 07:39:25-debug: lazy register asset handler text
+4-30-2026 07:39:25-debug: lazy register asset handler javascript
+4-30-2026 07:39:25-debug: lazy register asset handler typescript
+4-30-2026 07:39:25-debug: lazy register asset handler scene
+4-30-2026 07:39:25-debug: lazy register asset handler terrain
+4-30-2026 07:39:25-debug: lazy register asset handler sprite-frame
+4-30-2026 07:39:25-debug: lazy register asset handler json
+4-30-2026 07:39:25-debug: lazy register asset handler prefab
+4-30-2026 07:39:25-debug: lazy register asset handler tiled-map
+4-30-2026 07:39:25-debug: lazy register asset handler image
+4-30-2026 07:39:25-debug: lazy register asset handler buffer
+4-30-2026 07:39:25-debug: lazy register asset handler sign-image
+4-30-2026 07:39:25-debug: lazy register asset handler alpha-image
+4-30-2026 07:39:25-debug: lazy register asset handler texture-cube
+4-30-2026 07:39:25-debug: lazy register asset handler render-texture
+4-30-2026 07:39:25-debug: lazy register asset handler erp-texture-cube
+4-30-2026 07:39:25-debug: lazy register asset handler texture-cube-face
+4-30-2026 07:39:25-debug: lazy register asset handler gltf
+4-30-2026 07:39:25-debug: lazy register asset handler rt-sprite-frame
+4-30-2026 07:39:25-debug: lazy register asset handler gltf-animation
+4-30-2026 07:39:25-debug: lazy register asset handler texture
+4-30-2026 07:39:25-debug: lazy register asset handler gltf-mesh
+4-30-2026 07:39:25-debug: lazy register asset handler gltf-skeleton
+4-30-2026 07:39:25-debug: lazy register asset handler gltf-embeded-image
+4-30-2026 07:39:25-debug: lazy register asset handler fbx
+4-30-2026 07:39:25-debug: lazy register asset handler gltf-material
+4-30-2026 07:39:25-debug: lazy register asset handler physics-material
+4-30-2026 07:39:25-debug: lazy register asset handler material
+4-30-2026 07:39:25-debug: lazy register asset handler gltf-scene
+4-30-2026 07:39:25-debug: lazy register asset handler effect-header
+4-30-2026 07:39:25-debug: lazy register asset handler animation-clip
+4-30-2026 07:39:25-debug: lazy register asset handler audio-clip
+4-30-2026 07:39:25-debug: lazy register asset handler animation-graph
+4-30-2026 07:39:25-debug: lazy register asset handler animation-graph-variant
+4-30-2026 07:39:25-debug: lazy register asset handler ttf-font
+4-30-2026 07:39:25-debug: lazy register asset handler bitmap-font
+4-30-2026 07:39:25-debug: lazy register asset handler animation-mask
+4-30-2026 07:39:25-debug: lazy register asset handler particle
+4-30-2026 07:39:25-debug: lazy register asset handler sprite-atlas
+4-30-2026 07:39:25-debug: lazy register asset handler effect
+4-30-2026 07:39:25-debug: lazy register asset handler label-atlas
+4-30-2026 07:39:25-debug: lazy register asset handler render-pipeline
+4-30-2026 07:39:25-debug: lazy register asset handler render-flow
+4-30-2026 07:39:25-debug: lazy register asset handler render-stage
+4-30-2026 07:39:25-debug: lazy register asset handler instantiation-material
+4-30-2026 07:39:25-debug: lazy register asset handler auto-atlas
+4-30-2026 07:39:25-debug: lazy register asset handler instantiation-mesh
+4-30-2026 07:39:25-debug: lazy register asset handler instantiation-skeleton
+4-30-2026 07:39:25-debug: lazy register asset handler instantiation-animation
+4-30-2026 07:39:25-debug: lazy register asset handler video-clip
+4-30-2026 07:39:25-debug: asset-db:worker-startup-database[assets] (1675ms)
+4-30-2026 07:39:25-debug: asset-db:start-database (4539ms)
+4-30-2026 07:39:25-debug: asset-db:ready (9557ms)
+4-30-2026 07:39:25-debug: init worker message success
+4-30-2026 07:39:25-debug: programming:execute-script (5ms)
+4-30-2026 07:39:25-debug: [Build Memory track]: builder:worker-init start:196.89MB, end 169.48MB, increase: -28065.36KB
+4-30-2026 07:39:25-debug: builder:worker-init (404ms)
+4-30-2026 07:39:28-debug: refresh db internal success
+4-30-2026 07:39:28-debug: refresh db assets success
+4-30-2026 07:39:28-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 07:39:28-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 07:39:28-debug: asset-db:refresh-all-database (46ms)
+4-30-2026 07:39:28-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 07:39:28-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 07:41:05-debug: refresh db internal success
+4-30-2026 07:41:05-debug: refresh db assets success
+4-30-2026 07:41:05-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 07:41:05-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 07:41:05-debug: asset-db:refresh-all-database (47ms)
+4-30-2026 07:44:49-debug: refresh db internal success
+4-30-2026 07:44:49-debug: refresh db assets success
+4-30-2026 07:44:49-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 07:44:49-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 07:44:49-debug: asset-db:refresh-all-database (40ms)
+4-30-2026 07:44:49-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 07:44:49-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 07:45:27-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.ts...
+4-30-2026 07:45:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 07:45:27-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading success
+4-30-2026 07:45:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loadingbackground: #aaff85; color: #000;color: #000;
+4-30-2026 07:45:32-debug: refresh db internal success
+4-30-2026 07:45:32-debug: refresh db assets success
+4-30-2026 07:45:32-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 07:45:32-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 07:45:32-debug: asset-db:refresh-all-database (37ms)
+4-30-2026 07:45:37-debug: refresh db internal success
+4-30-2026 07:45:37-debug: refresh db assets success
+4-30-2026 07:45:37-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 07:45:37-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 07:45:37-debug: asset-db:refresh-all-database (45ms)
+4-30-2026 08:02:50-debug: refresh db internal success
+4-30-2026 08:02:50-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:02:50-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:02:50-debug: refresh db assets success
+4-30-2026 08:02:50-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:02:50-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:02:50-debug: asset-db:refresh-all-database (58ms)
+4-30-2026 08:02:50-debug: asset-db:worker-effect-data-processing (7ms)
+4-30-2026 08:02:50-debug: asset-db-hook-engine-extends-afterRefresh (7ms)
+4-30-2026 08:03:20-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Game.scenebackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:03:20-debug: asset-db:reimport-assetfc754bdf-eb93-4ec8-a2dc-92de2a2add1a (16ms)
+4-30-2026 08:36:31-debug: refresh db internal success
+4-30-2026 08:36:31-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:36:31-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:36:31-debug: refresh db assets success
+4-30-2026 08:36:31-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:36:31-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:36:31-debug: asset-db:refresh-all-database (45ms)
+4-30-2026 08:36:31-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:36:31-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 08:37:41-debug: refresh db internal success
+4-30-2026 08:37:41-debug: refresh db assets success
+4-30-2026 08:37:41-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:37:41-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:37:41-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 08:37:41-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:37:41-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+4-30-2026 08:38:01-debug: refresh db internal success
+4-30-2026 08:38:01-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiCore.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:38:01-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiError.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:38:01-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiManager.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:38:01-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\apibackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:38:01-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\GameApi.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:38:01-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:38:01-debug: refresh db assets success
+4-30-2026 08:38:01-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:38:01-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:38:01-debug: asset-db:refresh-all-database (59ms)
+4-30-2026 08:38:01-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:38:01-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 08:38:06-debug: refresh db internal success
+4-30-2026 08:38:06-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:38:06-debug: refresh db assets success
+4-30-2026 08:38:06-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:38:06-debug: asset-db:refresh-all-database (46ms)
+4-30-2026 08:38:06-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:38:06-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 08:40:19-debug: refresh db internal success
+4-30-2026 08:40:19-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:40:19-debug: refresh db assets success
+4-30-2026 08:40:19-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:40:19-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:40:19-debug: asset-db:refresh-all-database (48ms)
+4-30-2026 08:40:19-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:40:19-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 08:40:51-debug: refresh db internal success
+4-30-2026 08:40:51-debug: refresh db assets success
+4-30-2026 08:40:51-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:40:51-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:40:51-debug: asset-db:refresh-all-database (36ms)
+4-30-2026 08:45:49-debug: refresh db internal success
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\base\BasePanel.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\base\BaseUI.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\euibackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\basebackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\databackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\data\GameUserInfo.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\data\TicketData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\BGSize.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\SingleButton.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\UIHelper.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\UIkeys.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\UIRoot.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:45:49-debug: refresh db assets success
+4-30-2026 08:45:49-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:45:49-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:45:49-debug: asset-db:refresh-all-database (60ms)
+4-30-2026 08:45:49-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:45:49-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 08:45:56-debug: refresh db internal success
+4-30-2026 08:45:56-debug: refresh db assets success
+4-30-2026 08:45:56-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:45:56-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:45:56-debug: asset-db:refresh-all-database (35ms)
+4-30-2026 08:45:56-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 08:45:56-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+4-30-2026 08:58:27-debug: refresh db internal success
+4-30-2026 08:58:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\PLK.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:58:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:58:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\basebackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:58:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\databackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:58:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\euibackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:58:27-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 08:58:27-debug: refresh db assets success
+4-30-2026 08:58:27-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:58:27-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:58:27-debug: asset-db:refresh-all-database (102ms)
+4-30-2026 08:58:29-debug: refresh db internal success
+4-30-2026 08:58:29-debug: refresh db assets success
+4-30-2026 08:58:29-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 08:58:29-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 08:58:29-debug: asset-db:refresh-all-database (34ms)
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\apibackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiError.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiManager.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\GameApi.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: refresh db internal success
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiCore.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\basebackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\databackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\euibackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\base\BaseUI.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\base\BasePanel.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\data\GameUserInfo.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\data\GameData.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\data\TicketData.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\SingleButton.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\BGSize.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\UIHelper.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\UIRoot.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\eui\UIkeys.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\PLK.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:08:50-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:08:50-debug: refresh db assets success
+4-30-2026 09:08:50-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:08:50-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:08:50-debug: asset-db:refresh-all-database (45ms)
+4-30-2026 09:13:36-debug: refresh db internal success
+4-30-2026 09:13:36-debug: refresh db assets success
+4-30-2026 09:13:36-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:13:36-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:13:36-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 09:13:44-debug: refresh db internal success
+4-30-2026 09:13:44-debug: refresh db assets success
+4-30-2026 09:13:44-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:13:44-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:13:44-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 09:13:48-debug: refresh db internal success
+4-30-2026 09:13:48-debug: refresh db assets success
+4-30-2026 09:13:48-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:13:48-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:13:48-debug: asset-db:refresh-all-database (42ms)
+4-30-2026 09:13:48-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:13:50-debug: refresh db internal success
+4-30-2026 09:13:50-debug: refresh db assets success
+4-30-2026 09:13:50-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:13:50-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:13:50-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 09:13:50-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:28:35-debug: refresh db internal success
+4-30-2026 09:28:35-debug: refresh db assets success
+4-30-2026 09:28:35-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:28:35-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:28:35-debug: asset-db:refresh-all-database (79ms)
+4-30-2026 09:32:23-debug: refresh db internal success
+4-30-2026 09:32:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiCore.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiError.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\apibackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\GameApi.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiManager.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:23-debug: refresh db assets success
+4-30-2026 09:32:23-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:32:23-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:32:23-debug: asset-db:refresh-all-database (59ms)
+4-30-2026 09:32:32-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data...
+4-30-2026 09:32:32-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:32:32-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts success
+4-30-2026 09:32:32-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:38:04-debug: refresh db internal success
+4-30-2026 09:38:04-debug: refresh db assets success
+4-30-2026 09:38:04-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:38:04-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:38:04-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 09:38:04-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:38:12-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.ts...
+4-30-2026 09:38:12-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:38:12-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data success
+4-30-2026 09:38:12-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:39:20-debug: refresh db internal success
+4-30-2026 09:39:20-debug: refresh db assets success
+4-30-2026 09:39:20-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:39:20-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:39:20-debug: asset-db:refresh-all-database (33ms)
+4-30-2026 09:39:20-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:39:20-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:44:11-debug: refresh db internal success
+4-30-2026 09:44:11-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:44:11-debug: refresh db assets success
+4-30-2026 09:44:11-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:44:11-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:44:11-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 09:44:53-debug: refresh db internal success
+4-30-2026 09:44:53-debug: refresh db assets success
+4-30-2026 09:44:53-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:44:53-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:44:53-debug: asset-db:refresh-all-database (35ms)
+4-30-2026 09:44:53-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:44:53-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:49:57-debug: refresh db internal success
+4-30-2026 09:49:57-debug: refresh db assets success
+4-30-2026 09:49:57-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:49:57-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:49:57-debug: asset-db:refresh-all-database (40ms)
+4-30-2026 09:50:09-debug: refresh db internal success
+4-30-2026 09:50:09-debug: refresh db assets success
+4-30-2026 09:50:09-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:50:09-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:50:09-debug: asset-db:refresh-all-database (44ms)
+4-30-2026 09:50:13-debug: refresh db internal success
+4-30-2026 09:50:13-debug: refresh db assets success
+4-30-2026 09:50:13-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:50:13-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:50:13-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 09:50:30-debug: refresh db internal success
+4-30-2026 09:50:30-debug: refresh db assets success
+4-30-2026 09:50:30-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:50:30-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:50:30-debug: asset-db:refresh-all-database (40ms)
+4-30-2026 09:51:47-debug: refresh db internal success
+4-30-2026 09:51:47-debug: refresh db assets success
+4-30-2026 09:51:47-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:51:47-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:51:47-debug: asset-db:refresh-all-database (36ms)
+4-30-2026 09:51:47-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:51:47-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:52:18-debug: refresh db internal success
+4-30-2026 09:52:18-debug: refresh db assets success
+4-30-2026 09:52:18-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:18-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:18-debug: asset-db:refresh-all-database (68ms)
+4-30-2026 09:52:18-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:18-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+4-30-2026 09:52:22-debug: refresh db internal success
+4-30-2026 09:52:22-debug: refresh db assets success
+4-30-2026 09:52:22-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:22-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:22-debug: asset-db:refresh-all-database (44ms)
+4-30-2026 09:52:22-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:22-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:52:24-debug: refresh db internal success
+4-30-2026 09:52:24-debug: refresh db assets success
+4-30-2026 09:52:24-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:24-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:24-debug: asset-db:refresh-all-database (45ms)
+4-30-2026 09:52:24-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+4-30-2026 09:52:24-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:27-debug: refresh db internal success
+4-30-2026 09:52:27-debug: refresh db assets success
+4-30-2026 09:52:27-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:27-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:27-debug: asset-db:refresh-all-database (36ms)
+4-30-2026 09:52:27-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:27-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:52:33-debug: refresh db internal success
+4-30-2026 09:52:33-debug: refresh db assets success
+4-30-2026 09:52:33-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:33-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:33-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 09:52:33-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:33-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:52:36-debug: refresh db internal success
+4-30-2026 09:52:36-debug: refresh db assets success
+4-30-2026 09:52:36-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:36-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:36-debug: asset-db:refresh-all-database (51ms)
+4-30-2026 09:52:36-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:36-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:52:39-debug: refresh db internal success
+4-30-2026 09:52:39-debug: refresh db assets success
+4-30-2026 09:52:39-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:39-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:39-debug: asset-db:worker-effect-data-processing (3ms)
+4-30-2026 09:52:39-debug: asset-db-hook-engine-extends-afterRefresh (4ms)
+4-30-2026 09:52:39-debug: asset-db:refresh-all-database (80ms)
+4-30-2026 09:52:40-debug: refresh db internal success
+4-30-2026 09:52:40-debug: refresh db assets success
+4-30-2026 09:52:40-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:52:40-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:52:40-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 09:52:40-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:52:40-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:54:56-debug: refresh db internal success
+4-30-2026 09:54:56-debug: refresh db assets success
+4-30-2026 09:54:56-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:54:56-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:54:56-debug: asset-db:refresh-all-database (33ms)
+4-30-2026 09:54:59-debug: refresh db internal success
+4-30-2026 09:54:59-debug: refresh db assets success
+4-30-2026 09:54:59-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:54:59-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:54:59-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 09:54:59-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:54:59-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:55:01-debug: refresh db internal success
+4-30-2026 09:55:01-debug: refresh db assets success
+4-30-2026 09:55:01-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:55:01-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:55:01-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 09:55:01-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:55:01-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:55:07-debug: programming:execute-script (1ms)
+4-30-2026 09:55:08-debug: start remove asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.ts...
+4-30-2026 09:55:08-debug: refresh db internal success
+4-30-2026 09:55:08-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 09:55:08-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 09:55:08-debug: refresh db assets success
+4-30-2026 09:55:08-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 09:55:08-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 09:55:08-debug: asset-db:refresh-all-database (50ms)
+4-30-2026 09:55:08-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 09:55:08-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 09:55:08-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.ts...
+4-30-2026 09:55:08-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data success
+4-30-2026 09:55:08-debug: remove asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.ts success
+4-30-2026 10:00:13-debug: refresh db internal success
+4-30-2026 10:00:13-debug: refresh db assets success
+4-30-2026 10:00:13-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 10:00:13-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 10:00:13-debug: asset-db:refresh-all-database (35ms)
+4-30-2026 10:00:24-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.ts...
+4-30-2026 10:00:24-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:00:24-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data success
+4-30-2026 10:00:24-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:05:10-debug: refresh db internal success
+4-30-2026 10:05:10-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:05:10-debug: refresh db assets success
+4-30-2026 10:05:10-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 10:05:10-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 10:05:10-debug: asset-db:refresh-all-database (37ms)
+4-30-2026 10:05:19-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.ts...
+4-30-2026 10:05:19-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:05:19-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data success
+4-30-2026 10:05:19-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:06:56-debug: refresh db internal success
+4-30-2026 10:06:56-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:06:56-debug: refresh db assets success
+4-30-2026 10:06:56-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 10:06:56-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 10:06:56-debug: asset-db:refresh-all-database (41ms)
+4-30-2026 10:06:56-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 10:07:00-debug: start move asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.ts -> D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.ts...
+4-30-2026 10:07:00-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.ts...
+4-30-2026 10:07:00-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:07:00-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data...
+4-30-2026 10:07:00-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data success
+4-30-2026 10:07:00-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 10:07:00-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts success
+4-30-2026 10:07:00-debug: move asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.ts -> D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.ts success
+4-30-2026 13:16:35-debug: refresh db internal success
+4-30-2026 13:16:35-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:16:35-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:16:35-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingBar.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:16:35-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:16:35-debug: refresh db assets success
+4-30-2026 13:16:35-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:16:35-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:16:35-debug: asset-db:refresh-all-database (50ms)
+4-30-2026 13:16:35-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 13:16:35-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:16:42-debug: refresh db internal success
+4-30-2026 13:16:42-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:16:42-debug: refresh db assets success
+4-30-2026 13:16:42-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:16:42-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 13:16:48-debug: Query all assets info in project
+4-30-2026 13:16:48-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:16:48-debug:   Number of all scenes: 1
+4-30-2026 13:16:48-debug:   Number of all scripts: 14
+4-30-2026 13:16:48-debug:   Number of other assets: 344
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ---- (3ms)
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.33MB, end 178.18MB, increase: -150.64KB
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in 3 ms√, progress: 5%
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.21MB, end 178.30MB, increase: 90.21KB
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ---- (1ms)
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in √, progress: 12%
+4-30-2026 13:16:48-debug: [Build Memory track]: Sort some build options to settings.json start:178.32MB, end 178.34MB, increase: 17.72KB
+4-30-2026 13:16:48-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:16:48-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:16:48-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:16:48-debug: [Build Memory track]: Fill script data to settings start:178.37MB, end 178.38MB, increase: 16.80KB
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 15%
+4-30-2026 13:16:48-debug: [Build Memory track]: Sort some build options to settings.json start:178.41MB, end 178.55MB, increase: 137.32KB
+4-30-2026 13:16:48-debug: Query all assets info in project
+4-30-2026 13:16:48-debug: Query all assets info in project
+4-30-2026 13:16:48-debug: Query all assets info in project
+4-30-2026 13:16:48-debug: Query all assets info in project
+4-30-2026 13:16:48-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:16:48-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:16:48-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:16:48-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:16:48-debug:   Number of all scripts: 14
+4-30-2026 13:16:48-debug:   Number of other assets: 344
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug:   Number of all scenes: 1
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ---- (3ms)
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.54MB, end 178.56MB, increase: 21.23KB
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in 3 ms√, progress: 5%
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:16:48-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:16:48-debug:   Number of all scenes: 1
+4-30-2026 13:16:48-debug:   Number of other assets: 344
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ---- (2ms)
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.58MB, end 178.44MB, increase: -146.15KB
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in 2 ms√, progress: 5%
+4-30-2026 13:16:48-debug:   Number of all scripts: 14
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug:   Number of all scenes: 1
+4-30-2026 13:16:48-debug:   Number of all scripts: 14
+4-30-2026 13:16:48-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:16:48-debug:   Number of other assets: 344
+4-30-2026 13:16:48-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:16:48-debug:   Number of all scripts: 14
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in √, progress: 10%
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.47MB, end 178.67MB, increase: 212.34KB
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug:   Number of all scenes: 1
+4-30-2026 13:16:48-debug:   Number of other assets: 344
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in √, progress: 5%
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in √, progress: 5%
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.80MB, end 178.81MB, increase: 12.32KB
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:16:48-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:16:48-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+4-30-2026 13:16:48-debug: [Build Memory track]: Sort some build options to settings.json start:178.71MB, end 178.87MB, increase: 163.35KB
+4-30-2026 13:16:48-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:16:48-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:16:48-debug: [Build Memory track]: Query asset bundle start:178.84MB, end 178.92MB, increase: 88.67KB
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in √, progress: 10%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:16:48-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:16:48-debug: [Build Memory track]: Fill script data to settings start:178.90MB, end 179.08MB, increase: 183.45KB
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in √, progress: 12%
+4-30-2026 13:16:48-debug: [Build Memory track]: Sort some build options to settings.json start:179.10MB, end 179.12MB, increase: 20.44KB
+4-30-2026 13:16:48-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:16:48-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in √, progress: 10%
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:16:48-debug: [Build Memory track]: Fill script data to settings start:180.05MB, end 179.25MB, increase: -818.11KB
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: run build task Query asset bundle success in √, progress: 10%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+4-30-2026 13:16:48-debug: [Build Memory track]: Sort some build options to settings.json start:179.28MB, end 178.60MB, increase: -698.05KB
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+4-30-2026 13:16:48-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:16:48-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:16:48-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:16:48-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:16:48-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:16:48-debug: [Build Memory track]: Fill script data to settings start:178.66MB, end 178.69MB, increase: 27.95KB
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:16:48-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:16:48-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
+4-30-2026 13:16:48-debug: [Build Memory track]: Sort some build options to settings.json start:178.75MB, end 178.98MB, increase: 240.45KB
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in √, progress: 15%
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in √, progress: 15%
+4-30-2026 13:16:48-debug: run build task Sort some build options to settings.json success in √, progress: 15%
+4-30-2026 13:17:01-debug: refresh db internal success
+4-30-2026 13:17:01-debug: refresh db assets success
+4-30-2026 13:17:01-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:17:01-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:17:01-debug: asset-db:refresh-all-database (43ms)
+4-30-2026 13:17:01-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 13:17:01-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:17:44-debug: refresh db internal success
+4-30-2026 13:17:44-debug: refresh db assets success
+4-30-2026 13:17:44-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:17:44-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:17:44-debug: asset-db:refresh-all-database (55ms)
+4-30-2026 13:17:44-debug: asset-db:worker-effect-data-processing (2ms)
+4-30-2026 13:17:44-debug: asset-db-hook-engine-extends-afterRefresh (3ms)
+4-30-2026 13:17:48-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\resources\Prefabs\Loading_Scene.prefabbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:17:48-debug: asset-db:reimport-asset1ba6edf3-e479-42eb-b78f-160ccddcdd12 (14ms)
+4-30-2026 13:17:50-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\resources\Prefabs\Loading_Scene.prefabbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:17:50-debug: asset-db:reimport-asset1ba6edf3-e479-42eb-b78f-160ccddcdd12 (10ms)
+4-30-2026 13:22:37-debug: refresh db internal success
+4-30-2026 13:22:37-debug: refresh db assets success
+4-30-2026 13:22:37-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:22:37-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:22:37-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 13:22:37-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:22:42-debug: Query all assets info in project
+4-30-2026 13:22:42-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:22:42-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:22:42-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:22:42-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:22:42-debug:   Number of all scripts: 14
+4-30-2026 13:22:42-debug:   Number of other assets: 344
+4-30-2026 13:22:42-debug:   Number of all scenes: 1
+4-30-2026 13:22:42-debug: run build task Query asset bundle success in 4 ms√, progress: 5%
+4-30-2026 13:22:42-debug: [Build Memory track]: Query asset bundle start:166.29MB, end 166.09MB, increase: -212.60KB
+4-30-2026 13:22:42-debug: // ---- build task Query asset bundle ---- (4ms)
+4-30-2026 13:22:42-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:22:42-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:22:42-debug: // ---- build task Query asset bundle ---- (1ms)
+4-30-2026 13:22:42-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
+4-30-2026 13:22:42-debug: [Build Memory track]: Query asset bundle start:166.11MB, end 166.20MB, increase: 87.38KB
+4-30-2026 13:22:42-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:22:42-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:22:42-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:22:42-debug: [Build Memory track]: Sort some build options to settings.json start:166.23MB, end 166.25MB, increase: 26.18KB
+4-30-2026 13:22:42-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:22:42-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+4-30-2026 13:22:42-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:22:42-debug: // ---- build task Fill script data to settings ---- (1ms)
+4-30-2026 13:22:42-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+4-30-2026 13:22:42-debug: [Build Memory track]: Fill script data to settings start:166.28MB, end 166.30MB, increase: 26.40KB
+4-30-2026 13:22:42-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:22:42-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:22:42-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:22:42-debug: [Build Memory track]: Sort some build options to settings.json start:166.33MB, end 166.46MB, increase: 130.77KB
+4-30-2026 13:22:42-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
+4-30-2026 13:23:08-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\resources\Prefabs\Loading_Scene.prefabbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:23:08-debug: asset-db:reimport-asset1ba6edf3-e479-42eb-b78f-160ccddcdd12 (20ms)
+4-30-2026 13:23:09-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\resources\Prefabs\Loading_Scene.prefabbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:23:09-debug: asset-db:reimport-asset1ba6edf3-e479-42eb-b78f-160ccddcdd12 (10ms)
+4-30-2026 13:23:13-debug: Query all assets info in project
+4-30-2026 13:23:13-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:23:13-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:23:13-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:23:13-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:23:13-debug:   Number of other assets: 344
+4-30-2026 13:23:13-debug: // ---- build task Query asset bundle ---- (3ms)
+4-30-2026 13:23:13-debug:   Number of all scenes: 1
+4-30-2026 13:23:13-debug:   Number of all scripts: 14
+4-30-2026 13:23:13-debug: [Build Memory track]: Query asset bundle start:166.53MB, end 166.34MB, increase: -197.17KB
+4-30-2026 13:23:13-debug: run build task Query asset bundle success in 3 ms√, progress: 5%
+4-30-2026 13:23:13-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:23:13-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:23:13-debug: // ---- build task Query asset bundle ---- (2ms)
+4-30-2026 13:23:13-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
+4-30-2026 13:23:13-debug: [Build Memory track]: Query asset bundle start:166.36MB, end 166.45MB, increase: 86.79KB
+4-30-2026 13:23:13-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:23:13-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:23:13-debug: run build task Sort some build options to settings.json success in √, progress: 12%
+4-30-2026 13:23:13-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:23:13-debug: [Build Memory track]: Sort some build options to settings.json start:166.48MB, end 166.49MB, increase: 17.65KB
+4-30-2026 13:23:13-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:23:13-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:23:13-debug: [Build Memory track]: Fill script data to settings start:166.52MB, end 166.54MB, increase: 16.40KB
+4-30-2026 13:23:13-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:23:13-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:23:13-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:23:13-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
+4-30-2026 13:23:13-debug: [Build Memory track]: Sort some build options to settings.json start:166.56MB, end 166.69MB, increase: 125.98KB
+4-30-2026 13:24:10-debug: programming:execute-script (1ms)
+4-30-2026 13:24:11-debug: start remove asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api...
+4-30-2026 13:24:11-log: The asset database is locked, asset operations(bound _refreshAsset) will delay response, please wait a moment.
+4-30-2026 13:24:11-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\apibackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 13:24:11-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiCore.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 13:24:11-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiManager.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 13:24:11-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\GameApi.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 13:24:11-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api\ApiError.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 13:24:11-debug: refresh db internal success
+4-30-2026 13:24:11-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scriptsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:24:11-debug: refresh db assets success
+4-30-2026 13:24:11-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:24:11-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:24:11-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts success
+4-30-2026 13:24:11-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api...
+4-30-2026 13:24:11-debug: remove asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\api success
+4-30-2026 13:24:11-debug: asset-db:refresh-all-database (48ms)
+4-30-2026 13:24:11-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:24:11-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 13:24:23-debug: refresh db internal success
+4-30-2026 13:24:23-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:24:23-debug: refresh db assets success
+4-30-2026 13:24:23-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:24:23-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:24:23-debug: asset-db:refresh-all-database (40ms)
+4-30-2026 13:24:23-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:24:41-debug: refresh db internal success
+4-30-2026 13:24:41-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:24:41-debug: refresh db assets success
+4-30-2026 13:24:41-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:24:41-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:24:41-debug: asset-db:refresh-all-database (39ms)
+4-30-2026 13:24:41-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 13:24:41-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:27:22-debug: refresh db internal success
+4-30-2026 13:27:22-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:27:22-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:27:22-debug: refresh db assets success
+4-30-2026 13:27:22-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:27:22-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:27:22-debug: asset-db:refresh-all-database (44ms)
+4-30-2026 13:27:22-debug: asset-db:worker-effect-data-processing (2ms)
+4-30-2026 13:27:22-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+4-30-2026 13:27:55-debug: refresh db internal success
+4-30-2026 13:27:55-debug: %cDestroy%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.d.tsbackground: #ffb8b8; color: #000;color: #000;
+4-30-2026 13:27:55-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:27:55-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:27:55-debug: refresh db assets success
+4-30-2026 13:27:55-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:27:55-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:27:55-debug: asset-db:refresh-all-database (47ms)
+4-30-2026 13:27:55-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 13:27:55-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+4-30-2026 13:28:34-debug: refresh db internal success
+4-30-2026 13:28:34-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\GameData.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:28:34-debug: refresh db assets success
+4-30-2026 13:28:34-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:28:34-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:28:34-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 13:28:34-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:28:44-debug: start refresh asset from D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.ts...
+4-30-2026 13:28:44-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:28:44-debug: refresh asset D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data success
+4-30-2026 13:28:44-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Databackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:29:02-debug: refresh db internal success
+4-30-2026 13:29:02-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\Data\TicketItem.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:29:02-debug: refresh db assets success
+4-30-2026 13:29:02-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:29:02-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:29:02-debug: asset-db:refresh-all-database (42ms)
+4-30-2026 13:29:13-debug: refresh db internal success
+4-30-2026 13:29:13-debug: refresh db assets success
+4-30-2026 13:29:13-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:29:13-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:29:13-debug: asset-db:refresh-all-database (50ms)
+4-30-2026 13:29:14-debug: Query all assets info in project
+4-30-2026 13:29:14-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:29:14-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:29:14-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:29:14-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:29:14-debug:   Number of all scripts: 11
+4-30-2026 13:29:14-debug:   Number of other assets: 344
+4-30-2026 13:29:14-debug: run build task Query asset bundle success in 4 ms√, progress: 5%
+4-30-2026 13:29:14-debug: [Build Memory track]: Query asset bundle start:175.13MB, end 174.90MB, increase: -242.13KB
+4-30-2026 13:29:14-debug: // ---- build task Query asset bundle ---- (4ms)
+4-30-2026 13:29:14-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:29:14-debug:   Number of all scenes: 1
+4-30-2026 13:29:14-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:29:14-debug: // ---- build task Query asset bundle ---- (1ms)
+4-30-2026 13:29:14-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
+4-30-2026 13:29:14-debug: [Build Memory track]: Query asset bundle start:174.92MB, end 175.01MB, increase: 88.98KB
+4-30-2026 13:29:14-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:29:14-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:29:14-debug: run build task Sort some build options to settings.json success in √, progress: 12%
+4-30-2026 13:29:14-debug: [Build Memory track]: Sort some build options to settings.json start:175.04MB, end 175.06MB, increase: 17.55KB
+4-30-2026 13:29:14-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:29:14-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:29:14-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:29:14-debug: [Build Memory track]: Fill script data to settings start:175.08MB, end 175.10MB, increase: 16.30KB
+4-30-2026 13:29:14-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:29:14-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:29:14-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:29:14-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
+4-30-2026 13:29:14-debug: [Build Memory track]: Sort some build options to settings.json start:175.13MB, end 175.25MB, increase: 126.00KB
+4-30-2026 13:29:25-debug: refresh db internal success
+4-30-2026 13:29:25-debug: refresh db assets success
+4-30-2026 13:29:25-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:29:25-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:29:25-debug: asset-db:refresh-all-database (37ms)
+4-30-2026 13:29:58-debug: refresh db internal success
+4-30-2026 13:29:58-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\Scripts\UI\Scenes\Loading\LoadingScene.tsbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:29:58-debug: refresh db assets success
+4-30-2026 13:29:58-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:29:58-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:29:58-debug: asset-db:refresh-all-database (37ms)
+4-30-2026 13:29:58-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:30:00-debug: Query all assets info in project
+4-30-2026 13:30:00-debug: init custom config: keepNodeUuid: false, useCache: true
+4-30-2026 13:30:00-debug: Query asset bundle start, progress: 0%
+4-30-2026 13:30:00-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:30:00-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+4-30-2026 13:30:00-debug:   Number of all scenes: 1
+4-30-2026 13:30:00-debug:   Number of all scripts: 11
+4-30-2026 13:30:00-debug:   Number of other assets: 344
+4-30-2026 13:30:00-debug: // ---- build task Query asset bundle ---- (4ms)
+4-30-2026 13:30:00-debug: [Build Memory track]: Query asset bundle start:177.47MB, end 177.22MB, increase: -252.75KB
+4-30-2026 13:30:00-debug: run build task Query asset bundle success in 4 ms√, progress: 5%
+4-30-2026 13:30:00-debug: // ---- build task Query asset bundle ----
+4-30-2026 13:30:00-debug: Query asset bundle start, progress: 5%
+4-30-2026 13:30:00-debug: // ---- build task Query asset bundle ---- (1ms)
+4-30-2026 13:30:00-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
+4-30-2026 13:30:00-debug: [Build Memory track]: Query asset bundle start:177.25MB, end 177.34MB, increase: 94.39KB
+4-30-2026 13:30:00-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:30:00-debug: Sort some build options to settings.json start, progress: 10%
+4-30-2026 13:30:00-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:30:00-debug: [Build Memory track]: Sort some build options to settings.json start:177.37MB, end 177.39MB, increase: 26.25KB
+4-30-2026 13:30:00-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+4-30-2026 13:30:00-debug: Fill script data to settings start, progress: 12%
+4-30-2026 13:30:00-debug: // ---- build task Fill script data to settings ----
+4-30-2026 13:30:00-debug: run build task Fill script data to settings success in √, progress: 13%
+4-30-2026 13:30:00-debug: Sort some build options to settings.json start, progress: 13%
+4-30-2026 13:30:00-debug: [Build Memory track]: Fill script data to settings start:177.42MB, end 177.44MB, increase: 17.10KB
+4-30-2026 13:30:00-debug: // ---- build task Sort some build options to settings.json ----
+4-30-2026 13:30:00-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+4-30-2026 13:30:00-debug: [Build Memory track]: Sort some build options to settings.json start:177.46MB, end 177.59MB, increase: 130.70KB
+4-30-2026 13:30:00-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
+4-30-2026 13:30:05-debug: refresh db internal success
+4-30-2026 13:30:05-debug: refresh db assets success
+4-30-2026 13:30:05-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:30:05-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:30:05-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 13:30:05-debug: asset-db:worker-effect-data-processing (1ms)
+4-30-2026 13:30:05-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+4-30-2026 13:30:25-debug: refresh db internal success
+4-30-2026 13:30:25-debug: refresh db assets success
+4-30-2026 13:30:25-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:30:25-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:30:25-debug: asset-db:refresh-all-database (38ms)
+4-30-2026 13:30:31-debug: refresh db internal success
+4-30-2026 13:30:31-debug: refresh db assets success
+4-30-2026 13:30:31-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:30:31-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:30:31-debug: asset-db:refresh-all-database (32ms)
+4-30-2026 13:30:34-debug: refresh db internal success
+4-30-2026 13:30:34-debug: refresh db assets success
+4-30-2026 13:30:34-debug: Run asset db hook engine-extends:afterRefresh ...
+4-30-2026 13:30:34-debug: Run asset db hook engine-extends:afterRefresh success!
+4-30-2026 13:30:34-debug: asset-db:refresh-all-database (37ms)
+4-30-2026 13:30:58-debug: %cImport%c: D:\Game-Engine Projects\Blazing7Test\assets\resources\Prefabs\Loading_Scene.prefabbackground: #aaff85; color: #000;color: #000;
+4-30-2026 13:30:58-debug: asset-db:reimport-asset1ba6edf3-e479-42eb-b78f-160ccddcdd12 (9ms)
