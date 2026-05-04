@@ -1,0 +1,481 @@
+
+blazing7-dragon-idle_skeleton.webp
+size: 2032, 1999
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Dragon head/dragon-head_flame0
+  rotate: true
+  xy: 825, 1834
+  size: 163, 180
+  orig: 290, 229
+  offset: 58, 29
+  index: -1
+Dragon head/left-eye_glow
+  rotate: false
+  xy: 2, 1987
+  size: 12, 10
+  orig: 13, 10
+  offset: 0, 0
+  index: -1
+Dragon head/right-eye_glow
+  rotate: false
+  xy: 16, 1987
+  size: 12, 10
+  orig: 13, 10
+  offset: 0, 0
+  index: -1
+dragon_idle/Dragon_body/L arm 1
+  rotate: true
+  xy: 1465, 1811
+  size: 186, 218
+  orig: 186, 220
+  offset: 0, 2
+  index: -1
+dragon_idle/Dragon_body/R arm 1
+  rotate: true
+  xy: 1685, 1811
+  size: 186, 218
+  orig: 186, 220
+  offset: 0, 2
+  index: -1
+dragon_idle/Dragon_body/Tail 1
+  rotate: true
+  xy: 30, 1920
+  size: 77, 529
+  orig: 77, 529
+  offset: 0, 0
+  index: -1
+dragon_idle/Dragon_body/back 2
+  rotate: true
+  xy: 1007, 1828
+  size: 169, 197
+  orig: 169, 197
+  offset: 0, 0
+  index: -1
+dragon_idle/Dragon_body/legs 1
+  rotate: true
+  xy: 1206, 1813
+  size: 184, 257
+  orig: 184, 257
+  offset: 0, 0
+  index: -1
+dragon_idle/Dragon_body/lower back 1
+  rotate: true
+  xy: 561, 1874
+  size: 123, 262
+  orig: 123, 262
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0000_Layer-104
+  rotate: false
+  xy: 2, 1691
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0002_Layer-102
+  rotate: false
+  xy: 292, 1645
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0004_Layer-100
+  rotate: false
+  xy: 582, 1605
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0006_Layer-98
+  rotate: false
+  xy: 872, 1599
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0008_Layer-96
+  rotate: false
+  xy: 1162, 1584
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0010_Layer-94
+  rotate: false
+  xy: 1452, 1582
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0012_Layer-92
+  rotate: false
+  xy: 1742, 1582
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0014_Layer-90
+  rotate: false
+  xy: 2, 1462
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0016_Layer-88
+  rotate: false
+  xy: 292, 1416
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0018_Layer-86
+  rotate: false
+  xy: 582, 1376
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0020_Layer-84
+  rotate: false
+  xy: 872, 1370
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0022_Layer-82
+  rotate: false
+  xy: 1162, 1355
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0024_Layer-80
+  rotate: false
+  xy: 1452, 1353
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0026_Layer-78
+  rotate: false
+  xy: 1742, 1353
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0028_Layer-76
+  rotate: false
+  xy: 2, 1233
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0030_Layer-74
+  rotate: false
+  xy: 292, 1187
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0032_Layer-72
+  rotate: false
+  xy: 582, 1147
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0034_Layer-70
+  rotate: false
+  xy: 872, 1141
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0036_Layer-68
+  rotate: false
+  xy: 1162, 1126
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0038_Layer-66
+  rotate: false
+  xy: 1452, 1124
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0040_Layer-64
+  rotate: false
+  xy: 1742, 1124
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0042_Layer-62
+  rotate: false
+  xy: 2, 1004
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0044_Layer-60
+  rotate: false
+  xy: 292, 958
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0046_Layer-58
+  rotate: false
+  xy: 582, 918
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0048_Layer-56
+  rotate: false
+  xy: 872, 912
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0050_Layer-54
+  rotate: false
+  xy: 1162, 897
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0052_Layer-52
+  rotate: false
+  xy: 1452, 895
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0054_Layer-50
+  rotate: false
+  xy: 1742, 895
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0056_Layer-48
+  rotate: false
+  xy: 2, 775
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0058_Layer-46
+  rotate: false
+  xy: 292, 729
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0060_Layer-44
+  rotate: false
+  xy: 582, 689
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0062_Layer-42
+  rotate: false
+  xy: 872, 683
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0064_Layer-40
+  rotate: false
+  xy: 1162, 668
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0066_Layer-38
+  rotate: false
+  xy: 1452, 666
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0068_Layer-36
+  rotate: false
+  xy: 1742, 666
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0070_Layer-34
+  rotate: false
+  xy: 2, 546
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0072_Layer-32
+  rotate: false
+  xy: 292, 500
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0074_Layer-30
+  rotate: false
+  xy: 582, 460
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0076_Layer-28
+  rotate: false
+  xy: 872, 454
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0078_Layer-26
+  rotate: false
+  xy: 1162, 439
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0080_Layer-24
+  rotate: false
+  xy: 1452, 437
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0082_Layer-22
+  rotate: false
+  xy: 1742, 437
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0084_Layer-20
+  rotate: false
+  xy: 2, 317
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0086_Layer-18
+  rotate: false
+  xy: 292, 271
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0088_Layer-16
+  rotate: false
+  xy: 582, 231
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0090_Layer-14
+  rotate: false
+  xy: 872, 225
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0092_Layer-12
+  rotate: false
+  xy: 1162, 210
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0094_Layer-10
+  rotate: false
+  xy: 1452, 208
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0096_Layer-8
+  rotate: false
+  xy: 1742, 208
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0098_Layer-6
+  rotate: false
+  xy: 2, 88
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0100_Layer-4
+  rotate: false
+  xy: 292, 42
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+dragon_idle/nose smoke/nose-smoke_0102_Layer-2
+  rotate: false
+  xy: 582, 2
+  size: 288, 227
+  orig: 288, 227
+  offset: 0, 0
+  index: -1
+
+blazing7-dragon-idle_skeleton_2.webp
+size: 1691, 1570
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+dragon_idle/Dragon Wings/1 Wings
+  rotate: false
+  xy: 1039, 943
+  size: 650, 625
+  orig: 1110, 650
+  offset: 228, 8
+  index: -1
+dragon_idle/Dragon Wings/2 Wings
+  rotate: true
+  xy: 1039, 2
+  size: 939, 506
+  orig: 967, 516
+  offset: 16, 7
+  index: -1
+dragon_idle/Dragon Wings/3 Wings
+  rotate: false
+  xy: 2, 9
+  size: 1035, 387
+  orig: 1050, 389
+  offset: 8, 0
+  index: -1
+dragon_idle/Dragon Wings/4 Wings
+  rotate: true
+  xy: 651, 440
+  size: 1128, 339
+  orig: 1145, 351
+  offset: 11, 7
+  index: -1
+dragon_idle/Dragon Wings/5 Wings
+  rotate: true
+  xy: 2, 398
+  size: 1170, 318
+  orig: 1200, 330
+  offset: 14, 7
+  index: -1
+dragon_idle/Dragon Wings/6 Wings
+  rotate: true
+  xy: 322, 427
+  size: 1141, 327
+  orig: 1159, 344
+  offset: 9, 6
+  index: -1

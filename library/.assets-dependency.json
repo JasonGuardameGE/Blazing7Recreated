@@ -1,15 +1,24 @@
 {
   "path": {
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragon-Idle\\blazing7-dragon-idle_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragon-Idle\\blazing7-dragon-idle_skeleton.atlas"
+    ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.fnt": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.png"
     ],
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.json": [
-      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.atlas"
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.png"
     ]
   },
   "uuid": {
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo\\blazing7s-WinUpTo_skeleton.json": [
       "6760b9d8-1464-4d8a-baae-9f9d5c54c45d@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragon-Idle\\blazing7-dragon-idle_skeleton.json": [
+      "9323e4fb-9a5c-4c34-8bb6-0a224b5c3bee@6c48a"
     ]
   }
 }

@@ -1,6 +1,7 @@
 import { _decorator, Node } from 'cc';
 import { UIRoot } from '../UI/UIRoot';
 import ResourceManager from './ResourceManager';
+import { Services } from './Services';
 
 const { ccclass } = _decorator;
 
@@ -15,9 +16,12 @@ export default class SceneManager {
     private _uiRoot: UIRoot = null;
     private _preLoadSceneNodes = new Map<ScenePrefabPath, Node>();
     private _currentScene: Node = null;
+    private _resourceManager: ResourceManager;
 
     public Init(uiRoot: UIRoot): void {
         this._uiRoot = uiRoot;
+        this._resourceManager = Services.GetService(ResourceManager);
+
         console.log('[SceneManager] Initialized');
     }
 
@@ -30,7 +34,7 @@ export default class SceneManager {
             return;
         }
 
-        const node = await ResourceManager.LoadPrefab(scenePrefabPath);
+        const node = await this._resourceManager.LoadPrefab(scenePrefabPath);
         this._preLoadSceneNodes.set(scenePrefabPath, node);
 
         console.log(`[SceneManager] Scene Preloaded: ${scenePrefabPath}`);
@@ -60,7 +64,7 @@ export default class SceneManager {
             nextScene = this._preLoadSceneNodes.get(scenePrefabPath);
             this._preLoadSceneNodes.delete(scenePrefabPath);
         } else {
-            nextScene = await ResourceManager.LoadPrefab(scenePrefabPath);
+            nextScene = await this._resourceManager.LoadPrefab(scenePrefabPath);
         }
 
         if (!nextScene || !nextScene.isValid) {

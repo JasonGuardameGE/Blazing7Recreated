@@ -1,6 +1,4 @@
 import { _decorator, Component, Node } from 'cc';
-import SceneManager from '../Managers/SceneManager';
-import { Services } from '../Managers/Services';
 
 const { ccclass, property } = _decorator;
 
@@ -33,10 +31,5 @@ export class UIRoot extends Component {
 
     public get SceneRoot(): Node {
         return this.scene;
-    }
-
-    protected start(): void {
-        const sceneManager = Services.GetService(SceneManager);
-        sceneManager.Init(this);
     }
 }
