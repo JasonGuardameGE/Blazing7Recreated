@@ -5,5 +5,11 @@
       "width": 375,
       "height": 680
     }
-  }
+  },
+  "layer": [
+    {
+      "name": "ScratchCover",
+      "value": 1
+    }
+  ]
 }

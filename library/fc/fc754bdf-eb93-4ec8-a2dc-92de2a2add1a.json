@@ -540,7 +540,7 @@
   },
   {
     "__type__": "cc.PrefabInstance",
-    "fileId": "e3UQIY9udNZrq2ZHKG7DYW",
+    "fileId": "f8BnnoxlxDDY02ZkA7rN0+",
     "prefabRootNode": null,
     "mountedChildren": [],
     "mountedComponents": [],
@@ -635,8 +635,8 @@
     ],
     "value": {
       "__type__": "cc.Size",
-      "width": 460.4253627232143,
-      "height": 50.39999999999999
+      "width": 460.47009294560996,
+      "height": 50.4
     }
   },
   {

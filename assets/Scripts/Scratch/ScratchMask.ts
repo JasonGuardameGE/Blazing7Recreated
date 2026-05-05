@@ -39,7 +39,6 @@ export class ScratchMask {
         }
     }
 
-    /** 像素属于哪个格子，找不到返回 -1 */
     findCellIndex(px: number, py: number): number {
         for (let i = 0; i < this.cells.length; i++) {
             const c = this.cells[i];
@@ -53,21 +52,19 @@ export class ScratchMask {
         return -1;
     }
 
-    /** 记录某个像素被擦除 */
     markErased(px: number, py: number) {
         const idx = this.findCellIndex(px, py);
         if (idx === -1) return;
+
         const key = `${px},${py}`;
         this.cellErasedPixelSet[idx].add(key);
     }
 
-    /** 获取某格子擦除百分比 */
     getCellPercent(index: number): number {
         if (index < 0 || index >= this.cellTotalPixels.length) return 0;
         return this.cellErasedPixelSet[index].size / this.cellTotalPixels[index] * 100;
     }
 
-    /** 所有格子是否都超过阈值 */
     areAllCellsDone(thresholdPercent: number): boolean {
         for (let i = 0; i < this.cellTotalPixels.length; i++) {
             if (this.getCellPercent(i) < thresholdPercent) return false;
@@ -75,7 +72,6 @@ export class ScratchMask {
         return true;
     }
 
-    /** 清空统计（重新开一张卡时用） */
     reset() {
         for (let i = 0; i < this.cellErasedPixelSet.length; i++) {
             this.cellErasedPixelSet[i].clear();

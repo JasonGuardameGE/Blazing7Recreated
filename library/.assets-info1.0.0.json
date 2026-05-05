@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1777882539487.7617,
+      "time": 1777969318856.7034,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -19,14 +19,14 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts": {
-      "time": 1777876742612.9158,
+      "time": 1777965154754.1494,
       "uuid": "9eb31a56-ed12-4146-8430-5f45a5042369"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI.meta": {
       "time": 1777527178108.1685
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI": {
-      "time": 1777855356092.7192,
+      "time": 1777964429317.6616,
       "uuid": "e68ed731-bd3a-4a87-8439-cb4faaf8ad78"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\UIRoot.ts.meta": {
@@ -68,7 +68,7 @@
       "time": 1777527178120.219
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures": {
-      "time": 1777878803333.2705,
+      "time": 1777963168450.028,
       "uuid": "7923c8fd-8b4a-43c8-ac27-24e82ea658de"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Loading.meta": {
@@ -180,22 +180,8 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font": {
-      "time": 1777875872897.7004,
+      "time": 1777963311892.062,
       "uuid": "83c067d3-9976-4874-8fef-2e3acab5757d"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.png.meta": {
-      "time": 1777527178110.1714
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.fnt.meta": {
-      "time": 1777527178109.1677
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.png": {
-      "time": 1777527178110.1714,
-      "uuid": "42a5eac2-1bd1-4d02-89a9-8882ebc82c87"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.fnt": {
-      "time": 1777527178109.1677,
-      "uuid": "7ba61a6b-11e4-454f-bd82-844057b810d6"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingBar.ts.meta": {
       "time": 1777527178108.1685
@@ -250,7 +236,7 @@
       "time": 1777531509777.9043
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Game\\ScrollingBackground.ts": {
-      "time": 1777541344422.5828,
+      "time": 1777943269237.7483,
       "uuid": "0385782a-d100-4ba9-872d-4fc138f9bb8b"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers.meta": {
@@ -302,7 +288,7 @@
       "uuid": "9659b73b-1bc4-4e6c-9066-dfef21069be8"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Game-Scene.prefab": {
-      "time": 1777883284384.1433,
+      "time": 1777969308337.209,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Loading-Scene.prefab": {
@@ -449,20 +435,6 @@
       "time": 1777875937345.8525,
       "uuid": "2e3bd513-6812-4321-950f-136b6f672977"
     },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.png.meta": {
-      "time": 1776242413792.02
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.png": {
-      "time": 1776242413791.0198,
-      "uuid": "3534ed4a-2100-4261-b74a-54b37bf7f077"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.fnt.meta": {
-      "time": 1776242413790.0203
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.fnt": {
-      "time": 1776242413790.0203,
-      "uuid": "5356cb3e-60d2-4957-90fd-5648cacae50d"
-    },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\New folder\\InnerRock-Background.png.meta": {
       "time": 1777874524959.3552
     },
@@ -488,50 +460,8 @@
       "time": 1777876742612.9158
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch": {
-      "time": 1777878241847.3098,
+      "time": 1777941462527.576,
       "uuid": "8b1cf3e4-cdea-4c59-97cb-33dc3bbde85c"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts.meta": {
-      "time": 1777876762399.431
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts": {
-      "time": 1777881320621.9167,
-      "uuid": "10e7233b-72ae-4f4a-8c1f-0d1008eada5c"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchMask.ts.meta": {
-      "time": 1777877193093.6118
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts.meta": {
-      "time": 1777877193094.6118
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSound.ts.meta": {
-      "time": 1777877193095.6128
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTrajectory.ts.meta": {
-      "time": 1777877193095.6128
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTypes.ts.meta": {
-      "time": 1777877193096.6118
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchMask.ts": {
-      "time": 1776242413968.6638,
-      "uuid": "2132b9c7-920a-4340-9965-5ef9c5e061c4"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts": {
-      "time": 1777881003752.2297,
-      "uuid": "a1f1bf74-5abf-42f9-b4ae-e153cb1270e4"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSound.ts": {
-      "time": 1777881444001.4841,
-      "uuid": "5c5ebbde-e642-4f39-b3ea-a46bceec60f7"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTrajectory.ts": {
-      "time": 1776242413969.665,
-      "uuid": "fa903ca2-b93b-4e2b-814e-986aaccee300"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTypes.ts": {
-      "time": 1776242413969.665,
-      "uuid": "47fbb0d4-c577-4f0e-8a24-5486b3ca8439"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\FragmentView.ts.meta": {
       "time": 1777878241852.3093
@@ -686,6 +616,272 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch\\main_cover.png": {
       "time": 1776242413862.4163,
       "uuid": "29884944-7f51-4886-8fa3-242e5184026b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts.meta": {
+      "time": 1777940747036.3904
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts": {
+      "time": 1777969193642.2808,
+      "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts.meta": {
+      "time": 1777940855304.3716
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts": {
+      "time": 1777960227487.0032,
+      "uuid": "0ba9cf86-c88a-47b3-b371-a764ed63d35b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchMask.ts.meta": {
+      "time": 1777941410264.7686
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchMask.ts": {
+      "time": 1777964257839.459,
+      "uuid": "508ec6af-099a-4d15-ad2b-ae3f2f70f2a0"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTypes.ts.meta": {
+      "time": 1777941432345.901
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTypes.ts": {
+      "time": 1777941443243.2139,
+      "uuid": "9fc8adef-57bb-418e-94e5-25c18d9ad3fc"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTrajectory.ts.meta": {
+      "time": 1777941462533.5762
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTrajectory.ts": {
+      "time": 1777941470842.833,
+      "uuid": "440b76a8-087a-41bd-82b1-aa0f53fa9ea2"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card.meta": {
+      "time": 1777961965596.7686
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card": {
+      "time": 1777961984164.421,
+      "uuid": "c9d1d8d7-0853-4219-9da0-fdae0b8b573f"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCardView.ts.meta": {
+      "time": 1777961984171.4214
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCardView.ts": {
+      "time": 1777962698770.2507,
+      "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons.meta": {
+      "time": 1777963168451.025
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons": {
+      "time": 1777964053684.2754,
+      "uuid": "c8ca35ee-1c81-431d-8670-40ffb1538853"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice.meta": {
+      "time": 1777963211668.4626
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice": {
+      "time": 1777963211669.4595,
+      "uuid": "1976ccd5-0bfc-49d3-afda-dae75d0491f4"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-active.png.meta": {
+      "time": 1777963211725.4607
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-disable.png.meta": {
+      "time": 1777963211719.4602
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-inactive.png.meta": {
+      "time": 1777963211721.462
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-disable.png": {
+      "time": 1776242413894.412,
+      "uuid": "6f70802a-8dc2-4f9a-8cac-3d89cc49e2c3"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-inactive.png": {
+      "time": 1776242413895.412,
+      "uuid": "51d32e43-f3b0-4b9c-9202-3c4e9ed55c69"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-active.png": {
+      "time": 1776242413894.412,
+      "uuid": "992c3beb-3b57-45bf-a9cd-13936ba42d04"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber.meta": {
+      "time": 1777963290035.435
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber": {
+      "time": 1777963293929.4714,
+      "uuid": "04fa7850-9357-4e1c-9f71-c7d4c490b034"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber\\font-cardnum.fnt.meta": {
+      "time": 1776242413790.0203
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber\\font-cardnum.fnt": {
+      "time": 1776242413790.0203,
+      "uuid": "5356cb3e-60d2-4957-90fd-5648cacae50d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber\\font-cardnum.png.meta": {
+      "time": 1776242413792.02
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber\\font-cardnum.png": {
+      "time": 1776242413791.0198,
+      "uuid": "3534ed4a-2100-4261-b74a-54b37bf7f077"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinUpTo.meta": {
+      "time": 1777963302018.8389
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinUpTo": {
+      "time": 1777963305116.492,
+      "uuid": "b1b49209-2769-48b7-b3a1-9a6c5ec0b81c"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinUpTo\\winup-font.fnt.meta": {
+      "time": 1777527178109.1677
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinUpTo\\winup-font.fnt": {
+      "time": 1777527178109.1677,
+      "uuid": "7ba61a6b-11e4-454f-bd82-844057b810d6"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinUpTo\\winup-font.png.meta": {
+      "time": 1777527178110.1714
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinUpTo\\winup-font.png": {
+      "time": 1777527178110.1714,
+      "uuid": "42a5eac2-1bd1-4d02-89a9-8882ebc82c87"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice.meta": {
+      "time": 1777963311893.0645
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice": {
+      "time": 1777963330210.5413,
+      "uuid": "002e72a2-bbb7-4153-8749-ffe082268f01"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-activefont.fnt.meta": {
+      "time": 1777963330232.541
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-activefont.png.meta": {
+      "time": 1777963330286.54
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-disabledFont.fnt.meta": {
+      "time": 1777963330232.541
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-disabledFont.png.meta": {
+      "time": 1777963330311.5405
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\untiPriceDefaultFont.fnt.meta": {
+      "time": 1777963330240.5413
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\untiPriceDefaultFont.png.meta": {
+      "time": 1777963330312.5398
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-activefont.fnt": {
+      "time": 1776242413794.0198,
+      "uuid": "2778b222-cd3e-4de0-bd7f-c8b42ba6414b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-disabledFont.fnt": {
+      "time": 1776242413794.0198,
+      "uuid": "4ae5b18d-e9ff-4152-82b6-e5003a39eacf"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\untiPriceDefaultFont.fnt": {
+      "time": 1776242413795.02,
+      "uuid": "b124831d-bd8b-41b7-9982-bd97afe8c95d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-activefont.png": {
+      "time": 1776242413794.0198,
+      "uuid": "a0e9fb1e-6c28-4c28-98b9-045e2f9082be"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-disabledFont.png": {
+      "time": 1776242413794.0198,
+      "uuid": "0aec7281-9752-4f44-9b5d-78d68e378edd"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\untiPriceDefaultFont.png": {
+      "time": 1776242413795.02,
+      "uuid": "a7f374fc-c609-4e06-9212-07b6b452f1dd"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy.meta": {
+      "time": 1777963608228.1443
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy": {
+      "time": 1777963608230.1455,
+      "uuid": "c68446f3-d2f2-4458-9353-e01aeeb0613f"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-clicked.png.meta": {
+      "time": 1777963608265.1453
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-disable.png.meta": {
+      "time": 1777963608274.1455
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-normal.png.meta": {
+      "time": 1777963608270.1816
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-clicked.png": {
+      "time": 1776242413889.4119,
+      "uuid": "17d2ebf2-ee81-40a8-b148-328593a8b579"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-normal.png": {
+      "time": 1776242413890.4119,
+      "uuid": "f04cb4f8-37a6-4de7-894a-3924c1554522"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-disable.png": {
+      "time": 1776242413890.4119,
+      "uuid": "b84d7712-dc9d-4efc-b83f-ed9d199a153b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto.meta": {
+      "time": 1777964053684.2754
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto": {
+      "time": 1777964053686.2773,
+      "uuid": "f9280e63-f0a3-44b7-a38f-11419aec2159"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_clicked.png.meta": {
+      "time": 1777964053722.2761
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_disable.png.meta": {
+      "time": 1777964053720.2764
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_normal.png.meta": {
+      "time": 1777964053719.2756
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_normal.png": {
+      "time": 1776242413880.412,
+      "uuid": "a79c3632-1206-4aa0-87fb-808523a330f2"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_disable.png": {
+      "time": 1776242413880.412,
+      "uuid": "2427db16-245a-46c8-8e75-89f9e10f240f"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_clicked.png": {
+      "time": 1776242413880.412,
+      "uuid": "4fb19b3f-0b90-425f-bef1-5bf0b8a5ebc8"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs.meta": {
+      "time": 1777964415683.2507
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs": {
+      "time": 1777964423004.6804,
+      "uuid": "fc3ae444-14b3-49e6-a9c8-40fe7e3e15d5"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs\\SingleButton.ts.meta": {
+      "time": 1777964423011.6802
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs\\SingleButton.ts": {
+      "time": 1777966540615.077,
+      "uuid": "19973e86-b230-4abf-b825-3c1207bddac5"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game.meta": {
+      "time": 1777965154755.149
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game": {
+      "time": 1777965195634.1187,
+      "uuid": "f570fc6a-d95c-4b12-832d-c4b980f1fe8f"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts.meta": {
+      "time": 1777965163833.1677
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
+      "time": 1777969251653.0159,
+      "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
+      "time": 1777965195641.118
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts": {
+      "time": 1777965340243.757,
+      "uuid": "d58cc7ed-83e8-454c-9920-0fee57d186ad"
     }
   },
   "missing": {
@@ -930,14 +1126,69 @@
       "removeTime": 1777875715776
     },
     "3534ed4a-2100-4261-b74a-54b37bf7f077": {
-      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\cardnum-font.png",
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.png",
       "time": 1776242413791.0198,
-      "removeTime": 1777875715776
+      "removeTime": 1777963293931
     },
     "f0e987c5-c425-40a4-87af-1b2acf236ab7": {
       "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-gold.fnt",
       "time": 1776242413792.02,
       "removeTime": 1777875878218
+    },
+    "2132b9c7-920a-4340-9965-5ef9c5e061c4": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchMask.ts",
+      "time": 1776242413968.6638,
+      "removeTime": 1777940729441
+    },
+    "5c5ebbde-e642-4f39-b3ea-a46bceec60f7": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSound.ts",
+      "time": 1777881444001.4841,
+      "removeTime": 1777940729616
+    },
+    "47fbb0d4-c577-4f0e-8a24-5486b3ca8439": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTypes.ts",
+      "time": 1776242413969.665,
+      "removeTime": 1777940729634
+    },
+    "a1f1bf74-5abf-42f9-b4ae-e153cb1270e4": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts",
+      "time": 1777881003752.2297,
+      "removeTime": 1777940729657
+    },
+    "10e7233b-72ae-4f4a-8c1f-0d1008eada5c": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts",
+      "time": 1777884452550.5615,
+      "removeTime": 1777940729670
+    },
+    "fa903ca2-b93b-4e2b-814e-986aaccee300": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchTrajectory.ts",
+      "time": 1776242413969.665,
+      "removeTime": 1777940729685
+    },
+    "5356cb3e-60d2-4957-90fd-5648cacae50d": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-cardnum.fnt",
+      "time": 1776242413790.0203,
+      "removeTime": 1777963293930
+    },
+    "7ba61a6b-11e4-454f-bd82-844057b810d6": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.fnt",
+      "time": 1777527178109.1677,
+      "removeTime": 1777963305116
+    },
+    "42a5eac2-1bd1-4d02-89a9-8882ebc82c87": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\winup-font.png",
+      "time": 1777527178110.1714,
+      "removeTime": 1777963305117
+    },
+    "fc3ae444-14b3-49e6-a9c8-40fe7e3e15d5": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Button",
+      "time": 1777964423004.6804,
+      "removeTime": 1777964429318
+    },
+    "19973e86-b230-4abf-b825-3c1207bddac5": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Button\\SingleButton.ts",
+      "time": 1777964423003.6804,
+      "removeTime": 1777964429318
     }
   }
 }

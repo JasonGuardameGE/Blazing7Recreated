@@ -28,7 +28,6 @@ export class ScrollingBackground extends Component {
             pos.y = i * this.bgHeight;
     
             bg.setPosition(pos);
-            console.log(`New Position: ${bg.position}`);
         }
     }
 
