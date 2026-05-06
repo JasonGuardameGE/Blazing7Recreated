@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "0ec176bc-de8e-4875-ae10-6010c86e10ee",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "0ec176bc-de8e-4875-ae10-6010c86e10ee@6c48a",
+      "displayName": "InnerRockWin-Background",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "0ec176bc-de8e-4875-ae10-6010c86e10ee",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "0ec176bc-de8e-4875-ae10-6010c86e10ee@f9941",
+      "displayName": "InnerRockWin-Background",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0.5,
+        "offsetY": 0,
+        "trimX": 13,
+        "trimY": 0,
+        "width": 269,
+        "height": 294,
+        "rawWidth": 294,
+        "rawHeight": 294,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -134.5,
+            -147,
+            0,
+            134.5,
+            -147,
+            0,
+            -134.5,
+            147,
+            0,
+            134.5,
+            147,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            13,
+            294,
+            282,
+            294,
+            13,
+            0,
+            282,
+            0
+          ],
+          "nuv": [
+            0.04421768707482993,
+            0,
+            0.9591836734693877,
+            0,
+            0.04421768707482993,
+            1,
+            0.9591836734693877,
+            1
+          ],
+          "minPos": [
+            -134.5,
+            -147,
+            0
+          ],
+          "maxPos": [
+            134.5,
+            147,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "0ec176bc-de8e-4875-ae10-6010c86e10ee@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "fixAlphaTransparencyArtifacts": false,
+    "redirect": "0ec176bc-de8e-4875-ae10-6010c86e10ee@6c48a"
+  }
+}

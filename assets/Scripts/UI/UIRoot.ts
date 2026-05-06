@@ -8,8 +8,16 @@ export class UIRoot extends Component {
     @property(Node)
     scene: Node = null;
 
+    public get SceneRoot(): Node {
+        return this.scene;
+    }
+
     @property(Node)
     private popup: Node = null;
+    
+    public get PopUpRoot(): Node {
+        return this.popup;
+    }
 
     @property(Node)
     private panel: Node = null;
@@ -28,8 +36,4 @@ export class UIRoot extends Component {
 
     @property(Node)
     private apiLoading: Node = null;
-
-    public get SceneRoot(): Node {
-        return this.scene;
-    }
 }

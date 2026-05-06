@@ -1,0 +1,474 @@
+
+blazing7-win_skeleton.webp
+size: 2004, 1943
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+B7-win_circlechain
+  rotate: true
+  xy: 485, 1540
+  size: 401, 377
+  orig: 417, 398
+  offset: 8, 14
+  index: -1
+B7-win_text
+  rotate: false
+  xy: 864, 1551
+  size: 249, 138
+  orig: 261, 170
+  offset: 7, 12
+  index: -1
+B7-winsuperwin_bg
+  rotate: false
+  xy: 2, 1715
+  size: 481, 226
+  orig: 506, 251
+  offset: 15, 10
+  index: -1
+Blue flame/1 Blue
+  rotate: false
+  xy: 2, 1463
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/11 Blue
+  rotate: false
+  xy: 254, 1288
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/13 Blue
+  rotate: false
+  xy: 2, 1211
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/15 Blue
+  rotate: false
+  xy: 506, 1288
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/17 Blue
+  rotate: false
+  xy: 758, 1288
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/19 Blue
+  rotate: false
+  xy: 864, 1691
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/21 Blue
+  rotate: false
+  xy: 1010, 1299
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/23 Blue
+  rotate: false
+  xy: 1116, 1691
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/25 Blue
+  rotate: false
+  xy: 1010, 1047
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/27 Blue
+  rotate: false
+  xy: 2, 959
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/29 Blue
+  rotate: false
+  xy: 254, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/3 Blue
+  rotate: false
+  xy: 506, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/31 Blue
+  rotate: false
+  xy: 758, 795
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/33 Blue
+  rotate: false
+  xy: 2, 707
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/35 Blue
+  rotate: false
+  xy: 254, 784
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/37 Blue
+  rotate: false
+  xy: 506, 784
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/39 Blue
+  rotate: false
+  xy: 1010, 795
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/41 Blue
+  rotate: false
+  xy: 758, 543
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/43 Blue
+  rotate: false
+  xy: 247, 455
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/45 Blue
+  rotate: false
+  xy: 499, 532
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/47 Blue
+  rotate: false
+  xy: 1010, 543
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/49 Blue
+  rotate: false
+  xy: 751, 291
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/5 Blue
+  rotate: false
+  xy: 492, 203
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/51 Blue
+  rotate: false
+  xy: 1003, 291
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/53 Blue
+  rotate: false
+  xy: 1255, 291
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/55 Blue
+  rotate: false
+  xy: 1262, 1439
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/57 Blue
+  rotate: false
+  xy: 1368, 1691
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/59 Blue
+  rotate: false
+  xy: 1262, 1187
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/7 Blue
+  rotate: false
+  xy: 1262, 935
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Blue flame/9 Blue
+  rotate: false
+  xy: 1262, 683
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Dragon head/dragon-head_flame0
+  rotate: true
+  xy: 254, 1550
+  size: 163, 180
+  orig: 290, 229
+  offset: 58, 29
+  index: -1
+Dragon head/dragon-head_flame1
+  rotate: false
+  xy: 492, 2
+  size: 160, 199
+  orig: 290, 228
+  offset: 59, 7
+  index: -1
+Dragon head/dragon-head_flame2
+  rotate: true
+  xy: 758, 1128
+  size: 158, 206
+  orig: 290, 229
+  offset: 60, 6
+  index: -1
+Mouth Flame Blue/1 Mouth Flame Blue
+  rotate: false
+  xy: 2, 373
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/11 Mouth Flame Blue
+  rotate: false
+  xy: 247, 121
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/13 Mouth Flame Blue
+  rotate: false
+  xy: 2, 39
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/15 Mouth Flame Blue
+  rotate: false
+  xy: 1507, 349
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/17 Mouth Flame Blue
+  rotate: true
+  xy: 1507, 104
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/19 Mouth Flame Blue
+  rotate: true
+  xy: 744, 46
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/21 Mouth Flame Blue
+  rotate: true
+  xy: 1078, 46
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/23 Mouth Flame Blue
+  rotate: false
+  xy: 1514, 1357
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/25 Mouth Flame Blue
+  rotate: true
+  xy: 1620, 1698
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/27 Mouth Flame Blue
+  rotate: false
+  xy: 1514, 1023
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/29 Mouth Flame Blue
+  rotate: true
+  xy: 1514, 778
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/3 Mouth Flame Blue
+  rotate: false
+  xy: 1752, 444
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/31 Mouth Flame Blue
+  rotate: false
+  xy: 1759, 1364
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/33 Mouth Flame Blue
+  rotate: false
+  xy: 1759, 1030
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+
+blazing7-win_skeleton_2.webp
+size: 1962, 670
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Mouth Flame Blue/35 Mouth Flame Blue
+  rotate: false
+  xy: 2, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/37 Mouth Flame Blue
+  rotate: false
+  xy: 2, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/39 Mouth Flame Blue
+  rotate: false
+  xy: 247, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/41 Mouth Flame Blue
+  rotate: false
+  xy: 247, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/43 Mouth Flame Blue
+  rotate: false
+  xy: 492, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/45 Mouth Flame Blue
+  rotate: false
+  xy: 492, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/47 Mouth Flame Blue
+  rotate: false
+  xy: 737, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/49 Mouth Flame Blue
+  rotate: false
+  xy: 737, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/5 Mouth Flame Blue
+  rotate: false
+  xy: 982, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/51 Mouth Flame Blue
+  rotate: false
+  xy: 982, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/53 Mouth Flame Blue
+  rotate: false
+  xy: 1227, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/55 Mouth Flame Blue
+  rotate: false
+  xy: 1227, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/57 Mouth Flame Blue
+  rotate: false
+  xy: 1472, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/59 Mouth Flame Blue
+  rotate: false
+  xy: 1472, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/7 Mouth Flame Blue
+  rotate: false
+  xy: 1717, 336
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Blue/9 Mouth Flame Blue
+  rotate: false
+  xy: 1717, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1

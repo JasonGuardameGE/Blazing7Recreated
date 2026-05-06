@@ -20,10 +20,8 @@ const { ccclass, property } = _decorator;
 @ccclass('ScratchSystem')
 export class ScratchSystem extends Component {
 
-    @property({
-        type: [EventHandler],
-        tooltip: 'Called once all scratch cells are scratched.',
-    })
+    onCardNumberScratchedCallbacks: EventHandler[] = [];
+
     allCardScratchedCallbacks: EventHandler[] = [];
 
     @property(Sprite)
@@ -61,6 +59,10 @@ export class ScratchSystem extends Component {
     private isTouched: boolean = false;
     private isAllScratched: boolean = false;
 
+    public get IsAllScratched(): boolean {
+        return this.isAllScratched;
+    }
+    
     protected onLoad(): void {
         if (!this.defaultScratchCover || !this.defaultScratchCover.spriteFrame) {
             console.error('[ScratchSystem] defaultScratchCover or spriteFrame is null');
@@ -264,10 +266,6 @@ export class ScratchSystem extends Component {
             this.cellScratched[closestCellIndex] = true;
             this.autoScratchCell(closestCellIndex);
 
-            console.log(
-                `[ScratchSystem] Cell ${closestCellIndex} scratched. Percent: ${percent.toFixed(2)}`,
-            );
-
             this.CheckScratchProgress();
         }
     }
@@ -309,6 +307,8 @@ export class ScratchSystem extends Component {
         const cell = this.validCells[index];
         const duration: number = 450;
 
+        EventHandler.emitEvents(this.onCardNumberScratchedCallbacks, index);
+        
         await this.scratchRenderer.autoScratchDiagonalOptimized(
             cell.x,
             cell.y,

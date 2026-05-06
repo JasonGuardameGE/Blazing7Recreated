@@ -14,6 +14,7 @@ import { Services } from '../../../Managers/Services';
 import SceneManager, { ScenePrefabPath } from '../../../Managers/SceneManager';
 import { GameManager } from '../../../Managers/GameManager';
 import { BaseEventListener } from '../../../EventListener/BaseEventListener';
+import { PopUpManager } from '../../../Managers/PopUpManager';
 
 const { ccclass, property } = _decorator;
 
@@ -47,6 +48,7 @@ export class LoadingScene extends Component {
     private initialize() : void{
         this._sceneManager = Services.GetService(SceneManager);
         this._sceneManager.SetCurrentScene(this.node);
+
         this.RegisterEvents();
     }
 

@@ -1,0 +1,440 @@
+
+RedHot7-MotionGraphics.png
+size: 1619, 233
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Comp 2/F-1
+  rotate: false
+  xy: 2, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-10
+  rotate: false
+  xy: 2, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-11
+  rotate: false
+  xy: 79, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-12
+  rotate: false
+  xy: 2, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-13
+  rotate: false
+  xy: 79, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-14
+  rotate: false
+  xy: 156, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-15
+  rotate: false
+  xy: 79, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-16
+  rotate: false
+  xy: 156, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-17
+  rotate: false
+  xy: 233, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-18
+  rotate: false
+  xy: 156, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-19
+  rotate: false
+  xy: 233, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-2
+  rotate: false
+  xy: 310, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-20
+  rotate: false
+  xy: 233, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-21
+  rotate: false
+  xy: 310, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-22
+  rotate: false
+  xy: 387, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-23
+  rotate: false
+  xy: 310, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-24
+  rotate: false
+  xy: 387, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-25
+  rotate: false
+  xy: 464, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-26
+  rotate: false
+  xy: 387, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-27
+  rotate: false
+  xy: 464, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-28
+  rotate: false
+  xy: 541, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-29
+  rotate: false
+  xy: 464, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-3
+  rotate: false
+  xy: 541, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-30
+  rotate: false
+  xy: 618, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-31
+  rotate: false
+  xy: 541, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-32
+  rotate: false
+  xy: 618, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-33
+  rotate: false
+  xy: 695, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-34
+  rotate: false
+  xy: 618, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-35
+  rotate: false
+  xy: 695, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-36
+  rotate: false
+  xy: 772, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-37
+  rotate: false
+  xy: 695, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-38
+  rotate: false
+  xy: 772, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-39
+  rotate: false
+  xy: 849, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-4
+  rotate: false
+  xy: 772, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-40
+  rotate: false
+  xy: 849, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-41
+  rotate: false
+  xy: 926, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-42
+  rotate: false
+  xy: 849, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-43
+  rotate: false
+  xy: 926, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-44
+  rotate: false
+  xy: 1003, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-45
+  rotate: false
+  xy: 926, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-46
+  rotate: false
+  xy: 1003, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-47
+  rotate: false
+  xy: 1080, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-48
+  rotate: false
+  xy: 1003, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-49
+  rotate: false
+  xy: 1080, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-5
+  rotate: false
+  xy: 1157, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-50
+  rotate: false
+  xy: 1080, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-51
+  rotate: false
+  xy: 1157, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-52
+  rotate: false
+  xy: 1234, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-53
+  rotate: false
+  xy: 1157, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-54
+  rotate: false
+  xy: 1234, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-55
+  rotate: false
+  xy: 1311, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-56
+  rotate: false
+  xy: 1234, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-57
+  rotate: false
+  xy: 1311, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-58
+  rotate: false
+  xy: 1388, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-59
+  rotate: false
+  xy: 1311, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-6
+  rotate: false
+  xy: 1388, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-60
+  rotate: false
+  xy: 1465, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-61
+  rotate: false
+  xy: 1388, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-62
+  rotate: false
+  xy: 1465, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-7
+  rotate: false
+  xy: 1542, 156
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-8
+  rotate: false
+  xy: 1465, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Comp 2/F-9
+  rotate: false
+  xy: 1542, 79
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1

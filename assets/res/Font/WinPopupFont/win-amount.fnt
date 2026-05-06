@@ -1,0 +1,16 @@
+info face="Arial Black" size=198 bold=1 italic=0 charset="" unicode=0 stretchH=100 smooth=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=198 base=198 scaleW=391 scaleH=998 pages=1 packed=0
+page file="win-amount.png" id=0
+chars count=11
+char id=50 x=2 y=2 width=151 height=198 xoffset=0 yoffset=0 xadvance=151 page=0 chnl=0 letter="2"
+char id=51 x=154 y=2 width=154 height=198 xoffset=0 yoffset=0 xadvance=154 page=0 chnl=0 letter="3"
+char id=52 x=2 y=201 width=158 height=198 xoffset=0 yoffset=0 xadvance=158 page=0 chnl=0 letter="4"
+char id=53 x=161 y=201 width=153 height=198 xoffset=0 yoffset=0 xadvance=153 page=0 chnl=0 letter="5"
+char id=54 x=2 y=400 width=151 height=198 xoffset=0 yoffset=0 xadvance=151 page=0 chnl=0 letter="6"
+char id=55 x=154 y=400 width=158 height=198 xoffset=0 yoffset=0 xadvance=158 page=0 chnl=0 letter="7"
+char id=56 x=2 y=599 width=159 height=198 xoffset=0 yoffset=0 xadvance=159 page=0 chnl=0 letter="8"
+char id=57 x=162 y=599 width=151 height=198 xoffset=0 yoffset=0 xadvance=151 page=0 chnl=0 letter="9"
+char id=44 x=2 y=807 width=120 height=179 xoffset=0 yoffset=0 xadvance=120 page=0 chnl=0 letter=","
+char id=48 x=123 y=798 width=147 height=198 xoffset=0 yoffset=0 xadvance=147 page=0 chnl=0 letter="0"
+char id=49 x=271 y=798 width=118 height=198 xoffset=0 yoffset=0 xadvance=118 page=0 chnl=0 letter="1"
+kernings count=0

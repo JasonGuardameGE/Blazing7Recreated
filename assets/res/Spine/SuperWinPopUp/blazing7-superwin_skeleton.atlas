@@ -1,0 +1,859 @@
+
+blazing7-superwin_skeleton.webp
+size: 2012, 2000
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+B7-superwin_text
+  rotate: false
+  xy: 1409, 1472
+  size: 501, 140
+  orig: 516, 153
+  offset: 9, 6
+  index: -1
+B7-winsuperwin_bg
+  rotate: false
+  xy: 593, 1254
+  size: 481, 226
+  orig: 506, 251
+  offset: 15, 10
+  index: -1
+Dragon head/dragon-head_flame0
+  rotate: true
+  xy: 411, 1321
+  size: 163, 180
+  orig: 290, 229
+  offset: 58, 29
+  index: -1
+Dragon head/dragon-head_flame1
+  rotate: true
+  xy: 210, 1326
+  size: 160, 199
+  orig: 290, 228
+  offset: 59, 7
+  index: -1
+Dragon head/dragon-head_flame2
+  rotate: true
+  xy: 2, 1332
+  size: 158, 206
+  orig: 290, 229
+  offset: 60, 6
+  index: -1
+Mouth Flame Orange/1 Mouth Flame Orange
+  rotate: true
+  xy: 1328, 1227
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/11 Mouth Flame Orange
+  rotate: true
+  xy: 1662, 1227
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/13 Mouth Flame Orange
+  rotate: true
+  xy: 2, 1081
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/15 Mouth Flame Orange
+  rotate: true
+  xy: 588, 1009
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/17 Mouth Flame Orange
+  rotate: true
+  xy: 922, 984
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/19 Mouth Flame Orange
+  rotate: true
+  xy: 1256, 982
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/21 Mouth Flame Orange
+  rotate: true
+  xy: 1590, 982
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/23 Mouth Flame Orange
+  rotate: true
+  xy: 2, 836
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/25 Mouth Flame Orange
+  rotate: true
+  xy: 588, 764
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/27 Mouth Flame Orange
+  rotate: true
+  xy: 922, 739
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/29 Mouth Flame Orange
+  rotate: true
+  xy: 1256, 737
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/3 Mouth Flame Orange
+  rotate: true
+  xy: 1590, 737
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/31 Mouth Flame Orange
+  rotate: true
+  xy: 2, 591
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/33 Mouth Flame Orange
+  rotate: true
+  xy: 588, 519
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/35 Mouth Flame Orange
+  rotate: true
+  xy: 922, 494
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/37 Mouth Flame Orange
+  rotate: true
+  xy: 1256, 492
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/39 Mouth Flame Orange
+  rotate: true
+  xy: 1590, 492
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/41 Mouth Flame Orange
+  rotate: true
+  xy: 2, 346
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/43 Mouth Flame Orange
+  rotate: true
+  xy: 588, 274
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/45 Mouth Flame Orange
+  rotate: true
+  xy: 922, 249
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/47 Mouth Flame Orange
+  rotate: true
+  xy: 1256, 247
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/49 Mouth Flame Orange
+  rotate: true
+  xy: 1590, 247
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/5 Mouth Flame Orange
+  rotate: true
+  xy: 2, 101
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/51 Mouth Flame Orange
+  rotate: true
+  xy: 588, 29
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/53 Mouth Flame Orange
+  rotate: true
+  xy: 922, 4
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/55 Mouth Flame Orange
+  rotate: true
+  xy: 1256, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/57 Mouth Flame Orange
+  rotate: true
+  xy: 1590, 2
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Orange flame/1 orange flame
+  rotate: false
+  xy: 1076, 1229
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/11 orange flame
+  rotate: false
+  xy: 336, 1069
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/13 orange flame
+  rotate: false
+  xy: 336, 817
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/15 orange flame
+  rotate: false
+  xy: 336, 565
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/17 orange flame
+  rotate: false
+  xy: 336, 313
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/19 orange flame
+  rotate: false
+  xy: 336, 61
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+skull_fire small/skull-fire_0000_Layer-52
+  rotate: false
+  xy: 931, 1876
+  size: 142, 122
+  orig: 149, 129
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0001_Layer-51
+  rotate: false
+  xy: 1727, 1875
+  size: 141, 123
+  orig: 149, 132
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0002_Layer-50
+  rotate: false
+  xy: 1870, 1875
+  size: 140, 123
+  orig: 148, 132
+  offset: 2, 1
+  index: -1
+skull_fire small/skull-fire_0003_Layer-49
+  rotate: false
+  xy: 1075, 1876
+  size: 140, 122
+  orig: 147, 133
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0004_Layer-48
+  rotate: false
+  xy: 766, 1751
+  size: 139, 124
+  orig: 147, 132
+  offset: 2, 1
+  index: -1
+skull_fire small/skull-fire_0005_Layer-47
+  rotate: false
+  xy: 907, 1750
+  size: 138, 124
+  orig: 146, 133
+  offset: 2, 2
+  index: -1
+skull_fire small/skull-fire_0006_Layer-46
+  rotate: false
+  xy: 1047, 1750
+  size: 140, 124
+  orig: 144, 133
+  offset: 2, 1
+  index: -1
+skull_fire small/skull-fire_0007_Layer-45
+  rotate: false
+  xy: 1445, 1749
+  size: 140, 125
+  orig: 144, 133
+  offset: 2, 1
+  index: -1
+skull_fire small/skull-fire_0008_Layer-44
+  rotate: false
+  xy: 1494, 1615
+  size: 140, 131
+  orig: 143, 133
+  offset: 2, 1
+  index: -1
+skull_fire small/skull-fire_0009_Layer-43
+  rotate: false
+  xy: 1636, 1614
+  size: 139, 131
+  orig: 142, 133
+  offset: 2, 1
+  index: -1
+skull_fire small/skull-fire_0010_Layer-42
+  rotate: false
+  xy: 1777, 1614
+  size: 139, 131
+  orig: 141, 133
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0011_Layer-41
+  rotate: false
+  xy: 1076, 1618
+  size: 139, 130
+  orig: 141, 133
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0012_Layer-40
+  rotate: false
+  xy: 136, 1492
+  size: 138, 131
+  orig: 140, 133
+  offset: 1, 0
+  index: -1
+skull_fire small/skull-fire_0013_Layer-39
+  rotate: false
+  xy: 1217, 1618
+  size: 137, 130
+  orig: 140, 133
+  offset: 1, 0
+  index: -1
+skull_fire small/skull-fire_0014_Layer-38
+  rotate: true
+  xy: 2, 1500
+  size: 136, 132
+  orig: 139, 134
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0015_Layer-37
+  rotate: false
+  xy: 276, 1488
+  size: 142, 133
+  orig: 144, 134
+  offset: 0, 1
+  index: -1
+skull_fire small/skull-fire_0016_Layer-36
+  rotate: false
+  xy: 982, 1482
+  size: 142, 134
+  orig: 144, 134
+  offset: 0, 0
+  index: -1
+skull_fire small/skull-fire_0017_Layer-35
+  rotate: false
+  xy: 420, 1487
+  size: 141, 133
+  orig: 143, 134
+  offset: 0, 0
+  index: -1
+skull_fire small/skull-fire_0018_Layer-34
+  rotate: false
+  xy: 1126, 1482
+  size: 140, 134
+  orig: 143, 134
+  offset: 1, 0
+  index: -1
+skull_fire small/skull-fire_0019_Layer-33
+  rotate: false
+  xy: 563, 1486
+  size: 139, 133
+  orig: 142, 134
+  offset: 1, 0
+  index: -1
+skull_fire small/skull-fire_0020_Layer-32
+  rotate: false
+  xy: 1268, 1481
+  size: 139, 134
+  orig: 141, 134
+  offset: 0, 0
+  index: -1
+skull_fire small/skull-fire_0021_Layer-31
+  rotate: false
+  xy: 704, 1485
+  size: 137, 133
+  orig: 141, 134
+  offset: 1, 0
+  index: -1
+skull_fire small/skull-fire_0022_Layer-30
+  rotate: false
+  xy: 843, 1484
+  size: 137, 133
+  orig: 140, 134
+  offset: 0, 0
+  index: -1
+skull_fire small/skull-fire_0023_Layer-29
+  rotate: false
+  xy: 1356, 1617
+  size: 136, 130
+  orig: 139, 134
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0024_Layer-28
+  rotate: false
+  xy: 939, 1619
+  size: 135, 129
+  orig: 138, 134
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0025_Layer-27
+  rotate: false
+  xy: 403, 1623
+  size: 135, 128
+  orig: 137, 134
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0026_Layer-26
+  rotate: false
+  xy: 2, 1638
+  size: 133, 127
+  orig: 136, 134
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0027_Layer-25
+  rotate: false
+  xy: 540, 1622
+  size: 133, 128
+  orig: 135, 134
+  offset: 0, 2
+  index: -1
+skull_fire small/skull-fire_0028_Layer-24
+  rotate: false
+  xy: 137, 1625
+  size: 132, 127
+  orig: 135, 134
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0029_Layer-23
+  rotate: false
+  xy: 1587, 1748
+  size: 131, 126
+  orig: 133, 134
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0030_Layer-22
+  rotate: false
+  xy: 1720, 1747
+  size: 131, 126
+  orig: 134, 134
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0031_Layer-21
+  rotate: false
+  xy: 675, 1621
+  size: 129, 128
+  orig: 133, 134
+  offset: 2, 2
+  index: -1
+skull_fire small/skull-fire_0032_Layer-20
+  rotate: true
+  xy: 806, 1620
+  size: 128, 131
+  orig: 132, 134
+  offset: 2, 2
+  index: -1
+skull_fire small/skull-fire_0033_Layer-19
+  rotate: true
+  xy: 271, 1625
+  size: 127, 130
+  orig: 132, 134
+  offset: 3, 2
+  index: -1
+skull_fire small/skull-fire_0034_Layer-18
+  rotate: true
+  xy: 1853, 1747
+  size: 126, 128
+  orig: 131, 134
+  offset: 3, 3
+  index: -1
+skull_fire small/skull-fire_0035_Layer-17
+  rotate: true
+  xy: 1189, 1750
+  size: 124, 127
+  orig: 130, 134
+  offset: 3, 3
+  index: -1
+skull_fire small/skull-fire_0036_Layer-16
+  rotate: true
+  xy: 1217, 1876
+  size: 122, 126
+  orig: 130, 134
+  offset: 5, 3
+  index: -1
+skull_fire small/skull-fire_0037_Layer-15
+  rotate: true
+  xy: 2, 1768
+  size: 123, 126
+  orig: 129, 134
+  offset: 4, 3
+  index: -1
+skull_fire small/skull-fire_0038_Layer-14
+  rotate: true
+  xy: 130, 1767
+  size: 123, 125
+  orig: 128, 133
+  offset: 3, 3
+  index: -1
+skull_fire small/skull-fire_0039_Layer-13
+  rotate: true
+  xy: 257, 1754
+  size: 123, 125
+  orig: 135, 133
+  offset: 7, 3
+  index: -1
+skull_fire small/skull-fire_0040_Layer-12
+  rotate: true
+  xy: 1345, 1876
+  size: 122, 126
+  orig: 130, 132
+  offset: 3, 2
+  index: -1
+skull_fire small/skull-fire_0041_Layer-11
+  rotate: true
+  xy: 1473, 1876
+  size: 122, 125
+  orig: 134, 132
+  offset: 8, 3
+  index: -1
+skull_fire small/skull-fire_0042_Layer-10
+  rotate: true
+  xy: 1600, 1876
+  size: 122, 125
+  orig: 135, 132
+  offset: 9, 3
+  index: -1
+skull_fire small/skull-fire_0043_Layer-9
+  rotate: true
+  xy: 1318, 1750
+  size: 124, 125
+  orig: 134, 132
+  offset: 7, 4
+  index: -1
+skull_fire small/skull-fire_0044_Layer-8
+  rotate: false
+  xy: 384, 1754
+  size: 124, 123
+  orig: 134, 131
+  offset: 7, 4
+  index: -1
+skull_fire small/skull-fire_0045_Layer-7
+  rotate: false
+  xy: 510, 1753
+  size: 126, 123
+  orig: 129, 130
+  offset: 1, 3
+  index: -1
+skull_fire small/skull-fire_0046_Layer-6
+  rotate: false
+  xy: 638, 1752
+  size: 126, 123
+  orig: 129, 129
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0047_Layer-5
+  rotate: false
+  xy: 676, 1877
+  size: 126, 121
+  orig: 129, 128
+  offset: 2, 2
+  index: -1
+skull_fire small/skull-fire_0048_Layer-4
+  rotate: false
+  xy: 804, 1877
+  size: 125, 121
+  orig: 129, 128
+  offset: 2, 2
+  index: -1
+skull_fire small/skull-fire_0049_Layer-3
+  rotate: false
+  xy: 292, 1879
+  size: 126, 119
+  orig: 129, 128
+  offset: 1, 2
+  index: -1
+skull_fire small/skull-fire_0050_Layer-2
+  rotate: false
+  xy: 420, 1879
+  size: 126, 119
+  orig: 129, 127
+  offset: 1, 1
+  index: -1
+skull_fire small/skull-fire_0051_Layer-1
+  rotate: false
+  xy: 548, 1878
+  size: 126, 120
+  orig: 128, 127
+  offset: 1, 1
+  index: -1
+torch-L
+  rotate: true
+  xy: 2, 1893
+  size: 105, 143
+  orig: 121, 146
+  offset: 6, 2
+  index: -1
+torch-R
+  rotate: true
+  xy: 147, 1892
+  size: 106, 143
+  orig: 121, 146
+  offset: 9, 2
+  index: -1
+
+blazing7-superwin_skeleton_2.webp
+size: 1848, 1573
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+B7-superwin_circlechain
+  rotate: false
+  xy: 847, 1132
+  size: 416, 439
+  orig: 438, 459
+  offset: 8, 10
+  index: -1
+Mouth Flame Orange/59 Mouth Flame Orange
+  rotate: false
+  xy: 847, 798
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/7 Mouth Flame Orange
+  rotate: true
+  xy: 2, 513
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Mouth Flame Orange/9 Mouth Flame Orange
+  rotate: false
+  xy: 1099, 546
+  size: 243, 332
+  orig: 243, 332
+  offset: 0, 0
+  index: -1
+Orange flame/21 orange flame
+  rotate: false
+  xy: 847, 546
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/23 orange flame
+  rotate: false
+  xy: 1092, 880
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/25 orange flame
+  rotate: false
+  xy: 1265, 1321
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/27 orange flame
+  rotate: false
+  xy: 336, 506
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/29 orange flame
+  rotate: false
+  xy: 2, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/3 orange flame
+  rotate: false
+  xy: 588, 506
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/31 orange flame
+  rotate: false
+  xy: 840, 294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/33 orange flame
+  rotate: false
+  xy: 254, 254
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/35 orange flame
+  rotate: false
+  xy: 2, 9
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/37 orange flame
+  rotate: false
+  xy: 506, 254
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/39 orange flame
+  rotate: false
+  xy: 1092, 294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/41 orange flame
+  rotate: false
+  xy: 758, 42
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/43 orange flame
+  rotate: false
+  xy: 254, 2
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/45 orange flame
+  rotate: false
+  xy: 506, 2
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/47 orange flame
+  rotate: false
+  xy: 1010, 42
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/49 orange flame
+  rotate: false
+  xy: 1262, 42
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/5 orange flame
+  rotate: false
+  xy: 1344, 1069
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/51 orange flame
+  rotate: false
+  xy: 1517, 1321
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/53 orange flame
+  rotate: false
+  xy: 1344, 817
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/55 orange flame
+  rotate: false
+  xy: 1344, 565
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/57 orange flame
+  rotate: false
+  xy: 1514, 313
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/59 orange flame
+  rotate: false
+  xy: 1514, 61
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/7 orange flame
+  rotate: false
+  xy: 1596, 1069
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+Orange flame/9 orange flame
+  rotate: false
+  xy: 1596, 817
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+skull 4 group
+  rotate: true
+  xy: 2, 758
+  size: 813, 843
+  orig: 855, 881
+  offset: 21, 21
+  index: -1

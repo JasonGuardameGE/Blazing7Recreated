@@ -26,6 +26,18 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-disabledFont.fnt": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchPrice\\unitPrice-disabledFont.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\NormalWinPopUp\\blazing7-win_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\NormalWinPopUp\\blazing7-win_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\SuperWinPopUp\\blazing7-superwin_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\SuperWinPopUp\\blazing7-superwin_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinPopupFont\\win-amount.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinPopupFont\\win-amount.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.atlas"
     ]
   },
   "uuid": {
@@ -34,6 +46,21 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragon-Idle\\blazing7-dragon-idle_skeleton.json": [
       "9323e4fb-9a5c-4c34-8bb6-0a224b5c3bee@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinPopup\\blazing7-win_skeleton.json": [
+      "5f5d93c3-e975-463f-ad55-5bce379df13f@6c48a",
+      "95ec1f5f-66f2-4dd2-a7e6-0efffe6dc9ba@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\NormalWinPopUp\\blazing7-win_skeleton.json": [
+      "5f5d93c3-e975-463f-ad55-5bce379df13f@6c48a",
+      "95ec1f5f-66f2-4dd2-a7e6-0efffe6dc9ba@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\SuperWinPopUp\\blazing7-superwin_skeleton.json": [
+      "849a5c1f-1eee-4b7e-a231-ee38cc9ccfc2@6c48a",
+      "4ec38c1a-9a2a-46ba-8167-605c578255ff@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.json": [
+      "94a543a2-3d34-42ef-af59-9820cd0d8019@6c48a"
     ]
   }
 }

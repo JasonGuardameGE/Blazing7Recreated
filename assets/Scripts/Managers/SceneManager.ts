@@ -6,8 +6,8 @@ import { Services } from './Services';
 const { ccclass } = _decorator;
 
 export enum ScenePrefabPath {
-    LOADING_SCENE = 'prefabs/Loading-Scene',
-    GAME_SCENE = 'prefabs/Game-Scene',
+    LOADING_SCENE = 'prefabs/Scenes/Loading-Scene',
+    GAME_SCENE = 'prefabs/Scenes/Game-Scene',
 }
 
 @ccclass('SceneManager')

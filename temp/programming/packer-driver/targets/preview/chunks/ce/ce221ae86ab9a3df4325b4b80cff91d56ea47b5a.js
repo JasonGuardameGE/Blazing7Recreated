@@ -55,6 +55,10 @@ System.register(["cc"], function (_export, _context) {
           return this.scene;
         }
 
+        get PopUpRoot() {
+          return this.popup;
+        }
+
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "scene", [_dec2], {
         configurable: true,
         enumerable: true,
