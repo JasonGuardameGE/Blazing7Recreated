@@ -1,5 +1,5 @@
-import { _decorator, Component, EventHandler, Node } from 'cc';
-import { GameOptions } from './GameOptions';
+import { _decorator, Animation, Component, EventHandler, Node } from 'cc';
+import { CENTERBUTTON, GameOptions } from './GameOptions';
 import { ScratchCardView } from '../Card/ScratchCardView';
 import { ScratchSystem } from '../Scratch/ScratchSystem';
 import { buyCard, mockBuyCard } from '../Api/GameApi';
@@ -7,13 +7,27 @@ import { GameData } from '../Data/GameData';
 import { GameManager } from '../Managers/GameManager';
 import { Services } from '../Managers/Services';
 import { PopUpManager, PopUpPrefabPath } from '../Managers/PopUpManager';
+import { WinPopUp } from '../UI/WinPopUp/WinPopUp';
+import { SettleRes } from '../Types';
+import { PricePopUpOptions } from './PricePopUpOptions';
 const { ccclass, property } = _decorator;
 
 @ccclass('Game')
 export class Game extends Component {
 
+    @property(Node)
+    balanceShake: Node = null;
+    private balanceShakeAnim: Animation = null;
+    @property(Node)
+    private combinationGuide: Node = null;
+
     @property(GameOptions)
     gameOptions: GameOptions;
+    @property(PricePopUpOptions)
+    priceOptions: PricePopUpOptions;
+    @property(PricePopUpOptions)
+    autoAttemptOptions: PricePopUpOptions;
+
     @property(ScratchCardView)
     scratchCardView: ScratchCardView;
     @property(ScratchSystem)
@@ -30,14 +44,20 @@ export class Game extends Component {
     }
 
     protected start(): void {
-      this._gameManager = Services.GetService(GameManager);   
-      this._popupManager = Services.GetService(PopUpManager);
 
-      this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
+        if(this.balanceShake){
+            this.balanceShakeAnim = this.balanceShake.getComponent(Animation);
 
-      this.setupGameOptions();
-      this.setupCardView();
-      this.setupScratchSystem();
+        }
+
+        this._gameManager = Services.GetService(GameManager);   
+        this._popupManager = Services.GetService(PopUpManager);
+
+        this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
+
+        this.setupGameOptions();
+        this.setupCardView();
+        this.setupScratchSystem();
     }
 
 
@@ -61,8 +81,8 @@ export class Game extends Component {
         }
 
         this.SetupBuyButton();
+        this.SetupAuxillaryOptions();
     }
-
 
     private SetupBuyButton(){        
         if (!this.gameOptions.buyCardButton) {
@@ -70,21 +90,49 @@ export class Game extends Component {
             return;
         }
 
-        const eventHandler = this.NewEventHandler('Game', 'buyNewCard');
-        this.gameOptions.buyCardButton.clickEndInsideCallbacks.push(eventHandler);
+        const buyNewCard = this.NewEventHandler('Game', 'buyNewCard');
+        this.gameOptions.buyCardButton.clickEndInsideCallbacks.push(buyNewCard);
+
+        const scratchAll = this.NewEventHandler('Game', 'scratchAll');
+        this.gameOptions.scratchAllButton.clickEndInsideCallbacks.push(scratchAll);
+    }
+
+    private SetupAuxillaryOptions(){
+        this.gameOptions.setPriceButton.node.on(Node.EventType.TOUCH_END, this.showPriceOptions, this);
+        this.gameOptions.setAutoButton.node.on(Node.EventType.TOUCH_END, this.onAutoButtonClicked, this);
+        this.gameOptions.pauseButton.node.on(Node.EventType.TOUCH_END, this.onStopButtonClicked, this);
+
+        const updateCurrentPrice = this.NewEventHandler('Game', 'updateCurrentPrice');
+        this.priceOptions.onPriceValueUpdateCallback.push(updateCurrentPrice);
+    }
+
+    private SetupWinPopup(winPopup: WinPopUp){
+        const shakeBalance = this.NewEventHandler('Game', 'shakeBalance');
+        winPopup.onCoinReachBalanceCallback.push(shakeBalance);
+        winPopup.IsPopUpInitialized = true;
+    }
+
+    private scratchAll(){
+        this.scratchSystem.ScratchAll();
+        this.cardAllScratched();
     }
 
     private async buyNewCard(): Promise<void> {
         if (this.cardCurrentlyShowing) return;
+
+        if(this.combinationGuide.active){
+            this.combinationGuide.active = false;
+            return;
+        }
     
         this.cardCurrentlyShowing = true;
-        this.gameOptions.buyCardButton.disabled = true;
+        this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, true);
         this.scratchSystem.ToggleTouch(false);
     
         try {
             console.log('[Game] BuyNewCard clicked');
             
-            await this._gameManager.PurchaseCard();
+            await this._gameManager.ScratchCard.PurchaseCard();
 
             this.scratchSystem.GenerateScratchRenderer();
             this.scratchCardView.StartCardPlayIn();    
@@ -92,19 +140,31 @@ export class Game extends Component {
             console.error('[Game] buyNewCard failed:', error);
     
             this.cardCurrentlyShowing = false;
-            this.gameOptions.buyCardButton.disabled = false;
+                    this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON);
         }
     }
 
     private cardPlayInComplete(){
         this.scratchSystem.ToggleTouch(true);
+        this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON)
     }
 
-    private cardAllScratched(){
-        this.gameOptions.buyCardButton.disabled = false;
-        this.cardCurrentlyShowing = false;
+    private async cardAllScratched(){
+        this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON);
+        this.cardCurrentlyShowing = false;  
+
+        //SETTLE
+        await this._gameManager.ScratchCard.SettleCard();
+        const settleRes = this._gameManager.GameData.TicketData.settleInfo as SettleRes;
+        console.log(`[GAME] TOTAL PAYOUT: ${settleRes.totalPayout}`);
+
+        if(settleRes.totalPayout <= 0)
+        {
+            return;
+        }
 
         this.scratchCardView.RevealWins();
+        await this.showWinResult(settleRes);
     }
 
     private cardNumberScratched(index: number){
@@ -119,6 +179,51 @@ export class Game extends Component {
         eventHandler.handler = handler;
 
         return eventHandler;
+    }
+
+    private async showWinResult(settleRes: SettleRes){
+        // SHOW RESULTS
+        let node: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.WIN_POPUP);        
+        let winPopUp = node.getComponent(WinPopUp);
+        
+        if(!winPopUp.IsPopUpInitialized){
+            this.SetupWinPopup(winPopUp);
+        }
+
+        winPopUp.StartShowing(settleRes.totalPayout, settleRes.winType);
+
+        //TODO: UPDATE PLAYER BALANCE
+    }
+
+    private showPriceOptions(){
+        this.priceOptions.node.active = true;
+    }
+
+    private onAutoButtonClicked(){
+        if(this.autoAttemptOptions.node.active){
+            this.gameOptions.ToggleAutoButton(false);
+            this.autoAttemptOptions.node.active = false;
+            this.updateAutoValue();
+        }else{
+            this.gameOptions.ToggleAutoButton(true);
+            this.autoAttemptOptions.node.active = true;
+        }
+    }
+
+    private onStopButtonClicked(){
+        this.gameOptions.ToggleAutoButton(true);
+    }
+
+    private updateCurrentPrice(){
+        this.gameOptions.setPriceButton.label.string = this.priceOptions.CurrentPriceValue.toString();
+    }
+
+    private updateAutoValue(){
+        this.gameOptions.pauseButton.label.string = this.autoAttemptOptions.CurrentPriceValue.toString();
+    }
+    
+    private shakeBalance(){
+        this.balanceShakeAnim.play();
     }
 }
 

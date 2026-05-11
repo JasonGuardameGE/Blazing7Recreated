@@ -30,15 +30,55 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
       _export("GameData", GameData = (_dec = ccclass('GameData'), _dec(_class = class GameData {
         constructor() {
+          this._deviceType = "h5";
           this._currentTicketData = null;
+          // bigAmount
+          //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
+          this._bigAmount = "100,2000";
+          // totalAmount
+          //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
+          this._topAmount = "20,40";
+          this._gameId = "2000802906231672834";
         }
 
-        set currentTicketData(value) {
+        get DeviceType() {
+          return this._deviceType;
+        }
+
+        set DeviceType(value) {
+          this._deviceType = value;
+        }
+
+        set TicketData(value) {
           this._currentTicketData = value;
         }
 
-        get currentTicketData() {
+        get TicketData() {
           return this._currentTicketData;
+        }
+
+        set gameId(value) {
+          this._gameId = value;
+        }
+
+        get gameId() {
+          return this._gameId;
+        }
+
+        get BigAmount() {
+          return this._bigAmount;
+        }
+
+        set BigAmount(value) {
+          this._bigAmount = value;
+        }
+
+        get TopAmount() {
+          return this._topAmount;
+        }
+
+        set TopAmount(value) {
+          this._topAmount = value;
         }
 
       }) || _class));

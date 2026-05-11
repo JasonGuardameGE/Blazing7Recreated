@@ -38,6 +38,21 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.json": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonum.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonum.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.png"
     ]
   },
   "uuid": {
@@ -61,6 +76,15 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.json": [
       "94a543a2-3d34-42ef-af59-9820cd0d8019@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.json": [
+      "4f7db0ff-d386-4242-89f9-a7789c25230e@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.json": [
+      "48adbcb5-df4a-4499-92f8-954b14cb6064@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.json": [
+      "630ca1b6-6780-40b4-b226-189df22237d3@6c48a"
     ]
   }
 }

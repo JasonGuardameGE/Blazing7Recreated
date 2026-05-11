@@ -137,7 +137,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
                 error: Error()
-              }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE); // Note: Placeholder
+              }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE); // TODO: IF GAMEDATA SKIPS NEWPLAYER GUIDE -- SKIP PRELOADING GUIDE
+
+
+              _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+                error: Error()
+              }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE); // TODO: ADD LOADING PROGRESS EVERYTIME A SCENE IS PRE-LOADED.
+              // Note: Placeholder
 
 
               while (_this.loadingBar.RealProgress < 100) {
@@ -153,49 +159,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               if (_this.evtOnLoadingComplete) {
                 _this.evtOnLoadingComplete.invoke();
-              } //TODO: Add Initialization of WebSocket here
-              //logger.log('[Loading] 初始化 ApiManager...');
-              //await ApiManager.initialize();
-              // // 获取当前所有游戏的列表，根据当前gameid获取当前游戏名称
-              // ApiManager.GameApi.getScratchList().then((res) => {
-              //     const gameList = PLK.gameData.gameList = res;
-              //     const currentGame = gameList.find((item: any) => item.gameId == PLK.gameData.gameId);
-              //     // 获取当前游戏的BigAmount和TopAmount
-              //     PLK.gameData.initTopAndBigAmount(currentGame.bigAmount, currentGame.topAmount);
-              //     // 获取当前游戏的gameType
-              //     PLK.gameData.gameName = currentGame.gameType;
-              //     // 获取当前游戏的playType
-              //     PLK.gameData.currentPlayType = currentGame.playType;
-              //     // 获取当前游戏的剩余卡片数量
-              //     PLK.gameData.remainingCardCount = currentGame.unusedCount;
-              //     // 获取当前游戏的单价
-              //     PLK.gameData.cardPrice = currentGame.unitPrice;
-              //     // 获取当前游戏的单价
-              //     PLK.gameData.unitPrice = currentGame.unitPrice;
-              //     // 获取当前游戏的priceList
-              //     PLK.gameData.gamePriceList = currentGame.unitPriceList;
-              //     // 获取当前游戏的isAutoPlay
-              //     PLK.gameData.isAutoPlay = currentGame.autoPlay != null && currentGame.autoPlay != 0;
-              // });
-              // // 加载游戏场景
-              // logger.log('[Loading] 开始加载新手引导:', PLK.userInfo.userInfo['showOnboarding']);
-              // if (PLK.userInfo.userInfo['showOnboarding']) {
-              //     this.checkAndLoadScene('newPlayerGuide');
-              // } else {
-              //     this.checkAndLoadScene('game');
-              // }
-
+              }
             } catch (err) {
-              console.error('[Loading] startLoading failed:', err); //logger.error('[Loading] ApiManager 初始化失败:', err);
-              //this.showRetryOption();
+              console.error('[Loading] startLoading failed:', err);
             }
           })();
         }
 
         loadGameScene() {
+          //TODO: Check on GameData if player is a new Player or nah
           this._sceneManager.LoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
             error: Error()
-          }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE);
+          }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE);
         }
 
         playWinUpToSkeletonAnimation() {

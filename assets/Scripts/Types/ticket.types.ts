@@ -58,6 +58,7 @@ export interface SettleRes {
     settleData: any[];
     cardsNum: number;
     billId: string;
+    winType: 0,
 }
 
 export interface DragonGate {

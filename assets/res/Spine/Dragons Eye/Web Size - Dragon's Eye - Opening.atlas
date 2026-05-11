@@ -1,0 +1,230 @@
+
+Web Size - Dragon's Eye - Opening.png
+size: 1872, 849
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+1920x1080-black-solid-color-background
+  rotate: false
+  xy: 2, 307
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+BG-1920x1080-smallfilesize
+  rotate: false
+  xy: 964, 567
+  size: 499, 280
+  orig: 499, 280
+  offset: 0, 0
+  index: -1
+D-1
+  rotate: true
+  xy: 1234, 375
+  size: 190, 180
+  orig: 203, 191
+  offset: 7, 6
+  index: -1
+D-Eye Ball
+  rotate: false
+  xy: 845, 99
+  size: 54, 54
+  orig: 55, 55
+  offset: 0, 0
+  index: -1
+D-Eye Frame
+  rotate: true
+  xy: 964, 269
+  size: 296, 268
+  orig: 296, 268
+  offset: 0, 0
+  index: -1
+D-Eye Lit
+  rotate: false
+  xy: 901, 47
+  size: 73, 68
+  orig: 73, 87
+  offset: 0, 3
+  index: -1
+D-Eye Lit2
+  rotate: true
+  xy: 762, 51
+  size: 102, 81
+  orig: 102, 81
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-1
+  rotate: false
+  xy: 1416, 306
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-10
+  rotate: false
+  xy: 1234, 223
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-11
+  rotate: false
+  xy: 1568, 306
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-12
+  rotate: false
+  xy: 1720, 306
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-13
+  rotate: false
+  xy: 1386, 154
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-14
+  rotate: false
+  xy: 1538, 154
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-15
+  rotate: false
+  xy: 1690, 154
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-16
+  rotate: false
+  xy: 2, 155
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-17
+  rotate: false
+  xy: 154, 155
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-18
+  rotate: false
+  xy: 306, 155
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-19
+  rotate: false
+  xy: 458, 155
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-2
+  rotate: false
+  xy: 610, 155
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-20
+  rotate: false
+  xy: 762, 155
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-21
+  rotate: false
+  xy: 914, 117
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-22
+  rotate: false
+  xy: 1066, 117
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-23
+  rotate: false
+  xy: 1218, 71
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-24
+  rotate: false
+  xy: 1370, 2
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-3
+  rotate: false
+  xy: 1522, 2
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-4
+  rotate: false
+  xy: 1674, 2
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-5
+  rotate: false
+  xy: 2, 3
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-6
+  rotate: false
+  xy: 154, 3
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-7
+  rotate: false
+  xy: 306, 3
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-8
+  rotate: false
+  xy: 458, 3
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Fire-dust/FS-9
+  rotate: false
+  xy: 610, 3
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+Glow 3
+  rotate: false
+  xy: 1465, 458
+  size: 388, 389
+  orig: 540, 540
+  offset: 78, 85
+  index: -1

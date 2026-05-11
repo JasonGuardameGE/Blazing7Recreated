@@ -1,4 +1,4 @@
-import { _decorator, Component } from 'cc';
+import { _decorator, CCInteger, Component } from 'cc';
 import { Services } from './Services';
 import SceneManager from './SceneManager';
 import ResourceManager from './ResourceManager';
@@ -7,39 +7,46 @@ import { UIRoot } from '../UI/UIRoot';
 import { GameData } from '../Data/GameData';
 import TicketData from '../Data/TicketData';
 import { PopUpManager } from './PopUpManager';
-import { mockBuyCard } from '../Api/GameApi';
+import { mockBuyCard, settleScratch } from '../Api/GameApi';
+import { ScratchCard } from '../Card/ScratchCard';
 
 const { ccclass, property } = _decorator;
-
-type CardNumberData = Array<{ value: number; win: number }>;
 
 @ccclass('GameManager')
 export class GameManager extends Component {
 
-    /**
-     * Called after a card is purchased and ticket card numbers are ready.
-     */
-    public onPurchaseUpdateCardVisualCallbacks: Array<(numbers: CardNumberData) => void> = [];
-
     private gameData: GameData = null;
 
-    get CurrentTicketData() {
-        return this.gameData.currentTicketData;
+    get GameData(){
+        return this.gameData;
     }
-
+    
     @property(UIRoot)
     uiRoot: UIRoot = null;
 
     @property(AudioManager)
     private audioManager: AudioManager = null;
 
+    @property(CCInteger)
+    forcedWinType: number = 0;
+
     private sceneManager: SceneManager = null;
     private popupManager: PopUpManager = null;
     private resourceManager: ResourceManager = null;
 
+    private scratchCard: ScratchCard;
+    get ScratchCard(){
+        return this.scratchCard;
+    }
+
     protected onLoad(): void {
         // TODO: Load from server the player's current Game Data
         this.gameData = new GameData();
+        this.gameData.TicketData = new TicketData();
+
+        // Can Re-check if this one should be transferred elsewhere.
+        this.scratchCard = new ScratchCard();
+        this.scratchCard.Init(this);
 
         this.registerServices();
         this.initializeServices();
@@ -67,48 +74,5 @@ export class GameManager extends Component {
         this.audioManager.Init();
 
         console.log('[GameManager] Services initialized');
-    }
-
-    public async PurchaseCard(): Promise<void> {
-        console.log('[GameManager] CardPurchased...');
-
-        // TODO: Later get the data from the gameData.
-        let params = {
-            gameId: "Test",
-            quantity: 1,
-            showLoading: false,
-            betType: 1,
-            unitPrice: "20"//PLK.gameData.unitPrice.toString(),
-        };
-
-        const res = await mockBuyCard(params);
-
-        if (!res) {
-            console.error('[GameManager] CardPurchased failed: response is null');
-            return;
-        }
-
-        if (!res.scratchCardData) {
-            console.error('[GameManager] CardPurchased failed: scratchCardData is missing', res);
-            return;
-        }
-
-        if (!this.gameData.currentTicketData) {
-            this.gameData.currentTicketData = new TicketData();
-        }
-
-        this.gameData.currentTicketData.updateTicketItem(res.scratchCardData);
-
-        const numbers = this.gameData.currentTicketData.currentTicket.codes as CardNumberData;
-
-        console.log('[GameManager] Numbers being emitted:', numbers);
-        console.log(
-            '[GameManager] Callback count before emit:',
-            this.onPurchaseUpdateCardVisualCallbacks.length,
-        );
-
-        this.onPurchaseUpdateCardVisualCallbacks.forEach((callback) => {
-            callback(numbers);
-        });
     }
 }

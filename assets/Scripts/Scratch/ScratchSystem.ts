@@ -14,6 +14,7 @@ import {
 import { ScratchRenderer } from './ScratchRenderer';
 import { GridCell } from './ScratchTypes';
 import { ScratchMask } from './ScratchMask';
+import { FragmentView } from './FragmentView';
 
 const { ccclass, property } = _decorator;
 
@@ -23,6 +24,9 @@ export class ScratchSystem extends Component {
     onCardNumberScratchedCallbacks: EventHandler[] = [];
 
     allCardScratchedCallbacks: EventHandler[] = [];
+
+    @property(FragmentView)
+    fragmentView: FragmentView = null;
 
     @property(Sprite)
     defaultScratchCover: Sprite = null;
@@ -120,12 +124,19 @@ export class ScratchSystem extends Component {
 
         const success = this.scratchRenderer.CreateNewRenderedScratch();
 
-        console.log(`[ScratchSystem] GenerateScratchRenderer Result: ${success}`);
-
         if (success && this.defaultScratchCover) {
             this.defaultScratchCover.node.active = false;
             this.calculateGridCellContainers();
         }
+    }
+
+    public ScratchAll(){
+        for (let i = 0; i < this.cellScratched.length; i++) {
+            if(this.cellScratched[i]) return;
+            this.autoScratchCell(i);
+        }
+
+        this.CheckScratchProgress();
     }
 
     private calculateGridCellContainers(): void {
@@ -187,8 +198,6 @@ export class ScratchSystem extends Component {
         this.scratchMask.setCells(cells);
 
         this.cellScratched = new Array(cells.length).fill(false);
-
-        console.log(`[ScratchSystem] Calculated ${cells.length} scratch cells.`);
     }
 
     //#region TOUCH RELATED CODE
@@ -268,6 +277,11 @@ export class ScratchSystem extends Component {
 
             this.CheckScratchProgress();
         }
+        
+        this.fragmentView.spawnFragments({
+            worldPos: worldPosition,
+            count: 1,
+        });
     }
 
     private CheckScratchProgress(): void {

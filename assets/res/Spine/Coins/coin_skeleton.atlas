@@ -1,0 +1,55 @@
+
+coin_skeleton.png
+size: 383, 78
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+coins/coin01
+  rotate: false
+  xy: 2, 2
+  size: 73, 74
+  orig: 80, 80
+  offset: 4, 2
+  index: -1
+coins/coin02
+  rotate: false
+  xy: 77, 2
+  size: 69, 74
+  orig: 80, 80
+  offset: 6, 2
+  index: -1
+coins/coin03
+  rotate: false
+  xy: 219, 2
+  size: 49, 74
+  orig: 80, 80
+  offset: 16, 2
+  index: -1
+coins/coin04
+  rotate: false
+  xy: 321, 2
+  size: 29, 74
+  orig: 80, 80
+  offset: 26, 2
+  index: -1
+coins/coin05
+  rotate: false
+  xy: 352, 2
+  size: 29, 74
+  orig: 80, 80
+  offset: 26, 2
+  index: -1
+coins/coin06
+  rotate: false
+  xy: 270, 2
+  size: 49, 74
+  orig: 80, 80
+  offset: 16, 2
+  index: -1
+coins/coin07
+  rotate: false
+  xy: 148, 2
+  size: 69, 74
+  orig: 80, 80
+  offset: 6, 2
+  index: -1

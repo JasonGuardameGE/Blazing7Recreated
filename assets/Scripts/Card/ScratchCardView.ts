@@ -39,7 +39,7 @@ export class ScratchCardView extends Component {
             return;
         }
     
-        gameManager.onPurchaseUpdateCardVisualCallbacks.push(
+        gameManager.ScratchCard.onPurchaseUpdateCardVisualCallbacks.push(
             this.setCardNumbers.bind(this),
         );
     
@@ -56,7 +56,7 @@ export class ScratchCardView extends Component {
 
             const numberSet = numbers[idx];
             numberCard.SetCardValue(numberSet.value);
-            numberCard.ToggleWinBackground(numberSet.win > 0);
+            numberCard.ToggleWinBackground(numberSet.value == 7);
 
             idx++;
         })

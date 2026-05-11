@@ -8,6 +8,7 @@ const { ccclass } = _decorator;
 export enum ScenePrefabPath {
     LOADING_SCENE = 'prefabs/Scenes/Loading-Scene',
     GAME_SCENE = 'prefabs/Scenes/Game-Scene',
+    NEW_PLAYER_SCENE = 'prefabs/Scenes/NewPlayerGuide-Scene',
 }
 
 @ccclass('SceneManager')

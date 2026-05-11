@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778033540007.1958,
+      "time": 1778229899746.4583,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -26,7 +26,7 @@
       "time": 1777527178108.1685
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI": {
-      "time": 1777964429317.6616,
+      "time": 1778055071956.3718,
       "uuid": "e68ed731-bd3a-4a87-8439-cb4faaf8ad78"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\UIRoot.ts.meta": {
@@ -40,7 +40,7 @@
       "time": 1777527178108.1685
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes": {
-      "time": 1777535522255.7966,
+      "time": 1778200739479.58,
       "uuid": "4933dc62-71ca-446a-b835-dccbad1df2d1"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading.meta": {
@@ -54,21 +54,21 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res": {
-      "time": 1777876123045.569,
+      "time": 1778135018454.552,
       "uuid": "2f4f6299-fa66-4e3a-b6cb-22ab04c55670"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingScene.ts.meta": {
       "time": 1777527178108.1685
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingScene.ts": {
-      "time": 1778053331941.197,
+      "time": 1778206739017.433,
       "uuid": "97ec7068-8675-4806-a9a4-b560f82e2ab7"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures.meta": {
       "time": 1777527178120.219
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures": {
-      "time": 1777963168450.028,
+      "time": 1778203201751.277,
       "uuid": "7923c8fd-8b4a-43c8-ac27-24e82ea658de"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Loading.meta": {
@@ -138,7 +138,7 @@
       "time": 1777527178110.1714
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine": {
-      "time": 1778044995148.1345,
+      "time": 1778207200743.2195,
       "uuid": "995ae186-b997-44ef-8aa2-0ae759b5e803"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo.meta": {
@@ -180,7 +180,7 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font": {
-      "time": 1778028339829.5493,
+      "time": 1778222332660.934,
       "uuid": "83c067d3-9976-4874-8fef-2e3acab5757d"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingBar.ts.meta": {
@@ -201,7 +201,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\GameData.ts": {
-      "time": 1778044211515.3657,
+      "time": 1778210790509.3381,
       "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\TicketItem.ts.meta": {
@@ -215,7 +215,7 @@
       "time": 1777530740140.288
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background": {
-      "time": 1777883162567.1614,
+      "time": 1778221449998.2651,
       "uuid": "e407b11e-18be-4ba4-a54e-8f2583f8d34a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\move_bg.png.meta": {
@@ -250,7 +250,7 @@
       "time": 1777534023321.0806
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\SceneManager.ts": {
-      "time": 1778051643564.7456,
+      "time": 1778218879398.3313,
       "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\ResourceManager.ts.meta": {
@@ -271,7 +271,7 @@
       "time": 1777538291008.8777
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\GameManager.ts": {
-      "time": 1778053219300.6147,
+      "time": 1778139004975.4192,
       "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs.meta": {
@@ -383,7 +383,7 @@
       "time": 1777860097806.1843
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\InnerBackground": {
-      "time": 1777861675639.0237,
+      "time": 1778141039183.5654,
       "uuid": "7b4e3104-8565-4646-9fc9-c57175ba0815"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\InnerBackground\\guigui.png.meta": {
@@ -439,7 +439,7 @@
       "time": 1777878241852.3093
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\FragmentView.ts": {
-      "time": 1777878293652.3496,
+      "time": 1778217473694.1272,
       "uuid": "4ce0e872-5d22-4533-a403-6c80a08b3c7f"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Particle.meta": {
@@ -568,25 +568,11 @@
       "time": 1776242413840.495,
       "uuid": "ed5fe30e-7530-4e09-a35c-43fbde853028"
     },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch.meta": {
-      "time": 1777883162568.161
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch": {
-      "time": 1777883174537.153,
-      "uuid": "9c0f4318-1fe8-4994-a9f0-500df7b50f84"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch\\main_cover.png.meta": {
-      "time": 1777883174578.1526
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch\\main_cover.png": {
-      "time": 1776242413862.4163,
-      "uuid": "29884944-7f51-4886-8fa3-242e5184026b"
-    },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts.meta": {
       "time": 1777940747036.3904
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts": {
-      "time": 1778050652151.557,
+      "time": 1778218776147.3855,
       "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts.meta": {
@@ -621,50 +607,22 @@
       "time": 1777961965596.7686
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card": {
-      "time": 1778044705647.4717,
+      "time": 1778123440141.521,
       "uuid": "c9d1d8d7-0853-4219-9da0-fdae0b8b573f"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCardView.ts.meta": {
       "time": 1777961984171.4214
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCardView.ts": {
-      "time": 1778050709702.9827,
+      "time": 1778133315287.2893,
       "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons.meta": {
       "time": 1777963168451.025
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons": {
-      "time": 1777964053684.2754,
+      "time": 1778228666947.7373,
       "uuid": "c8ca35ee-1c81-431d-8670-40ffb1538853"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice.meta": {
-      "time": 1777963211668.4626
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice": {
-      "time": 1777963211669.4595,
-      "uuid": "1976ccd5-0bfc-49d3-afda-dae75d0491f4"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-active.png.meta": {
-      "time": 1777963211725.4607
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-disable.png.meta": {
-      "time": 1777963211719.4602
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-inactive.png.meta": {
-      "time": 1777963211721.462
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-disable.png": {
-      "time": 1776242413894.412,
-      "uuid": "6f70802a-8dc2-4f9a-8cac-3d89cc49e2c3"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-inactive.png": {
-      "time": 1776242413895.412,
-      "uuid": "51d32e43-f3b0-4b9c-9202-3c4e9ed55c69"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-active.png": {
-      "time": 1776242413894.412,
-      "uuid": "992c3beb-3b57-45bf-a9cd-13936ba42d04"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber.meta": {
       "time": 1777963290035.435
@@ -757,62 +715,6 @@
       "time": 1776242413795.02,
       "uuid": "a7f374fc-c609-4e06-9212-07b6b452f1dd"
     },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy.meta": {
-      "time": 1777963608228.1443
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy": {
-      "time": 1777963608230.1455,
-      "uuid": "c68446f3-d2f2-4458-9353-e01aeeb0613f"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-clicked.png.meta": {
-      "time": 1777963608265.1453
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-disable.png.meta": {
-      "time": 1777963608274.1455
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-normal.png.meta": {
-      "time": 1777963608270.1816
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-clicked.png": {
-      "time": 1776242413889.4119,
-      "uuid": "17d2ebf2-ee81-40a8-b148-328593a8b579"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-normal.png": {
-      "time": 1776242413890.4119,
-      "uuid": "f04cb4f8-37a6-4de7-894a-3924c1554522"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-disable.png": {
-      "time": 1776242413890.4119,
-      "uuid": "b84d7712-dc9d-4efc-b83f-ed9d199a153b"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto.meta": {
-      "time": 1777964053684.2754
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto": {
-      "time": 1777964053686.2773,
-      "uuid": "f9280e63-f0a3-44b7-a38f-11419aec2159"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_clicked.png.meta": {
-      "time": 1777964053722.2761
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_disable.png.meta": {
-      "time": 1777964053720.2764
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_normal.png.meta": {
-      "time": 1777964053719.2756
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_normal.png": {
-      "time": 1776242413880.412,
-      "uuid": "a79c3632-1206-4aa0-87fb-808523a330f2"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_disable.png": {
-      "time": 1776242413880.412,
-      "uuid": "2427db16-245a-46c8-8e75-89f9e10f240f"
-    },
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_clicked.png": {
-      "time": 1776242413880.412,
-      "uuid": "4fb19b3f-0b90-425f-bef1-5bf0b8a5ebc8"
-    },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs.meta": {
       "time": 1777964415683.2507
     },
@@ -831,21 +733,21 @@
       "time": 1777965154755.149
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game": {
-      "time": 1777965195634.1187,
+      "time": 1778222593167.8435,
       "uuid": "f570fc6a-d95c-4b12-832d-c4b980f1fe8f"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts.meta": {
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1778053380828.555,
+      "time": 1778229638672.242,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
       "time": 1777965195641.118
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts": {
-      "time": 1777965340243.757,
+      "time": 1778229371384.3303,
       "uuid": "d58cc7ed-83e8-454c-9920-0fee57d186ad"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\NormalWinPopUp.meta": {
@@ -943,14 +845,14 @@
       "time": 1778029010298.6084
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes": {
-      "time": 1778029013840.8542,
+      "time": 1778206043992.434,
       "uuid": "c9d611f0-95cc-424d-a979-4a81beded426"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab.meta": {
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1778052316948.5437,
+      "time": 1778229643297.3203,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -964,14 +866,14 @@
       "time": 1778029022281.369
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps": {
-      "time": 1778029025427.4385,
+      "time": 1778141978100.4763,
       "uuid": "362511bc-03b4-43f0-a2e9-278bbd17fe47"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\Win-PopUp.prefab.meta": {
       "time": 1778029025437.4387
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\Win-PopUp.prefab": {
-      "time": 1778029025436.4426,
+      "time": 1778143297215.9734,
       "uuid": "3064321a-3c62-4bb7-87d6-ce34f36d1dbb"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\ClickVisualEffects.meta": {
@@ -1027,7 +929,7 @@
       "uuid": "95c97f05-13ac-4da2-a0f4-eb1c75f99849"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Api\\GameApi.ts": {
-      "time": 1778044284374.2275,
+      "time": 1778139831207.4248,
       "uuid": "214855fd-8a49-45dd-8a53-bc3feb318592"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils.meta": {
@@ -1083,7 +985,7 @@
       "time": 1778032423551.4365
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Types\\ticket.types.ts": {
-      "time": 1778032428383.6045,
+      "time": 1778138226325.4995,
       "uuid": "53d05feb-7098-432f-b968-02132248d278"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Types\\ranking.types.ts.meta": {
@@ -1176,6 +1078,461 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\PopUpManager.ts": {
       "time": 1778052161397.256,
       "uuid": "7c55f8ae-48ee-41a0-b3bc-9ba08c6d4dd6"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\WinPopUp.meta": {
+      "time": 1778055071957.3716
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\WinPopUp": {
+      "time": 1778055078133.632,
+      "uuid": "af1b48c3-70eb-4f81-98f5-516e9646257d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\WinPopUp\\WinPopUp.ts.meta": {
+      "time": 1778055078141.6335
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\WinPopUp\\WinPopUp.ts": {
+      "time": 1778144161774.0667,
+      "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCard.ts.meta": {
+      "time": 1778123440149.5176
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCard.ts": {
+      "time": 1778139545757.048,
+      "uuid": "718a8a4a-367f-499e-92b9-da686324bd76"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations.meta": {
+      "time": 1778135018455.5525
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations": {
+      "time": 1778135018455.5525,
+      "uuid": "7d37dad2-778a-40c3-9625-a43e73887617"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations\\balanceShake.anim.meta": {
+      "time": 1778135018473.5522
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations\\balanceShake.anim": {
+      "time": 1776242413782.02,
+      "uuid": "14f412a5-9c47-434f-9a76-c6185e0a63d4"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\InnerBackground\\inner-background-auto-atlas.pac.meta": {
+      "time": 1778141039189.5652
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\InnerBackground\\inner-background-auto-atlas.pac": {
+      "time": 1776237104493.9822,
+      "uuid": "40de4310-2339-4f38-8eb4-a6a6a1d626b5"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\main_cover.png.meta": {
+      "time": 1777883174578.1526
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\main_cover.png": {
+      "time": 1776242413862.4163,
+      "uuid": "29884944-7f51-4886-8fa3-242e5184026b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Backgroud-auto-atlas.pac.meta": {
+      "time": 1778141249289.3628
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Backgroud-auto-atlas.pac": {
+      "time": 1776237104493.9822,
+      "uuid": "7c92d2c5-47b2-4560-9ff3-dbdd68e1f4a9"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins.meta": {
+      "time": 1778141847083.7642
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins": {
+      "time": 1778141870959.2908,
+      "uuid": "8ff6fe21-a049-4b0e-bf17-a739ee24ce78"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.atlas.meta": {
+      "time": 1778141870970.2917
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.json.meta": {
+      "time": 1778141870980.29
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.png.meta": {
+      "time": 1778141870991.2913
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.atlas": {
+      "time": 1776242413825.1506,
+      "uuid": "faf49a6d-6b2d-4383-b996-4b20b839f9da"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.json": {
+      "time": 1776242413825.1506,
+      "uuid": "39852335-1a81-41b0-8e96-800c77a96182"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Coins\\coin_skeleton.png": {
+      "time": 1776242413825.1506,
+      "uuid": "4f7db0ff-d386-4242-89f9-a7789c25230e"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\Coin-VFX.prefab.meta": {
+      "time": 1778141978109.4736
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\Coin-VFX.prefab": {
+      "time": 1778141978108.4739,
+      "uuid": "4223244f-eb20-4024-a0ce-11cdbc8d390f"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\NewPlayerGuide.ts.meta": {
+      "time": 1778200739487.5798
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\NewPlayerGuide.ts": {
+      "time": 1778206308880.072,
+      "uuid": "daddf3e8-f3ef-4ac3-8fb7-8988c06e173d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header.meta": {
+      "time": 1778134774968.8088
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header": {
+      "time": 1778140952400.6936,
+      "uuid": "910e9302-adef-482a-b3bb-a09a0715e3f5"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\header-icons-auto-atlas.pac.meta": {
+      "time": 1778140952420.6897
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\header-icons-auto-atlas.pac": {
+      "time": 1776237104493.9822,
+      "uuid": "f9d1b6b5-f865-460c-9ea5-4141627a67c8"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\player-balance.png.meta": {
+      "time": 1778135052557.1873
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\player-balance.png": {
+      "time": 1776242413880.412,
+      "uuid": "c48091d7-ca23-467a-9133-24d98a4b9466"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\icon-back.png.meta": {
+      "time": 1778134792819.4697
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\icon-back.png": {
+      "time": 1776242413883.413,
+      "uuid": "b28dc13a-4ea5-4768-88d9-9a91cfec7e9d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\icon-menu.png.meta": {
+      "time": 1778134792821.4702
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\icon-menu.png": {
+      "time": 1776242413884.412,
+      "uuid": "47516592-5fa7-4ff1-9e41-b04700877ad5"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_clicked.png.meta": {
+      "time": 1777964053722.2761
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_clicked.png": {
+      "time": 1776242413880.412,
+      "uuid": "4fb19b3f-0b90-425f-bef1-5bf0b8a5ebc8"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_disable.png.meta": {
+      "time": 1777964053720.2764
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_disable.png": {
+      "time": 1776242413880.412,
+      "uuid": "2427db16-245a-46c8-8e75-89f9e10f240f"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_normal.png.meta": {
+      "time": 1777964053719.2756
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_normal.png": {
+      "time": 1776242413880.412,
+      "uuid": "a79c3632-1206-4aa0-87fb-808523a330f2"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-disable.png.meta": {
+      "time": 1777963608274.1455
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-disable.png": {
+      "time": 1776242413890.4119,
+      "uuid": "b84d7712-dc9d-4efc-b83f-ed9d199a153b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-normal.png.meta": {
+      "time": 1777963608270.1816
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-normal.png": {
+      "time": 1776242413890.4119,
+      "uuid": "f04cb4f8-37a6-4de7-894a-3924c1554522"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-clicked.png.meta": {
+      "time": 1777963608265.1453
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-clicked.png": {
+      "time": 1776242413889.4119,
+      "uuid": "17d2ebf2-ee81-40a8-b148-328593a8b579"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\scratchPriceBtn-disable.png.meta": {
+      "time": 1777963211719.4602
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\scratchPriceBtn-disable.png": {
+      "time": 1776242413894.412,
+      "uuid": "6f70802a-8dc2-4f9a-8cac-3d89cc49e2c3"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\scratchPriceBtn-active.png.meta": {
+      "time": 1777963211725.4607
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\scratchPriceBtn-active.png": {
+      "time": 1776242413894.412,
+      "uuid": "992c3beb-3b57-45bf-a9cd-13936ba42d04"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\scratchPriceBtn-inactive.png.meta": {
+      "time": 1777963211721.462
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\scratchPriceBtn-inactive.png": {
+      "time": 1776242413895.412,
+      "uuid": "51d32e43-f3b0-4b9c-9202-3c4e9ed55c69"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\buttons-auto-atlas.pac.meta": {
+      "time": 1778201585197.8765
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\buttons-auto-atlas.pac": {
+      "time": 1776237104493.9822,
+      "uuid": "b9bb758c-1ea1-4ef5-9411-2a0142e5f2f2"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides.meta": {
+      "time": 1778203201758.2805
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides": {
+      "time": 1778204167565.2778,
+      "uuid": "7e91991f-da88-4571-afb6-8c404344753b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\checkbox-inactive.png.meta": {
+      "time": 1778202505648.172
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\checkbox-inactive.png": {
+      "time": 1776242413866.4119,
+      "uuid": "ddbc9fac-1ce6-467a-836f-acaeef647e0d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\checkbox-active.png.meta": {
+      "time": 1778202505646.172
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\checkbox-active.png": {
+      "time": 1776242413865.4153,
+      "uuid": "91455a4f-a668-4b7e-96eb-ee24e452d999"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\PageIndicator-Empty.png.meta": {
+      "time": 1778201567774.516
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\PageIndicator-Empty.png": {
+      "time": 1776242413865.4153,
+      "uuid": "74ba4ea6-b880-47a0-bc38-eb6dfdd2a512"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\GuideContinue-Button.png.meta": {
+      "time": 1778202260034.5999
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\GuideContinue-Button.png": {
+      "time": 1776242413866.4119,
+      "uuid": "7861c743-da56-4e14-ae8b-bdd2c4b572c9"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\PageIndicator-Fill.png.meta": {
+      "time": 1778201567763.5183
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\PageIndicator-Fill.png": {
+      "time": 1776242413865.4153,
+      "uuid": "ad7263be-a6d9-47dd-9603-e727e131dcc6"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\Guides.pac.meta": {
+      "time": 1778203229135.5378
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\Guides.pac": {
+      "time": 1776237104493.9822,
+      "uuid": "224e05fc-51f3-4ddd-af92-415f9de3f45e"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_0.png.meta": {
+      "time": 1778203983397.9539
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_1.png.meta": {
+      "time": 1778204063191.204
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_0.png": {
+      "time": 1776242413867.4155,
+      "uuid": "aa240bde-df64-45a4-9c13-f336ba925b30"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_1.png": {
+      "time": 1776242413867.4155,
+      "uuid": "687cf494-4d3d-4232-a2a6-87cc2895655d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_2.png.meta": {
+      "time": 1778204104333.665
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_2.png": {
+      "time": 1776242413868.4153,
+      "uuid": "b9d69923-a992-446d-8d83-50c5cf7ccdc6"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_2_0.png.meta": {
+      "time": 1778204167602.2776
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_2_1.png.meta": {
+      "time": 1778204167625.2776
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_2_2.png.meta": {
+      "time": 1778204167604.2788
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_2_0.png": {
+      "time": 1776242413869.412,
+      "uuid": "04abbcef-3983-451c-844b-fc45a2f26cda"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_2_2.png": {
+      "time": 1776242413869.412,
+      "uuid": "1cfc1759-6aa3-4ec5-8000-625039bb1375"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_2_1.png": {
+      "time": 1776242413869.412,
+      "uuid": "7edb05ab-c102-4090-8003-9f6d91020c52"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\NewPlayerGuide-Scene.prefab.meta": {
+      "time": 1778206044004.4355
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\NewPlayerGuide-Scene.prefab": {
+      "time": 1778206044002.4375,
+      "uuid": "42ec971d-fea9-4612-bb1b-e7c72bc4ce4c"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye.meta": {
+      "time": 1778207200746.219
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye": {
+      "time": 1778207400492.5784,
+      "uuid": "5493ae3c-b9dc-4bc0-8997-4b77206f5bcc"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.atlas.meta": {
+      "time": 1778207400519.578
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.json.meta": {
+      "time": 1778207400537.5774
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.png.meta": {
+      "time": 1778207400646.5945
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.atlas.meta": {
+      "time": 1778207400524.5776
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.json.meta": {
+      "time": 1778207400526.578
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.png.meta": {
+      "time": 1778207400666.59
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.atlas": {
+      "time": 1776242413805.049,
+      "uuid": "f7ae3a7a-c7dd-40c3-acd3-3bbe50bf0fb2"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.atlas": {
+      "time": 1776242413809.0503,
+      "uuid": "90cf8f49-a96d-4af9-9bdd-fc597e04967e"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.json": {
+      "time": 1776242413809.0503,
+      "uuid": "517ed580-7f1b-43c6-ae78-857325b01971"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.json": {
+      "time": 1776242413805.049,
+      "uuid": "9c8add3f-8db1-4268-9619-9d9a3c7c1646"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.png": {
+      "time": 1776242413809.0503,
+      "uuid": "630ca1b6-6780-40b4-b226-189df22237d3"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Web Size - Dragon's Eye - Opening.png": {
+      "time": 1776242413813.7188,
+      "uuid": "48adbcb5-df4a-4499-92f8-954b14cb6064"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\DragonsEyeIntro.ts.meta": {
+      "time": 1778210269423.216
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\DragonsEyeIntro.ts": {
+      "time": 1778210852374.6348,
+      "uuid": "db94f91e-67bb-4281-9e09-4386cba8c720"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchAllBtn-clicked.png.meta": {
+      "time": 1778218161757.1665
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchAllBtn-disable.png.meta": {
+      "time": 1778218161754.1672
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchAllBtn-normal.png.meta": {
+      "time": 1778218161756.166
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchAllBtn-disable.png": {
+      "time": 1776242413891.412,
+      "uuid": "f96613df-60d0-4989-80c8-4bbbc4e61f90"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchAllBtn-normal.png": {
+      "time": 1776242413891.412,
+      "uuid": "98f6c309-5308-441e-9a94-86fb4238d781"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchAllBtn-clicked.png": {
+      "time": 1776242413892.412,
+      "uuid": "e92de56d-e857-457a-9c09-6dbb0d948804"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\pricePopUpOptions_background.png.meta": {
+      "time": 1778220221731.4104
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\pricePopUpOptions_background.png": {
+      "time": 1776242413888.412,
+      "uuid": "f4135fad-3c30-4f5b-b6bf-0f8645ece0c9"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\price_active_background.png.meta": {
+      "time": 1778221450017.2642
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\price_active_background.png": {
+      "time": 1776242413878.4153,
+      "uuid": "4562f93f-6c6f-4fa9-9a01-a30f3f2c6abb"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonum.fnt.meta": {
+      "time": 1778221782436.898
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonum.png.meta": {
+      "time": 1778221782456.8975
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonum.fnt": {
+      "time": 1776242413788.0203,
+      "uuid": "579d8443-430c-4c86-bf7c-0b5d321da770"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonum.png": {
+      "time": 1776242413789.0198,
+      "uuid": "7a27d37e-e1a0-4d0b-83e0-5609d76fcc35"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.fnt.meta": {
+      "time": 1778222332676.933
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.png.meta": {
+      "time": 1778222332688.9338
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.fnt": {
+      "time": 1776242413787.0227,
+      "uuid": "aad703ef-8329-4c27-9b41-45d43a538439"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.png": {
+      "time": 1776242413788.0203,
+      "uuid": "4fd7fcd2-5a47-4935-bc32-6a4b82a79cd6"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\PricePopUpOptions.ts.meta": {
+      "time": 1778222593174.8455
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\PricePopUpOptions.ts": {
+      "time": 1778229524903.5745,
+      "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_click.png.meta": {
+      "time": 1778228590352.7625
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_disable.png.meta": {
+      "time": 1778228590356.7627
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_normal.png.meta": {
+      "time": 1778228590359.761
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_click.png": {
+      "time": 1776242413892.412,
+      "uuid": "adb45898-46d0-41f3-b3a4-5e37c9e9d0a5"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_disable.png": {
+      "time": 1776242413892.412,
+      "uuid": "9fa0596a-15ba-443e-8c0e-33aaad53b088"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_normal.png": {
+      "time": 1776242413892.412,
+      "uuid": "20503f7f-9e2b-47fa-b464-8d4ee94aba56"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_count_bg.png.meta": {
+      "time": 1778228666966.733
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\auto_count_bg.png": {
+      "time": 1776242413879.4153,
+      "uuid": "f9762818-883f-4cc3-a27f-19bb7141552d"
     }
   },
   "missing": {
@@ -1538,6 +1895,146 @@
       "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\PopUpManager",
       "time": 1778051665606.4673,
       "removeTime": 1778051668063
+    },
+    "910e9302-adef-482a-b3bb-a09a0715e3f5": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\atlas\\Header",
+      "time": 1778140952400.6936,
+      "removeTime": 1778201418218
+    },
+    "b28dc13a-4ea5-4768-88d9-9a91cfec7e9d": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\atlas\\Header\\icon-back.png",
+      "time": 1776242413883.413,
+      "removeTime": 1778201418219
+    },
+    "47516592-5fa7-4ff1-9e41-b04700877ad5": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\atlas\\Header\\icon-menu.png",
+      "time": 1776242413884.412,
+      "removeTime": 1778201418219
+    },
+    "c48091d7-ca23-467a-9133-24d98a4b9466": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\atlas\\Header\\player-balance.png",
+      "time": 1776242413880.412,
+      "removeTime": 1778201418219
+    },
+    "9c0f4318-1fe8-4994-a9f0-500df7b50f84": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch",
+      "time": 1777883174537.153,
+      "removeTime": 1778141125113
+    },
+    "29884944-7f51-4886-8fa3-242e5184026b": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\Scratch\\main_cover.png",
+      "time": 1776242413862.4163,
+      "removeTime": 1778141125113
+    },
+    "f9d1b6b5-f865-460c-9ea5-4141627a67c8": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\atlas\\Header\\header-icons-auto-atlas.pac",
+      "time": 1776237104493.9822,
+      "removeTime": 1778201418219
+    },
+    "54d5b272-8ad2-425f-95d2-4050a04c6055": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\atlas",
+      "time": 1778201418217.1208,
+      "removeTime": 1778201421288
+    },
+    "4fb19b3f-0b90-425f-bef1-5bf0b8a5ebc8": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_clicked.png",
+      "time": 1776242413880.412,
+      "removeTime": 1778201440243
+    },
+    "2427db16-245a-46c8-8e75-89f9e10f240f": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_disable.png",
+      "time": 1776242413880.412,
+      "removeTime": 1778201440245
+    },
+    "a79c3632-1206-4aa0-87fb-808523a330f2": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto\\auto_normal.png",
+      "time": 1776242413880.412,
+      "removeTime": 1778201440246
+    },
+    "f9280e63-f0a3-44b7-a38f-11419aec2159": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Auto",
+      "time": 1778201440246.2856,
+      "removeTime": 1778201443293
+    },
+    "b84d7712-dc9d-4efc-b83f-ed9d199a153b": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-disable.png",
+      "time": 1776242413890.4119,
+      "removeTime": 1778201446858
+    },
+    "f04cb4f8-37a6-4de7-894a-3924c1554522": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-normal.png",
+      "time": 1776242413890.4119,
+      "removeTime": 1778201446859
+    },
+    "17d2ebf2-ee81-40a8-b148-328593a8b579": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy\\BuyCardBtn-clicked.png",
+      "time": 1776242413889.4119,
+      "removeTime": 1778201446860
+    },
+    "6f70802a-8dc2-4f9a-8cac-3d89cc49e2c3": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-disable.png",
+      "time": 1776242413894.412,
+      "removeTime": 1778201452931
+    },
+    "992c3beb-3b57-45bf-a9cd-13936ba42d04": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-active.png",
+      "time": 1776242413894.412,
+      "removeTime": 1778201452934
+    },
+    "51d32e43-f3b0-4b9c-9202-3c4e9ed55c69": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice\\scratchPriceBtn-inactive.png",
+      "time": 1776242413895.412,
+      "removeTime": 1778201452935
+    },
+    "c68446f3-d2f2-4458-9353-e01aeeb0613f": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\Buy",
+      "time": 1778201446860.1023,
+      "removeTime": 1778201456166
+    },
+    "1976ccd5-0bfc-49d3-afda-dae75d0491f4": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\ScratchPrice",
+      "time": 1778201452931.5225,
+      "removeTime": 1778201456167
+    },
+    "ddbc9fac-1ce6-467a-836f-acaeef647e0d": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\checkbox-inactive.png",
+      "time": 1776242413866.4119,
+      "removeTime": 1778203220796
+    },
+    "91455a4f-a668-4b7e-96eb-ee24e452d999": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\checkbox-active.png",
+      "time": 1776242413865.4153,
+      "removeTime": 1778203220809
+    },
+    "74ba4ea6-b880-47a0-bc38-eb6dfdd2a512": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\PageIndicator-Empty.png",
+      "time": 1776242413865.4153,
+      "removeTime": 1778203220810
+    },
+    "7861c743-da56-4e14-ae8b-bdd2c4b572c9": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\GuideContinue-Button.png",
+      "time": 1776242413866.4119,
+      "removeTime": 1778203220810
+    },
+    "ad7263be-a6d9-47dd-9603-e727e131dcc6": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\PageIndicator-Fill.png",
+      "time": 1776242413865.4153,
+      "removeTime": 1778203220814
+    },
+    "c6d70864-bfbc-4736-9fd5-f8f3202f55f8": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Guides\\page_1_2.png",
+      "time": 1776242413868.4153,
+      "removeTime": 1778204063150
+    },
+    "4233ef36-3f8d-41ea-9df0-cba0894e59c9": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-OptionsPopUp.fnt",
+      "time": 1776242413788.0203,
+      "removeTime": 1778221782420
+    },
+    "fa0c8db0-9ebf-4c51-a1c5-c2fe1de6852d": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-OptionsPopUp.png",
+      "time": 1776242413789.0198,
+      "removeTime": 1778221782420
     }
   }
 }
