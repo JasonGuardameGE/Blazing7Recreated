@@ -3,11 +3,13 @@
     "url": "db://assets/Game.scene",
     "value": {
       "depends": [
-        "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
+        "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a",
+        "1ba6edf3-e479-42eb-b78f-160ccddcdd12"
       ],
       "dependScripts": [
         "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb",
         "1f9054db-351f-4e7a-8020-a416167b637e",
+        "CC3eba29-7abb-723a-f7ab-ae275e2277e8",
         "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f"
       ]
     },
@@ -3311,6 +3313,11 @@
         "f9762818-883f-4cc3-a27f-19bb7141552d@6c48a"
       ]
     },
+    "versionCode": 1
+  },
+  "57f61253-d752-43c1-88c2-c2747f8fe13a": {
+    "url": "db://assets/Scripts/Data/GameUserInfo.ts",
+    "value": {},
     "versionCode": 1
   }
 }

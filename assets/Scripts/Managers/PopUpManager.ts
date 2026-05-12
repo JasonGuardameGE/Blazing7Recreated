@@ -76,9 +76,9 @@ export class PopUpManager extends Component {
 
         this._uiRoot.PopUpRoot.addChild(popup);
 
-        console.log(`[PopUpManager] New PopUp Loaded: ${popup.name}`);
-        console.log(`[PopUpManager] Added to parent: ${popup.parent?.name}`);
-        console.log(`[PopUpManager] PopUpRoot child count: ${this._uiRoot.PopUpRoot.children.length}`);
+        // console.log(`[PopUpManager] New PopUp Loaded: ${popup.name}`);
+        // console.log(`[PopUpManager] Added to parent: ${popup.parent?.name}`);
+        // console.log(`[PopUpManager] PopUpRoot child count: ${this._uiRoot.PopUpRoot.children.length}`);
 
         return popup;
     }

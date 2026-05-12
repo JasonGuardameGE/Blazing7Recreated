@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, sp, LoadingBar, Services, SceneManager, ScenePrefabPath, BaseEventListener, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, LoadingScene;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, sp, LoadingBar, Services, SceneManager, ScenePrefabPath, GameManager, BaseEventListener, logger, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, LoadingScene;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -37,6 +37,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("BaseEventListener", "../../../EventListener/BaseEventListener", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOflogger(extras) {
+    _reporterNs.report("logger", "../../../utils/logger", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -56,7 +60,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       SceneManager = _unresolved_4.default;
       ScenePrefabPath = _unresolved_4.ScenePrefabPath;
     }, function (_unresolved_5) {
-      BaseEventListener = _unresolved_5.BaseEventListener;
+      GameManager = _unresolved_5.GameManager;
+    }, function (_unresolved_6) {
+      BaseEventListener = _unresolved_6.BaseEventListener;
+    }, function (_unresolved_7) {
+      logger = _unresolved_7.default;
     }],
     execute: function () {
       _crd = true;
@@ -99,6 +107,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         initialize() {
+          this._gameManager = (_crd && Services === void 0 ? (_reportPossibleCrUseOfServices({
+            error: Error()
+          }), Services) : Services).GetService(_crd && GameManager === void 0 ? (_reportPossibleCrUseOfGameManager({
+            error: Error()
+          }), GameManager) : GameManager);
           this._sceneManager = (_crd && Services === void 0 ? (_reportPossibleCrUseOfServices({
             error: Error()
           }), Services) : Services).GetService(_crd && SceneManager === void 0 ? (_reportPossibleCrUseOfSceneManager({
@@ -131,46 +144,48 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           var _this = this;
 
           return _asyncToGenerator(function* () {
+            // console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
             try {
-              console.log("Test Start");
-              console.log("Starting Loading: " + _this.loadingBar.RealProgress);
+              yield _this._gameManager.LoadGameSetup();
 
-              _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+              _this.loadingBar.SetProgress(10);
+
+              yield _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
                 error: Error()
-              }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE); // TODO: IF GAMEDATA SKIPS NEWPLAYER GUIDE -- SKIP PRELOADING GUIDE
+              }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE);
+
+              _this.loadingBar.SetProgress(25); // TODO: IF GAMEDATA SKIPS NEWPLAYER GUIDE -- SKIP PRELOADING GUIDE
 
 
-              _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+              yield _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
                 error: Error()
-              }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE); // TODO: ADD LOADING PROGRESS EVERYTIME A SCENE IS PRE-LOADED.
-              // Note: Placeholder
+              }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE);
 
+              _this.loadingBar.SetProgress(50);
 
-              while (_this.loadingBar.RealProgress < 100) {
-                var delay = _this.randomRange(0.25, 1.0);
-
-                var increment = _this.randomRange(3, 12);
-
-                yield _this.sleep(delay);
-                var newProgressValue = Math.min(_this.loadingBar.RealProgress + increment, 100); //console.log(`[Loading] Progress: ${newProgressValue}%`);
-
-                _this.loadingBar.SetProgress(newProgressValue);
-              }
+              _this.loadingBar.SetProgress(100);
 
               if (_this.evtOnLoadingComplete) {
                 _this.evtOnLoadingComplete.invoke();
               }
             } catch (err) {
-              console.error('[Loading] startLoading failed:', err);
+              (_crd && logger === void 0 ? (_reportPossibleCrUseOflogger({
+                error: Error()
+              }), logger) : logger).error("[Loading] Error when Loading game: " + err);
             }
           })();
         }
 
         loadGameScene() {
-          //TODO: Check on GameData if player is a new Player or nah
-          this._sceneManager.LoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
-            error: Error()
-          }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE);
+          if (this._gameManager.GameUserInfo.userInfo['showOnboarding']) {
+            this._sceneManager.LoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+              error: Error()
+            }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE);
+          } else {
+            this._sceneManager.LoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
+              error: Error()
+            }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE);
+          }
         }
 
         playWinUpToSkeletonAnimation() {

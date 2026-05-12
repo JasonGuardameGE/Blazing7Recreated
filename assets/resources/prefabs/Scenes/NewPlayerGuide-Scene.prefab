@@ -3135,6 +3135,9 @@
         "__id__": 90
       }
     ],
+    "doNotShowAgain": {
+      "__id__": 124
+    },
     "pages": [
       {
         "__id__": 11
@@ -3143,6 +3146,7 @@
         "__id__": 35
       }
     ],
+    "autoSwitchInterval": 1.25,
     "_id": ""
   },
   {
@@ -3158,6 +3162,7 @@
       "__id__": 0
     },
     "fileId": "e8ZWSxdURHl6NzTr6Qv55h",
+    "instance": null,
     "targetOverrides": null
   }
 ]

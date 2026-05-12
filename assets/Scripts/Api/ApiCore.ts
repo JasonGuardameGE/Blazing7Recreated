@@ -4,6 +4,8 @@ import { ApiError, ApiErrorType } from "./ApiError";
 //import PLK from "../PLK";
 //import { MessageFlag } from "../manager/MessageFlag";
 import logger from "../utils/logger";
+import { GameManager } from "../Managers/GameManager";
+import { Services } from "../Managers/Services";
 
 let sdk: ApiService | null = null;
 let isInitialized = false;
@@ -34,21 +36,23 @@ export async function initSdk(config?: Partial<ApiConfig>): Promise<void> {
     localStorage.setItem("username", username);
   }
 
+  const gameManager = Services.GetService(GameManager);
+
   initPromise = new Promise<void>((resolve, reject) => {
     const baseConfig: ApiConfig = {
-      baseUrl: "temp",//PLK.gameData.config.http,
+      baseUrl: gameManager.GameData.config.http,
       aesKeyUrl: "/api/lotto/aes-key",
-      token: "temp",//PLK.gameData.urlParams.token,
+      token: gameManager.GameData.urlParams.token,
       loginUrl: "/api/lotto/game/open/test/login",
       userInfoApiUrl: "/api/lotto/user/customer/info",
       loginParams: {
-        gameId: "temp",//PLK.gameData.gameId,
+        gameId: gameManager.GameData.gameId,
         username: username,
         balance: "8000",
       },
       retryTimes: 0,
-      onAesKeySuccess: (data) => ("temp"),//PLK.gameData.aesKey = data.key),
-      onTokenSuccess: (data) => ("temp"),//PLK.gameData.token = data.token),
+      onAesKeySuccess: (data) => (gameManager.GameData.aesKey = data.key),
+      onTokenSuccess: (data) => (gameManager.GameData.token = data.token),
       ...config,
     };
 
@@ -59,10 +63,8 @@ export async function initSdk(config?: Partial<ApiConfig>): Promise<void> {
       isInitialized = true;
       resolve();
 
-      // 获取用户信息
-      //PLK.userInfo.userInfo = sdk.getUserInfoData();
-
-      //PLK.userInfo.userInfo.aliasName = sdk.getUserInfoData().aliasName;
+      gameManager.GameUserInfo.userInfo = sdk.getUserInfoData();
+      gameManager.GameUserInfo.userInfo.aliasName = sdk.getUserInfoData().aliasName;
 
       // 执行排队请求
       requestQueue.forEach((cb) => cb());

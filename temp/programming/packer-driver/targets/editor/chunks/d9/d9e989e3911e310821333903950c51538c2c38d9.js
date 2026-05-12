@@ -30,15 +30,48 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
       _export("GameData", GameData = (_dec = ccclass('GameData'), _dec(_class = class GameData {
         constructor() {
+          // DEVICE TYPE
           this._deviceType = "h5";
+          // CURRENT TICKET DATA
           this._currentTicketData = null;
-          // bigAmount
+          // GAME LIST
+          this._gameList = [];
+          // GAME ID
+          this._gameId = "2000802906231672834";
+          // GameName
+          this._gameName = "Go Bananas";
+          // CurrentPlayType
+          this._currentPlayType = "GO_BANANAS2";
+          // Last Win
+          this._lastWinAmount = 0;
+          // Remaining Cards
+          this._remainingCardCount = 0;
+          // Card Price
+          this._cardPrice = 20;
+          // Auto Play
+          this._isAutoPlay = true;
+          // Price List
+          this._gamePriceList = [];
+          // Unit Price
+          this._unitPrice = 20;
+          // Token
+          this._token = "";
+          // aesKey
+          this._aesKey = "";
+          // CONFIG
+          this._config = null;
+          this._onlineConfig = null;
+          this._productId = "GV1";
+          this._urlParams = null;
+          this._showBackBtn = true;
+          this.topItemDelay = 50;
+          this.contentItemDelay = 50;
+          this.topToContentDelay = 100;
+          //#region  big and top Amounts
           //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
           this._bigAmount = "100,2000";
-          // totalAmount
           //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
           this._topAmount = "20,40";
-          this._gameId = "2000802906231672834";
         }
 
         get DeviceType() {
@@ -57,12 +90,217 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           return this._currentTicketData;
         }
 
+        set gameList(value) {
+          this._gameList = value;
+        }
+
+        get gameList() {
+          return this._gameList;
+        }
+
         set gameId(value) {
           this._gameId = value;
         }
 
         get gameId() {
           return this._gameId;
+        }
+
+        set gameName(value) {
+          this._gameName = value;
+        }
+
+        get gameName() {
+          return this._gameName;
+        }
+
+        set currentPlayType(value) {
+          this._currentPlayType = value;
+        }
+
+        get currentPlayType() {
+          // 当前游戏id对应的玩法
+          this._gameList.forEach(game => {
+            if (game.gameId === this._gameId) {
+              this._currentPlayType = game.playType;
+            }
+          });
+
+          return this._currentPlayType;
+        }
+
+        set lastWinAmount(value) {
+          this._lastWinAmount = value;
+        }
+
+        get lastWinAmount() {
+          return this._lastWinAmount;
+        }
+
+        set remainingCardCount(value) {
+          this._remainingCardCount = value;
+        }
+
+        get remainingCardCount() {
+          return this._remainingCardCount;
+        }
+
+        set cardPrice(value) {
+          this._cardPrice = value;
+        }
+
+        get cardPrice() {
+          return this._cardPrice;
+        }
+
+        set isAutoPlay(value) {
+          this._isAutoPlay = value;
+        }
+
+        get isAutoPlay() {
+          return this._isAutoPlay;
+        }
+
+        set gamePriceList(value) {
+          this._gamePriceList = value;
+        }
+
+        get gamePriceList() {
+          return this._gamePriceList;
+        }
+
+        set unitPrice(value) {
+          this._unitPrice = value != null ? value : 20;
+        }
+
+        get unitPrice() {
+          return this._unitPrice;
+        }
+
+        set token(value) {
+          this._token = value;
+        }
+
+        get token() {
+          return this._token;
+        }
+
+        set aesKey(value) {
+          this._aesKey = value;
+        }
+
+        get aesKey() {
+          return this._aesKey;
+        }
+
+        get config() {
+          return this._config;
+        }
+
+        get urlParams() {
+          return this._urlParams;
+        }
+
+        initConfig() {
+          this.getUrlParams();
+          const win = window;
+          this._config = {
+            http: "https://lotto-gateway.gelotto-test.com",
+            ws: "wss://lotto-scratch-websocket.gelotto-test.com/scratch/ws/lotto/websocket/",
+            cdn: "https://minio-api.complexdevops.com/common-base/scratch/",
+            sensors: "https://dev-8106.digiplus-bigdata.com/sa?project=BingoPlus",
+            staticCdn: "https://detcslitqpsmv.cloudfront.net/img.gurl.ph/",
+            otherGamePath: "https://scratch.gelotto-test.com/"
+          };
+
+          if (win.getAppConfig) {
+            this._config = win.getAppConfig();
+          }
+
+          this.getGameConfig();
+        }
+
+        async getGameConfig() {
+          var _config$back_button_c;
+
+          if (this.isLocal()) {
+            this._config.menuBundleRemoteUrl = "menu-bundle";
+            this._showBackBtn = true;
+            this.replaceConfig();
+            return;
+          }
+
+          const cdn = this._config.cdn.split("/scratch/")[0] + "/scratch/";
+          const config = await this.loadRemoteJson(window.location.origin + "/version");
+          this._config.menuBundleRemoteUrl = cdn + "menubundleremote/" + config.menu + "/dist/remote/menu-bundle";
+          const hideBackBtn = (config == null || (_config$back_button_c = config.back_button_config) == null ? void 0 : _config$back_button_c.hide) || [];
+          hideBackBtn.includes(this._productId) ? this._showBackBtn = false : this._showBackBtn = true;
+          this._onlineConfig = config;
+          this.replaceConfig();
+          return config;
+        }
+
+        getUrlParams() {
+          //const urlParams = new URLSearchParams(window.location.search);
+          const urlParams = new URLSearchParams("?token=eyJhbGciOiJSUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_y3KSw6CMBSF4b10zIB76euyAdSBYWCcmtJWg5GWlJJojHu3QWcn__nebE7RrTbvHWtZdwZWsUe8jeFoJv8rl4NZYuhOfsnltOuS4-TT5gVoAo4Np7oWxKWSzUZS8sG-Cuh3fQn3PJZNZJwbwEthgcvBDmicRuJXI5AUqgJHk1kLSmkuqUFdMf-c_4E0oP58AZ1zKOavAAAA.WaoKDck3XAVEzox_QRps0tTT6iJcdoXTgNFrrfAqvfZ_jqFQ_K_B2QTqg5xbCA0037rAY2rBUfDWeIyD_QGtavWVeRl0EsDxGP8svoGurlu-WTsDLxfgdtZCvve-oxb13bVMd33OEpqMOl1tTMzDpjOz_F8enI3Ozni0zZxY6Y7W8WuX_fumCmMmiwWWfL2sAqAtx06j_fqmgHuWMsv3X5gl6BwZ7x5vOmz1Obl4ToeBnev7ceEw1TrYEhw_N2YVRyyMnTb1YbZjHrzXvqIkKia_PekbgbqFa7it3v3LIzDfirKGOCkkP_HRV4QguMhWmCDdxNL5OSoQcJFC6xyMCA&gameId=2000802906231672834&lang=en-US&productId=GV1&gameName=BLAZING%207s&playType=BLAZING_7S_SCRATCH&callbackUrl=https://pilot.gelotto-test.com");
+          const token = urlParams.get("token");
+          const gameId = urlParams.get("gameId");
+          const lang = urlParams.get("lang");
+          const callbackUrl = urlParams.get("callbackUrl");
+          const playType = urlParams.get("playType");
+          const topItemDelay = urlParams.get("topItemDelay");
+          const contentItemDelay = urlParams.get("contentItemDelay");
+          const topToContentDelay = urlParams.get("topToContentDelay");
+          const productId = urlParams.get("productId") || "GV1";
+          this._productId = productId;
+
+          if (topItemDelay) {
+            this.topItemDelay = Number(topItemDelay);
+          }
+
+          if (contentItemDelay) {
+            this.contentItemDelay = Number(contentItemDelay);
+          }
+
+          if (topToContentDelay) {
+            this.topToContentDelay = Number(topToContentDelay);
+          }
+
+          if (gameId) {
+            this.gameId = gameId;
+          }
+
+          this._urlParams = {
+            token,
+            gameId,
+            lang,
+            callbackUrl,
+            playType,
+            productId
+          }; // 如果playType不为空，则设置当前游戏玩法
+
+          if (playType) {
+            this.currentPlayType = playType;
+          }
+
+          if (gameId) {
+            this.gameId = gameId;
+          }
+
+          if (token) {
+            this.token = token;
+          }
+        }
+
+        replaceConfig() {
+          for (const key in this._config) {
+            this._config[key] = this.removeTrailingSlash(this._config[key]);
+          }
+        }
+
+        initTopAndBigAmount(bigAmount, topAmount) {
+          this._bigAmount = bigAmount;
+          this._topAmount = topAmount;
         }
 
         get BigAmount() {
@@ -79,6 +317,55 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
         set TopAmount(value) {
           this._topAmount = value;
+        } //#endregion
+
+
+        removeTrailingSlash(str) {
+          if (!str) return str;
+          return str.endsWith('/') ? str.slice(0, -1) : str;
+        }
+
+        isLocal() {
+          if (typeof window === "undefined") {
+            return false;
+          }
+
+          const host = window.location.hostname;
+          const port = window.location.port; // localhost or 127.0.0.1
+
+          if (host === "localhost" || host === "127.0.0.1") {
+            return true;
+          } // IPv6 localhost
+
+
+          if (host === "::1") {
+            return true;
+          } // 10.x.x.x 私有 IP 段
+
+
+          if (/^10\.\d+\.\d+\.\d+$/.test(host)) {
+            return true;
+          } // 192.168.x.x 私有 IP 段
+
+
+          if (/^192\.168\.\d+\.\d+$/.test(host)) {
+            return true;
+          } // 172.16.0.0 – 172.31.255.255 私有 IP 段
+
+
+          if (/^172\.(1[6-9]|2\d|3[0-1])\.\d+\.\d+$/.test(host)) {
+            return true;
+          }
+
+          return false;
+        }
+
+        async loadRemoteJson(url) {
+          const res = await fetch(url, {
+            cache: 'no-store'
+          });
+          if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+          return await res.json();
         }
 
       }) || _class));

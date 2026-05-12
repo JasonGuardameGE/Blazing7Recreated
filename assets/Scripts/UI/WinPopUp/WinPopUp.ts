@@ -231,7 +231,13 @@ export class WinPopUp extends Component {
             return;
         }
 
+        this.SkipBalanceAnimation();
+
         this.node.active = false;
+    }
+
+    private SkipBalanceAnimation(): void {
+        EventHandler.emitEvents(this.onCoinReachBalanceCallback, true);
     }
 
     private CompleteIncrementLabel(): void {
@@ -410,7 +416,7 @@ export class WinPopUp extends Component {
                         ),
                 )
                 .call(() => {
-                    EventHandler.emitEvents(this.onCoinReachBalanceCallback);
+                    EventHandler.emitEvents(this.onCoinReachBalanceCallback, false);
                     
                     coin.active = false;
                     coin.setPosition(originalPosition);

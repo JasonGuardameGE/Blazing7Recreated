@@ -15,6 +15,8 @@ import SceneManager, { ScenePrefabPath } from '../../../Managers/SceneManager';
 import { GameManager } from '../../../Managers/GameManager';
 import { BaseEventListener } from '../../../EventListener/BaseEventListener';
 import { PopUpManager } from '../../../Managers/PopUpManager';
+import ApiManager from '../../../Api/ApiManager';
+import logger from '../../../utils/logger';
 
 const { ccclass, property } = _decorator;
 
@@ -46,6 +48,7 @@ export class LoadingScene extends Component {
     }
 
     private initialize() : void{
+        this._gameManager = Services.GetService(GameManager);
         this._sceneManager = Services.GetService(SceneManager);
         this._sceneManager.SetCurrentScene(this.node);
 
@@ -70,42 +73,32 @@ export class LoadingScene extends Component {
     }
 
     private async startLoading(): Promise<void> {
-        try {
-            console.log(`Test Start`);
-            console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
+        // console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
 
-            this._sceneManager.PreLoadScene(ScenePrefabPath.GAME_SCENE);
-
+        try{
+            await this._gameManager.LoadGameSetup();
+            this.loadingBar.SetProgress(10);
+            await this._sceneManager.PreLoadScene(ScenePrefabPath.GAME_SCENE);                
+            this.loadingBar.SetProgress(25);
             // TODO: IF GAMEDATA SKIPS NEWPLAYER GUIDE -- SKIP PRELOADING GUIDE
-            this._sceneManager.PreLoadScene(ScenePrefabPath.NEW_PLAYER_SCENE);
+            await this._sceneManager.PreLoadScene(ScenePrefabPath.NEW_PLAYER_SCENE);
+            this.loadingBar.SetProgress(50);
 
-
-            // TODO: ADD LOADING PROGRESS EVERYTIME A SCENE IS PRE-LOADED.
-
-            // Note: Placeholder
-            while (this.loadingBar.RealProgress < 100) {
-                const delay = this.randomRange(0.25, 1.0);
-                const increment = this.randomRange(3, 12);
-                await this.sleep(delay);
-    
-                const newProgressValue = Math.min(this.loadingBar.RealProgress + increment, 100);
-                //console.log(`[Loading] Progress: ${newProgressValue}%`);
-
-                this.loadingBar.SetProgress(newProgressValue);
-            }
-
-
+            this.loadingBar.SetProgress(100);
             if(this.evtOnLoadingComplete){
                 this.evtOnLoadingComplete.invoke();
-            }
-        } catch (err) {
-            console.error('[Loading] startLoading failed:', err);
+            }    
+        }catch(err){
+            logger.error(`[Loading] Error when Loading game: ${err}`);
         }
     }
 
     private loadGameScene(){
-        //TODO: Check on GameData if player is a new Player or nah
-        this._sceneManager.LoadScene(ScenePrefabPath.NEW_PLAYER_SCENE);
+        if(this._gameManager.GameUserInfo.userInfo['showOnboarding']){
+            this._sceneManager.LoadScene(ScenePrefabPath.NEW_PLAYER_SCENE);
+        }else{
+            this._sceneManager.LoadScene(ScenePrefabPath.GAME_SCENE);
+        }
     }
 
     private playWinUpToSkeletonAnimation(): void {

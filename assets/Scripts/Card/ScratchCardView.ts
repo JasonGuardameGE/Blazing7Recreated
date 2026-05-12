@@ -27,9 +27,6 @@ export class ScratchCardView extends Component {
 
     private isPlayingIn: boolean = false;
 
-    protected start(): void {
-        this.SetupEvents();
-    }
     
     public SetupEvents(): void {
         const gameManager = Services.GetService(GameManager);
@@ -38,7 +35,9 @@ export class ScratchCardView extends Component {
             console.error('[ScratchCardView] GameManager service not found');
             return;
         }
-    
+
+        console.log('[ScratchCardView] Binding Events');
+
         gameManager.ScratchCard.onPurchaseUpdateCardVisualCallbacks.push(
             this.setCardNumbers.bind(this),
         );
@@ -50,6 +49,9 @@ export class ScratchCardView extends Component {
     }
     
     public setCardNumbers(numbers: Array<{value: number, win: number}>){
+
+        console.log('[ScratchCardView] Scratch Numbers:', numbers);
+
         let idx = 0;
         this.numberCards.forEach( (numberCard) =>{
             numberCard.Reset();

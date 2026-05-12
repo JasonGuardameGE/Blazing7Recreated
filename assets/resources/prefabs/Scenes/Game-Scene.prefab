@@ -16127,7 +16127,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Label",
+    "_name": "balance-Label",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -16982,6 +16982,9 @@
     },
     "balanceShake": {
       "__id__": 689
+    },
+    "playerBalance": {
+      "__id__": 701
     },
     "combinationGuide": {
       "__id__": 452

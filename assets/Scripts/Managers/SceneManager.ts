@@ -37,8 +37,6 @@ export default class SceneManager {
 
         const node = await this._resourceManager.LoadPrefab(scenePrefabPath);
         this._preLoadSceneNodes.set(scenePrefabPath, node);
-
-        console.log(`[SceneManager] Scene Preloaded: ${scenePrefabPath}`);
     }
 
     public async LoadScene(scenePrefabPath: ScenePrefabPath): Promise<Node> {
@@ -56,8 +54,6 @@ export default class SceneManager {
             console.error('[SceneManager] SceneRoot is invalid/destroyed.');
             return null;
         }
-
-        console.log(`[SceneManager] Loading Scene: ${scenePrefabPath}`);
 
         let nextScene: Node = null;
 
@@ -84,9 +80,9 @@ export default class SceneManager {
         this._uiRoot.SceneRoot.addChild(nextScene);
         this.SetCurrentScene(nextScene);
 
-        console.log(`[SceneManager] New Scene Loaded: ${nextScene.name}`);
-        console.log(`[SceneManager] Added to parent: ${nextScene.parent?.name}`);
-        console.log(`[SceneManager] SceneRoot child count: ${this._uiRoot.SceneRoot.children.length}`);
+        // console.log(`[SceneManager] New Scene Loaded: ${nextScene.name}`);
+        // console.log(`[SceneManager] Added to parent: ${nextScene.parent?.name}`);
+        // console.log(`[SceneManager] SceneRoot child count: ${this._uiRoot.SceneRoot.children.length}`);
 
         return nextScene;
     }
