@@ -597,6 +597,11 @@
         "93c6e79d-119b-4c72-8fd0-3955a619ed63@f9941",
         "80b78843-1438-4ff4-aa41-23df95115588@f9941",
         "29884944-7f51-4886-8fa3-242e5184026b@f9941",
+        "5b0517d5-1480-40d1-9e19-68518d57a70a@f9941",
+        "5ecab716-3713-45b0-adfc-726e5a8d78fe",
+        "2fb6756a-3782-49c3-a03b-f3596778e557",
+        "fd9236a2-d2b0-4210-8fb4-39d716421657@f9941",
+        "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829@f9941",
         "cafaffcd-7863-4e25-aa73-2907f3e2a174@f9941",
         "f1d9c7ba-00b4-4ee8-974c-98598dd69be1@f9941",
         "a91f5cb9-ca4f-431f-a25f-a6c8c1ee74d5@f9941",
@@ -646,6 +651,7 @@
         "4b09c795-a9dd-402a-9067-d61794713802",
         "4ce0e872-5d22-4533-a403-6c80a08b3c7f",
         "57de9ce9-f649-41bf-8555-4d178229c5c3",
+        "1e8430ea-3fe5-4505-97db-5411dc7febca",
         "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9",
         "bd992824-ad58-475c-bac3-5204ed83529c",
         "6b853320-3c93-406f-bb74-0fc392874c78",
@@ -22481,6 +22487,134 @@
     "value": {
       "depends": [
         "27a8cbb0-c908-427b-afaf-5f8e3d1c28e0@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5b0517d5-1480-40d1-9e19-68518d57a70a": {
+    "url": "db://assets/res/Textures/Card/help.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5b0517d5-1480-40d1-9e19-68518d57a70a@6c48a": {
+    "url": "db://assets/res/Textures/Card/help.png@6c48a",
+    "value": {
+      "depends": [
+        "5b0517d5-1480-40d1-9e19-68518d57a70a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5b0517d5-1480-40d1-9e19-68518d57a70a@f9941": {
+    "url": "db://assets/res/Textures/Card/help.png@f9941",
+    "value": {
+      "depends": [
+        "5b0517d5-1480-40d1-9e19-68518d57a70a@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5ecab716-3713-45b0-adfc-726e5a8d78fe": {
+    "url": "db://assets/res/animations/help.anim",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "1e8430ea-3fe5-4505-97db-5411dc7febca": {
+    "url": "db://assets/Scripts/UI/VisualFx/HelpView.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "fd9236a2-d2b0-4210-8fb4-39d716421657": {
+    "url": "db://assets/res/Textures/Card/Card ID.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829": {
+    "url": "db://assets/res/Textures/Card/Card Prize.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "fd9236a2-d2b0-4210-8fb4-39d716421657@6c48a": {
+    "url": "db://assets/res/Textures/Card/Card ID.png@6c48a",
+    "value": {
+      "depends": [
+        "fd9236a2-d2b0-4210-8fb4-39d716421657"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829@6c48a": {
+    "url": "db://assets/res/Textures/Card/Card Prize.png@6c48a",
+    "value": {
+      "depends": [
+        "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fd9236a2-d2b0-4210-8fb4-39d716421657@f9941": {
+    "url": "db://assets/res/Textures/Card/Card ID.png@f9941",
+    "value": {
+      "depends": [
+        "fd9236a2-d2b0-4210-8fb4-39d716421657@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829@f9941": {
+    "url": "db://assets/res/Textures/Card/Card Prize.png@f9941",
+    "value": {
+      "depends": [
+        "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a61aa42a-702c-48ce-9a9d-e3956043018b": {
+    "url": "db://assets/res/Font/font-red.fnt",
+    "value": {
+      "depends": [
+        "647b6016-d7bb-4488-b2a2-ce70a1237f13@f9941"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fe08f844-5b37-496f-9181-fde1c065be9d": {
+    "url": "db://assets/res/Font/FontsFree-Net-SFProText-Bold.ttf",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "647b6016-d7bb-4488-b2a2-ce70a1237f13": {
+    "url": "db://assets/res/Font/font-red.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "647b6016-d7bb-4488-b2a2-ce70a1237f13@6c48a": {
+    "url": "db://assets/res/Font/font-red.png@6c48a",
+    "value": {
+      "depends": [
+        "647b6016-d7bb-4488-b2a2-ce70a1237f13"
+      ]
+    },
+    "versionCode": 1
+  },
+  "647b6016-d7bb-4488-b2a2-ce70a1237f13@f9941": {
+    "url": "db://assets/res/Font/font-red.png@f9941",
+    "value": {
+      "depends": [
+        "647b6016-d7bb-4488-b2a2-ce70a1237f13@6c48a"
       ]
     },
     "versionCode": 1

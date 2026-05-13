@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778564216424.926,
+      "time": 1778642422664.5613,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -68,7 +68,7 @@
       "time": 1777527178120.219
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures": {
-      "time": 1778203201751.277,
+      "time": 1778648623544.708,
       "uuid": "7923c8fd-8b4a-43c8-ac27-24e82ea658de"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Loading.meta": {
@@ -180,7 +180,7 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font": {
-      "time": 1778222332660.934,
+      "time": 1778648838694.316,
       "uuid": "83c067d3-9976-4874-8fef-2e3acab5757d"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingBar.ts.meta": {
@@ -327,7 +327,7 @@
       "time": 1777855356092.7192
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx": {
-      "time": 1778629570331.7998,
+      "time": 1778644665640.237,
       "uuid": "1fdae46d-fc57-473c-a311-0a1a11474a05"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\DragonBreathing.ts.meta": {
@@ -362,7 +362,7 @@
       "time": 1777863842714.6292
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card": {
-      "time": 1778048996476.8984,
+      "time": 1778648640249.8032,
       "uuid": "2ba57850-fbf7-430b-be5c-4931e98a9b8e"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\Combinations.png.meta": {
@@ -614,7 +614,7 @@
       "time": 1777961984171.4214
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCardView.ts": {
-      "time": 1778485493244.5776,
+      "time": 1778649942435.2937,
       "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons.meta": {
@@ -726,7 +726,7 @@
       "time": 1777964423011.6802
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs\\SingleButton.ts": {
-      "time": 1778635285448.7488,
+      "time": 1778641915864.6904,
       "uuid": "19973e86-b230-4abf-b825-3c1207bddac5"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game.meta": {
@@ -740,7 +740,7 @@
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1778630876786.577,
+      "time": 1778646127017.2048,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
@@ -852,7 +852,7 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1778635310298.273,
+      "time": 1778650000922.0432,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -1104,7 +1104,7 @@
       "time": 1778135018455.5525
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations": {
-      "time": 1778135018455.5525,
+      "time": 1778644534478.4612,
       "uuid": "7d37dad2-778a-40c3-9625-a43e73887617"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations\\balanceShake.anim.meta": {
@@ -9177,6 +9177,62 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\texture\\popupcard\\bg\\PikaPika.png": {
       "time": 1778641606115.628,
       "uuid": "5f9039f9-963c-478a-91c3-29049131e0cf"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\help.png.meta": {
+      "time": 1778644349251.1262
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\help.png": {
+      "time": 1776242413883.413,
+      "uuid": "5b0517d5-1480-40d1-9e19-68518d57a70a"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations\\help.anim.meta": {
+      "time": 1778644534532.458
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations\\help.anim": {
+      "time": 1776242413783.02,
+      "uuid": "5ecab716-3713-45b0-adfc-726e5a8d78fe"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\HelpView.ts.meta": {
+      "time": 1778644665647.234
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\HelpView.ts": {
+      "time": 1778645967519.9175,
+      "uuid": "1e8430ea-3fe5-4505-97db-5411dc7febca"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\Card ID.png.meta": {
+      "time": 1778648640299.5166
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\Card Prize.png.meta": {
+      "time": 1778648640303.5173
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\Card ID.png": {
+      "time": 1776242413875.412,
+      "uuid": "fd9236a2-d2b0-4210-8fb4-39d716421657"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Card\\Card Prize.png": {
+      "time": 1776242413875.412,
+      "uuid": "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.fnt.meta": {
+      "time": 1778648838745.315
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.png.meta": {
+      "time": 1778648838757.316
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\FontsFree-Net-SFProText-Bold.ttf.meta": {
+      "time": 1778648838738.3127
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\FontsFree-Net-SFProText-Bold.ttf": {
+      "time": 1776242413787.0227,
+      "uuid": "fe08f844-5b37-496f-9181-fde1c065be9d"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.fnt": {
+      "time": 1776242413793.02,
+      "uuid": "a61aa42a-702c-48ce-9a9d-e3956043018b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.png": {
+      "time": 1776242413793.02,
+      "uuid": "647b6016-d7bb-4488-b2a2-ce70a1237f13"
     }
   },
   "missing": {

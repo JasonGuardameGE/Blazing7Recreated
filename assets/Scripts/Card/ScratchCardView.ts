@@ -1,4 +1,4 @@
-import { _decorator, CCFloat, Component, Node, EventHandler, Vec3 } from 'cc';
+import { _decorator, CCFloat, Component, Node, EventHandler, Vec3, Label } from 'cc';
 import { NumberCardView } from './NumberCardView';
 import { Services } from '../Managers/Services';
 import { GameManager } from '../Managers/GameManager';
@@ -25,20 +25,28 @@ export class ScratchCardView extends Component {
     @property([NumberCardView])
     private numberCards: NumberCardView[] = [];
 
-    private isPlayingIn: boolean = false;
+    @property(Label)
+    cardPrice: Label = null;
 
+    @property(Label)
+    cardNumber: Label = null;
+
+    private isPlayingIn: boolean = false;
+    private _gameManager: GameManager;
     
     public SetupEvents(): void {
-        const gameManager = Services.GetService(GameManager);
+        if(!this._gameManager){
+            this._gameManager = Services.GetService(GameManager);
+        }
     
-        if (!gameManager) {
+        if (!this._gameManager) {
             console.error('[ScratchCardView] GameManager service not found');
             return;
         }
 
         console.log('[ScratchCardView] Binding Events');
 
-        gameManager.ScratchCard.onPurchaseUpdateCardVisualCallbacks.push(
+        this._gameManager.ScratchCard.onPurchaseUpdateCardVisualCallbacks.push(
             this.setCardNumbers.bind(this),
         );
     
@@ -62,6 +70,23 @@ export class ScratchCardView extends Component {
 
             idx++;
         })
+
+        // Set Card Info
+        this.SetCardInfo();
+    }
+
+    public SetCardInfo(){
+        if(!this._gameManager){
+            this._gameManager = Services.GetService(GameManager);
+        }
+
+        if(this._gameManager.GameData.TicketData.currentTicket){
+            this.cardPrice.string = `₱${this._gameManager.GameData.TicketData.currentTicket.unitPrice.toString()}`;
+            this.cardNumber.string = `Card NO ${this._gameManager.GameData.TicketData.currentTicket.cardId}`;    
+        }else{
+            this.cardPrice.string = ``;
+            this.cardNumber.string = ``;
+        }
     }
 
     public StartCardPlayIn() {

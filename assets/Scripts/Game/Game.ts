@@ -11,6 +11,7 @@ import { WinPopUp } from '../UI/WinPopUp/WinPopUp';
 import { SettleRes } from '../Types';
 import { PricePopUpOptions } from './PricePopUpOptions';
 import { AudioManager } from '../Managers/AudioManager';
+import { HelpView } from '../UI/VisualFx/HelpView';
 
 const { ccclass, property } = _decorator;
 
@@ -262,6 +263,10 @@ export class Game extends Component {
     }
 
     private showPriceOptions(): void {
+        if(this.gameOptions.setPriceButton.disabled){
+            return;
+        }
+
         if (this.autoAttemptCount > 0) {
             return;
         }
@@ -270,6 +275,10 @@ export class Game extends Component {
     }
 
     private onAutoButtonClicked(): void {
+        if(this.gameOptions.setAutoButton.disabled){
+            return;
+        }
+
         if (this.autoAttemptOptions.node.active) {
             this.autoAttemptOptions.node.active = false;
             this.setAutoValue();

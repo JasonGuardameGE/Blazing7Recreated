@@ -253,6 +253,7 @@ export class SingleButton extends Component {
             return;
         }
     
+        
         Tween.stopAllByTarget(this.blinker);
     
         const shouldBlink =
