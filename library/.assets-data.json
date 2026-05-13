@@ -599,6 +599,10 @@
         "29884944-7f51-4886-8fa3-242e5184026b@f9941",
         "5b0517d5-1480-40d1-9e19-68518d57a70a@f9941",
         "5ecab716-3713-45b0-adfc-726e5a8d78fe",
+        "9469d6ef-74f7-4dfd-ab1d-0f1ee70776ba",
+        "f2a4b21e-d329-4c31-8dee-b52b0331c65e@f9941",
+        "1d5cc946-fb0e-4bb2-ab9b-fba45c1b2e31",
+        "86906680-8616-447a-85cd-1730b5224e0e@f9941",
         "2fb6756a-3782-49c3-a03b-f3596778e557",
         "fd9236a2-d2b0-4210-8fb4-39d716421657@f9941",
         "8ab86d62-5cf9-42ad-8507-fdc3f2dcb829@f9941",
@@ -652,6 +656,7 @@
         "4ce0e872-5d22-4533-a403-6c80a08b3c7f",
         "57de9ce9-f649-41bf-8555-4d178229c5c3",
         "1e8430ea-3fe5-4505-97db-5411dc7febca",
+        "0336399e-8d15-481b-adaa-d281d22d0c48",
         "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9",
         "bd992824-ad58-475c-bac3-5204ed83529c",
         "6b853320-3c93-406f-bb74-0fc392874c78",
@@ -22617,6 +22622,146 @@
         "647b6016-d7bb-4488-b2a2-ce70a1237f13@6c48a"
       ]
     },
+    "versionCode": 1
+  },
+  "86906680-8616-447a-85cd-1730b5224e0e": {
+    "url": "db://assets/res/Textures/Header/Last Win BG.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "86906680-8616-447a-85cd-1730b5224e0e@6c48a": {
+    "url": "db://assets/res/Textures/Header/Last Win BG.png@6c48a",
+    "value": {
+      "depends": [
+        "86906680-8616-447a-85cd-1730b5224e0e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "86906680-8616-447a-85cd-1730b5224e0e@f9941": {
+    "url": "db://assets/res/Textures/Header/Last Win BG.png@f9941",
+    "value": {
+      "depends": [
+        "86906680-8616-447a-85cd-1730b5224e0e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "bfae5ce8-22ff-4d82-893b-021ff90d6be1": {
+    "url": "db://assets/res/Spine/LastWin",
+    "value": {},
+    "versionCode": 1
+  },
+  "80b693ad-f4ee-456a-b526-cb568ba9bfaa": {
+    "url": "db://assets/res/Spine/LastWin/blazing7s-lastwin_skeleton.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9469d6ef-74f7-4dfd-ab1d-0f1ee70776ba": {
+    "url": "db://assets/res/Spine/LastWin/blazing7s-lastwin_skeleton.json",
+    "value": {
+      "depends": [
+        "80b693ad-f4ee-456a-b526-cb568ba9bfaa@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c01be910-a9c3-445b-b40d-7328349bd8d9": {
+    "url": "db://assets/res/Spine/LastWin/blazing7s-lastwin_skeleton.atlas",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "80b693ad-f4ee-456a-b526-cb568ba9bfaa@6c48a": {
+    "url": "db://assets/res/Spine/LastWin/blazing7s-lastwin_skeleton.png@6c48a",
+    "value": {
+      "depends": [
+        "80b693ad-f4ee-456a-b526-cb568ba9bfaa"
+      ]
+    },
+    "versionCode": 1
+  },
+  "80b693ad-f4ee-456a-b526-cb568ba9bfaa@f9941": {
+    "url": "db://assets/res/Spine/LastWin/blazing7s-lastwin_skeleton.png@f9941",
+    "value": {
+      "depends": [
+        "80b693ad-f4ee-456a-b526-cb568ba9bfaa@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f2a4b21e-d329-4c31-8dee-b52b0331c65e": {
+    "url": "db://assets/res/Textures/Header/Last Win.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f2a4b21e-d329-4c31-8dee-b52b0331c65e@6c48a": {
+    "url": "db://assets/res/Textures/Header/Last Win.png@6c48a",
+    "value": {
+      "depends": [
+        "f2a4b21e-d329-4c31-8dee-b52b0331c65e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f2a4b21e-d329-4c31-8dee-b52b0331c65e@f9941": {
+    "url": "db://assets/res/Textures/Header/Last Win.png@f9941",
+    "value": {
+      "depends": [
+        "f2a4b21e-d329-4c31-8dee-b52b0331c65e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "38b664ab-ff10-483f-b4d8-e8f8f00f8456": {
+    "url": "db://assets/res/Font/LastWin",
+    "value": {},
+    "versionCode": 1
+  },
+  "1d5cc946-fb0e-4bb2-ab9b-fba45c1b2e31": {
+    "url": "db://assets/res/Font/LastWin/font-last.fnt",
+    "value": {
+      "depends": [
+        "55c33d00-b1b8-4f10-8689-8085af9cb8cb@f9941"
+      ]
+    },
+    "versionCode": 1
+  },
+  "55c33d00-b1b8-4f10-8689-8085af9cb8cb": {
+    "url": "db://assets/res/Font/LastWin/font-last.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "55c33d00-b1b8-4f10-8689-8085af9cb8cb@6c48a": {
+    "url": "db://assets/res/Font/LastWin/font-last.png@6c48a",
+    "value": {
+      "depends": [
+        "55c33d00-b1b8-4f10-8689-8085af9cb8cb"
+      ]
+    },
+    "versionCode": 1
+  },
+  "55c33d00-b1b8-4f10-8689-8085af9cb8cb@f9941": {
+    "url": "db://assets/res/Font/LastWin/font-last.png@f9941",
+    "value": {
+      "depends": [
+        "55c33d00-b1b8-4f10-8689-8085af9cb8cb@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0336399e-8d15-481b-adaa-d281d22d0c48": {
+    "url": "db://assets/Scripts/UI/LastWin.ts",
+    "value": {},
     "versionCode": 1
   }
 }

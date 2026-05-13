@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778642422664.5613,
+      "time": 1778654319012.5542,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -26,14 +26,14 @@
       "time": 1777527178108.1685
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI": {
-      "time": 1778055071956.3718,
+      "time": 1778657043101.65,
       "uuid": "e68ed731-bd3a-4a87-8439-cb4faaf8ad78"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\UIRoot.ts.meta": {
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\UIRoot.ts": {
-      "time": 1778051945576.3904,
+      "time": 1778654304771.5608,
       "uuid": "1f9054db-351f-4e7a-8020-a416167b637e"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes.meta": {
@@ -138,7 +138,7 @@
       "time": 1777527178110.1714
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine": {
-      "time": 1778207200743.2195,
+      "time": 1778654829538.795,
       "uuid": "995ae186-b997-44ef-8aa2-0ae759b5e803"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\WinUpTo.meta": {
@@ -180,7 +180,7 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font": {
-      "time": 1778648838694.316,
+      "time": 1778655034131.93,
       "uuid": "83c067d3-9976-4874-8fef-2e3acab5757d"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingBar.ts.meta": {
@@ -740,7 +740,7 @@
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1778651815783.2568,
+      "time": 1778658342479.2998,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
@@ -852,7 +852,7 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1778652269017.5286,
+      "time": 1778658057907.3594,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -1111,7 +1111,7 @@
       "time": 1778135018473.5522
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\animations\\balanceShake.anim": {
-      "time": 1776242413782.02,
+      "time": 1778652949280.787,
       "uuid": "14f412a5-9c47-434f-9a76-c6185e0a63d4"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\InnerBackground\\inner-background-auto-atlas.pac.meta": {
@@ -1181,7 +1181,7 @@
       "time": 1778134774968.8088
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header": {
-      "time": 1778140952400.6936,
+      "time": 1778654924441.24,
       "uuid": "910e9302-adef-482a-b3bb-a09a0715e3f5"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\header-icons-auto-atlas.pac.meta": {
@@ -9233,6 +9233,76 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.png": {
       "time": 1776242413793.02,
       "uuid": "647b6016-d7bb-4488-b2a2-ce70a1237f13"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\Last Win BG.png.meta": {
+      "time": 1778654759868.5613
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\Last Win BG.png": {
+      "time": 1776242413876.4155,
+      "uuid": "86906680-8616-447a-85cd-1730b5224e0e"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin.meta": {
+      "time": 1778654829539.795
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin": {
+      "time": 1778654829541.7952,
+      "uuid": "bfae5ce8-22ff-4d82-893b-021ff90d6be1"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.atlas.meta": {
+      "time": 1778654829590.8044
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.json.meta": {
+      "time": 1778654829598.8042
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.png.meta": {
+      "time": 1778654829609.8047
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.atlas": {
+      "time": 1776242413827.1523,
+      "uuid": "c01be910-a9c3-445b-b40d-7328349bd8d9"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.json": {
+      "time": 1776242413828.937,
+      "uuid": "9469d6ef-74f7-4dfd-ab1d-0f1ee70776ba"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.png": {
+      "time": 1776242413829.4934,
+      "uuid": "80b693ad-f4ee-456a-b526-cb568ba9bfaa"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\Last Win.png.meta": {
+      "time": 1778654924496.2595
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Header\\Last Win.png": {
+      "time": 1776242413876.4155,
+      "uuid": "f2a4b21e-d329-4c31-8dee-b52b0331c65e"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin.meta": {
+      "time": 1778655034132.9302
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin": {
+      "time": 1778655034132.9302,
+      "uuid": "38b664ab-ff10-483f-b4d8-e8f8f00f8456"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.fnt.meta": {
+      "time": 1778655034180.9304
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.png.meta": {
+      "time": 1778655034192.9314
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.fnt": {
+      "time": 1776242413792.02,
+      "uuid": "1d5cc946-fb0e-4bb2-ab9b-fba45c1b2e31"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.png": {
+      "time": 1776242413793.02,
+      "uuid": "55c33d00-b1b8-4f10-8689-8085af9cb8cb"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\LastWin.ts.meta": {
+      "time": 1778657043107.6528
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\LastWin.ts": {
+      "time": 1778658048621.3967,
+      "uuid": "0336399e-8d15-481b-adaa-d281d22d0c48"
     }
   },
   "missing": {

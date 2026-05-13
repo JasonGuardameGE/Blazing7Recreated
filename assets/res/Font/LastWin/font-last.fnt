@@ -1,0 +1,16 @@
+info face="Arial Black" size=48 bold=1 italic=0 charset="" unicode=0 stretchH=100 smooth=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=48 base=48 scaleW=340 scaleH=52 pages=1 packed=0
+page file="font-last.png" id=0
+chars count=11
+char id=50 x=2 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="2"
+char id=51 x=35 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="3"
+char id=52 x=68 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="4"
+char id=53 x=101 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="5"
+char id=54 x=134 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="6"
+char id=55 x=167 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="7"
+char id=56 x=200 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="8"
+char id=57 x=233 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="9"
+char id=44 x=266 y=2 width=14 height=48 xoffset=0 yoffset=0 xadvance=14 page=0 chnl=0 letter=","
+char id=48 x=281 y=2 width=32 height=48 xoffset=0 yoffset=0 xadvance=32 page=0 chnl=0 letter="0"
+char id=49 x=314 y=2 width=24 height=48 xoffset=0 yoffset=0 xadvance=24 page=0 chnl=0 letter="1"
+kernings count=0

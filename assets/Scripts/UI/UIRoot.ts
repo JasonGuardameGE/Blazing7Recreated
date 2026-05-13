@@ -18,22 +18,4 @@ export class UIRoot extends Component {
     public get PopUpRoot(): Node {
         return this.popup;
     }
-
-    @property(Node)
-    private panel: Node = null;
-
-    @property(Node)
-    private toast: Node = null;
-
-    @property(Node)
-    private alert: Node = null;
-
-    @property(Node)
-    private loading: Node = null;
-
-    @property(Node)
-    private maskNode: Node = null;
-
-    @property(Node)
-    private apiLoading: Node = null;
 }

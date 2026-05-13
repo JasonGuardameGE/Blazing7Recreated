@@ -12,6 +12,7 @@ import { SettleRes } from '../Types';
 import { PricePopUpOptions } from './PricePopUpOptions';
 import { AudioManager } from '../Managers/AudioManager';
 import { HelpView } from '../UI/VisualFx/HelpView';
+import { LastWin } from '../UI/LastWin';
 
 const { ccclass, property } = _decorator;
 
@@ -20,7 +21,10 @@ export class Game extends Component {
 
     @property(HelpView)
     helpView: HelpView;
-    
+
+    @property(LastWin)
+    lastWin: LastWin;
+
     @property(Label)
     maxWinAmount: Label;
 
@@ -262,6 +266,7 @@ export class Game extends Component {
 
         winPopUp.StartShowing(settleRes.totalPayout, settleRes.winType, () => {
             this.checkAutoCall();
+            this.lastWin.CheckLastWin();
         });
     }
 

@@ -1,0 +1,34 @@
+
+blazing7s-lastwin_skeleton.png
+size: 846, 62
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+last_win/bot_lw
+  rotate: false
+  xy: 308, 32
+  size: 310, 28
+  orig: 345, 45
+  offset: 18, 8
+  index: -1
+last_win/light_sweep
+  rotate: true
+  xy: 620, 5
+  size: 55, 224
+  orig: 56, 224
+  offset: 0, 0
+  index: -1
+last_win/mid_lw
+  rotate: false
+  xy: 2, 7
+  size: 304, 53
+  orig: 314, 66
+  offset: 4, 7
+  index: -1
+last_win/top_lw
+  rotate: false
+  xy: 308, 2
+  size: 310, 28
+  orig: 345, 45
+  offset: 18, 9
+  index: -1

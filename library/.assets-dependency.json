@@ -321,6 +321,12 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.fnt": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-red.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.png"
     ]
   },
   "uuid": {
@@ -521,6 +527,9 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\win_numbers\\StarFish-WinningNumbers-skeleton.json": [
       "cc6b5de2-a582-437a-97d1-bd0a62ba49f2@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\LastWin\\blazing7s-lastwin_skeleton.json": [
+      "80b693ad-f4ee-456a-b526-cb568ba9bfaa@6c48a"
     ]
   }
 }
