@@ -24,6 +24,10 @@ export class HelpView extends Component {
         this.unschedule(this.showIdleHelp);
     }
 
+    public onAutoInput(){
+        this.resetCountdown();
+    }
+    
     private onPlayerInput(event?: EventTouch | EventMouse): void {
         this.resetCountdown();
     }

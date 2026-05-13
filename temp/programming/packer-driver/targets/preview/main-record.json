@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 7506449.42,
+      "mTimestamp": 9380915.2969,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -8083,7 +8083,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778646127017.2048,
+        "mtime": 1778651815783.2568,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -8236,6 +8236,20 @@
               "column": 55
             }
           }
+        },
+        {
+          "value": "../UI/VisualFx/HelpView",
+          "resolved": "__unresolved_10",
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 25
+            },
+            "end": {
+              "line": 14,
+              "column": 50
+            }
+          }
         }
       ],
       "type": "esm",
@@ -8328,6 +8342,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts"
           },
           "messages": []
         }
@@ -24004,7 +24025,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts": {
       "mTimestamp": {
-        "mtime": 1778645967519.9175,
+        "mtime": 1778651642295.766,
         "uuid": "1e8430ea-3fe5-4505-97db-5411dc7febca"
       },
       "chunkId": "7e9b03fe3ccac897a75fce43483ab1b4e6cb15ef",

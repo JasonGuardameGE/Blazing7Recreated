@@ -18,6 +18,9 @@ const { ccclass, property } = _decorator;
 @ccclass('Game')
 export class Game extends Component {
 
+    @property(HelpView)
+    helpView: HelpView;
+    
     @property(Label)
     maxWinAmount: Label;
 
@@ -355,6 +358,7 @@ export class Game extends Component {
             this.combinationGuide.active = false;
         }
 
+        this.helpView.onAutoInput();
         this.buyNewCard();
     }
 
