@@ -60,7 +60,7 @@ export class PricePopUpOptions extends Component {
     enableInfinite: boolean = false;
 
     private infiniteStr: string = '∞';
-
+    private initialized: boolean = false;
     /**
      * Initial selected price value.
      * Can be a number or infiniteStr.
@@ -68,9 +68,9 @@ export class PricePopUpOptions extends Component {
     @property(CCInteger)
     private initialPriceValue: number = 20;
 
-    private currentPriceValue: number | string = 20;
+    private currentPriceValue: number = 20;
 
-    get CurrentPriceValue(): number | string {
+    get CurrentPriceValue(): number {
         return this.currentPriceValue;
     }
 
@@ -116,12 +116,14 @@ export class PricePopUpOptions extends Component {
         }
 
         this.ValidateCurrentPriceValue();
-        this.SetSelectedPrice(this.currentPriceValue);
+        this.UpdateSelectedPriceByCenter();
 
         this.scheduleOnce(() => {
-            this.ScrollToPriceValue(this.currentPriceValue);
+            this.initialized = true;
+            this.ScrollToPriceValue(this.initialPriceValue);
             this.UpdateSelectedPriceByCenter();
-        }, 0);
+        }, 0.01);
+        
     }
 
     protected update(): void {
@@ -139,7 +141,7 @@ export class PricePopUpOptions extends Component {
     }
 
     private ValidateCurrentPriceValue(): void {
-        if (this.currentPriceValue === this.infiniteStr && this.enableInfinite) {
+        if (this.currentPriceValue.toString() === this.infiniteStr && this.enableInfinite) {
             return;
         }
     
@@ -157,7 +159,7 @@ export class PricePopUpOptions extends Component {
         }
     
         if (this.enableInfinite) {
-            this.currentPriceValue = this.infiniteStr;
+            this.currentPriceValue = -1;
         }
     }
 
@@ -219,7 +221,9 @@ export class PricePopUpOptions extends Component {
         this.SetSelectedPrice(newPriceValue);
     }
 
-    private SetSelectedPrice(priceValue: number | string): void {
+    private SetSelectedPrice(priceValue: number): void {
+        if(!this.initialized) return;
+        
         this.currentPriceValue = priceValue;
 
         if (this.centerSelectedLabel) {
@@ -229,8 +233,8 @@ export class PricePopUpOptions extends Component {
         EventHandler.emitEvents(this.onPriceValueUpdateCallback);
     }
 
-    private ScrollToPriceValue(priceValue: number | string): void {
-        if (!this.scrollView || !this.scrollView.content || !this.centerSelectedOption) {
+    private ScrollToPriceValue(priceValue: number): void {
+        if (!this.scrollView || !this.scrollView.content || !this.centerSelectedOption || !this.initialized) {
             return;
         }
 
@@ -261,7 +265,7 @@ export class PricePopUpOptions extends Component {
         );
     }
 
-    private GetPriceOptionByValue(priceValue: number | string): Node | null {
+    private GetPriceOptionByValue(priceValue: number): Node | null {
         const targetLabelString = this.GetPriceLabelFromValue(priceValue);
 
         for (let i = 0; i < this.priceOptions.length; i++) {
@@ -275,16 +279,16 @@ export class PricePopUpOptions extends Component {
         return null;
     }
 
-    private GetPriceValueFromLabel(labelString: string): number | string {
+    private GetPriceValueFromLabel(labelString: string): number {
         if (labelString === this.infiniteStr) {
-            return this.infiniteStr;
+            return -1;
         }
 
         return Number(labelString);
     }
 
-    private GetPriceLabelFromValue(priceValue: number | string): string {
-        if (priceValue === this.infiniteStr) {
+    private GetPriceLabelFromValue(priceValue: number): string {
+        if (priceValue === -1) {
             return this.infiniteStr;
         }
 

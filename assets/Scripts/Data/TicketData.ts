@@ -9,9 +9,6 @@ export default class TicketData {
     private _needInit:boolean = false;
     private _inProgress:boolean = false;
   
-    get RemainingTickets(){
-      return this.tickets.keys.length;
-    }
 
     updateTicketItem(data: any) {
         console.log("[GameManager] Updating TicketItem");

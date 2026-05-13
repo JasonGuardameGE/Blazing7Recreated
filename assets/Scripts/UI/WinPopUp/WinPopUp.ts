@@ -11,6 +11,8 @@ import {
     UITransform,
     EventHandler,
 } from 'cc';
+import { AudioManager } from '../../Managers/AudioManager';
+import { Services } from '../../Managers/Services';
 
 const { ccclass, property } = _decorator;
 
@@ -18,6 +20,7 @@ const { ccclass, property } = _decorator;
 export class WinPopUp extends Component {
 
     onCoinReachBalanceCallback: EventHandler[] = [];
+    onWinPopUpFinishedCallback: EventHandler[] = [];
 
     @property(Node)
     public coinFlyTarget: Node = null;
@@ -69,7 +72,15 @@ export class WinPopUp extends Component {
     private hasPlayedCoinFly: boolean = false;
     private coinOriginalPositions: Vec3[] = [];
 
+    private onWinPopupDoneCallback: (() => void) | null = null;
+
     IsPopUpInitialized: boolean = false;
+    
+    private _audioManager: AudioManager;
+
+    protected start(): void {
+        this._audioManager = Services.GetService(AudioManager);
+    }
 
     protected onLoad(): void {
         this.cacheCoinOriginalPositions();
@@ -94,54 +105,71 @@ export class WinPopUp extends Component {
         this.resetCoins();
     }
 
-    public StartShowing(newWinValue: number, isSuperWin: number = 0): void {
+    public StartShowing(
+        newWinValue: number,
+        isSuperWin: number = 0,
+        callback: (() => void) | null = null,
+    ): void {
         this.winAmount = newWinValue;
         this.isSuperWin = isSuperWin === -1;
+        this.onWinPopupDoneCallback = callback;
 
         this.node.active = true;
 
         this.Play();
     }
 
-    protected Play(): void {
-        this.isIncrementFinished = false;
-        this.hasPlayedCoinFly = false;
+    protected async Play(): Promise<void> {
+        try{            
+            if(!this._audioManager){
+                this._audioManager = Services.GetService(AudioManager);
+            }
 
-        this.resetCoins();
+            await this._audioManager.playEffectByName("fire");
 
-        if (this.normalWin) {
-            this.normalWin.node.active = true;
-            this.normalWin.setAnimation(0, 'blazing7-win_popup_animation', false);
-        }
+            this.isIncrementFinished = false;
+            this.hasPlayedCoinFly = false;
 
-        if (this.superWin) {
-            this.superWin.node.active = false;
-        }
+            this.resetCoins();
 
-        if (this.winAmountLabel) {
-            this.winAmountLabel.node.active = false;
-            this.originalWinAmountFontSize = this.winAmountLabel.fontSize;
-            this.winAmountLabel.string = '0';
-        }
+            if (this.normalWin) {
+                this.normalWin.node.active = true;
+                this.normalWin.setAnimation(0, 'blazing7-win_popup_animation', false);
+                await this._audioManager.playEffectByName("win");
+            }
 
-        tween(this.node)
-            .delay(0.5)
-            .call(() => {
-                this.startShowingValue();
-            })
-            .start();
+            if (this.superWin) {
+                this.superWin.node.active = false;
+            }
 
-        if (this.isSuperWin) {
-            this.showSuperWin();
-        } else {
+            if (this.winAmountLabel) {
+                this.winAmountLabel.node.active = false;
+                this.originalWinAmountFontSize = this.winAmountLabel.fontSize;
+                this.winAmountLabel.string = '0';
+            }
+
             tween(this.node)
-                .delay(2)
+                .delay(0.5)
                 .call(() => {
-                    if (this.normalWin) {
-                        this.normalWin.setAnimation(0, 'blazing7-win_looping_animation', true);
-                    }
+                    this.startShowingValue();
                 })
                 .start();
+
+            if (this.isSuperWin) {
+                await this._audioManager.playEffectByName("superwin");
+                this.showSuperWin();
+            } else {
+                tween(this.node)
+                    .delay(2)
+                    .call(() => {
+                        if (this.normalWin) {
+                            this.normalWin.setAnimation(0, 'blazing7-win_looping_animation', true);
+                        }
+                    })
+                    .start();
+            }
+        }catch(err){
+            console.error(`[WinPopUp] Error:`, err);
         }
     }
 
@@ -232,8 +260,7 @@ export class WinPopUp extends Component {
         }
 
         this.SkipBalanceAnimation();
-
-        this.node.active = false;
+        this.FinishWinPopup();
     }
 
     private SkipBalanceAnimation(): void {
@@ -282,6 +309,19 @@ export class WinPopUp extends Component {
             this.normalWin.node.active = true;
             this.normalWin.setAnimation(0, 'blazing7-win_looping_animation', true);
         }
+    }
+
+    private FinishWinPopup(): void {
+        const callback = this.onWinPopupDoneCallback;
+        this.onWinPopupDoneCallback = null;
+
+        EventHandler.emitEvents(this.onWinPopUpFinishedCallback);
+
+        if (callback) {
+            callback();
+        }
+
+        this.node.active = false;
     }
 
     private playCoinFlySequenceOnce(): void {
@@ -363,6 +403,7 @@ export class WinPopUp extends Component {
 
             const originalPosition = this.coinOriginalPositions[i]?.clone() || coin.position.clone();
             const delay = i * this.coinFlyDelayBetween;
+            const isLastCoin = i === this.coins.length - 1;
 
             tween(coin)
                 .delay(delay)
@@ -417,7 +458,7 @@ export class WinPopUp extends Component {
                 )
                 .call(() => {
                     EventHandler.emitEvents(this.onCoinReachBalanceCallback, false);
-                    
+
                     coin.active = false;
                     coin.setPosition(originalPosition);
                     coin.setScale(
@@ -425,6 +466,10 @@ export class WinPopUp extends Component {
                         this.coinStartScale,
                         this.coinStartScale,
                     );
+
+                    if (isLastCoin) {
+                        this.FinishWinPopup();
+                    }
                 })
                 .start();
         }

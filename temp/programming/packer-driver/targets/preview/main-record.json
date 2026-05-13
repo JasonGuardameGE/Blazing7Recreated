@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 9771.3577,
+      "mTimestamp": 9220.5078,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 29787913.9946,
+      "mTimestamp": 5804095.9933,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1134,7 +1134,7 @@
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/WinPopUp/WinPopUp.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonMovement.ts",
           "resolved": "__unresolved_50",
           "loc": {
             "start": {
@@ -1143,12 +1143,12 @@
             },
             "end": {
               "line": 54,
-              "column": 94
+              "column": 100
             }
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/logger.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/WinPopUp/WinPopUp.ts",
           "resolved": "__unresolved_51",
           "loc": {
             "start": {
@@ -1157,6 +1157,20 @@
             },
             "end": {
               "line": 55,
+              "column": 94
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/logger.ts",
+          "resolved": "__unresolved_52",
+          "loc": {
+            "start": {
+              "line": 56,
+              "column": 7
+            },
+            "end": {
+              "line": 56,
               "column": 86
             }
           }
@@ -1511,6 +1525,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonBreathing.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonMovement.ts"
           },
           "messages": []
         },
@@ -2093,7 +2114,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1778458039434,
+      "mTimestamp": 1778629490505,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -2257,7 +2278,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingScene.ts": {
       "mTimestamp": {
-        "mtime": 1778486879594.0142,
+        "mtime": 1778630086136.3828,
         "uuid": "97ec7068-8675-4806-a9a4-b560f82e2ab7"
       },
       "chunkId": "4648144d8513977ca708e25c94246bffd79fccb2",
@@ -3563,7 +3584,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/GameData.ts": {
       "mTimestamp": {
-        "mtime": 1778479704678.0703,
+        "mtime": 1778630223335.9038,
         "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
       },
       "chunkId": "d9e989e3911e310821333903950c51538c2c38d9",
@@ -4025,7 +4046,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1778483756716.144,
+        "mtime": 1778630195352.733,
         "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
       },
       "chunkId": "ea54d85c17f7a85b3ce3bf934492b9dce719df1a",
@@ -4531,7 +4552,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts": {
       "mTimestamp": {
-        "mtime": 1777881699287.9526,
+        "mtime": 1778567763111.5857,
         "uuid": "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f"
       },
       "chunkId": "a37606a2dd1d2516ae6ed8fef349709b501e3720",
@@ -4636,7 +4657,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/ScratchSystem.ts": {
       "mTimestamp": {
-        "mtime": 1778218776147.3855,
+        "mtime": 1778568350137.3928,
         "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
       },
       "chunkId": "674535ab1a5501de2c150ec162b176f00f2d6f41",
@@ -4705,6 +4726,34 @@
               "column": 45
             }
           }
+        },
+        {
+          "value": "../Managers/AudioManager",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 29
+            },
+            "end": {
+              "line": 18,
+              "column": 55
+            }
+          }
+        },
+        {
+          "value": "../Managers/Services",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 25
+            },
+            "end": {
+              "line": 19,
+              "column": 47
+            }
+          }
         }
       ],
       "type": "esm",
@@ -4755,6 +4804,20 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/FragmentView.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
           },
           "messages": []
         }
@@ -5227,7 +5290,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/InteractableUIs/SingleButton.ts": {
       "mTimestamp": {
-        "mtime": 1777966540615.077,
+        "mtime": 1778635285448.7488,
         "uuid": "19973e86-b230-4abf-b825-3c1207bddac5"
       },
       "chunkId": "b612afb9a3f484cd001f905a1d9ee3cb8ce81a2a",
@@ -5246,11 +5309,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 18,
               "column": 7
             },
             "end": {
-              "line": 16,
+              "line": 18,
               "column": 11
             }
           }
@@ -5260,11 +5323,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 18,
+              "line": 20,
               "column": 29
             },
             "end": {
-              "line": 18,
+              "line": 20,
               "column": 58
             }
           }
@@ -5274,11 +5337,11 @@
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
-              "line": 19,
+              "line": 21,
               "column": 25
             },
             "end": {
-              "line": 19,
+              "line": 21,
               "column": 50
             }
           }
@@ -5332,7 +5395,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778485535128.7825,
+        "mtime": 1778630876786.577,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -5471,6 +5534,20 @@
               "column": 55
             }
           }
+        },
+        {
+          "value": "../Managers/AudioManager",
+          "resolved": "__unresolved_9",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 29
+            },
+            "end": {
+              "line": 13,
+              "column": 55
+            }
+          }
         }
       ],
       "type": "esm",
@@ -5558,12 +5635,19 @@
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/PricePopUpOptions.ts"
           },
           "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts"
+          },
+          "messages": []
         }
       ]
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/GameOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778229371384.3303,
+        "mtime": 1778631194217.7837,
         "uuid": "d58cc7ed-83e8-454c-9920-0fee57d186ad"
       },
       "chunkId": "95a72159d86e76129be31d7732343a07b5e2446d",
@@ -5583,11 +5667,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 38
+              "column": 53
             },
             "end": {
               "line": 1,
-              "column": 42
+              "column": 57
             }
           }
         },
@@ -5602,6 +5686,34 @@
             "end": {
               "line": 2,
               "column": 65
+            }
+          }
+        },
+        {
+          "value": "../Managers/AudioManager",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 29
+            },
+            "end": {
+              "line": 3,
+              "column": 55
+            }
+          }
+        },
+        {
+          "value": "../Managers/Services",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 47
             }
           }
         }
@@ -5640,6 +5752,20 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/InteractableUIs/SingleButton.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
           },
           "messages": []
         }
@@ -5699,7 +5825,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/TicketData.ts": {
       "mTimestamp": {
-        "mtime": 1778484762411.0317,
+        "mtime": 1778568360024.4553,
         "uuid": "fa8a6e42-0921-4ae0-aba7-f893a84bf3ae"
       },
       "chunkId": "39b997892997a8eb621b8e30b4ccf70f20a53080",
@@ -6571,11 +6697,15 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/WinPopUp/WinPopUp.ts": {
       "mTimestamp": {
-        "mtime": 1778481452053.6501,
+        "mtime": 1778567912854.5864,
         "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
       },
       "chunkId": "de6f5ead330bfa7dbc67fbb3e8f0ccb4fe5c10bd",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -6594,6 +6724,34 @@
               "column": 11
             }
           }
+        },
+        {
+          "value": "../../Managers/AudioManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 29
+            },
+            "end": {
+              "line": 14,
+              "column": 58
+            }
+          }
+        },
+        {
+          "value": "../../Managers/Services",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 25
+            },
+            "end": {
+              "line": 15,
+              "column": 50
+            }
+          }
         }
       ],
       "type": "esm",
@@ -6601,7 +6759,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "cce:/internal/x/cc"
+            "url": "cce:/internal/code-quality/cr.mjs"
           },
           "messages": []
         },
@@ -6616,6 +6774,27 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
           },
           "messages": []
         }
@@ -6980,7 +7159,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/PricePopUpOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778229524903.5745,
+        "mtime": 1778553269258.693,
         "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
       },
       "chunkId": "cee91858986803de21b8fb0d430d475e16fb194f",
@@ -7051,6 +7230,58 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonMovement.ts": {
+      "mTimestamp": {
+        "mtime": 1778629884176.5657,
+        "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
+      },
+      "chunkId": "bfcf1b9de790e52437c75a8548b1707e01158020",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 66
+            },
+            "end": {
+              "line": 1,
+              "column": 70
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
           },
           "messages": []
         },

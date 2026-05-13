@@ -76,18 +76,20 @@ export class LoadingScene extends Component {
         // console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
 
         try{
-            await this._gameManager.LoadGameSetup();
             this.loadingBar.SetProgress(10);
             await this._sceneManager.PreLoadScene(ScenePrefabPath.GAME_SCENE);                
             this.loadingBar.SetProgress(25);
             // TODO: IF GAMEDATA SKIPS NEWPLAYER GUIDE -- SKIP PRELOADING GUIDE
             await this._sceneManager.PreLoadScene(ScenePrefabPath.NEW_PLAYER_SCENE);
             this.loadingBar.SetProgress(50);
-
-            this.loadingBar.SetProgress(100);
-            if(this.evtOnLoadingComplete){
-                this.evtOnLoadingComplete.invoke();
-            }    
+            
+            await this._gameManager.LoadGameSetup();
+            if(this._gameManager.SetupLoaded){
+                this.loadingBar.SetProgress(100);
+                if(this.evtOnLoadingComplete){
+                    this.evtOnLoadingComplete.invoke();
+                }        
+            }
         }catch(err){
             logger.error(`[Loading] Error when Loading game: ${err}`);
         }

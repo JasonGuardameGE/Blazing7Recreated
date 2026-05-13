@@ -1602,8 +1602,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 460.4005967408115,
-      "height": 50.400000000000006
+      "width": 405.84375,
+      "height": 50.4
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1638,10 +1638,10 @@
       "b": 255,
       "a": 255
     },
-    "_string": "labelSeek the 7's to escape the inferno...",
+    "_string": "Seek the 7's to escape the inferno...",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 24.24705882352941,
+    "_actualFontSize": 24,
     "_fontSize": 24,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -2514,6 +2514,7 @@
       "__id__": 0
     },
     "fileId": "c46/YsCPVOJYA4mWEpNYRx",
+    "instance": null,
     "targetOverrides": []
   }
 ]

@@ -40,6 +40,11 @@ export class GameManager extends Component {
     @property(CCInteger)
     forcedWinType: number = 0;
 
+    private setupLoaded: boolean = false;
+    get SetupLoaded(){
+        return this.setupLoaded;
+    }
+    
     private sceneManager: SceneManager = null;
     private popupManager: PopUpManager = null;
     private resourceManager: ResourceManager = null;
@@ -65,6 +70,7 @@ export class GameManager extends Component {
 
     public async LoadGameSetup() : Promise<void> {
         try{
+            this.setupLoaded = false;
             logger.log('[GameManager] Loading API Manager..');
             await ApiManager.initialize();
 
@@ -80,11 +86,15 @@ export class GameManager extends Component {
                 gameData.isAutoPlay = currentGame.autoPlay != null && currentGame.autoPlay != 0;
             });
 
+            this.setupLoaded = true;
             await this.scratchCard.RequestRemainingCards();
-
         }catch(err){
             logger.error('[GameManager] Error when initializing API:', err);
         }
+    }
+
+    public UpdateCardPrice(newUnitPrice: number){
+        this.gameData.unitPrice = this.gameData.cardPrice = newUnitPrice;
     }
 
     private registerServices(): void {

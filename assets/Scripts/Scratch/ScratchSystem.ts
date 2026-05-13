@@ -15,6 +15,8 @@ import { ScratchRenderer } from './ScratchRenderer';
 import { GridCell } from './ScratchTypes';
 import { ScratchMask } from './ScratchMask';
 import { FragmentView } from './FragmentView';
+import { AudioManager } from '../Managers/AudioManager';
+import { Services } from '../Managers/Services';
 
 const { ccclass, property } = _decorator;
 
@@ -62,6 +64,7 @@ export class ScratchSystem extends Component {
 
     private isTouched: boolean = false;
     private isAllScratched: boolean = false;
+    private _audioManager: AudioManager;
 
     public get IsAllScratched(): boolean {
         return this.isAllScratched;
@@ -99,6 +102,7 @@ export class ScratchSystem extends Component {
 
     protected start(): void {
         this.GenerateScratchRenderer();
+        this._audioManager = Services.GetService(AudioManager);
     }
 
     public ResetScratchCard(): void {
@@ -136,6 +140,7 @@ export class ScratchSystem extends Component {
             this.autoScratchCell(i);
         }
 
+        this._audioManager.playAutoScratchSound();
         this.CheckScratchProgress();
     }
 
@@ -252,6 +257,7 @@ export class ScratchSystem extends Component {
 
         const worldPos = this.getWorldPositionFromTouch(e);
         this.checkCellInLastPosition(worldPos);
+        this._audioManager.playScratchEffectOneShot();
     }
 
     private checkCellInLastPosition(worldPosition: Vec3): void {

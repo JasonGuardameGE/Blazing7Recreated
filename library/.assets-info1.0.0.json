@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778480005088.9905,
+      "time": 1778564216424.926,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -61,7 +61,7 @@
       "time": 1777527178108.1685
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Loading\\LoadingScene.ts": {
-      "time": 1778486879594.0142,
+      "time": 1778630086136.3828,
       "uuid": "97ec7068-8675-4806-a9a4-b560f82e2ab7"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures.meta": {
@@ -201,7 +201,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\GameData.ts": {
-      "time": 1778479704678.0703,
+      "time": 1778630223335.9038,
       "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\TicketItem.ts.meta": {
@@ -271,7 +271,7 @@
       "time": 1777538291008.8777
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\GameManager.ts": {
-      "time": 1778483756716.144,
+      "time": 1778630195352.733,
       "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs.meta": {
@@ -327,7 +327,7 @@
       "time": 1777855356092.7192
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx": {
-      "time": 1777855361840.388,
+      "time": 1778629570331.7998,
       "uuid": "1fdae46d-fc57-473c-a311-0a1a11474a05"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\DragonBreathing.ts.meta": {
@@ -341,14 +341,14 @@
       "time": 1777855811897.6313
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\AudioManager.ts": {
-      "time": 1777881699287.9526,
+      "time": 1778567763111.5857,
       "uuid": "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3.meta": {
       "time": 1777858059160.5293
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3": {
-      "time": 1777858085453.42,
+      "time": 1778568167023.8745,
       "uuid": "30c1ffb8-aef4-4173-b5c8-514765c7641a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\dragonbreathing.mp3.meta": {
@@ -572,7 +572,7 @@
       "time": 1777940747036.3904
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts": {
-      "time": 1778218776147.3855,
+      "time": 1778568350137.3928,
       "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts.meta": {
@@ -621,7 +621,7 @@
       "time": 1777963168451.025
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons": {
-      "time": 1778228666947.7373,
+      "time": 1778633413953.4822,
       "uuid": "c8ca35ee-1c81-431d-8670-40ffb1538853"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\ScratchCardNumber.meta": {
@@ -726,7 +726,7 @@
       "time": 1777964423011.6802
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\InteractableUIs\\SingleButton.ts": {
-      "time": 1777966540615.077,
+      "time": 1778635285448.7488,
       "uuid": "19973e86-b230-4abf-b825-3c1207bddac5"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game.meta": {
@@ -740,14 +740,14 @@
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1778485535128.7825,
+      "time": 1778630876786.577,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
       "time": 1777965195641.118
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts": {
-      "time": 1778229371384.3303,
+      "time": 1778631194217.7837,
       "uuid": "d58cc7ed-83e8-454c-9920-0fee57d186ad"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\NormalWinPopUp.meta": {
@@ -852,14 +852,14 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1778477502868.912,
+      "time": 1778635310298.273,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
       "time": 1777530462194.0354
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab": {
-      "time": 1777533009624.5486,
+      "time": 1778575792071.1062,
       "uuid": "1ba6edf3-e479-42eb-b78f-160ccddcdd12"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps.meta": {
@@ -894,7 +894,7 @@
       "time": 1778029577917.9612
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\TicketData.ts": {
-      "time": 1778484762411.0317,
+      "time": 1778568360024.4553,
       "uuid": "fa8a6e42-0921-4ae0-aba7-f893a84bf3ae"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Api.meta": {
@@ -1090,7 +1090,7 @@
       "time": 1778055078141.6335
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\WinPopUp\\WinPopUp.ts": {
-      "time": 1778481452053.6501,
+      "time": 1778567912854.5864,
       "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCard.ts.meta": {
@@ -1248,7 +1248,7 @@
       "uuid": "f04cb4f8-37a6-4de7-894a-3924c1554522"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-clicked.png.meta": {
-      "time": 1777963608265.1453
+      "time": 1778632629113.502
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-clicked.png": {
       "time": 1776242413889.4119,
@@ -1503,7 +1503,7 @@
       "time": 1778222593174.8455
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\PricePopUpOptions.ts": {
-      "time": 1778229524903.5745,
+      "time": 1778553269258.693,
       "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\stop_click.png.meta": {
@@ -1540,6 +1540,76 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\GameUserInfo.ts": {
       "time": 1778475297903.7998,
       "uuid": "57f61253-d752-43c1-88c2-c2747f8fe13a"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\bg2.mp3.meta": {
+      "time": 1778563769801.4941
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\bg2.mp3": {
+      "time": 1776242413930.3445,
+      "uuid": "c9f8cb98-9dbb-4a51-ab19-6684d238849b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\bg1.mp3.meta": {
+      "time": 1778563882562.068
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\bg1.mp3": {
+      "time": 1776242413923.3416,
+      "uuid": "f11b42d1-48bb-4ef5-bf61-80aa43941d10"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\click.mp3.meta": {
+      "time": 1778564198285.1394
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\click.mp3": {
+      "time": 1776242413930.3445,
+      "uuid": "e75f7754-a762-43c7-80bd-061ba590b93a"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\scratch.mp3.meta": {
+      "time": 1778564551430.0544
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\scratch.mp3": {
+      "time": 1776242413934.3416,
+      "uuid": "e62c9ca5-e3c5-46c6-a2e4-8aedeb2f2423"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\superwin.mp3.meta": {
+      "time": 1778567028882.1697
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\win.mp3.meta": {
+      "time": 1778567028882.1697
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\superwin.mp3": {
+      "time": 1776242413942.3416,
+      "uuid": "815538ec-0958-4ab6-b99a-0d55c83d9c92"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\win.mp3": {
+      "time": 1776242413942.3416,
+      "uuid": "a8d66874-954e-493e-91d6-773e2cbc5eb2"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\fire.mp3.meta": {
+      "time": 1778567522925.762
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\fire.mp3": {
+      "time": 1776242413933.3423,
+      "uuid": "b8fded03-f0a7-4a75-9a5a-e36e95f4f571"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\coin.mp3.meta": {
+      "time": 1778568167048.87
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3\\coin.mp3": {
+      "time": 1776242413931.3416,
+      "uuid": "d4d4bb96-7199-473b-b9cc-c039d108a99b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\DragonMovement.ts.meta": {
+      "time": 1778629570337.8022
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\DragonMovement.ts": {
+      "time": 1778629884176.5657,
+      "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\play_clicked.png.meta": {
+      "time": 1778633942006.182
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\play_clicked.png": {
+      "time": 1776242413889.4119,
+      "uuid": "83b4f705-a45f-4d62-8d4e-6b6010371e27"
     }
   },
   "missing": {
@@ -2042,6 +2112,16 @@
       "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-OptionsPopUp.png",
       "time": 1776242413789.0198,
       "removeTime": 1778221782420
+    },
+    "d8dd6737-8ab2-42e4-8129-a0c01fcd26f8": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\play_normal.png",
+      "time": 1776242413890.4119,
+      "removeTime": 1778633221943
+    },
+    "53314eaf-63ef-47ab-a3fc-d26c9970be9e": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons\\BuyCardBtn-clicked-2.png",
+      "time": 1776242413889.4119,
+      "removeTime": 1778633415293
     }
   }
 }

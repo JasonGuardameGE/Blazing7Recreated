@@ -58,6 +58,8 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           this._gamePriceList = [];
           // Unit Price
           this._unitPrice = 20;
+          // MaxWinMultiple
+          this._maxWinMultiple = 14582;
           // Token
           this._token = "";
           // aesKey
@@ -181,6 +183,14 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           return this._unitPrice;
         }
 
+        set maxWinMultiple(value) {
+          this._maxWinMultiple = value;
+        }
+
+        get maxWinMultiple() {
+          return this._maxWinMultiple;
+        }
+
         set token(value) {
           this._token = value;
         }
@@ -254,7 +264,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
         getUrlParams() {
           //const urlParams = new URLSearchParams(window.location.search);
-          var urlParams = new URLSearchParams("?token=eyJhbGciOiJSUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_y3KSw6CMBSF4b10zIB76euyAdSBYWCcmtJWg5GWlJJojHu3QWcn__nebE7RrTbvHWtZdwZWsUe8jeFoJv8rl4NZYuhOfsnltOuS4-TT5gVoAo4Np7oWxKWSzUZS8sG-Cuh3fQn3PJZNZJwbwEthgcvBDmicRuJXI5AUqgJHk1kLSmkuqUFdMf-c_4E0oP58AZ1zKOavAAAA.WaoKDck3XAVEzox_QRps0tTT6iJcdoXTgNFrrfAqvfZ_jqFQ_K_B2QTqg5xbCA0037rAY2rBUfDWeIyD_QGtavWVeRl0EsDxGP8svoGurlu-WTsDLxfgdtZCvve-oxb13bVMd33OEpqMOl1tTMzDpjOz_F8enI3Ozni0zZxY6Y7W8WuX_fumCmMmiwWWfL2sAqAtx06j_fqmgHuWMsv3X5gl6BwZ7x5vOmz1Obl4ToeBnev7ceEw1TrYEhw_N2YVRyyMnTb1YbZjHrzXvqIkKia_PekbgbqFa7it3v3LIzDfirKGOCkkP_HRV4QguMhWmCDdxNL5OSoQcJFC6xyMCA&gameId=2000802906231672834&lang=en-US&productId=GV1&gameName=BLAZING%207s&playType=BLAZING_7S_SCRATCH&callbackUrl=https://pilot.gelotto-test.com");
+          var urlParams = new URLSearchParams("?token=eyJhbGciOiJSUzI1NiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAA_y2Nyw7CIBRE_4V1FzwuUPoDVRemC-PWAL01NRYaShON8d_F6m5y5kzmReYU-9XnfU8a0p4Zqcg9XsdwtBP-yOVglxjaEy65lH5dcpwwbb5ktWHABRhKpQGlldiUlDD4ZxG6XVfALY8lg_eOaosC2ADMGqfQ9cLTmjkKcvguR5tJw7SulaCc8orgY_4DWS74-wPOAiPOrwAAAA.nlwkEZ4YLgpGNq3GrNIyv8Q-nMsDd6xPVVpzhbmNL4gUGFLCqBF-rcgY9BYDH1if4hkw21izuMZHY8vFBohlGB_AgR8oZiwitnAgEQL29makDfaOB8Uo1LOP4fc5P9RR3HbcWWElHVPSUKDTjFu2Vr6zucuevbUMD6gVyxKz1qVvYnyWrNdTVUFPf1YQIw56KyxG47SJ1mT9XIGeju4HeASKkJTuM6pzDNvZTdrrWwaMUtEkHPifpGL88Vk5zkH7QIGR4lMd70Wh-zZBMgQ2_UzhBEEBRUKtpBABX-rvpnQvplTP4pwFe1WMxsfwSyDmoo7KHvh2TjSznVRJwJEhrg&gameId=2000802906231672834&lang=en-US&productId=GV1&gameName=BLAZING%207s&playType=BLAZING_7S_SCRATCH&callbackUrl=https://pilot.gelotto-test.com");
           var token = urlParams.get("token");
           var gameId = urlParams.get("gameId");
           var lang = urlParams.get("lang");

@@ -13,6 +13,8 @@ import {
     EventTouch,
     UITransform,
     EventHandler,
+    UIOpacity,
+    Tween,
 } from 'cc';
 
 import { AudioManager } from '../../Managers/AudioManager';
@@ -33,6 +35,12 @@ export class SingleButton extends Component {
     
     @property({ type: Sprite, tooltip: 'Main button sprite. If empty, will use Sprite on this node.' })
     mainSprite: Sprite = null;
+
+    @property(UIOpacity)
+    blinker: UIOpacity = null;
+
+    @property(CCBoolean)
+    enableBlinker: boolean = false;
 
     @property(Sprite)
     tagSprite: Sprite = null;
@@ -232,11 +240,38 @@ export class SingleButton extends Component {
 
     private updateState(): void {
         const state = this.getCurrentVisualState();
-
+    
         this.applyMainSprite(state);
         this.applyTagSprite(state);
         this.applyTag2Sprite(state);
         this.applyLabelFont(state);
+        this.updateBlinker(state);
+    }
+
+    private updateBlinker(state: ButtonVisualState): void {
+        if (!this.blinker) {
+            return;
+        }
+    
+        Tween.stopAllByTarget(this.blinker);
+    
+        const shouldBlink =
+            this.enableBlinker &&
+            state === ButtonVisualState.Normal;
+    
+        if (!shouldBlink) {
+            this.blinker.opacity = 0;
+            return;
+        }
+    
+        this.blinker.opacity = 0;
+    
+        tween(this.blinker)
+            .to(0.6, { opacity: 200 })
+            .to(0.6, { opacity: 0 })
+            .union()
+            .repeatForever()
+            .start();
     }
 
     private getCurrentVisualState(): ButtonVisualState {

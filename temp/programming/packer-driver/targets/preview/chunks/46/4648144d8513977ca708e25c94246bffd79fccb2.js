@@ -146,8 +146,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           return _asyncToGenerator(function* () {
             // console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
             try {
-              yield _this._gameManager.LoadGameSetup();
-
               _this.loadingBar.SetProgress(10);
 
               yield _this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
@@ -163,10 +161,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               _this.loadingBar.SetProgress(50);
 
-              _this.loadingBar.SetProgress(100);
+              yield _this._gameManager.LoadGameSetup();
 
-              if (_this.evtOnLoadingComplete) {
-                _this.evtOnLoadingComplete.invoke();
+              if (_this._gameManager.SetupLoaded) {
+                _this.loadingBar.SetProgress(100);
+
+                if (_this.evtOnLoadingComplete) {
+                  _this.evtOnLoadingComplete.invoke();
+                }
               }
             } catch (err) {
               (_crd && logger === void 0 ? (_reportPossibleCrUseOflogger({
