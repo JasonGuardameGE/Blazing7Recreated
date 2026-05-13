@@ -1,0 +1,3 @@
+[submodule "assets/menu-bundle"]
+	path = assets/menu-bundle
+	url = https://gitlab.complexdevops.com/frontend/scratch/menu-bundle.git

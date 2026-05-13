@@ -53,6 +53,271 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.fnt": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\font-autonormal.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\effect\\FlipPage.effect": [
+      "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.5\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\vs.chunk",
+      "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.5\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\cc-global.chunk",
+      "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.5\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\cc-local.chunk",
+      "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.5\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\fs.chunk",
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\chunks\\vs.chunk",
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\chunks\\cc-global.chunk",
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\chunks\\cc-local.chunk",
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\chunks\\fs.chunk"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fish\\Fish-Icons-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fish\\Fish-Icons-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\bonuswin.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\bonuswin.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-blue.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-blue.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-black.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-black.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-gold.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-gold.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-red.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\font-red.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\pika_upwin.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\pika_upwin.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\pika_default.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\pika_default.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\pika_win.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\pika_win.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\prize.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\prize.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\winFont.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\winFont.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\winNum.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\font\\winNum.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\coin_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\coin_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Crowd-Animation-Initial.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Crowd-Animation-Initial.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Arc Reactor-Ginto-LuckyNumber.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Arc Reactor-Ginto-LuckyNumber.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\LuckNumber(BackPartFx).json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\LuckNumber(BackPartFx).atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Crowd-Animations.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Crowd-Animations.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\RedHot7-MotionGraphics.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\RedHot7-MotionGraphics.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Skeleton-LastWin.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Skeleton-LastWin.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\pika-bg_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\pika-bg_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\font\\prize.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\font\\prize.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\pika-superwin_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\pika-superwin_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-default-num.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-default-num.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\skeleton\\BC_base_tileeffect_1_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\skeleton\\BC_base_tileeffect_1_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-num.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-num.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-match-num.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-match-num.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-win-num.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-bingo-win-num.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-lastwin-blue.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-lastwin-blue.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-lastwin-yellow.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\font\\font-lastwin-yellow.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\font\\font-cardnum.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\font\\font-cardnum.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\font\\winup-font.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\font\\winup-font.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\texutre\\font-cardnum.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\texutre\\font-cardnum.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-barrel-act.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-barrel-act.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-bonus-win.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-bonus-win.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-bonus.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-bonus.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-super-bonus.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-super-bonus.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-super-amount.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-super-amount.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-super-num.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-super-num.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-your-num-win.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-your-num-win.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-win-num.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\font\\font-win-num.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-black.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-black.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-blue.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-blue.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-gold.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-gold.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-red.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-red.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-settle.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\font\\font-settle.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\spine\\Arc Reactor-Ginto-LuckyNumber.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\spine\\Arc Reactor-Ginto-LuckyNumber.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\spine\\LuckNumber(BackPartFx).json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\spine\\LuckNumber(BackPartFx).atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\font\\font-card-win.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\font\\font-card-win.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\font\\font-win.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\font\\font-win.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\balls\\Bingo-Ball-Dynamics-Skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\balls\\Bingo-Ball-Dynamics-Skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Extra Ball Animation-Json Part 1\\Click Buy and Machine Open-Close-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Extra Ball Animation-Json Part 1\\Click Buy and Machine Open-Close-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\LC-NewGame_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\LC-NewGame_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Extra Ball Animation-Json-Webp-Part 2\\Click Buy and Machine Open-Close-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Extra Ball Animation-Json-Webp-Part 2\\Click Buy and Machine Open-Close-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Win\\Bingo-Win-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Win\\Bingo-Win-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\clickbuy\\Click Buy Glitch-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\clickbuy\\Click Buy Glitch-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\door\\Click Buy and Machine Open-Close-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\door\\Click Buy and Machine Open-Close-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\line\\Bingo-Light effects-3.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\line\\Bingo-Light effects-3.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Machine-Big Purple Close&Open-Bingo\\Purple Machine Door-Open-Close-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Machine-Big Purple Close&Open-Bingo\\Purple Machine Door-Open-Close-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Small Purple Door-Question Mark-Opening-Json\\Click Buy and Machine Open-Close-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Small Purple Door-Question Mark-Opening-Json\\Click Buy and Machine Open-Close-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\wild\\skeleton2.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\wild\\skeleton2.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel\\superbonus-barrel_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel\\superbonus-barrel_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel\\superbonus-barrel_OrangeFish_Skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel\\superbonus-barrel_OrangeFish_Skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\ani\\Flame Frame\\RedHot7-MotionGraphics.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\ani\\Flame Frame\\RedHot7-MotionGraphics.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\bonus_point\\SeaShell-Bonus Game-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\bonus_point\\SeaShell-Bonus Game-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel_point\\superbonus-barrel-point_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel_point\\superbonus-barrel-point_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\enter_bonus\\Bonus Game Opening-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\enter_bonus\\Bonus Game Opening-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\bubble_light\\Base_Collect-Bonus-Badge1_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\bubble_light\\Base_Collect-Bonus-Badge1_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\coins\\Coin-Flip-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\coins\\Coin-Flip-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\enter_super\\IP_SBon-entrance_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\enter_super\\IP_SBon-entrance_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fakewin\\Base-FakeWin2_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fakewin\\Base-FakeWin2_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fakewin2\\Base_FakeWin1_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fakewin2\\Base_FakeWin1_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\ship\\Ship-SuperBonus-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\ship\\Ship-SuperBonus-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\win_numbers\\StarFish-WinningNumbers-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\win_numbers\\StarFish-WinningNumbers-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\super_bonus_point\\SeaShell-Bonus Game-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\super_bonus_point\\SeaShell-Bonus Game-skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\1x\\M-1x.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\1x\\M-1x.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\3x\\M-3x.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\3x\\M-3x.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\2x\\M-2x.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\2x\\M-2x.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\5x\\M-5x.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\5x\\M-5x.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\last win\\LC-lastwin_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\last win\\LC-lastwin_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\light_win\\LC_LightSource_skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\light_win\\LC_LightSource_skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\Mulitplier Light Bar\\M-Light Bar.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\Mulitplier Light Bar\\M-Light Bar.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\water\\skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\water\\skeleton.atlas"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\shell\\BonusG-SeaShell-skeleton.json": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\shell\\BonusG-SeaShell-skeleton.atlas"
     ]
   },
   "uuid": {
@@ -85,6 +350,174 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Dragons Eye\\Mobile Size - Dragon's Eye - Opening.json": [
       "630ca1b6-6780-40b4-b226-189df22237d3@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Arc Reactor-Ginto-LuckyNumber.json": [
+      "3ce7cafe-3b10-478d-adba-814545ae64c0@6c48a",
+      "81945356-291b-45c7-a892-0c1c14ef4383@6c48a",
+      "cadede82-e3d3-4cfc-afa0-bd21355b6a86@6c48a",
+      "df2dc9a7-db44-4f08-8312-31382dea03ed@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\coin_skeleton.json": [
+      "2e59384c-42cb-466e-87f9-d281eb20ff2e@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Crowd-Animation-Initial.json": [
+      "b0b43189-0b0b-4b8c-8f45-5bb6b9541598@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Crowd-Animations.json": [
+      "27031f91-3792-4c25-b2c3-ce2f06ef2881@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\LuckNumber(BackPartFx).json": [
+      "523f1f17-0d35-4f34-9a98-919c85fe55d3@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\pika-bg_skeleton.json": [
+      "f80e6aaf-76b5-43f7-a6ce-3278ba84ac0e@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\pika-superwin_skeleton.json": [
+      "7978f2f6-2abf-4eb7-8058-8211026c9b86@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\RedHot7-MotionGraphics.json": [
+      "7a4d4f65-6449-463d-a953-83acf459b57e@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\Skeleton-LastWin.json": [
+      "7921af64-13e2-413f-90e9-eb694f985d10@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\resources\\skeleton\\skeleton.json": [
+      "ddf82886-85d5-4843-8591-36209c7f4c34@6c48a",
+      "ce02acd9-ce86-4d54-b841-339d726fc92d@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\skeleton\\Saber-FrameIcon-GreenFlame.json": [
+      "351714d5-a9dc-4484-bbac-d65b8a9062ee@6c48a",
+      "d82ffbff-0d69-4a63-a44a-0fd9bc58060e@6c48a",
+      "45340e6a-c209-4d4c-a6a1-7cc4757b8f1f@6c48a",
+      "5e13f926-a327-4f4c-a9c8-6ff754e55f79@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\skeleton\\Saber-Icon Frame-YellowFlame.json": [
+      "e48bd095-32d2-4cfe-84fc-fecca9d3399d@6c48a",
+      "714a7c32-3220-48e1-a762-df1394a445eb@6c48a",
+      "22830240-7b17-4f19-ab5d-881709cce775@6c48a",
+      "cde3acd5-c195-4fc4-b3fd-4eb2c01f185f@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\spine\\Arc Reactor-Ginto-LuckyNumber.json": [
+      "6b7f265d-6514-4287-ab90-b05bed30f640@6c48a",
+      "3e415094-2cf3-4333-90bf-7aad871f36a5@6c48a",
+      "40f2c086-784e-4442-b05e-6863a40369bd@6c48a",
+      "132113cc-ec24-4e61-9313-58210b0f77b7@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\res\\spine\\LuckNumber(BackPartFx).json": [
+      "70d633cf-0d15-47f7-966a-8d66d2fe2852@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\LC-NewGame_skeleton.json": [
+      "dbb0ec2e-0735-4d42-96db-0a2bd90f2f5d@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\skeleton.json": [
+      "f8b3d190-f24d-4a7a-9c3e-c5bc36ffd993@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\balls\\Bingo-Ball-Dynamics-Skeleton.json": [
+      "f6dadf72-925a-4bd5-a61d-b792d742b778@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Extra Ball Animation-Json Part 1\\Click Buy and Machine Open-Close-skeleton.json": [
+      "9c86859b-9364-4743-958f-5084004dc7a0@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Extra Ball Animation-Json-Webp-Part 2\\Click Buy and Machine Open-Close-skeleton.json": [
+      "a2ae5030-9d03-471d-b226-c5d52e13e8a2@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Bingo-Win\\Bingo-Win-skeleton.json": [
+      "d886708f-fe53-4319-9a58-46c1b52fd975@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\clickbuy\\Click Buy Glitch-skeleton.json": [
+      "ce370c4e-29b8-45a6-81b3-cd8bb5101468@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\door\\Click Buy and Machine Open-Close-skeleton.json": [
+      "0bd3eb08-75c3-41c0-8800-39f0f64ca828@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\line\\Bingo-Light effects-3.json": [
+      "671c6f78-89e0-49db-9da4-9c3bbd334800@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Small Purple Door-Question Mark-Opening-Json\\Click Buy and Machine Open-Close-skeleton.json": [
+      "b8627d06-c29c-4913-8d36-8f7667842966@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\Machine-Big Purple Close&Open-Bingo\\Purple Machine Door-Open-Close-skeleton.json": [
+      "1da233b2-dc47-4e6d-a6d0-b3e7fbba851d@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BINGO2\\res\\spine\\wild\\skeleton2.json": [
+      "8420e2eb-55c8-4590-9320-2d457df28d29@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BLAZING_7S_SCRATCH\\res\\ani\\Flame Frame\\RedHot7-MotionGraphics.json": [
+      "677c70d6-b7c9-4b04-a06c-17c2f95b2b26@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\1x\\M-1x.json": [
+      "d4d3ced7-53cc-4d60-b4a0-149f6e2c85ed@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\2x\\M-2x.json": [
+      "f029044b-2fb0-40c6-80fa-756b9a0e0918@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\3x\\M-3x.json": [
+      "772dd51e-39bc-41b9-aaf1-a16a2b8a41de@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\5x\\M-5x.json": [
+      "1d03d9f4-7525-4bcd-aa66-9a9571a72d23@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\last win\\LC-lastwin_skeleton.json": [
+      "73c360b0-47d5-447e-a862-dcdefe45a978@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\light_win\\LC_LightSource_skeleton.json": [
+      "3a519eee-3d3e-43bd-9da2-0cae355052d1@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\spine\\Mulitplier Light Bar\\M-Light Bar.json": [
+      "090179dd-51d3-4e46-899c-83daa56d6bc2@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\BANANACRAZE\\res\\skeleton\\BC_base_tileeffect_1_skeleton.json": [
+      "5e1af867-b219-4f4e-bde6-e64c202b9350@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel\\superbonus-barrel_OrangeFish_Skeleton.json": [
+      "e4eef033-053e-497d-9a25-c5ba609160bd@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel\\superbonus-barrel_skeleton.json": [
+      "456ce48d-3c90-49c3-b196-c449409c9812@6c48a",
+      "123d7140-9d0d-4a35-81ad-706eb954e9da@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\barrel_point\\superbonus-barrel-point_skeleton.json": [
+      "2a56d90e-3285-426b-968f-3aba72116e24@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\bonus_point\\SeaShell-Bonus Game-skeleton.json": [
+      "346c6da4-2d6d-4759-acd3-66317ae8ffdd@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\bubble_light\\Base_Collect-Bonus-Badge1_skeleton.json": [
+      "a36e9cf9-c429-49b2-82fd-5d9a994eeb8c@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\coins\\Coin-Flip-skeleton.json": [
+      "579a70f9-dce3-46dc-89de-853d16c9d133@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\enter_bonus\\Bonus Game Opening-skeleton.json": [
+      "4a4e7361-f119-4ad6-9912-3bfd47d0fefd@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\enter_super\\IP_SBon-entrance_skeleton.json": [
+      "1beefc39-5ece-424e-b13b-3309666da868@6c48a",
+      "558a321e-325a-4165-b075-8192b7e30bd3@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fakewin\\Base-FakeWin2_skeleton.json": [
+      "00bbf312-de39-4ca8-8a34-8513b3c8f38b@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fakewin2\\Base_FakeWin1_skeleton.json": [
+      "5bd0fcb0-898a-4d26-a47d-998ee4681dc9@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\shell\\BonusG-SeaShell-skeleton.json": [
+      "34fb3acd-ada4-4847-933f-1ffac9b680ee@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\fish\\Fish-Icons-skeleton.json": [
+      "a84457de-b13c-4268-92eb-02b7ffb8d8f6@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\ship\\Ship-SuperBonus-skeleton.json": [
+      "3095a974-0878-4307-b47a-883086936ec0@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\super_bonus_point\\SeaShell-Bonus Game-skeleton.json": [
+      "2450d3e2-b3ea-4446-a2e6-0e194e3aef69@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\water\\skeleton.json": [
+      "a190a02f-5ce1-4a01-b386-7b3d10c7e4bb@6c48a"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\DEEP_SEA\\res\\spine\\win_numbers\\StarFish-WinningNumbers-skeleton.json": [
+      "cc6b5de2-a582-437a-97d1-bd0a62ba49f2@6c48a"
     ]
   }
 }
