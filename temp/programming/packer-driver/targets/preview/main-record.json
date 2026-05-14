@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 5395.6978,
+      "mTimestamp": 4736.9425,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 2051429.3555,
+      "mTimestamp": 244411.7878,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -4949,7 +4949,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1778742493109,
+      "mTimestamp": 1778748065526,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -8272,7 +8272,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778744160699.18,
+        "mtime": 1778748255141.161,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -10041,7 +10041,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/PricePopUpOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778744543691.0764,
+        "mtime": 1778744566241.8035,
         "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
       },
       "chunkId": "cee91858986803de21b8fb0d430d475e16fb194f",
@@ -24576,7 +24576,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/PopUp/WinPopUp.ts": {
       "mTimestamp": {
-        "mtime": 1778739706984.193,
+        "mtime": 1778748308495.8914,
         "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
       },
       "chunkId": "487b68f0660f01f6fdfb6a9c331b28f264c107fd",
@@ -24645,6 +24645,20 @@
               "column": 75
             }
           }
+        },
+        {
+          "value": "../../utils/NumberFormatter",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 32
+            },
+            "end": {
+              "line": 17,
+              "column": 61
+            }
+          }
         }
       ],
       "type": "esm",
@@ -24695,6 +24709,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/PopUpManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/NumberFormatter.ts"
           },
           "messages": []
         }
@@ -25081,7 +25102,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/NumberFormatter.ts": {
       "mTimestamp": {
-        "mtime": 1778742108137.9763,
+        "mtime": 1778748153560.1792,
         "uuid": "73e54186-e599-483e-8076-9dedcd12848b"
       },
       "chunkId": "cd54dfe9b7cccde18232722a8cb9b6419adf2185",
@@ -25097,11 +25118,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 44
+              "column": 27
             },
             "end": {
               "line": 1,
-              "column": 48
+              "column": 31
             }
           }
         }

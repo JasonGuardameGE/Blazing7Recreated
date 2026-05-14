@@ -14,6 +14,7 @@ import {
 import { AudioManager } from '../../Managers/AudioManager';
 import { Services } from '../../Managers/Services';
 import { PopUpManager, PopUpPrefabPath } from '../../Managers/PopUpManager';
+import { NumberFormatter } from '../../utils/NumberFormatter';
 
 const { ccclass, property } = _decorator;
 
@@ -44,7 +45,6 @@ export class WinPopUp extends Component {
     @property(CCFloat)
     public superWinIncrementDuration: number = 1.75;
 
-    // Coins Related Variables
     @property([Node])
     private coins: Node[] = [];
 
@@ -63,7 +63,6 @@ export class WinPopUp extends Component {
     @property(CCFloat)
     public coinEndScale: number = 0.3;
 
-    // Label Related Variables
     private isSuperWin: boolean = false;
     private winAmount: number = 0;
     private originalWinAmountFontSize: number = 0;
@@ -127,7 +126,6 @@ export class WinPopUp extends Component {
         this.isSuperWin = isSuperWin === -1;
         this.onWinPopupDoneCallback = callback;
 
-        // Important: reset while still inactive/before replaying.
         this.resetAnimationState();
 
         this.node.active = true;
@@ -166,7 +164,7 @@ export class WinPopUp extends Component {
             if (this.winAmountLabel) {
                 this.winAmountLabel.node.active = false;
                 this.originalWinAmountFontSize = this.winAmountLabel.fontSize;
-                this.winAmountLabel.string = '0';
+                this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(0);
             }
 
             tween(this.node)
@@ -257,7 +255,7 @@ export class WinPopUp extends Component {
             : this.normalWinIncrementDuration;
 
         this.incrementTweenTarget.value = 0;
-        this.winAmountLabel.string = '0';
+        this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(0);
 
         const originalFontSize = this.originalWinAmountFontSize || this.winAmountLabel.fontSize;
         const pulseFontSize = originalFontSize * 1.5;
@@ -270,8 +268,10 @@ export class WinPopUp extends Component {
                 { value: targetValue },
                 {
                     onUpdate: () => {
-                        const currentValue = Math.floor(this.incrementTweenTarget.value);
-                        this.winAmountLabel.string = this.FormatWinAmount(currentValue);
+                        const currentValue = this.incrementTweenTarget.value;
+
+                        this.winAmountLabel.string =
+                            NumberFormatter.formatAmountWithDecimal(currentValue);
 
                         const pulse = Math.sin(Date.now() * 0.02);
                         const normalizedPulse = (pulse + 1) * 0.5;
@@ -312,7 +312,7 @@ export class WinPopUp extends Component {
         const targetValue = Math.max(0, this.winAmount);
 
         this.incrementTweenTarget.value = targetValue;
-        this.winAmountLabel.string = this.FormatWinAmount(targetValue);
+        this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(targetValue);
         this.winAmountLabel.fontSize = this.originalWinAmountFontSize || this.winAmountLabel.fontSize;
 
         this.isIncrementFinished = true;
@@ -549,7 +549,7 @@ export class WinPopUp extends Component {
 
         if (this.winAmountLabel) {
             this.originalWinAmountFontSize = this.winAmountLabel.fontSize;
-            this.winAmountLabel.string = '0';
+            this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(0);
             this.winAmountLabel.node.active = false;
         }
 
@@ -590,9 +590,5 @@ export class WinPopUp extends Component {
         skeleton.setToSetupPose();
         skeleton.setAnimation(0, animationName, loop);
         skeleton.updateAnimation(0);
-    }
-
-    private FormatWinAmount(value: number): string {
-        return Math.floor(value).toLocaleString();
     }
 }

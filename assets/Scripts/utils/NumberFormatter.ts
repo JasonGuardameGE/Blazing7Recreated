@@ -1,5 +1,6 @@
-import { _decorator, Component, Node } from 'cc';
-const { ccclass, property } = _decorator;
+import { _decorator } from 'cc';
+
+const { ccclass } = _decorator;
 
 @ccclass('NumberFormatter')
 export class NumberFormatter {
@@ -47,7 +48,9 @@ export class NumberFormatter {
         if (!Number.isFinite(value)) return 0;
 
         const factor = Math.pow(10, decimals);
-        const truncated = value < 0 ? Math.ceil(value * factor) : Math.floor(value * factor);
+        const truncated = value < 0
+            ? Math.ceil(value * factor)
+            : Math.floor(value * factor);
 
         return truncated / factor;
     }
@@ -56,7 +59,10 @@ export class NumberFormatter {
         if (!Number.isFinite(value)) return '0';
 
         const factor = Math.pow(10, decimals);
-        const truncated = value < 0 ? Math.ceil(value * factor) : Math.floor(value * factor);
+        const truncated = value < 0
+            ? Math.ceil(value * factor)
+            : Math.floor(value * factor);
+
         const absTruncated = Math.abs(truncated / factor);
         const integerPart = Math.floor(absTruncated);
         const sign = truncated < 0 ? '-' : '';
@@ -87,5 +93,3 @@ export class NumberFormatter {
         return Number.isFinite(parsed) ? parsed : 0;
     }
 }
-
-

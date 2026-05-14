@@ -33,9 +33,6 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\SuperWinPopUp\\blazing7-superwin_skeleton.json": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\SuperWinPopUp\\blazing7-superwin_skeleton.atlas"
     ],
-    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinPopupFont\\win-amount.fnt": [
-      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinPopupFont\\win-amount.png"
-    ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.json": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Spine\\Flaming Frame\\RedHot7-MotionGraphics.atlas"
     ],
@@ -327,6 +324,9 @@
     ],
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.fnt": [
       "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.png"
+    ],
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinPopupFont\\win-amount.fnt": [
+      "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\WinPopupFont\\win-amount.png"
     ]
   },
   "uuid": {
