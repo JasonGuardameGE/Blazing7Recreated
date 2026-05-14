@@ -6,7 +6,7 @@ import { AudioManager } from './AudioManager';
 import { UIRoot } from '../UI/UIRoot';
 import { GameData } from '../Data/GameData';
 import TicketData from '../Data/TicketData';
-import { PopUpManager } from './PopUpManager';
+import { PopUpManager, PopUpPrefabPath } from './PopUpManager';
 import { mockBuyCard, settleScratch } from '../Api/GameApi';
 import { ScratchCard } from '../Card/ScratchCard';
 import logger from '../utils/logger';
@@ -73,8 +73,6 @@ export class GameManager extends Component {
 
         this.registerServices();
         this.initializeServices();
-
-        //WsManager.getInstance().init();
     }
 
     public async LoadGameSetup() : Promise<void> {
@@ -87,6 +85,7 @@ export class GameManager extends Component {
                 const gameData = this.gameData;
                 const gameList = gameData.gameList = res;
                 const currentGame = gameList.find((item:any) => item.gameId == gameData.gameId);
+                gameData.initTopAndBigAmount(currentGame.bigAmount, currentGame.topAmount);
                 gameData.gameName = currentGame.gameType;
                 gameData.remainingCardCount = currentGame.unusedCount;
                 gameData.cardPrice = currentGame.unitPrice;
@@ -96,6 +95,7 @@ export class GameManager extends Component {
             });
 
             this.setupLoaded = true;
+            WsManager.getInstance().init();
             await this.scratchCard.RequestRemainingCards();
         }catch(err){
             logger.error('[GameManager] Error when initializing API:', err);

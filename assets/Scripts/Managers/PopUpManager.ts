@@ -35,11 +35,9 @@ export class PopUpManager extends Component {
 
         const node = await this._resourceManager.LoadPrefab(popUpPrefabPath);
         this._preLoadPopups.set(popUpPrefabPath, node);
-
-        console.log(`[PopUpManager] PopUp Preloaded: ${popUpPrefabPath}`);
     }
 
-    public async LoadPopup(popUpPrefabPath: PopUpPrefabPath): Promise<Node> {
+    public async LoadPopup(popUpPrefabPath: PopUpPrefabPath, active: boolean = false): Promise<Node> {
         if (!this._uiRoot) {
             console.error('[PopUpManager] _uiRoot is null. Did you call Init()?');
             return null;
@@ -59,7 +57,7 @@ export class PopUpManager extends Component {
         if(this._spawnedPopups.has(popUpPrefabPath)){
             return this._spawnedPopups.get(popUpPrefabPath);
         }
-        
+
         let popup: Node = null;
 
         if (this._preLoadPopups.has(popUpPrefabPath)) {
@@ -74,10 +72,11 @@ export class PopUpManager extends Component {
             return null;
         }
 
-        popup.active = true;
+        popup.active = active;
 
         this._uiRoot.PopUpRoot.addChild(popup);
-
+        popup.setSiblingIndex(0);
+        
         // console.log(`[PopUpManager] New PopUp Loaded: ${popup.name}`);
         // console.log(`[PopUpManager] Added to parent: ${popup.parent?.name}`);
         // console.log(`[PopUpManager] PopUpRoot child count: ${this._uiRoot.PopUpRoot.children.length}`);

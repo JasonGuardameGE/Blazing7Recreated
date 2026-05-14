@@ -112,7 +112,7 @@ export class WsManager {
    */
   public async init(): Promise<void> {
     if (this.isInitialized) {
-      this.log("WebSocket 管理器已经初始化");
+      this.log("WebSocket Manager has been initialized");
       return;
     }
     
@@ -124,7 +124,7 @@ export class WsManager {
     this.aesKey = gameData.aesKey;
     this.language = gameData.urlParams.language || "en-US";
     this.url = `${gameData.config.ws}/game/${this.token}/${this.language}/${gameData.gameId}`
-
+    
     this._wsConfig = {
         url: this.url,
         aesKey: this.aesKey,
@@ -138,7 +138,7 @@ export class WsManager {
         ...this._wsConfig,
       };
 
-      this.log("开始初始化 WebSocket 管理器...");
+      this.log("Start initializing the WebSocket manager...");
 
       // 创建 WsService 实例
       this.wsService = new WsService(this.config);
@@ -152,7 +152,7 @@ export class WsManager {
       this.isInitialized = true;
       this.log("WebSocket 管理器初始化成功");
     } catch (error) {
-      this.log("WebSocket 管理器初始化失败:", error);
+      this.log("WebSocket Manager initialization failed:", error);
       this.updateConnectionState(WsConnectionState.ERROR, error);
       throw error;
     }
@@ -243,6 +243,10 @@ export class WsManager {
     this.wsService.onHeartbeatTimeout((data) => {
       logger.log(`心跳检测失败 ${data.failures}/${data.maxFailures}`);
 
+      console.log(`[Websocket Manager] URL: ${this.url}`);
+      console.log(`[Websocket Manager] Token: ${this.token}`);
+      console.log(`[Websocket Manager] AesKey: ${this.aesKey}`);
+      console.log(`[Websocket Manager] Language: ${this.language}`);
       // 可以在这里显示警告信息
     });
 

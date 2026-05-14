@@ -34,9 +34,9 @@ export class WinnerBroadcastPopUp extends Component {
 
         // Wait 2 seconds, fade out, then trigger callbacks
         tween(this.opacity)
-            .delay(2)
+            .delay(3)
             .to(1, { opacity: 0 })
-            .delay(1)
+            .delay(0.25)
             .call(() => {
                 this.onAnnouncementCompleteCallbacks.forEach(callback => {
                     EventHandler.emitEvents([callback], this);

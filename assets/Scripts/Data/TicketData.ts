@@ -11,8 +11,6 @@ export default class TicketData {
   
 
     updateTicketItem(data: any) {
-        console.log("[GameManager] Updating TicketItem");
-
         try {
             // Returns marked Winning lines
             let codes: any = this.markWinningCells(data.codes);

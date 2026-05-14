@@ -1,4 +1,4 @@
-import { _decorator, Component, EventHandler, Node } from 'cc';
+import { _decorator, Component, EventHandler, Node, tween } from 'cc';
 import { Announcement } from '../Types';
 import { PopUpManager, PopUpPrefabPath } from './PopUpManager';
 import { Services } from './Services';
@@ -17,8 +17,12 @@ export class WinBroadcastManager extends Component {
     private winnerBroadcastPopup: WinnerBroadcastPopUp;
     private isShowingAnnouncement: boolean = false;
 
+    private delayShow: number = 5;
+    private delayTweenValue = { value: 5 };
+
     protected async start(): Promise<void> {
         await this.initialize();
+        this.startDelayCountdown();
     }
 
     private async initialize(): Promise<void> {
@@ -28,17 +32,18 @@ export class WinBroadcastManager extends Component {
 
         if (!this.winnerBroadcastPopup) {
             const node: Node = await this._popupManager.LoadPopup(
-                PopUpPrefabPath.WINNER_ANNOUNCEMENT_POPUP
+                PopUpPrefabPath.WINNER_ANNOUNCEMENT_POPUP,
+                true
             );
 
             this.winnerBroadcastPopup = node.getComponent(WinnerBroadcastPopUp);
 
-            const callback = new EventHandler();
-            callback.target = this.node;
-            callback.component = 'WinBroadcastManager';
-            callback.handler = 'checkAnnouncements';
+            const AnnouncementComplete = new EventHandler();
+            AnnouncementComplete.target = this.node;
+            AnnouncementComplete.component = 'WinBroadcastManager';
+            AnnouncementComplete.handler = 'AnnouncementComplete';
 
-            this.winnerBroadcastPopup.onAnnouncementCompleteCallbacks.push(callback);
+            this.winnerBroadcastPopup.onAnnouncementCompleteCallbacks.push(AnnouncementComplete);
         }
 
         // Register to WebsocketManager.
@@ -49,8 +54,6 @@ export class WinBroadcastManager extends Component {
     }
 
     private async onNewAnnouncement(data: any): Promise<void> {
-        await this.initialize();
-
         data.forEach((announcement: Announcement) => {
             if (announcement.announcementType === 'BIG') {
                 this.queuedAnnouncements.push(announcement);
@@ -60,11 +63,17 @@ export class WinBroadcastManager extends Component {
         this.checkAnnouncements();
     }
 
+
+    public AnnouncementComplete(){
+        this.isShowingAnnouncement = false;
+        this.checkAnnouncements();
+    }
+    
     public async checkAnnouncements(): Promise<void> {
-        if (this.isShowingAnnouncement) {
+        if (this.isShowingAnnouncement || this.delayShow > 0) {
             return;
         }
-
+    
         if (this.queuedAnnouncements.length > 0) {
             await this.ShowAnnouncement();
         }
@@ -91,5 +100,21 @@ export class WinBroadcastManager extends Component {
     public onAnnouncementCompleted(): void {
         this.isShowingAnnouncement = false;
         this.checkAnnouncements();
+    }
+
+    private startDelayCountdown(): void {
+        this.delayTweenValue.value = this.delayShow;
+    
+        tween(this.delayTweenValue)
+            .to(this.delayShow, { value: 0 }, {
+                onUpdate: () => {
+                    this.delayShow = this.delayTweenValue.value;
+                }
+            })
+            .call(() => {
+                this.delayShow = 0;
+                this.checkAnnouncements();
+            })
+            .start();
     }
 }

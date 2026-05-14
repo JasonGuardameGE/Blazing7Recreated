@@ -48,6 +48,18 @@ export class ScratchSystem extends Component {
     })
     singleErasedAreaThreshold: number = 5;
 
+    @property({
+        type: CCFloat,
+        tooltip: 'How many random fragment positions to spawn per cell when ScratchAll is used.',
+    })
+    scratchAllFragmentsPerCell: number = 3;
+
+    @property({
+        type: CCFloat,
+        tooltip: 'How many fragments to spawn per random position when ScratchAll is used.',
+    })
+    scratchAllFragmentsPerBurst: number = 1;
+
     @property([Node])
     scratchNumberNodes: Node[] = [];
 
@@ -64,6 +76,8 @@ export class ScratchSystem extends Component {
 
     private isTouched: boolean = false;
     private isAllScratched: boolean = false;
+    private isAutoScratching: boolean = false;
+
     private _audioManager: AudioManager;
 
     public get IsAllScratched(): boolean {
@@ -125,6 +139,7 @@ export class ScratchSystem extends Component {
 
         this.isTouched = false;
         this.isAllScratched = false;
+        this.isAutoScratching = false;
 
         const success = this.scratchRenderer.CreateNewRenderedScratch();
 
@@ -134,14 +149,120 @@ export class ScratchSystem extends Component {
         }
     }
 
-    public ScratchAll(){
+    public async ScratchAll(): Promise<void> {
+        if (this.isAllScratched || this.isAutoScratching) {
+            return;
+        }
+    
+        if (!this.cellScratched || this.cellScratched.length === 0) {
+            return;
+        }
+    
+        const unscratchedIndexes: number[] = [];
+    
         for (let i = 0; i < this.cellScratched.length; i++) {
-            if(this.cellScratched[i]) return;
-            this.autoScratchCell(i);
+            if (!this.cellScratched[i]) {
+                unscratchedIndexes.push(i);
+            }
+        }
+    
+        // Nothing left to scratch, so do not emit allCardScratchedCallbacks again.
+        if (unscratchedIndexes.length === 0) {
+            return;
+        }
+    
+        this.isAutoScratching = true;
+        this.isTouched = false;
+        this.disableTouch();
+    
+        const scratchPromises: Promise<void>[] = [];
+    
+        for (const index of unscratchedIndexes) {
+            this.cellScratched[index] = true;
+
+            this.spawnScratchAllFragmentsForCell(index);
+
+            scratchPromises.push(this.autoScratchCell(index));
+        }
+    
+        if (this._audioManager) {
+            this._audioManager.playAutoScratchSound();
+        }
+    
+        try {
+            await Promise.all(scratchPromises);
+        } finally {
+            this.isAutoScratching = false;
+            this.CheckScratchProgress();
+        }
+    }
+
+    private spawnScratchAllFragmentsForCell(cellIndex: number): void {
+        if (!this.fragmentView) {
+            return;
         }
 
-        this._audioManager.playAutoScratchSound();
-        this.CheckScratchProgress();
+        if (cellIndex < 0 || cellIndex >= this.validCells.length) {
+            return;
+        }
+
+        const burstCount = Math.max(0, Math.floor(this.scratchAllFragmentsPerCell));
+        const fragmentsPerBurst = Math.max(0, Math.floor(this.scratchAllFragmentsPerBurst));
+
+        if (burstCount <= 0 || fragmentsPerBurst <= 0) {
+            return;
+        }
+
+        for (let i = 0; i < burstCount; i++) {
+            const worldPos = this.getRandomWorldPositionInsideCell(cellIndex);
+
+            if (!worldPos) {
+                continue;
+            }
+
+            this.fragmentView.spawnFragments({
+                worldPos,
+                count: fragmentsPerBurst,
+            });
+        }
+    }
+
+    private getRandomWorldPositionInsideCell(cellIndex: number): Vec3 | null {
+        if (!this.scratchRenderedHolder) {
+            return null;
+        }
+
+        if (cellIndex < 0 || cellIndex >= this.validCells.length) {
+            return null;
+        }
+
+        const coverUI = this.scratchRenderedHolder.getComponent(UITransform);
+
+        if (!coverUI) {
+            return null;
+        }
+
+        const cell = this.validCells[cellIndex];
+
+        const randomTexX = cell.x + Math.random() * cell.width;
+        const randomTexY = cell.y + Math.random() * cell.height;
+
+        const localX =
+            (randomTexX / this.textureWidth) * coverUI.width -
+            coverUI.width / 2;
+
+        const localY =
+            coverUI.height / 2 -
+            (randomTexY / this.textureHeight) * coverUI.height;
+
+        const worldPos = new Vec3();
+
+        coverUI.convertToWorldSpaceAR(
+            new Vec3(localX, localY, 0),
+            worldPos,
+        );
+
+        return worldPos;
     }
 
     private calculateGridCellContainers(): void {
@@ -222,7 +343,7 @@ export class ScratchSystem extends Component {
     }
 
     private onTouchStart(e: EventTouch): void {
-        if (this.isAllScratched) {
+        if (this.isAllScratched || this.isAutoScratching) {
             return;
         }
 
@@ -231,7 +352,7 @@ export class ScratchSystem extends Component {
     }
 
     private onTouchMove(e: EventTouch): void {
-        if (!this.isTouched || this.isAllScratched) {
+        if (!this.isTouched || this.isAllScratched || this.isAutoScratching) {
             return;
         }
 
@@ -257,7 +378,10 @@ export class ScratchSystem extends Component {
 
         const worldPos = this.getWorldPositionFromTouch(e);
         this.checkCellInLastPosition(worldPos);
-        this._audioManager.playScratchEffectOneShot();
+
+        if (this._audioManager) {
+            this._audioManager.playScratchEffectOneShot();
+        }
     }
 
     private checkCellInLastPosition(worldPosition: Vec3): void {
@@ -284,10 +408,12 @@ export class ScratchSystem extends Component {
             this.CheckScratchProgress();
         }
         
-        this.fragmentView.spawnFragments({
-            worldPos: worldPosition,
-            count: 1,
-        });
+        if (this.fragmentView) {
+            this.fragmentView.spawnFragments({
+                worldPos: worldPosition,
+                count: 1,
+            });
+        }
     }
 
     private CheckScratchProgress(): void {

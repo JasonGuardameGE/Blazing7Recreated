@@ -1,11 +1,9 @@
 import { _decorator, CCFloat, Component, Node, tween, Vec3 } from 'cc';
+
 const { ccclass, property } = _decorator;
 
-@ccclass('DragonMovement')
-export class DragonMovement extends Component {
-    
-    @property(Node)
-    dragonNode: Node = null!;
+@ccclass('NodeMovement')
+export class NodeMovement extends Component {
 
     @property(CCFloat)
     targetYPosition: number = 0;
@@ -16,19 +14,36 @@ export class DragonMovement extends Component {
     @property(CCFloat)
     moveDuration: number = 0.5;
     
+    @property(Boolean)
+    startOnLoad: boolean = false;
+
+    @property(Boolean)
+    disableOnReach: boolean = false;
+
     protected start(): void {
+        if (this.startOnLoad) {
+            this.StartMoving();
+        }
+    }
+    
+    public StartMoving(): void {
         this.scheduleOnce(() => {
-            if (!this.dragonNode) return;
+            if (!this.node) return;
 
-            const currentPos = this.dragonNode.position;
+            const currentPos = this.node.position;
 
-            tween(this.dragonNode)
+            tween(this.node)
                 .to(this.moveDuration, {
                     position: new Vec3(
                         currentPos.x,
                         this.targetYPosition,
                         currentPos.z
                     )
+                })
+                .call(() => {
+                    if (this.disableOnReach && this.node) {
+                        this.node.active = false;
+                    }
                 })
                 .start();
 

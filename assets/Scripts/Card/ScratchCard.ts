@@ -10,6 +10,8 @@ type CardNumberData = Array<{ value: number; win: number }>;
 @ccclass('ScratchCard')
 export class ScratchCard {
 
+    private isSettlingCard: boolean = false;
+
     /**
      * Called after a card is purchased and ticket card numbers are ready.
      */
@@ -39,7 +41,6 @@ export class ScratchCard {
             if (currentCardList) {
 
                 currentCardList.content.forEach((item: any) =>{
-                    console.log("UPDATING UNOPENED TICKET!");
                     this.gameManager.GameData.TicketData.updateTicketItem(item);
                 });          
             }
@@ -79,26 +80,64 @@ export class ScratchCard {
         }
     }
 
-    public async SettleCard(){
-        try{
+    public async SettleCard(): Promise<void> {
+        if (this.isSettlingCard) {
+            return;
+        }
+
+        const gameData = this.GameData;
+        const ticketData = gameData?.TicketData;
+        const currentTicket = ticketData?.currentTicket;
+
+        if (!gameData) {
+            console.error('[ScratchCard] Cannot settle card: GameData is null');
+            return;
+        }
+
+        if (!ticketData) {
+            console.error('[ScratchCard] Cannot settle card: TicketData is null');
+            return;
+        }
+
+        if (!currentTicket) {
+            return;
+        }
+
+        if (!currentTicket.billId) {
+            console.error('[ScratchCard] Cannot settle card: currentTicket.billId is null', currentTicket);
+            return;
+        }
+
+        const billId = currentTicket.billId;
+
+        this.isSettlingCard = true;
+
+        try {
             const res = await settleScratch({
-                gameId: this.GameData.gameId,
-                billId: this.GameData.TicketData.currentTicket.billId,
+                gameId: gameData.gameId,
+                billId: billId,
                 showLoading: false,
                 showLoadingMask: false,
-                extField: "",
+                extField: '',
             });
-    
-            res.billId = this.GameData.TicketData.currentTicket.billId;
-            // process Settlement front-end
+
+            if (!res) {
+                console.error('[ScratchCard] SettleCard failed: response is null');
+                return;
+            }
+
+            res.billId = billId;
+
             this.processSettlement(res);
 
-            // Remove and settle ticketData
-            this.GameData.TicketData.settleInfo = res;
-            this.GameData.TicketData.settleInfo.winType = this.getAmountType(this.GameData.TicketData.settleInfo.totalPayout);
-            this.GameData.TicketData.removeSettleTicket(res.billId);    
-        }catch(err){
+            ticketData.settleInfo = res;
+            ticketData.settleInfo.winType = this.getAmountType(ticketData.settleInfo.totalPayout);
+            ticketData.removeSettleTicket(billId);
+
+        } catch (err) {
             console.error(`[ScratchCard] Error while Settling Card: ${err}`);
+        } finally {
+            this.isSettlingCard = false;
         }
     }
 

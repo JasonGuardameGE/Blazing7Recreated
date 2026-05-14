@@ -79,14 +79,14 @@ export class WinPopUp extends Component {
     
     private _audioManager: AudioManager;
 
-    protected start(): void {
-        this._audioManager = Services.GetService(AudioManager);
-    }
-
     protected onLoad(): void {
         this.RegisterPopUp();
         this.cacheCoinOriginalPositions();
-        this.resetCoins();
+        this.resetAnimationState();
+    }
+
+    protected start(): void {
+        this._audioManager = Services.GetService(AudioManager);
     }
 
     protected onEnable(): void {
@@ -100,18 +100,18 @@ export class WinPopUp extends Component {
             this.skipButton.off(Node.EventType.TOUCH_END, this.onSkipTouched, this);
         }
 
-        Tween.stopAllByTarget(this.incrementTweenTarget);
-        Tween.stopAllByTarget(this.node);
-
+        this.stopAllRunningTweens();
         this.stopCoinTweens();
         this.resetCoins();
+        this.resetSkeleton(this.normalWin, false);
+        this.resetSkeleton(this.superWin, false);
     }
 
-    private RegisterPopUp(){
+    private RegisterPopUp(): void {
         const popupManager = Services.GetService(PopUpManager);
 
-        if(!popupManager){
-            console.warn(`[WinPopUp] Trying to register popup, but Manager does not exist`)
+        if (!popupManager) {
+            console.warn('[WinPopUp] Trying to register popup, but Manager does not exist');
             return;
         }
 
@@ -126,33 +126,41 @@ export class WinPopUp extends Component {
         this.winAmount = newWinValue;
         this.isSuperWin = isSuperWin === -1;
         this.onWinPopupDoneCallback = callback;
-        
+
+        // Important: reset while still inactive/before replaying.
+        this.resetAnimationState();
+
         this.node.active = true;
 
         this.Play();
     }
 
     protected async Play(): Promise<void> {
-        try{            
-            if(!this._audioManager){
+        try {
+            if (!this._audioManager) {
                 this._audioManager = Services.GetService(AudioManager);
             }
 
-            await this._audioManager.playEffectByName("fire");
+            await this._audioManager.playEffectByName('fire');
 
             this.isIncrementFinished = false;
             this.hasPlayedCoinFly = false;
 
             this.resetCoins();
 
-            if (this.normalWin) {
-                this.normalWin.node.active = true;
-                this.normalWin.setAnimation(0, 'blazing7-win_popup_animation', false);
-                await this._audioManager.playEffectByName("win");
+            if (this.superWin) {
+                this.resetSkeleton(this.superWin, false);
             }
 
-            if (this.superWin) {
-                this.superWin.node.active = false;
+            if (this.normalWin) {
+                this.playSkeletonAnimation(
+                    this.normalWin,
+                    'blazing7-win_popup_animation',
+                    false,
+                    true,
+                );
+
+                await this._audioManager.playEffectByName('win');
             }
 
             if (this.winAmountLabel) {
@@ -169,20 +177,25 @@ export class WinPopUp extends Component {
                 .start();
 
             if (this.isSuperWin) {
-                await this._audioManager.playEffectByName("superwin");
+                await this._audioManager.playEffectByName('superwin');
                 this.showSuperWin();
             } else {
                 tween(this.node)
                     .delay(2)
                     .call(() => {
                         if (this.normalWin) {
-                            this.normalWin.setAnimation(0, 'blazing7-win_looping_animation', true);
+                            this.playSkeletonAnimation(
+                                this.normalWin,
+                                'blazing7-win_looping_animation',
+                                true,
+                                true,
+                            );
                         }
                     })
                     .start();
             }
-        }catch(err){
-            console.error(`[WinPopUp] Error:`, err);
+        } catch (err) {
+            console.error('[WinPopUp] Error:', err);
         }
     }
 
@@ -191,12 +204,16 @@ export class WinPopUp extends Component {
             .delay(1.25)
             .call(() => {
                 if (this.normalWin) {
-                    this.normalWin.node.active = false;
+                    this.resetSkeleton(this.normalWin, false);
                 }
 
                 if (this.superWin) {
-                    this.superWin.node.active = true;
-                    this.superWin.setAnimation(0, 'blazing7-superwin_popup_animation', false);
+                    this.playSkeletonAnimation(
+                        this.superWin,
+                        'blazing7-superwin_popup_animation',
+                        false,
+                        true,
+                    );
                 }
             })
             .start();
@@ -205,7 +222,12 @@ export class WinPopUp extends Component {
             .delay(2)
             .call(() => {
                 if (this.superWin) {
-                    this.superWin.setAnimation(0, 'blazing7-superwin_looping_animation', true);
+                    this.playSkeletonAnimation(
+                        this.superWin,
+                        'blazing7-superwin_looping_animation',
+                        true,
+                        true,
+                    );
                 }
             })
             .start();
@@ -303,24 +325,32 @@ export class WinPopUp extends Component {
 
         if (this.isSuperWin) {
             if (this.normalWin) {
-                this.normalWin.node.active = false;
+                this.resetSkeleton(this.normalWin, false);
             }
 
             if (this.superWin) {
-                this.superWin.node.active = true;
-                this.superWin.setAnimation(0, 'blazing7-superwin_looping_animation', true);
+                this.playSkeletonAnimation(
+                    this.superWin,
+                    'blazing7-superwin_looping_animation',
+                    true,
+                    true,
+                );
             }
 
             return;
         }
 
         if (this.superWin) {
-            this.superWin.node.active = false;
+            this.resetSkeleton(this.superWin, false);
         }
 
         if (this.normalWin) {
-            this.normalWin.node.active = true;
-            this.normalWin.setAnimation(0, 'blazing7-win_looping_animation', true);
+            this.playSkeletonAnimation(
+                this.normalWin,
+                'blazing7-win_looping_animation',
+                true,
+                true,
+            );
         }
     }
 
@@ -506,6 +536,60 @@ export class WinPopUp extends Component {
         }
 
         return coin.parent.inverseTransformPoint(new Vec3(), targetWorldPosition);
+    }
+
+    private resetAnimationState(): void {
+        this.stopAllRunningTweens();
+        this.stopCoinTweens();
+
+        this.isIncrementFinished = false;
+        this.hasPlayedCoinFly = false;
+
+        this.incrementTweenTarget.value = 0;
+
+        if (this.winAmountLabel) {
+            this.originalWinAmountFontSize = this.winAmountLabel.fontSize;
+            this.winAmountLabel.string = '0';
+            this.winAmountLabel.node.active = false;
+        }
+
+        this.resetSkeleton(this.normalWin, false);
+        this.resetSkeleton(this.superWin, false);
+
+        this.resetCoins();
+    }
+
+    private stopAllRunningTweens(): void {
+        Tween.stopAllByTarget(this.incrementTweenTarget);
+        Tween.stopAllByTarget(this.node);
+    }
+
+    private resetSkeleton(skeleton: sp.Skeleton | null, active: boolean): void {
+        if (!skeleton) {
+            return;
+        }
+
+        skeleton.clearTracks();
+        skeleton.setToSetupPose();
+        skeleton.updateAnimation(0);
+        skeleton.node.active = active;
+    }
+
+    private playSkeletonAnimation(
+        skeleton: sp.Skeleton | null,
+        animationName: string,
+        loop: boolean,
+        active: boolean = true,
+    ): void {
+        if (!skeleton) {
+            return;
+        }
+
+        skeleton.node.active = active;
+        skeleton.clearTracks();
+        skeleton.setToSetupPose();
+        skeleton.setAnimation(0, animationName, loop);
+        skeleton.updateAnimation(0);
     }
 
     private FormatWinAmount(value: number): string {

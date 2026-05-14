@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, ProgressBar, Sprite, Label, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, LoadingBar;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, ProgressBar, Sprite, Label, tween, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, LoadingBar;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -19,13 +19,14 @@ System.register(["cc"], function (_export, _context) {
       ProgressBar = _cc.ProgressBar;
       Sprite = _cc.Sprite;
       Label = _cc.Label;
+      tween = _cc.tween;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "1ab6eNZ0wtPAJrLErfhXNX4", "LoadingBar", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node', 'ProgressBar', 'Sprite', 'Label']);
+      __checkObsolete__(['_decorator', 'Component', 'ProgressBar', 'Sprite', 'Label', 'tween']);
 
       ({
         ccclass,
@@ -47,6 +48,9 @@ System.register(["cc"], function (_export, _context) {
 
           this._realProgress = 0;
           this._isSceneLoading = false;
+          this._progressTweenTarget = {
+            value: 0
+          };
         }
 
         get RealProgress() {
@@ -63,7 +67,7 @@ System.register(["cc"], function (_export, _context) {
 
         async StartLoading() {
           if (!this.evtOnLoadingBarStartLoading) {
-            console.error("Loading cannot start, No loading event registered.");
+            console.error('Loading cannot start, No loading event registered.');
             return;
           }
 
@@ -71,22 +75,64 @@ System.register(["cc"], function (_export, _context) {
         }
 
         Reset() {
+          tween(this._progressTweenTarget).stop();
           this._realProgress = 0;
+          this._progressTweenTarget.value = 0;
           this.UpdateBar();
         }
 
         update(deltaTime) {}
 
         SetProgress(newProgress) {
-          this._realProgress = newProgress;
+          this._realProgress = this.ClampProgress(newProgress);
+          this._progressTweenTarget.value = this._realProgress;
           this.UpdateBar();
         }
 
-        UpdateBar() {
-          var _this$_realProgress;
+        SetProgressSmooth(targetProgress, duration = 0.4, onComplete) {
+          return new Promise(resolve => {
+            const target = this.ClampProgress(targetProgress);
+            tween(this._progressTweenTarget).stop();
+            this._progressTweenTarget.value = this._realProgress;
+            tween(this._progressTweenTarget).to(duration, {
+              value: target
+            }, {
+              onUpdate: () => {
+                this._realProgress = this._progressTweenTarget.value;
+                this.UpdateBar();
+              }
+            }).call(() => {
+              this._realProgress = target;
+              this._progressTweenTarget.value = target;
+              this.UpdateBar();
 
-          const p = Math.min(Math.max((_this$_realProgress = this._realProgress) != null ? _this$_realProgress : 0, 0), 100);
-          this.progressBar.progress = p / 100;
+              if (onComplete) {
+                onComplete();
+              }
+
+              resolve();
+            }).start();
+          });
+        }
+
+        UpdateBar() {
+          const p = this.ClampProgress(this._realProgress);
+
+          if (this.progressBar) {
+            this.progressBar.progress = p / 100;
+          }
+
+          if (this.progressLabel) {
+            this.progressLabel.string = `${Math.floor(p)}%`;
+          }
+        }
+
+        ClampProgress(value) {
+          if (!Number.isFinite(value)) {
+            return 0;
+          }
+
+          return Math.min(Math.max(value, 0), 100);
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "progressLabel", [_dec2], {

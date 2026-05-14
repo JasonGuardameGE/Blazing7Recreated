@@ -43,18 +43,7 @@ export class PricePopUpOptions extends Component {
      * You can edit this directly in the Cocos Inspector.
      */
     @property([CCInteger])
-    private possiblePriceValues: number[] = [
-        20,
-        40,
-        60,
-        80,
-        100,
-        120,
-        140,
-        160,
-        180,
-        200
-    ];
+    private possiblePriceValues: number[] = [];
 
     @property(Boolean)
     enableInfinite: boolean = false;
@@ -92,7 +81,7 @@ export class PricePopUpOptions extends Component {
         input.off(Input.EventType.TOUCH_END, this.OnGlobalTouchEnd, this);
     }
 
-    public Initialize(): void {
+    public Initialize(availableNumbers: number[] = null): void {
         if (!this.scrollView || !this.scrollView.content || !this.priceOptionTemplate) {
             return;
         }
@@ -102,6 +91,10 @@ export class PricePopUpOptions extends Component {
         this.ClearGeneratedPriceOptions();
 
         this.priceOptionTemplate.active = false;
+
+        if(availableNumbers){
+            this.possiblePriceValues = availableNumbers;
+        }
 
         for (let i = 0; i < this.possiblePriceValues.length; i++) {
             const priceValue = this.possiblePriceValues[i];

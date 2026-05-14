@@ -67,7 +67,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
       _cclegacy._RF.push({}, "97ec7BohnVIBqmktWD4Liq3", "LoadingScene", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'ProgressBar', 'Sprite', 'Label', 'Node', 'sp', 'UITransform']);
+      __checkObsolete__(['_decorator', 'Component', 'Node', 'sp']);
 
       ({
         ccclass,
@@ -93,6 +93,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           this._sceneManager = void 0;
           this._gameManager = void 0;
+        }
+
+        onLoad() {
+          if (!this.loadingBar) {
+            console.error('[LoadingScene] loadingBar is null or not assigned in Inspector');
+            return;
+          }
+
+          this.loadingBar.setEvtOnLoadingBarStartLoading(this.startLoading.bind(this));
         }
 
         start() {
@@ -123,36 +132,29 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.evtOnLoadingComplete.add(this.loadGameScene.bind(this));
         }
 
-        onLoad() {
-          if (!this.loadingBar) {
-            console.error('[LoadingScene] loadingBar is null or not assigned in Inspector');
-            return;
-          }
-
-          this.loadingBar.setEvtOnLoadingBarStartLoading(this.startLoading.bind(this));
-        }
-
         AddEvtOnLoadingComplete(cb) {
           this.evtOnLoadingComplete.add(cb);
         }
 
         async startLoading() {
-          // console.log(`Starting Loading: ${this.loadingBar.RealProgress}`);
           try {
-            this.loadingBar.SetProgress(10);
+            await this.loadingBar.SetProgressSmooth(10, 0.35);
+            let progressTween = this.loadingBar.SetProgressSmooth(25, 0.16);
             await this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
               error: Error()
             }), ScenePrefabPath) : ScenePrefabPath).GAME_SCENE);
-            this.loadingBar.SetProgress(25); // TODO: IF GAMEDATA SKIPS NEWPLAYER GUIDE -- SKIP PRELOADING GUIDE
-
+            await progressTween;
+            progressTween = this.loadingBar.SetProgressSmooth(50, 0.26);
             await this._sceneManager.PreLoadScene((_crd && ScenePrefabPath === void 0 ? (_reportPossibleCrUseOfScenePrefabPath({
               error: Error()
             }), ScenePrefabPath) : ScenePrefabPath).NEW_PLAYER_SCENE);
-            this.loadingBar.SetProgress(50);
+            await progressTween;
+            progressTween = this.loadingBar.SetProgressSmooth(75, 0.36);
             await this._gameManager.LoadGameSetup();
+            await progressTween;
 
             if (this._gameManager.SetupLoaded) {
-              this.loadingBar.SetProgress(100);
+              await this.loadingBar.SetProgressSmooth(100, 0.35);
 
               if (this.evtOnLoadingComplete) {
                 this.evtOnLoadingComplete.invoke();
@@ -183,8 +185,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             return;
           }
 
-          const skeletonNode = this.winUpToSkeleton;
-          const skeleton = skeletonNode == null ? void 0 : skeletonNode.getComponent(sp.Skeleton);
+          const skeleton = this.winUpToSkeleton.getComponent(sp.Skeleton);
 
           if (skeleton) {
             skeleton.setAnimation(0, 'blazing7s-WinUpTo_animation', true);

@@ -1,4 +1,6 @@
-import { _decorator, CCFloat, Component, Node, input, Input, EventTouch, EventMouse } from 'cc';
+import { _decorator, CCFloat, Component, Node, input, Input, EventTouch, EventMouse, Game } from 'cc';
+import { GameManager } from '../../Managers/GameManager';
+import { Services } from '../../Managers/Services';
 
 const { ccclass, property } = _decorator;
 
@@ -9,6 +11,12 @@ export class HelpView extends Component {
 
     @property(Node)
     handGuide: Node = null;
+
+    private _gameManager: GameManager;
+
+    protected start(): void {
+        this._gameManager = Services.GetService(GameManager);    
+    }
 
     protected onEnable(): void {
         input.on(Input.EventType.TOUCH_START, this.onPlayerInput, this);
@@ -44,6 +52,12 @@ export class HelpView extends Component {
 
     private showIdleHelp(): void {
         if (!this.handGuide) return;
+
+        // Dont show help if there's no existing ticket
+        if(!this._gameManager.GameData.TicketData.currentTicket){
+            this.resetCountdown();
+            return;
+        }
 
         this.handGuide.active = true;
     }

@@ -13,6 +13,7 @@ import { PricePopUpOptions } from './PricePopUpOptions';
 import { AudioManager } from '../Managers/AudioManager';
 import { HelpView } from '../UI/VisualFx/HelpView';
 import { LastWin } from '../UI/LastWin';
+import { NodeMovement } from '../UI/VisualFx/NodeMovement';
 
 const { ccclass, property } = _decorator;
 
@@ -36,8 +37,8 @@ export class Game extends Component {
 
     private balanceShakeAnim: Animation = null;
 
-    @property(Node)
-    private combinationGuide: Node = null;
+    @property(NodeMovement)
+    private combinationGuide: NodeMovement;
 
     @property(GameOptions)
     gameOptions: GameOptions;
@@ -57,13 +58,16 @@ export class Game extends Component {
     @property(ScratchSystem)
     scratchSystem: ScratchSystem;
 
+    @property(Node)
+    cardInfoNode: Node;
+
     private cardCurrentlyShowing: boolean = false;
     private cardReady: boolean = false;
     private _gameManager: GameManager = null;
     private _audioManager: AudioManager;
 
     private _popupManager: PopUpManager;
-
+    private isShowingResults: boolean = false;
     private balanceTweenTarget: { value: number } = { value: 0 };
 
     public onLoad(): void {
@@ -91,7 +95,7 @@ export class Game extends Component {
 
     private async setupRemainingCard(): Promise<void> {
         if (this._gameManager.GameData.TicketData.currentTicket != null) {
-            this.combinationGuide.active = false;
+            this.combinationGuide.node.active = false;
             this.gameOptions.DisableAuxillaryOptions(true);
             this.showCurrentCard();
         }
@@ -145,6 +149,10 @@ export class Game extends Component {
         this.gameOptions.pauseButton.node.on(Node.EventType.TOUCH_END, this.onStopButtonClicked, this);
 
         const updateCurrentPrice = this.NewEventHandler('Game', 'updateCurrentPrice');
+
+        //this.autoAttemptOptions.Initialize()
+        
+        this.priceOptions.Initialize(this._gameManager.GameData.gamePriceList);
         this.priceOptions.onPriceValueUpdateCallback.push(updateCurrentPrice);
     }
 
@@ -162,9 +170,8 @@ export class Game extends Component {
     private async buyNewCard(): Promise<void> {
         if (this.cardCurrentlyShowing) return;
 
-        if (this.combinationGuide.active) {
-            this.combinationGuide.active = false;
-            return;
+        if (this.combinationGuide.node.active) {
+            this.combinationGuide.StartMoving();
         }
 
         this.cardCurrentlyShowing = true;
@@ -195,6 +202,7 @@ export class Game extends Component {
         this.scratchCardView.StartCardPlayIn();
         this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
         this._gameManager.ScratchCard.SetupCurrentCardNumbers();
+        this.cardInfoNode.active = true;
     }
 
     private cardPlayInComplete(): void {
@@ -256,7 +264,9 @@ export class Game extends Component {
     }
 
     private async showWinResult(settleRes: SettleRes): Promise<void> {
-        console.log(`[Game] Showing Win Result`);
+        if(this.isShowingResults) return;
+
+        this.isShowingResults = true;
         const node: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.WIN_POPUP);
         const winPopUp = node.getComponent(WinPopUp);
 
@@ -265,6 +275,7 @@ export class Game extends Component {
         }
 
         winPopUp.StartShowing(settleRes.totalPayout, settleRes.winType, () => {
+            this.isShowingResults = false;
             this.checkAutoCall();
             this.lastWin.CheckLastWin();
         });
@@ -359,8 +370,8 @@ export class Game extends Component {
             return;
         }
 
-        if (this.combinationGuide.active) {
-            this.combinationGuide.active = false;
+        if (this.combinationGuide.node.active) {
+            this.combinationGuide.node.active = false;
         }
 
         this.helpView.onAutoInput();

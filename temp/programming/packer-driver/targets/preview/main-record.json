@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 7777.7936,
+      "mTimestamp": 4666.3528,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 373574.8314,
+      "mTimestamp": 13623902.3448,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1218,7 +1218,7 @@
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonMovement.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts",
           "resolved": "__unresolved_56",
           "loc": {
             "start": {
@@ -1227,12 +1227,12 @@
             },
             "end": {
               "line": 60,
-              "column": 100
+              "column": 94
             }
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/NodeMovement.ts",
           "resolved": "__unresolved_57",
           "loc": {
             "start": {
@@ -1241,7 +1241,7 @@
             },
             "end": {
               "line": 61,
-              "column": 94
+              "column": 98
             }
           }
         },
@@ -3435,14 +3435,14 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonMovement.ts"
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts"
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/NodeMovement.ts"
           },
           "messages": []
         },
@@ -4907,7 +4907,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1778722558929,
+      "mTimestamp": 1778727492234,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -5071,7 +5071,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingScene.ts": {
       "mTimestamp": {
-        "mtime": 1778630086136.3828,
+        "mtime": 1778737053389.496,
         "uuid": "97ec7068-8675-4806-a9a4-b560f82e2ab7"
       },
       "chunkId": "4648144d8513977ca708e25c94246bffd79fccb2",
@@ -5090,11 +5090,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 10,
+              "line": 6,
               "column": 7
             },
             "end": {
-              "line": 10,
+              "line": 6,
               "column": 11
             }
           }
@@ -5104,11 +5104,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 12,
+              "line": 8,
               "column": 27
             },
             "end": {
-              "line": 12,
+              "line": 8,
               "column": 41
             }
           }
@@ -5118,11 +5118,11 @@
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
-              "line": 13,
+              "line": 9,
               "column": 25
             },
             "end": {
-              "line": 13,
+              "line": 9,
               "column": 53
             }
           }
@@ -5132,11 +5132,11 @@
           "resolved": "__unresolved_3",
           "loc": {
             "start": {
-              "line": 14,
+              "line": 10,
               "column": 46
             },
             "end": {
-              "line": 14,
+              "line": 10,
               "column": 78
             }
           }
@@ -5146,11 +5146,11 @@
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
-              "line": 15,
+              "line": 11,
               "column": 28
             },
             "end": {
-              "line": 15,
+              "line": 11,
               "column": 59
             }
           }
@@ -5160,11 +5160,11 @@
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 12,
               "column": 34
             },
             "end": {
-              "line": 16,
+              "line": 12,
               "column": 76
             }
           }
@@ -5174,11 +5174,11 @@
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
-              "line": 19,
+              "line": 13,
               "column": 19
             },
             "end": {
-              "line": 19,
+              "line": 13,
               "column": 42
             }
           }
@@ -5260,7 +5260,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Loading/LoadingBar.ts": {
       "mTimestamp": {
-        "mtime": 1777535919182.364,
+        "mtime": 1778735613055.0342,
         "uuid": "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8"
       },
       "chunkId": "887f3befa77162f12ee6a600dc90b09b23dbd2e6",
@@ -5276,11 +5276,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 72
+              "column": 73
             },
             "end": {
               "line": 1,
-              "column": 76
+              "column": 77
             }
           }
         }
@@ -6839,7 +6839,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1778721791301.3064,
+        "mtime": 1778740515971.3472,
         "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
       },
       "chunkId": "ea54d85c17f7a85b3ce3bf934492b9dce719df1a",
@@ -6971,11 +6971,11 @@
           "loc": {
             "start": {
               "line": 9,
-              "column": 29
+              "column": 46
             },
             "end": {
               "line": 9,
-              "column": 45
+              "column": 62
             }
           }
         },
@@ -7046,6 +7046,20 @@
             "end": {
               "line": 16,
               "column": 59
+            }
+          }
+        },
+        {
+          "value": "./WebsocketManager",
+          "resolved": "__unresolved_14",
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 26
+            },
+            "end": {
+              "line": 17,
+              "column": 46
             }
           }
         }
@@ -7168,6 +7182,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WinBroadcastManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WebsocketManager.ts"
           },
           "messages": []
         }
@@ -7471,7 +7492,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/ScratchSystem.ts": {
       "mTimestamp": {
-        "mtime": 1778568350137.3928,
+        "mtime": 1778741111791.5232,
         "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
       },
       "chunkId": "674535ab1a5501de2c150ec162b176f00f2d6f41",
@@ -7874,7 +7895,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/FragmentView.ts": {
       "mTimestamp": {
-        "mtime": 1778217473694.1272,
+        "mtime": 1778741102411.1843,
         "uuid": "4ce0e872-5d22-4533-a403-6c80a08b3c7f"
       },
       "chunkId": "6ec6498dc9abc5e891ba52d890eee48c8d5e061f",
@@ -7889,12 +7910,12 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 1,
-              "column": 123
+              "line": 14,
+              "column": 7
             },
             "end": {
-              "line": 1,
-              "column": 127
+              "line": 14,
+              "column": 11
             }
           }
         }
@@ -8209,7 +8230,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778722427601.5425,
+        "mtime": 1778740449543.7192,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -8390,6 +8411,20 @@
               "column": 39
             }
           }
+        },
+        {
+          "value": "../UI/VisualFx/NodeMovement",
+          "resolved": "__unresolved_12",
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 29
+            },
+            "end": {
+              "line": 16,
+              "column": 58
+            }
+          }
         }
       ],
       "type": "esm",
@@ -8496,6 +8531,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/LastWin.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/NodeMovement.ts"
           },
           "messages": []
         }
@@ -8681,7 +8723,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/TicketData.ts": {
       "mTimestamp": {
-        "mtime": 1778568360024.4553,
+        "mtime": 1778723943667.5645,
         "uuid": "fa8a6e42-0921-4ae0-aba7-f893a84bf3ae"
       },
       "chunkId": "39b997892997a8eb621b8e30b4ccf70f20a53080",
@@ -9448,7 +9490,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/PopUpManager.ts": {
       "mTimestamp": {
-        "mtime": 1778722930123.8167,
+        "mtime": 1778728797300.4504,
         "uuid": "7c55f8ae-48ee-41a0-b3bc-9ba08c6d4dd6"
       },
       "chunkId": "7de9d3f60dc040856414a90296f9c081c2a10292",
@@ -9558,7 +9600,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Card/ScratchCard.ts": {
       "mTimestamp": {
-        "mtime": 1778485404779.996,
+        "mtime": 1778738182183.7278,
         "uuid": "718a8a4a-367f-499e-92b9-da686324bd76"
       },
       "chunkId": "4a2f2fc99b3b4fe8c6ae62f1ba5d1d4dcc76c251",
@@ -9915,7 +9957,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/PricePopUpOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778553269258.693,
+        "mtime": 1778740390399.8257,
         "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
       },
       "chunkId": "cee91858986803de21b8fb0d430d475e16fb194f",
@@ -10000,7 +10042,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/DragonMovement.ts": {
       "mTimestamp": {
-        "mtime": 1778629884176.5657,
+        "mtime": 1778736509394.0146,
         "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
       },
       "chunkId": "bfcf1b9de790e52437c75a8548b1707e01158020",
@@ -24072,11 +24114,15 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts": {
       "mTimestamp": {
-        "mtime": 1778651642295.766,
+        "mtime": 1778737113226.4832,
         "uuid": "1e8430ea-3fe5-4505-97db-5411dc7febca"
       },
       "chunkId": "7e9b03fe3ccac897a75fce43483ab1b4e6cb15ef",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -24088,11 +24134,39 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 91
+              "column": 97
             },
             "end": {
               "line": 1,
-              "column": 95
+              "column": 101
+            }
+          }
+        },
+        {
+          "value": "../../Managers/GameManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 28
+            },
+            "end": {
+              "line": 2,
+              "column": 56
+            }
+          }
+        },
+        {
+          "value": "../../Managers/Services",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 25
+            },
+            "end": {
+              "line": 3,
+              "column": 50
             }
           }
         }
@@ -24102,7 +24176,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "cce:/internal/x/cc"
+            "url": "cce:/internal/code-quality/cr.mjs"
           },
           "messages": []
         },
@@ -24117,6 +24191,27 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
           },
           "messages": []
         }
@@ -24229,7 +24324,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WinBroadcastManager.ts": {
       "mTimestamp": {
-        "mtime": 1778719307604.7544,
+        "mtime": 1778738883754.406,
         "uuid": "2df96411-3d08-4355-93ff-7abf0349f531"
       },
       "chunkId": "706a5710be6b5e858b947e825975bacd5c3a1e11",
@@ -24249,11 +24344,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 58
+              "column": 65
             },
             "end": {
               "line": 1,
-              "column": 62
+              "column": 69
             }
           }
         },
@@ -24397,7 +24492,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/PopUp/WinPopUp.ts": {
       "mTimestamp": {
-        "mtime": 1778722136363.3132,
+        "mtime": 1778739706984.193,
         "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
       },
       "chunkId": "487b68f0660f01f6fdfb6a9c331b28f264c107fd",
@@ -24523,7 +24618,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/PopUp/WinnerBroadcastPopUp.ts": {
       "mTimestamp": {
-        "mtime": 1778722800710.4246,
+        "mtime": 1778728234570.4158,
         "uuid": "846d1362-06ae-4790-94d8-2347521d1ab3"
       },
       "chunkId": "f3a8cf1c5e3e4456c2885697f08febf15248b1a5",
@@ -24628,7 +24723,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WebsocketManager.ts": {
       "mTimestamp": {
-        "mtime": 1778722201437.3523,
+        "mtime": 1778727023147.3542,
         "uuid": "ea564933-d664-49fa-8e42-65819034eec3"
       },
       "chunkId": "d36dcfc4ccd52ec84cff62b7eb31556740b1a2d8",
@@ -24755,6 +24850,58 @@
       ],
       "type": "esm",
       "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/NodeMovement.ts": {
+      "mTimestamp": {
+        "mtime": 1778736834950.7378,
+        "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
+      },
+      "chunkId": "925467d3572d2b8767cc3499d84c91f370f4ea08",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 66
+            },
+            "end": {
+              "line": 1,
+              "column": 70
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
         {
           "resolved": {
             "type": "module",
