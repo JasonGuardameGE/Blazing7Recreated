@@ -7,7 +7,7 @@ import { GameData } from '../Data/GameData';
 import { GameManager } from '../Managers/GameManager';
 import { Services } from '../Managers/Services';
 import { PopUpManager, PopUpPrefabPath } from '../Managers/PopUpManager';
-import { WinPopUp } from '../UI/WinPopUp/WinPopUp';
+import { WinPopUp } from '../UI/PopUp/WinPopUp';
 import { SettleRes } from '../Types';
 import { PricePopUpOptions } from './PricePopUpOptions';
 import { AudioManager } from '../Managers/AudioManager';
@@ -190,7 +190,6 @@ export class Game extends Component {
     }
 
     private showCurrentCard(): void {
-        console.log('[Game] Showing Current Card');
 
         this.scratchSystem.GenerateScratchRenderer();
         this.scratchCardView.StartCardPlayIn();
@@ -257,6 +256,7 @@ export class Game extends Component {
     }
 
     private async showWinResult(settleRes: SettleRes): Promise<void> {
+        console.log(`[Game] Showing Win Result`);
         const node: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.WIN_POPUP);
         const winPopUp = node.getComponent(WinPopUp);
 

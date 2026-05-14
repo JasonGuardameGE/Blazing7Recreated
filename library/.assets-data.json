@@ -10,7 +10,9 @@
         "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb",
         "1f9054db-351f-4e7a-8020-a416167b637e",
         "CC3eba29-7abb-723a-f7ab-ae275e2277e8",
-        "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f"
+        "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f",
+        "2df96411-3d08-4355-93ff-7abf0349f531",
+        "7c55f8ae-48ee-41a0-b3bc-9ba08c6d4dd6"
       ]
     },
     "versionCode": 1
@@ -2378,12 +2380,12 @@
     "versionCode": 1
   },
   "af1b48c3-70eb-4f81-98f5-516e9646257d": {
-    "url": "db://assets/Scripts/UI/WinPopUp",
+    "url": "db://assets/Scripts/UI/PopUp",
     "value": {},
     "versionCode": 1
   },
   "466bd5ad-b1a1-4ee1-b5f2-11344d7989de": {
-    "url": "db://assets/Scripts/UI/WinPopUp/WinPopUp.ts",
+    "url": "db://assets/Scripts/UI/PopUp/WinPopUp.ts",
     "value": {},
     "versionCode": 1
   },
@@ -22761,6 +22763,63 @@
   },
   "0336399e-8d15-481b-adaa-d281d22d0c48": {
     "url": "db://assets/Scripts/UI/LastWin.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "2df96411-3d08-4355-93ff-7abf0349f531": {
+    "url": "db://assets/Scripts/Managers/WinBroadcastManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "9e299d77-140b-4044-9548-024c02bbdd1e": {
+    "url": "db://assets/res/Textures/Background/broadcast-background.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9e299d77-140b-4044-9548-024c02bbdd1e@6c48a": {
+    "url": "db://assets/res/Textures/Background/broadcast-background.png@6c48a",
+    "value": {
+      "depends": [
+        "9e299d77-140b-4044-9548-024c02bbdd1e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9e299d77-140b-4044-9548-024c02bbdd1e@f9941": {
+    "url": "db://assets/res/Textures/Background/broadcast-background.png@f9941",
+    "value": {
+      "depends": [
+        "9e299d77-140b-4044-9548-024c02bbdd1e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "89909021-78ae-4102-b4bc-e7f14c9f839a": {
+    "url": "db://assets/resources/prefabs/PopUps/WinnerBroadcast-PopUp.prefab",
+    "value": {
+      "depends": [
+        "9e299d77-140b-4044-9548-024c02bbdd1e@f9941"
+      ],
+      "dependScripts": [
+        "846d1362-06ae-4790-94d8-2347521d1ab3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "846d1362-06ae-4790-94d8-2347521d1ab3": {
+    "url": "db://assets/Scripts/UI/PopUp/WinnerBroadcastPopUp.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "ea564933-d664-49fa-8e42-65819034eec3": {
+    "url": "db://assets/Scripts/Managers/WebsocketManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "97ff8bb9-549a-4d14-9a47-16c9d092e0e8": {
+    "url": "db://assets/Scripts/Managers/WsConfig.ts",
     "value": {},
     "versionCode": 1
   }

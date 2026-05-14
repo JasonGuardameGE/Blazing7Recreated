@@ -13,6 +13,8 @@ import logger from '../utils/logger';
 import ApiManager from '../Api/ApiManager';
 import { GameUserInfo } from '../Data/GameUserInfo';
 import { UserInfo } from '../Types';
+import { WinBroadcastManager } from './WinBroadcastManager';
+import { WsManager } from './WebsocketManager';
 
 const { ccclass, property } = _decorator;
 
@@ -37,6 +39,12 @@ export class GameManager extends Component {
     @property(AudioManager)
     private audioManager: AudioManager = null;
 
+    @property(WinBroadcastManager)
+    private winBroadcastManager: WinBroadcastManager = null;
+    
+    @property(PopUpManager)
+    private popupManager: PopUpManager = null;
+    
     @property(CCInteger)
     forcedWinType: number = 0;
 
@@ -46,7 +54,6 @@ export class GameManager extends Component {
     }
     
     private sceneManager: SceneManager = null;
-    private popupManager: PopUpManager = null;
     private resourceManager: ResourceManager = null;
 
     private scratchCard: ScratchCard;
@@ -66,6 +73,8 @@ export class GameManager extends Component {
 
         this.registerServices();
         this.initializeServices();
+
+        //WsManager.getInstance().init();
     }
 
     public async LoadGameSetup() : Promise<void> {
@@ -99,8 +108,9 @@ export class GameManager extends Component {
 
     private registerServices(): void {
         Services.Register(SceneManager, new SceneManager());
-        Services.Register(PopUpManager, new PopUpManager());
+        Services.Register(PopUpManager, this.popupManager);
         Services.Register(ResourceManager, new ResourceManager());
+        Services.Register(WinBroadcastManager, this.winBroadcastManager);
         Services.Register(AudioManager, this.audioManager);
         Services.Register(GameManager, this);
 
@@ -112,6 +122,7 @@ export class GameManager extends Component {
         this.popupManager = Services.GetService(PopUpManager);
         this.resourceManager = Services.GetService(ResourceManager);
         this.audioManager = Services.GetService(AudioManager);
+        this.winBroadcastManager = Services.GetService(WinBroadcastManager);
 
         this.sceneManager.Init(this.uiRoot);
         this.popupManager.Init(this.uiRoot);

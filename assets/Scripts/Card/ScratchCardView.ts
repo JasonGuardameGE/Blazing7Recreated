@@ -44,8 +44,6 @@ export class ScratchCardView extends Component {
             return;
         }
 
-        console.log('[ScratchCardView] Binding Events');
-
         this._gameManager.ScratchCard.onPurchaseUpdateCardVisualCallbacks.push(
             this.setCardNumbers.bind(this),
         );
@@ -57,8 +55,6 @@ export class ScratchCardView extends Component {
     }
     
     public setCardNumbers(numbers: Array<{value: number, win: number}>){
-
-        console.log('[ScratchCardView] Scratch Numbers:', numbers);
 
         let idx = 0;
         this.numberCards.forEach( (numberCard) =>{

@@ -13,6 +13,7 @@ import {
 } from 'cc';
 import { AudioManager } from '../../Managers/AudioManager';
 import { Services } from '../../Managers/Services';
+import { PopUpManager, PopUpPrefabPath } from '../../Managers/PopUpManager';
 
 const { ccclass, property } = _decorator;
 
@@ -83,6 +84,7 @@ export class WinPopUp extends Component {
     }
 
     protected onLoad(): void {
+        this.RegisterPopUp();
         this.cacheCoinOriginalPositions();
         this.resetCoins();
     }
@@ -105,6 +107,17 @@ export class WinPopUp extends Component {
         this.resetCoins();
     }
 
+    private RegisterPopUp(){
+        const popupManager = Services.GetService(PopUpManager);
+
+        if(!popupManager){
+            console.warn(`[WinPopUp] Trying to register popup, but Manager does not exist`)
+            return;
+        }
+
+        popupManager.RegisterPopup(PopUpPrefabPath.WIN_POPUP, this.node);
+    }
+
     public StartShowing(
         newWinValue: number,
         isSuperWin: number = 0,
@@ -113,7 +126,7 @@ export class WinPopUp extends Component {
         this.winAmount = newWinValue;
         this.isSuperWin = isSuperWin === -1;
         this.onWinPopupDoneCallback = callback;
-
+        
         this.node.active = true;
 
         this.Play();

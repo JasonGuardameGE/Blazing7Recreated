@@ -6,6 +6,7 @@ const { ccclass, property } = _decorator;
 
 export enum PopUpPrefabPath{
     WIN_POPUP = 'prefabs/PopUps/Win-PopUp',
+    WINNER_ANNOUNCEMENT_POPUP = 'prefabs/PopUps/WinnerBroadcast-PopUp',
 }
 
 @ccclass('PopUpManager')
@@ -21,6 +22,10 @@ export class PopUpManager extends Component {
         this._resourceManager = Services.GetService(ResourceManager);
 
         console.log('[PopUpManager] Initialized');
+    }
+
+    public RegisterPopup(popUpPrefabPath : PopUpPrefabPath, node : Node){
+        this._spawnedPopups.set(popUpPrefabPath, node);
     }
 
     public async PreLoadPopUp(popUpPrefabPath: PopUpPrefabPath): Promise<void>{
@@ -52,11 +57,9 @@ export class PopUpManager extends Component {
 
         // Popup already Spawned, we can re-use it.
         if(this._spawnedPopups.has(popUpPrefabPath)){
-            return this._spawnedPopups[popUpPrefabPath];
+            return this._spawnedPopups.get(popUpPrefabPath);
         }
-
-        console.log(`[PopUpManager] Loading PopUp: ${popUpPrefabPath}`);
-
+        
         let popup: Node = null;
 
         if (this._preLoadPopups.has(popUpPrefabPath)) {
@@ -72,7 +75,6 @@ export class PopUpManager extends Component {
         }
 
         popup.active = true;
-        popup.setPosition(0, 0, 0);
 
         this._uiRoot.PopUpRoot.addChild(popup);
 
