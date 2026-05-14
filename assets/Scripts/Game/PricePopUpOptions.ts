@@ -38,38 +38,28 @@ export class PricePopUpOptions extends Component {
     @property(Label)
     centerSelectedLabel: Label | null = null;
 
-    /**
-     * Designer-friendly list of price values.
-     * You can edit this directly in the Cocos Inspector.
-     */
     @property([CCInteger])
     private possiblePriceValues: number[] = [];
 
     @property(Boolean)
     enableInfinite: boolean = false;
 
-    private infiniteStr: string = '∞';
-    private initialized: boolean = false;
-    /**
-     * Initial selected price value.
-     * Can be a number or infiniteStr.
-     */
     @property(CCInteger)
     private initialPriceValue: number = 20;
 
+    @property(CCInteger)
+    private centerDetectDistance: number = 30;
+
+    private infiniteStr: string = '∞';
+    private initialized: boolean = false;
     private currentPriceValue: number = 20;
+    private priceOptions: Node[] = [];
 
     get CurrentPriceValue(): number {
         return this.currentPriceValue;
     }
 
-    @property(CCInteger)
-    private centerDetectDistance: number = 30;
-    
-    private priceOptions: Node[] = [];
-
     protected start(): void {
-        this.currentPriceValue = this.initialPriceValue;
         this.Initialize();
     }
 
@@ -86,15 +76,23 @@ export class PricePopUpOptions extends Component {
             return;
         }
 
+        this.unscheduleAllCallbacks();
+
+        // Important: block center detection while rebuilding/repositioning.
+        this.initialized = false;
+
         const content = this.scrollView.content;
 
         this.ClearGeneratedPriceOptions();
 
         this.priceOptionTemplate.active = false;
 
-        if(availableNumbers){
+        if (availableNumbers) {
             this.possiblePriceValues = availableNumbers;
         }
+
+        // Important: force starting value back to your desired initial value.
+        this.currentPriceValue = this.initialPriceValue;
 
         for (let i = 0; i < this.possiblePriceValues.length; i++) {
             const priceValue = this.possiblePriceValues[i];
@@ -109,17 +107,27 @@ export class PricePopUpOptions extends Component {
         }
 
         this.ValidateCurrentPriceValue();
-        this.UpdateSelectedPriceByCenter();
+
+        if (this.centerSelectedLabel) {
+            this.centerSelectedLabel.string = this.GetPriceLabelFromValue(this.currentPriceValue);
+        }
 
         this.scheduleOnce(() => {
+            this.ScrollToPriceValueWithoutInitializedCheck(this.currentPriceValue);
+
             this.initialized = true;
-            this.ScrollToPriceValue(this.initialPriceValue);
-            this.UpdateSelectedPriceByCenter();
+
+            if (this.centerSelectedLabel) {
+                this.centerSelectedLabel.string = this.GetPriceLabelFromValue(this.currentPriceValue);
+            }
         }, 0.01);
-        
     }
 
     protected update(): void {
+        if (!this.initialized) {
+            return;
+        }
+
         this.UpdateSelectedPriceByCenter();
     }
 
@@ -145,7 +153,8 @@ export class PricePopUpOptions extends Component {
                 return;
             }
         }
-    
+
+        // If initialPriceValue is not available, then fallback to first available value.
         if (this.possiblePriceValues.length > 0) {
             this.currentPriceValue = this.possiblePriceValues[0];
             return;
@@ -172,6 +181,10 @@ export class PricePopUpOptions extends Component {
     }
 
     private UpdateSelectedPriceByCenter(): void {
+        if (!this.initialized) {
+            return;
+        }
+
         if (!this.centerSelectedOption || this.priceOptions.length <= 0) {
             return;
         }
@@ -215,7 +228,9 @@ export class PricePopUpOptions extends Component {
     }
 
     private SetSelectedPrice(priceValue: number): void {
-        if(!this.initialized) return;
+        if (!this.initialized) {
+            return;
+        }
         
         this.currentPriceValue = priceValue;
 
@@ -226,8 +241,8 @@ export class PricePopUpOptions extends Component {
         EventHandler.emitEvents(this.onPriceValueUpdateCallback);
     }
 
-    private ScrollToPriceValue(priceValue: number): void {
-        if (!this.scrollView || !this.scrollView.content || !this.centerSelectedOption || !this.initialized) {
+    private ScrollToPriceValueWithoutInitializedCheck(priceValue: number): void {
+        if (!this.scrollView || !this.scrollView.content || !this.centerSelectedOption) {
             return;
         }
 

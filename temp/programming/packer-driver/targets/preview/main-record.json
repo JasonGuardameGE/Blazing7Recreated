@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 478056.548,
+      "mTimestamp": 2051429.3555,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -8272,7 +8272,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778742963570.5571,
+        "mtime": 1778744160699.18,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -10041,7 +10041,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/PricePopUpOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778740390399.8257,
+        "mtime": 1778744543691.0764,
         "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
       },
       "chunkId": "cee91858986803de21b8fb0d430d475e16fb194f",

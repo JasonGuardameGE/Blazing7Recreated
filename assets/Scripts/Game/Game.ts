@@ -159,7 +159,7 @@ export class Game extends Component {
 
             const toasterNode: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP, false, 999);
             this.maxWinToaster = toasterNode.getComponent(MaxWinToasterPopUp);
-
+            this.updateCurrentPrice(false);
         }catch(err){
             console.error(`[Game] SetupAuxillaryOptions Error:`, err);
         }
@@ -190,6 +190,7 @@ export class Game extends Component {
             this.gameOptions.DisableAuxillaryOptions(true);
             await this._gameManager.PurchaseCard();
             this.showCurrentCard();
+            this.disableAuxillaryPopUpOptions();
 
         } catch (error) {
             console.error('[Game] buyNewCard failed:', error);
@@ -248,6 +249,11 @@ export class Game extends Component {
         this.scratchCardView.OnCardNumberFullyScratched(index);
     }
 
+    private disableAuxillaryPopUpOptions(){
+        this.priceOptions.node.active = false;
+        this.autoAttemptOptions.node.active = false;
+    }
+
     private NewEventHandler(component: string, handler: string): EventHandler {
         const eventHandler = new EventHandler();
         eventHandler.target = this.node;
@@ -303,6 +309,7 @@ export class Game extends Component {
             return;
         }
 
+        this.disableAuxillaryPopUpOptions();
         this.priceOptions.node.active = true;
     }
 
@@ -317,6 +324,7 @@ export class Game extends Component {
             return;
         }
 
+        this.disableAuxillaryPopUpOptions();
         this.autoAttemptOptions.node.active = true;
     }
 
@@ -324,9 +332,9 @@ export class Game extends Component {
         this.stopAuto();
     }
 
-    private updateCurrentPrice(): void {
+    private updateCurrentPrice(showToaster: boolean = true): void {
         this.gameOptions.setPriceButton.label.string = this.priceOptions.CurrentPriceValue.toString();
-        this.updateMaximumAmount();
+        this.updateMaximumAmount(showToaster);
     }
 
     private setAutoValue(): void {
