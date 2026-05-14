@@ -14,6 +14,8 @@ import { AudioManager } from '../Managers/AudioManager';
 import { HelpView } from '../UI/VisualFx/HelpView';
 import { LastWin } from '../UI/LastWin';
 import { NodeMovement } from '../UI/VisualFx/NodeMovement';
+import { NumberFormatter } from '../utils/NumberFormatter';
+import { MaxWinToasterPopUp } from '../UI/PopUp/MaxWinToasterPopUp';
 
 const { ccclass, property } = _decorator;
 
@@ -69,6 +71,7 @@ export class Game extends Component {
     private _popupManager: PopUpManager;
     private isShowingResults: boolean = false;
     private balanceTweenTarget: { value: number } = { value: 0 };
+    private maxWinToaster: MaxWinToasterPopUp;
 
     public onLoad(): void {
 
@@ -84,6 +87,7 @@ export class Game extends Component {
         this._audioManager = Services.GetService(AudioManager);
 
         this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
+        this._popupManager.PreLoadPopUp(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP);
 
         this.setupGameOptions();
         this.setupCardView();
@@ -143,17 +147,22 @@ export class Game extends Component {
         this.gameOptions.scratchAllButton.clickEndInsideCallbacks.push(scratchAll);
     }
 
-    private SetupAuxillaryOptions(): void {
-        this.gameOptions.setPriceButton.node.on(Node.EventType.TOUCH_END, this.showPriceOptions, this);
-        this.gameOptions.setAutoButton.node.on(Node.EventType.TOUCH_END, this.onAutoButtonClicked, this);
-        this.gameOptions.pauseButton.node.on(Node.EventType.TOUCH_END, this.onStopButtonClicked, this);
+    private async SetupAuxillaryOptions(): Promise<void> {
+        try{
+            this.gameOptions.setPriceButton.node.on(Node.EventType.TOUCH_END, this.showPriceOptions, this);
+            this.gameOptions.setAutoButton.node.on(Node.EventType.TOUCH_END, this.onAutoButtonClicked, this);
+            this.gameOptions.pauseButton.node.on(Node.EventType.TOUCH_END, this.onStopButtonClicked, this);
 
-        const updateCurrentPrice = this.NewEventHandler('Game', 'updateCurrentPrice');
+            const updateCurrentPrice = this.NewEventHandler('Game', 'updateCurrentPrice');            
+            this.priceOptions.Initialize(this._gameManager.GameData.gamePriceList);
+            this.priceOptions.onPriceValueUpdateCallback.push(updateCurrentPrice);
 
-        //this.autoAttemptOptions.Initialize()
-        
-        this.priceOptions.Initialize(this._gameManager.GameData.gamePriceList);
-        this.priceOptions.onPriceValueUpdateCallback.push(updateCurrentPrice);
+            const toasterNode: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP, false, 999);
+            this.maxWinToaster = toasterNode.getComponent(MaxWinToasterPopUp);
+
+        }catch(err){
+            console.error(`[Game] SetupAuxillaryOptions Error:`, err);
+        }
     }
 
     private SetupWinPopup(winPopup: WinPopUp): void {
@@ -232,7 +241,7 @@ export class Game extends Component {
     }
 
     private updatePlayerBalance(): void {
-        this.playerBalance.string = this.formatAmountWithDecimal(this._gameManager.GameUserInfo.balance) || '0';
+        this.playerBalance.string = NumberFormatter.formatAmountWithDecimal(this._gameManager.GameUserInfo.balance) || '0';
     }
 
     private cardNumberScratched(index: number): void {
@@ -248,7 +257,7 @@ export class Game extends Component {
         return eventHandler;
     }
 
-    private updateMaximumAmount(): void {
+    private updateMaximumAmount(showToaster: boolean = true): void {
         if (!this.maxWinAmount) {
             console.warn('[Game] Trying to update Maximum Amount Label, not set properly');
             return;
@@ -256,11 +265,15 @@ export class Game extends Component {
 
         this._gameManager.UpdateCardPrice(this.priceOptions.CurrentPriceValue);
 
-        const newAmount = this.formatAmount(
-            this._gameManager.GameData.unitPrice * this._gameManager.GameData?.maxWinMultiple,
+        const newValue = this._gameManager.GameData.unitPrice * this._gameManager.GameData?.maxWinMultiple;
+        const newAmount = NumberFormatter.formatAmount(newValue
         );
 
         this.maxWinAmount.string = `p${newAmount}`;
+
+        if(this.maxWinToaster && showToaster){
+            this.maxWinToaster.showValue(newValue);
+        }
     }
 
     private async showWinResult(settleRes: SettleRes): Promise<void> {
@@ -403,7 +416,7 @@ export class Game extends Component {
             Tween.stopAllByTarget(this.balanceTweenTarget);
 
             this.balanceTweenTarget.value = 0;
-            this.playerBalance.string = this.formatAmountWithDecimal(finalBalance);
+            this.playerBalance.string = NumberFormatter.formatAmountWithDecimal(finalBalance);
 
             return;
         }
@@ -419,7 +432,7 @@ export class Game extends Component {
 
         Tween.stopAllByTarget(this.balanceTweenTarget);
 
-        const currentBalance = this.parseFormattedAmount(this.playerBalance.string);
+        const currentBalance = NumberFormatter.parseFormattedAmount(this.playerBalance.string);
 
         this.balanceTweenTarget.value = currentBalance;
 
@@ -429,7 +442,7 @@ export class Game extends Component {
                 { value: finalBalance },
                 {
                     onUpdate: () => {
-                        this.playerBalance.string = this.formatAmountWithDecimal(
+                        this.playerBalance.string = NumberFormatter.formatAmountWithDecimal(
                             this.balanceTweenTarget.value,
                         );
                     },
@@ -437,92 +450,9 @@ export class Game extends Component {
             )
             .call(() => {
                 this.balanceTweenTarget.value = finalBalance;
-                this.playerBalance.string = this.formatAmountWithDecimal(finalBalance);
+                this.playerBalance.string = NumberFormatter.formatAmountWithDecimal(finalBalance);
                 this.balanceTweenTarget.value = 0;
             })
             .start();
-    }
-
-    private formatAmount(amount: number): string {
-        if (!amount || !Number.isFinite(amount)) return '0';
-
-        const absAmount = Math.abs(amount);
-        const amountStr = absAmount.toString();
-
-        let fractionDigits = 0;
-
-        if (!amountStr.includes('e') && amountStr.includes('.')) {
-            fractionDigits = amountStr.split('.')[1].length;
-        }
-
-        const decimalsToKeep = Math.min(fractionDigits, 2);
-        const truncated = this.truncateNumber(absAmount, decimalsToKeep);
-        const raw = this.formatFixedNoRound(truncated, decimalsToKeep);
-        const parts = raw.split('.');
-        const intPart = parts[0];
-        const fracPart = parts[1];
-        const intWithCommas = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-        const sign = amount < 0 ? '-' : '';
-
-        return fracPart ? `${sign}${intWithCommas}.${fracPart}` : `${sign}${intWithCommas}`;
-    }
-
-    private formatAmountWithDecimal(amount: number): string {
-        if (amount == null || !Number.isFinite(amount)) return '0.00';
-
-        const absAmount = Math.abs(amount);
-        const truncated = this.truncateNumber(absAmount, 2);
-        const raw = this.formatFixedNoRound(truncated, 2);
-        const parts = raw.split('.');
-        const intPart = parts[0];
-        const fracPart = parts[1] || '00';
-        const intWithCommas = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-        const sign = amount < 0 ? '-' : '';
-
-        return `${sign}${intWithCommas}.${fracPart}`;
-    }
-
-    private truncateNumber(value: number, decimals: number): number {
-        if (!Number.isFinite(value)) return 0;
-
-        const factor = Math.pow(10, decimals);
-        const truncated = value < 0 ? Math.ceil(value * factor) : Math.floor(value * factor);
-
-        return truncated / factor;
-    }
-
-    private formatFixedNoRound(value: number, decimals: number = 2): string {
-        if (!Number.isFinite(value)) return '0';
-
-        const factor = Math.pow(10, decimals);
-        const truncated = value < 0 ? Math.ceil(value * factor) : Math.floor(value * factor);
-        const absTruncated = Math.abs(truncated / factor);
-        const integerPart = Math.floor(absTruncated);
-        const sign = truncated < 0 ? '-' : '';
-
-        if (decimals === 0) {
-            return `${sign}${integerPart}`;
-        }
-
-        const fractionAsInt = Math.floor((absTruncated - integerPart) * factor);
-
-        let fractionStr = fractionAsInt.toString();
-
-        while (fractionStr.length < decimals) {
-            fractionStr = `0${fractionStr}`;
-        }
-
-        return `${sign}${integerPart}.${fractionStr}`;
-    }
-
-    private parseFormattedAmount(value: string): number {
-        if (!value) {
-            return 0;
-        }
-
-        const normalized = value.replace(/,/g, '');
-        const parsed = Number(normalized);
-
-        return Number.isFinite(parsed) ? parsed : 0;
     }
 }

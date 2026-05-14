@@ -7,6 +7,7 @@ const { ccclass, property } = _decorator;
 export enum PopUpPrefabPath{
     WIN_POPUP = 'prefabs/PopUps/Win-PopUp',
     WINNER_ANNOUNCEMENT_POPUP = 'prefabs/PopUps/WinnerBroadcast-PopUp',
+    MAX_WIN_TOASTER_POPUP = 'prefabs/PopUps/MaxWinToaster-PopUp',
 }
 
 @ccclass('PopUpManager')
@@ -37,7 +38,7 @@ export class PopUpManager extends Component {
         this._preLoadPopups.set(popUpPrefabPath, node);
     }
 
-    public async LoadPopup(popUpPrefabPath: PopUpPrefabPath, active: boolean = false): Promise<Node> {
+    public async LoadPopup(popUpPrefabPath: PopUpPrefabPath, active: boolean = false, siblingIndex: number = 0): Promise<Node> {
         if (!this._uiRoot) {
             console.error('[PopUpManager] _uiRoot is null. Did you call Init()?');
             return null;
@@ -75,7 +76,7 @@ export class PopUpManager extends Component {
         popup.active = active;
 
         this._uiRoot.PopUpRoot.addChild(popup);
-        popup.setSiblingIndex(0);
+        popup.setSiblingIndex(siblingIndex);
         
         // console.log(`[PopUpManager] New PopUp Loaded: ${popup.name}`);
         // console.log(`[PopUpManager] Added to parent: ${popup.parent?.name}`);

@@ -2,13 +2,10 @@
   "state": {
     "expandUuids": [
       "db://assets",
-      "e68ed731-bd3a-4a87-8439-cb4faaf8ad78",
       "995ae186-b997-44ef-8aa2-0ae759b5e803",
       "c9555806-d1cd-4b9d-9aa4-dd3a61d7bed6",
       "362511bc-03b4-43f0-a2e9-278bbd17fe47",
       "033e5e5b-0896-447c-9e5b-fd721905eb79",
-      "7d37dad2-778a-40c3-9625-a43e73887617",
-      "7923c8fd-8b4a-43c8-ac27-24e82ea658de",
       "c9d611f0-95cc-424d-a979-4a81beded426",
       "c8e6f35f-7f5d-4295-bd93-413e95cad81f",
       "d759301f-a610-40cc-b660-e4f693c1c41b",
@@ -16,9 +13,11 @@
       "9eb31a56-ed12-4146-8430-5f45a5042369",
       "af1b48c3-70eb-4f81-98f5-516e9646257d",
       "b84d7712-dc9d-4efc-b83f-ed9d199a153b",
-      "bfae5ce8-22ff-4d82-893b-021ff90d6be1",
       "238c0e9e-457d-4287-82a9-e8d733becb7a",
-      "9659b73b-1bc4-4e6c-9066-dfef21069be8"
+      "9659b73b-1bc4-4e6c-9066-dfef21069be8",
+      "daaaf8a8-5cf3-4748-b8fa-f477d1b81fbc",
+      "e407b11e-18be-4ba4-a54e-8f2583f8d34a",
+      "6465b815-023a-401d-a495-2c2e6aa4191a"
     ],
     "sortType": "name"
   }

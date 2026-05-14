@@ -22827,5 +22827,53 @@
     "url": "db://assets/Scripts/UI/VisualFx/CombinationMovement",
     "value": {},
     "versionCode": 1
+  },
+  "d0c05f49-bbcc-461e-b738-acb16b408a14": {
+    "url": "db://assets/res/Textures/Background/MaxPrizeToast-background.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d0c05f49-bbcc-461e-b738-acb16b408a14@6c48a": {
+    "url": "db://assets/res/Textures/Background/MaxPrizeToast-background.png@6c48a",
+    "value": {
+      "depends": [
+        "d0c05f49-bbcc-461e-b738-acb16b408a14"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d0c05f49-bbcc-461e-b738-acb16b408a14@f9941": {
+    "url": "db://assets/res/Textures/Background/MaxPrizeToast-background.png@f9941",
+    "value": {
+      "depends": [
+        "d0c05f49-bbcc-461e-b738-acb16b408a14@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dc5ef585-96a2-4688-9524-cc9900eb855a": {
+    "url": "db://assets/resources/prefabs/PopUps/MaxWinToaster-PopUp.prefab",
+    "value": {
+      "depends": [
+        "2fb6756a-3782-49c3-a03b-f3596778e557",
+        "d0c05f49-bbcc-461e-b738-acb16b408a14@f9941"
+      ],
+      "dependScripts": [
+        "96df8500-ed31-4b6b-ad17-54f88a1439e9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "96df8500-ed31-4b6b-ad17-54f88a1439e9": {
+    "url": "db://assets/Scripts/UI/PopUp/MaxWinToasterPopUp.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "73e54186-e599-483e-8076-9dedcd12848b": {
+    "url": "db://assets/Scripts/utils/NumberFormatter.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

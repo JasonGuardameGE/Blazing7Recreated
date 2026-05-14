@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778740393849.2478,
+      "time": 1778742332983.3323,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -215,7 +215,7 @@
       "time": 1777530740140.288
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background": {
-      "time": 1778660743088.0132,
+      "time": 1778741665859.3994,
       "uuid": "e407b11e-18be-4ba4-a54e-8f2583f8d34a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\move_bg.png.meta": {
@@ -740,7 +740,7 @@
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1778740449543.7192,
+      "time": 1778742963570.5571,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
@@ -866,7 +866,7 @@
       "time": 1778029022281.369
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps": {
-      "time": 1778717045180.4773,
+      "time": 1778741903993.5088,
       "uuid": "362511bc-03b4-43f0-a2e9-278bbd17fe47"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\Win-PopUp.prefab.meta": {
@@ -939,7 +939,7 @@
       "time": 1778030959567.8926
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils": {
-      "time": 1778030959561.8926,
+      "time": 1778742069539.348,
       "uuid": "6465b815-023a-401d-a495-2c2e6aa4191a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\logger.ts": {
@@ -1076,7 +1076,7 @@
       "time": 1778051672734.5989
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\PopUpManager.ts": {
-      "time": 1778728797300.4504,
+      "time": 1778742451444.4346,
       "uuid": "7c55f8ae-48ee-41a0-b3bc-9ba08c6d4dd6"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCard.ts.meta": {
@@ -9301,7 +9301,7 @@
       "time": 1778055071957.3716
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp": {
-      "time": 1778661375800.785,
+      "time": 1778741943895.908,
       "uuid": "af1b48c3-70eb-4f81-98f5-516e9646257d"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\WinPopUp.ts.meta": {
@@ -9345,6 +9345,34 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\NodeMovement.ts": {
       "time": 1778736834950.7378,
       "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\MaxPrizeToast-background.png.meta": {
+      "time": 1778741665919.199
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\MaxPrizeToast-background.png": {
+      "time": 1776242413877.412,
+      "uuid": "d0c05f49-bbcc-461e-b738-acb16b408a14"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\MaxWinToaster-PopUp.prefab.meta": {
+      "time": 1778741904002.4785
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\MaxWinToaster-PopUp.prefab": {
+      "time": 1778742319983.972,
+      "uuid": "dc5ef585-96a2-4688-9524-cc9900eb855a"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\MaxWinToasterPopUp.ts.meta": {
+      "time": 1778741943902.8848
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\MaxWinToasterPopUp.ts": {
+      "time": 1778742313923.1858,
+      "uuid": "96df8500-ed31-4b6b-ad17-54f88a1439e9"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\NumberFormatter.ts.meta": {
+      "time": 1778742069548.3184
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\NumberFormatter.ts": {
+      "time": 1778742108137.9763,
+      "uuid": "73e54186-e599-483e-8076-9dedcd12848b"
     }
   },
   "missing": {
