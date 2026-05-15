@@ -118,6 +118,12 @@ export class NewPlayerGuide extends Component {
         }
 
         this.isInternalPageChange = true;
+    
+        for (let i:number = 0; i < this.toggles.length; i++) {
+            const element = this.toggles[i];
+            
+            this.toggles[i].interactable = !(i == activeIndex);
+        }
 
         if (this.activePage && this.activePage.isValid) {
             this.activePage.active = false;
