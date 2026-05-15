@@ -28,6 +28,12 @@ export class ScratchSystem extends Component {
 
     allCardScratchedCallbacks: EventHandler[] = [];
 
+    @property({
+        type: CCFloat,
+        tooltip: 'Delay between each cell when ScratchAll is used.',
+    })
+    scratchAllInterval: number = 0.12;
+
     @property(FragmentView)
     fragmentView: FragmentView = null;
 
@@ -82,14 +88,22 @@ export class ScratchSystem extends Component {
     private textureHeight: number = 0;
 
     private isTouched: boolean = false;
+    
     private isAllScratched: boolean = false;
-    private isAutoScratching: boolean = false;
-
-    private _audioManager: AudioManager;
-
-    public get IsAllScratched(): boolean {
+    get IsAllScratched(): boolean {
         return this.isAllScratched;
     }
+
+    private isAutoScratching: boolean = false;
+
+    private isGeneratingScratch: boolean = false;
+    get IsGeneratingScratch(): boolean {
+        return this.isGeneratingScratch;
+    }
+
+    private scratchSessionId: number = 0;
+
+    private _audioManager: AudioManager;
     
     protected onLoad(): void {
         if (!this.defaultScratchCover || !this.defaultScratchCover.spriteFrame) {
@@ -126,8 +140,8 @@ export class ScratchSystem extends Component {
         this._audioManager = Services.GetService(AudioManager);
     }
 
-    public ResetScratchCard(): void {
-        this.GenerateScratchRenderer();
+    public async ResetScratchCard(): Promise<void> {
+        await this.GenerateScratchRenderer();
     }
 
     public ToggleTouch(toggle: boolean): void {
@@ -138,21 +152,49 @@ export class ScratchSystem extends Component {
         }
     }
 
-    public GenerateScratchRenderer(): void {
+    public async GenerateScratchRenderer(): Promise<boolean> {
+        if (this.isGeneratingScratch) {
+            return false;
+        }
+    
         if (!this.scratchRenderer) {
             console.error('[ScratchSystem] scratchRenderer is null');
-            return;
+            return false;
         }
-
-        this.isTouched = false;
-        this.isAllScratched = false;
-        this.isAutoScratching = false;
-
-        const success = this.scratchRenderer.CreateNewRenderedScratch();
-
-        if (success && this.defaultScratchCover) {
-            this.defaultScratchCover.node.active = false;
+    
+        this.scratchSessionId++;
+        const sessionId = this.scratchSessionId;
+    
+        this.isGeneratingScratch = true;
+    
+        try {
+            this.isTouched = false;
+            this.isAllScratched = false;
+            this.isAutoScratching = false;
+    
+            const success = this.scratchRenderer.CreateNewRenderedScratch();
+    
+            if (!success) {
+                return false;
+            }
+    
+            await this.waitOneFrame();
+    
+            if (sessionId !== this.scratchSessionId) {
+                return false;
+            }
+    
+            if (this.defaultScratchCover) {
+                this.defaultScratchCover.node.active = false;
+            }
+    
             this.calculateGridCellContainers();
+    
+            return true;
+        } finally {
+            if (sessionId === this.scratchSessionId) {
+                this.isGeneratingScratch = false;
+            }
         }
     }
 
@@ -165,6 +207,7 @@ export class ScratchSystem extends Component {
             return;
         }
     
+        const sessionId = this.scratchSessionId;
         const unscratchedIndexes: number[] = [];
     
         for (let i = 0; i < this.cellScratched.length; i++) {
@@ -173,7 +216,6 @@ export class ScratchSystem extends Component {
             }
         }
     
-        // Nothing left to scratch, so do not emit allCardScratchedCallbacks again.
         if (unscratchedIndexes.length === 0) {
             return;
         }
@@ -182,26 +224,54 @@ export class ScratchSystem extends Component {
         this.isTouched = false;
         this.disableTouch();
     
-        const scratchPromises: Promise<void>[] = [];
-    
-        for (const index of unscratchedIndexes) {
-            this.cellScratched[index] = true;
-
-            this.spawnScratchAllFragmentsForCell(index);
-
-            scratchPromises.push(this.autoScratchCell(index));
-        }
-    
         if (this._audioManager) {
             this._audioManager.playAutoScratchSound();
         }
     
         try {
-            await Promise.all(scratchPromises);
+            for (const index of unscratchedIndexes) {
+                if (sessionId !== this.scratchSessionId) {
+                    return;
+                }
+    
+                if (this.isAllScratched) {
+                    break;
+                }
+    
+                if (this.cellScratched[index]) {
+                    continue;
+                }
+    
+                this.cellScratched[index] = true;
+    
+                this.spawnScratchAllFragmentsForCell(index);
+                
+                this.autoScratchCell(index, sessionId);
+    
+                if (sessionId !== this.scratchSessionId) {
+                    return;
+                }
+    
+                await this.waitSeconds(this.scratchAllInterval);
+    
+                if (sessionId !== this.scratchSessionId) {
+                    return;
+                }
+            }
         } finally {
-            this.isAutoScratching = false;
-            this.CheckScratchProgress();
+            if (sessionId === this.scratchSessionId) {
+                this.isAutoScratching = false;
+                this.CheckScratchProgress();
+            }
         }
+    }
+
+    public CancelScratchAll(): void {
+        this.scratchSessionId++;
+        this.isAutoScratching = false;
+        this.isTouched = false;
+        this.unscheduleAllCallbacks();
+        this.disableTouch();
     }
 
     private spawnScratchAllFragmentsForCell(cellIndex: number): void {
@@ -272,6 +342,14 @@ export class ScratchSystem extends Component {
         return worldPos;
     }
 
+    private waitSeconds(seconds: number): Promise<void> {
+        return new Promise((resolve) => {
+            this.scheduleOnce(() => {
+                resolve();
+            }, Math.max(0, seconds));
+        });
+    }
+    
     private calculateGridCellContainers(): void {
         if (!this.scratchMask) {
             console.error('[ScratchSystem] scratchMask is null');
@@ -452,20 +530,24 @@ export class ScratchSystem extends Component {
         EventHandler.emitEvents(this.allCardScratchedCallbacks, this);
     }
 
-    private async autoScratchCell(index: number): Promise<void> {
+    private async autoScratchCell(index: number, sessionId: number = this.scratchSessionId): Promise<void> {
+        if (sessionId !== this.scratchSessionId) {
+            return;
+        }
+    
         if (!this.scratchRenderer) {
             return;
         }
-
+    
         if (index < 0 || index >= this.validCells.length) {
             return;
         }
-
+    
         const cell = this.validCells[index];
         const duration: number = 450;
-
+    
         EventHandler.emitEvents(this.onCardNumberScratchedCallbacks, index);
-        
+    
         await this.scratchRenderer.autoScratchDiagonalOptimized(
             cell.x,
             cell.y,
@@ -474,6 +556,74 @@ export class ScratchSystem extends Component {
             this.brushSize / 5,
             duration,
         );
+    
+        if (sessionId !== this.scratchSessionId) {
+            return;
+        }
+    
+        await this.eraseFullCell(index, sessionId);
+    }
+
+    private async eraseFullCell(index: number, sessionId: number = this.scratchSessionId): Promise<void> {
+        if (sessionId !== this.scratchSessionId) {
+            return;
+        }
+    
+        if (!this.scratchRenderer) {
+            return;
+        }
+    
+        if (index < 0 || index >= this.validCells.length) {
+            return;
+        }
+    
+        const cell = this.validCells[index];
+    
+        const padding = 10;
+        const eraseRadius = this.brushSize / 2;
+    
+        const startX = cell.x - padding;
+        const startY = cell.y - padding;
+        const endX = cell.x + cell.width + padding;
+        const endY = cell.y + cell.height + padding;
+    
+        const step = Math.max(eraseRadius * 0.75, 8);
+    
+        let eraseCount = 0;
+        const erasePerFrame = 8;
+    
+        for (let y = startY; y <= endY; y += step) {
+            for (let x = startX; x <= endX; x += step) {
+                if (sessionId !== this.scratchSessionId) {
+                    return;
+                }
+    
+                this.scratchRenderer.EraseCircle(
+                    x,
+                    y,
+                    eraseRadius,
+                );
+    
+                eraseCount++;
+    
+                if (eraseCount >= erasePerFrame) {
+                    eraseCount = 0;
+                    await this.waitOneFrame();
+    
+                    if (sessionId !== this.scratchSessionId) {
+                        return;
+                    }
+                }
+            }
+        }
+    }
+    
+    private waitOneFrame(): Promise<void> {
+        return new Promise((resolve) => {
+            this.scheduleOnce(() => {
+                resolve();
+            }, 0);
+        });
     }
 
     private getWorldPositionFromTouch(e: EventTouch): Vec3 {

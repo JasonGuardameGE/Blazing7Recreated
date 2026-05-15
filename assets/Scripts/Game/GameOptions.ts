@@ -76,6 +76,14 @@ export class GameOptions extends Component {
         this.currentlyShownButton.disabled = isDisabled;
     }
 
+    public SetCenterButtonDisabled(isDisabled: boolean): void {
+        if (!this.currentlyShownButton) {
+            return;
+        }
+    
+        this.currentlyShownButton.disabled = isDisabled;
+    }
+
     public DisableAuxillaryOptions(toggle: boolean): void {
         if (this.setAutoButton) {
             this.setAutoButton.disabled = toggle;
