@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 19304302.768,
+      "mTimestamp": 21008726.1689,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -6713,7 +6713,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/GameData.ts": {
       "mTimestamp": {
-        "mtime": 1778806724213.998,
+        "mtime": 1778823996270.291,
         "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
       },
       "chunkId": "d9e989e3911e310821333903950c51538c2c38d9",
@@ -6996,7 +6996,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts": {
       "mTimestamp": {
-        "mtime": 1778808755836.9255,
+        "mtime": 1778824473078.798,
         "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
       },
       "chunkId": "a466d0397f6d8bdc7e2528816197d20815b0156a",
@@ -7016,11 +7016,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 33
+              "column": 47
             },
             "end": {
               "line": 1,
-              "column": 37
+              "column": 51
             }
           }
         },
@@ -24702,7 +24702,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WinBroadcastManager.ts": {
       "mTimestamp": {
-        "mtime": 1778738883754.406,
+        "mtime": 1778824624676.993,
         "uuid": "2df96411-3d08-4355-93ff-7abf0349f531"
       },
       "chunkId": "706a5710be6b5e858b947e825975bacd5c3a1e11",
@@ -24799,6 +24799,20 @@
               "column": 37
             }
           }
+        },
+        {
+          "value": "./SceneManager",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 46
+            },
+            "end": {
+              "line": 8,
+              "column": 62
+            }
+          }
         }
       ],
       "type": "esm",
@@ -24863,6 +24877,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WsConfig.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts"
           },
           "messages": []
         }

@@ -1,4 +1,4 @@
-import { _decorator, Node } from 'cc';
+import { _decorator, EventHandler, Node } from 'cc';
 import { UIRoot } from '../UI/UIRoot';
 import ResourceManager from './ResourceManager';
 import { Services } from './Services';
@@ -14,10 +14,14 @@ export enum ScenePrefabPath {
 @ccclass('SceneManager')
 export default class SceneManager {
 
+    onSceneChangeCallback: EventHandler[] = [];
+
     private _uiRoot: UIRoot = null;
     private _preLoadSceneNodes = new Map<ScenePrefabPath, Node>();
     private _currentScene: Node = null;
     private _resourceManager: ResourceManager;
+
+    CurrentScene: ScenePrefabPath;
 
     public Init(uiRoot: UIRoot): void {
         this._uiRoot = uiRoot;
@@ -79,6 +83,11 @@ export default class SceneManager {
 
         this._uiRoot.SceneRoot.addChild(nextScene);
         this.SetCurrentScene(nextScene);
+        this.CurrentScene = scenePrefabPath;
+
+        console.log(`[SceneManager] Loading Scene: ${this.CurrentScene} Callback: ${this.onSceneChangeCallback.length}`);
+
+        EventHandler.emitEvents(this.onSceneChangeCallback);
 
         return nextScene;
     }

@@ -5,6 +5,7 @@ import { Services } from './Services';
 import { WinnerBroadcastPopUp } from '../UI/PopUp/WinnerBroadcastPopUp';
 import { WsManager } from './WebsocketManager';
 import { WsConfig } from './WsConfig';
+import SceneManager, { ScenePrefabPath } from './SceneManager';
 
 const { ccclass, property } = _decorator;
 
@@ -20,7 +21,23 @@ export class WinBroadcastManager extends Component {
     private delayShow: number = 5;
     private delayTweenValue = { value: 5 };
 
+    private _sceneManager: SceneManager;
+    private isGameSceneReady: boolean = false;
+
     protected async start(): Promise<void> {
+        this._sceneManager = Services.GetService(SceneManager);
+        if(this._sceneManager)
+        {
+            const sceneChangeHandler = new EventHandler();
+            sceneChangeHandler.target = this.node;
+            sceneChangeHandler.component = 'WinBroadcastManager';
+            sceneChangeHandler.handler = 'allowAnnouncements';
+
+            this._sceneManager.onSceneChangeCallback.push(sceneChangeHandler);
+
+            console.log(`[WinBroadcastManager] Adding onSceneCallback: ${this._sceneManager.onSceneChangeCallback.length}`);
+        }
+
         await this.initialize();
         this.startDelayCountdown();
     }
@@ -63,7 +80,6 @@ export class WinBroadcastManager extends Component {
         this.checkAnnouncements();
     }
 
-
     public AnnouncementComplete(){
         this.isShowingAnnouncement = false;
         this.checkAnnouncements();
@@ -79,10 +95,24 @@ export class WinBroadcastManager extends Component {
         }
     }
 
-    private async ShowAnnouncement(): Promise<void> {
-        await this.initialize();
+    public allowAnnouncements(): void {
+        this.isGameSceneReady = this._sceneManager?.CurrentScene == ScenePrefabPath.GAME_SCENE;
+    
+        console.log(`[WinBroadcastManager] AllowAnnouncement Called: ${this.isGameSceneReady}`);
+    
+        if (!this.isGameSceneReady) {
+            return;
+        }
+    
+        this.startDelayCountdown();
+    }
 
+    private async ShowAnnouncement(): Promise<void> {
         if (!this.winnerBroadcastPopup) {
+            return;
+        }
+
+        if(!this.isGameSceneReady){
             return;
         }
 
