@@ -220,7 +220,8 @@ export class Game extends Component {
             await this._gameManager.PurchaseCard();
     
             const didShowCard = await this.showCurrentCard();
-    
+
+
             if (!didShowCard) {
                 this.cardCurrentlyShowing = false;
                 this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
@@ -266,15 +267,26 @@ export class Game extends Component {
     private cardPlayInComplete(): void {
         this.scratchSystem.ToggleTouch(true);
     
-        console.log(`[Game] CardPlayInComplete, AutoCount: ${this.autoAttemptCount}`)
-
+        console.log(`[Game] CardPlayInComplete, AutoCount: ${this.autoAttemptCount}`);
+    
         if (this.autoAttemptCount > 0) {
             this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
+    
             this.scratchAll();
+    
+            this.autoAttemptCount--;
+            this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
+    
+            // Important:
+            // Do NOT call SetAutoModeUI(false) here when autoAttemptCount reaches 0.
+            // The final auto card is still being scratched/settled.
+            this.gameOptions.SetAutoModeUI(true);
+            this.gameOptions.DisableAuxillaryOptions(true);
+    
             return;
         }
     
-        // Card has arrived. Now enable Scratch All.
+        // Manual mode only: card has arrived, allow player to scratch.
         this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, false);
     }
 
@@ -297,7 +309,10 @@ export class Game extends Component {
                     this.checkAutoCall();
                     return;
                 }
-    
+            
+                // Final auto card is now fully scratched and settled.
+                // Only now should controls be enabled again.
+                this.gameOptions.SetAutoModeUI(false);
                 this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
                 this.gameOptions.DisableAuxillaryOptions(false);
                 return;
@@ -368,14 +383,15 @@ export class Game extends Component {
     
         winPopUp.StartShowing(settleRes.totalPayout, settleRes.winType, () => {
             this.isShowingResults = false;
-    
+        
             if (this.autoAttemptCount > 0) {
                 this.checkAutoCall();
             } else {
+                this.gameOptions.SetAutoModeUI(false);
                 this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
                 this.gameOptions.DisableAuxillaryOptions(false);
             }
-    
+        
             this.lastWin.CheckLastWin();
         });
     }
@@ -434,6 +450,7 @@ export class Game extends Component {
         this.unschedule(this.updateAuto);
 
         this.gameOptions.SetAutoModeUI(true);
+
         this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
 
         this.buyNewCard();
@@ -442,12 +459,12 @@ export class Game extends Component {
     private checkAutoCall(): void {
         this.unschedule(this.updateAuto);
 
-        if (this.autoAttemptCount > 0) {
+        if (this.autoAttemptCount > 0){
             this.scheduleOnce(this.updateAuto, 0.5);
-            return;
+        }else{
+            this.stopAuto();
         }
 
-        this.stopAuto();
     }
 
     private updateAuto = (): void => {
@@ -455,16 +472,19 @@ export class Game extends Component {
             this.stopAuto();
             return;
         }
+        
+        // Buy Card
+        this.helpView.onAutoInput();
+        this.buyNewCard();
 
         const isInfiniteAuto = this.autoAttemptOptions.CurrentPriceValue === -1;
-
         if (isInfiniteAuto) {
             this.autoAttemptCount = this.infiniteAutoAttemptCount;
-        } else {
-            this.autoAttemptCount--;
         }
 
+        // Set Button
         this.gameOptions.SetAutoModeUI(true);
+        // Set Counter
         this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
 
         if (!isInfiniteAuto && this.autoAttemptCount <= 0) {
@@ -475,9 +495,6 @@ export class Game extends Component {
         if (this.combinationGuide.node.active) {
             this.combinationGuide.node.active = false;
         }
-
-        this.helpView.onAutoInput();
-        this.buyNewCard();
     };
 
     private stopAuto(): void {
