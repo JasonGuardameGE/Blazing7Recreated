@@ -20,6 +20,7 @@ export class HelpView extends Component {
 
     protected onEnable(): void {
         input.on(Input.EventType.TOUCH_START, this.onPlayerInput, this);
+        input.on(Input.EventType.TOUCH_MOVE, this.onPlayerInput, this);
         input.on(Input.EventType.MOUSE_DOWN, this.onPlayerInput, this);
 
         this.startCountdown();
@@ -27,6 +28,7 @@ export class HelpView extends Component {
 
     protected onDisable(): void {
         input.off(Input.EventType.TOUCH_START, this.onPlayerInput, this);
+        input.off(Input.EventType.TOUCH_MOVE, this.onPlayerInput, this);
         input.off(Input.EventType.MOUSE_DOWN, this.onPlayerInput, this);
 
         this.unschedule(this.showIdleHelp);

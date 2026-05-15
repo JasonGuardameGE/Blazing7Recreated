@@ -13,7 +13,6 @@ import { _decorator,
 export default class ResourceManager{
 
     public Init(): void {
-        console.log('[ResourceManager] Initialized');
     }
 
     public async LoadPrefab(path: string): Promise<Node> {

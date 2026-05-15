@@ -10,6 +10,7 @@ import {
     Vec3,
     UITransform,
     EventHandler,
+    Vec2,
 } from 'cc';
 import { AudioManager } from '../../Managers/AudioManager';
 import { Services } from '../../Managers/Services';
@@ -75,7 +76,7 @@ export class WinPopUp extends Component {
     private onWinPopupDoneCallback: (() => void) | null = null;
 
     IsPopUpInitialized: boolean = false;
-    
+
     private _audioManager: AudioManager;
 
     protected onLoad(): void {
@@ -90,13 +91,13 @@ export class WinPopUp extends Component {
 
     protected onEnable(): void {
         if (this.skipButton) {
-            this.skipButton.on(Node.EventType.TOUCH_END, this.onSkipTouched, this);
+            this.skipButton.on(Node.EventType.TOUCH_START, this.onSkipTouched, this);
         }
     }
 
     protected onDisable(): void {
         if (this.skipButton) {
-            this.skipButton.off(Node.EventType.TOUCH_END, this.onSkipTouched, this);
+            this.skipButton.off(Node.EventType.TOUCH_START, this.onSkipTouched, this);
         }
 
         this.stopAllRunningTweens();
@@ -139,7 +140,7 @@ export class WinPopUp extends Component {
                 this._audioManager = Services.GetService(AudioManager);
             }
 
-            await this._audioManager.playEffectByName('fire');
+            this._audioManager.playEffectByName('fire');
 
             this.isIncrementFinished = false;
             this.hasPlayedCoinFly = false;
@@ -158,7 +159,7 @@ export class WinPopUp extends Component {
                     true,
                 );
 
-                await this._audioManager.playEffectByName('win');
+                this._audioManager.playEffectByName('win');
             }
 
             if (this.winAmountLabel) {
@@ -175,7 +176,7 @@ export class WinPopUp extends Component {
                 .start();
 
             if (this.isSuperWin) {
-                await this._audioManager.playEffectByName('superwin');
+                this._audioManager.playEffectByName('superwin');
                 this.showSuperWin();
             } else {
                 tween(this.node)
@@ -445,8 +446,15 @@ export class WinPopUp extends Component {
             }
 
             const originalPosition = this.coinOriginalPositions[i]?.clone() || coin.position.clone();
+            const targetPosition = this.getCoinTargetLocalPosition(coin);
             const delay = i * this.coinFlyDelayBetween;
             const isLastCoin = i === this.coins.length - 1;
+
+            const startPoint = new Vec2(originalPosition.x, originalPosition.y);
+            const endPoint = new Vec2(targetPosition.x, targetPosition.y);
+            const controlPoint = this.getBezierCurve(startPoint, endPoint);
+
+            const bezierProgress = { value: 0 };
 
             tween(coin)
                 .delay(delay)
@@ -458,16 +466,30 @@ export class WinPopUp extends Component {
                         this.coinStartScale,
                         this.coinStartScale,
                     );
+
+                    bezierProgress.value = 0;
                 })
                 .parallel(
-                    tween()
+                    tween(bezierProgress)
                         .to(
                             this.coinFlyDuration,
-                            {
-                                position: this.getCoinTargetLocalPosition(coin),
-                            },
+                            { value: 1 },
                             {
                                 easing: 'quadInOut',
+                                onUpdate: () => {
+                                    const curvedPosition = this.getQuadraticBezierPoint(
+                                        startPoint,
+                                        controlPoint,
+                                        endPoint,
+                                        bezierProgress.value,
+                                    );
+
+                                    coin.setPosition(
+                                        curvedPosition.x,
+                                        curvedPosition.y,
+                                        originalPosition.z,
+                                    );
+                                },
                             },
                         ),
 
@@ -590,5 +612,45 @@ export class WinPopUp extends Component {
         skeleton.setToSetupPose();
         skeleton.setAnimation(0, animationName, loop);
         skeleton.updateAnimation(0);
+    }
+
+    private getBezierCurve(start: Vec2, end: Vec2): Vec2 {
+        if (!start || !end) {
+            return new Vec2();
+        }
+
+        const mid = new Vec2((start.x + end.x) / 2, (start.y + end.y) / 2);
+
+        const dx = end.x - start.x;
+        const dy = end.y - start.y;
+        const len = Math.sqrt(dx * dx + dy * dy) || 1;
+
+        const nx = -dy / len;
+        const ny = dx / len;
+
+        const offset = Math.min(200, Math.max(50, len * 0.25));
+
+        return new Vec2(mid.x + nx * offset, mid.y + ny * offset);
+    }
+
+    private getQuadraticBezierPoint(
+        start: Vec2,
+        control: Vec2,
+        end: Vec2,
+        t: number,
+    ): Vec2 {
+        const oneMinusT = 1 - t;
+
+        const x =
+            oneMinusT * oneMinusT * start.x +
+            2 * oneMinusT * t * control.x +
+            t * t * end.x;
+
+        const y =
+            oneMinusT * oneMinusT * start.y +
+            2 * oneMinusT * t * control.y +
+            t * t * end.y;
+
+        return new Vec2(x, y);
     }
 }

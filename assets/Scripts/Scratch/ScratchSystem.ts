@@ -17,6 +17,7 @@ import { ScratchMask } from './ScratchMask';
 import { FragmentView } from './FragmentView';
 import { AudioManager } from '../Managers/AudioManager';
 import { Services } from '../Managers/Services';
+import { HelpView } from '../UI/VisualFx/HelpView';
 
 const { ccclass, property } = _decorator;
 
@@ -62,6 +63,12 @@ export class ScratchSystem extends Component {
 
     @property([Node])
     scratchNumberNodes: Node[] = [];
+
+    // ADDED AFK DETECTION
+    private helpView: HelpView;
+    set HelpView(value:HelpView){
+        this.helpView = value;
+    }
 
     private validCells: GridCell[] = [];
     private cellScratched: boolean[] = [];
@@ -349,6 +356,10 @@ export class ScratchSystem extends Component {
 
         this.isTouched = true;
         this.OnTouchUpdate(e);
+
+        this.helpView?.resetCountdown();
+        const texPos = this.getTextureXYFromTouch(e);
+        this.scratchRenderer.EraseCircle(texPos.x, texPos.y, this.brushSize / 2);
     }
 
     private onTouchMove(e: EventTouch): void {

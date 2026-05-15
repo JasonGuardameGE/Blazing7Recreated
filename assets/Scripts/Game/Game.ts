@@ -120,6 +120,8 @@ export class Game extends Component {
 
         const cardNumberScratched = this.NewEventHandler('Game', 'cardNumberScratched');
         this.scratchSystem.onCardNumberScratchedCallbacks.push(cardNumberScratched);
+
+        this.scratchSystem.HelpView = this.helpView;
     }
 
     private setupGameOptions(): void {

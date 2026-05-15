@@ -80,10 +80,6 @@ export default class SceneManager {
         this._uiRoot.SceneRoot.addChild(nextScene);
         this.SetCurrentScene(nextScene);
 
-        // console.log(`[SceneManager] New Scene Loaded: ${nextScene.name}`);
-        // console.log(`[SceneManager] Added to parent: ${nextScene.parent?.name}`);
-        // console.log(`[SceneManager] SceneRoot child count: ${this._uiRoot.SceneRoot.children.length}`);
-
         return nextScene;
     }
 }

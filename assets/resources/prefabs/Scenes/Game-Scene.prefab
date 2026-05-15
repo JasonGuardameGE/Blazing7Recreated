@@ -8478,6 +8478,8 @@
     },
     "brushSize": 90,
     "singleErasedAreaThreshold": 0,
+    "scratchAllFragmentsPerCell": 3,
+    "scratchAllFragmentsPerBurst": 1,
     "scratchNumberNodes": [
       {
         "__id__": 27
@@ -11117,7 +11119,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 855.4110000000001,
+      "y": 715,
       "z": 0
     },
     "_lrot": {
@@ -11232,7 +11234,7 @@
     "_target": null,
     "_left": 0,
     "_right": 0,
-    "_top": -1289.0950067138672,
+    "_top": -1148.6840067138673,
     "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -12208,7 +12210,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -25,
+      "y": -41,
       "z": 0
     },
     "_lrot": {

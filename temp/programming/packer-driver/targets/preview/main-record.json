@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 4736.9425,
+      "mTimestamp": 12745.9533,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 244411.7878,
+      "mTimestamp": 8673943.6363,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -4949,7 +4949,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1778748065526,
+      "mTimestamp": 1778803620814,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -6419,7 +6419,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/GameData.ts": {
       "mTimestamp": {
-        "mtime": 1778720896865.0315,
+        "mtime": 1778806724213.998,
         "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
       },
       "chunkId": "d9e989e3911e310821333903950c51538c2c38d9",
@@ -6702,7 +6702,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts": {
       "mTimestamp": {
-        "mtime": 1778484123729.749,
+        "mtime": 1778808755836.9255,
         "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
       },
       "chunkId": "a466d0397f6d8bdc7e2528816197d20815b0156a",
@@ -6807,7 +6807,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/ResourceManager.ts": {
       "mTimestamp": {
-        "mtime": 1777858193756.8467,
+        "mtime": 1778808756713.0273,
         "uuid": "7c7c227d-c13c-4882-a81a-43610dabcee4"
       },
       "chunkId": "da4d61e81047345ef6a6ce0b6e3eaeb3c3a5f135",
@@ -6881,7 +6881,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1778740515971.3472,
+        "mtime": 1778808767856.8271,
         "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
       },
       "chunkId": "ea54d85c17f7a85b3ce3bf934492b9dce719df1a",
@@ -7429,7 +7429,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/AudioManager.ts": {
       "mTimestamp": {
-        "mtime": 1778567763111.5857,
+        "mtime": 1778808768693.3538,
         "uuid": "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f"
       },
       "chunkId": "a37606a2dd1d2516ae6ed8fef349709b501e3720",
@@ -7534,7 +7534,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/ScratchSystem.ts": {
       "mTimestamp": {
-        "mtime": 1778741111791.5232,
+        "mtime": 1778812289739.4412,
         "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
       },
       "chunkId": "674535ab1a5501de2c150ec162b176f00f2d6f41",
@@ -7937,7 +7937,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/FragmentView.ts": {
       "mTimestamp": {
-        "mtime": 1778741102411.1843,
+        "mtime": 1778808754330.1548,
         "uuid": "4ce0e872-5d22-4533-a403-6c80a08b3c7f"
       },
       "chunkId": "6ec6498dc9abc5e891ba52d890eee48c8d5e061f",
@@ -7989,7 +7989,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Card/ScratchCardView.ts": {
       "mTimestamp": {
-        "mtime": 1778722409922.5464,
+        "mtime": 1778808769508.6567,
         "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
       },
       "chunkId": "4a7859a70f398272e170d9b89ba58d608912b28e",
@@ -8272,7 +8272,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778748255141.161,
+        "mtime": 1778812271551.6633,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -15229,7 +15229,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchSystem.ts": {
       "mTimestamp": {
-        "mtime": 1778641605946.836,
+        "mtime": 1778808764001.443,
         "uuid": "b11a3d25-7581-428f-9b4b-6b83ddfa72ea"
       },
       "chunkId": "2fffac63b2f120a06bec018884904156022764db",
@@ -15397,7 +15397,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchTrajectory.ts": {
       "mTimestamp": {
-        "mtime": 1778641605946.836,
+        "mtime": 1778808762349.5784,
         "uuid": "a8d63770-24c1-4c35-a87b-ba9d5ffaf952"
       },
       "chunkId": "c599ea765e43b7fc97dff6ac719c1b94f25f47c4",
@@ -24198,7 +24198,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/HelpView.ts": {
       "mTimestamp": {
-        "mtime": 1778737113226.4832,
+        "mtime": 1778810562504.458,
         "uuid": "1e8430ea-3fe5-4505-97db-5411dc7febca"
       },
       "chunkId": "7e9b03fe3ccac897a75fce43483ab1b4e6cb15ef",
@@ -24576,7 +24576,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/PopUp/WinPopUp.ts": {
       "mTimestamp": {
-        "mtime": 1778748308495.8914,
+        "mtime": 1778810521313.883,
         "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
       },
       "chunkId": "487b68f0660f01f6fdfb6a9c331b28f264c107fd",
@@ -24595,11 +24595,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 13,
+              "line": 14,
               "column": 7
             },
             "end": {
-              "line": 13,
+              "line": 14,
               "column": 11
             }
           }
@@ -24609,11 +24609,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 14,
+              "line": 15,
               "column": 29
             },
             "end": {
-              "line": 14,
+              "line": 15,
               "column": 58
             }
           }
@@ -24623,11 +24623,11 @@
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
-              "line": 15,
+              "line": 16,
               "column": 25
             },
             "end": {
-              "line": 15,
+              "line": 16,
               "column": 50
             }
           }
@@ -24637,11 +24637,11 @@
           "resolved": "__unresolved_3",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 17,
               "column": 46
             },
             "end": {
-              "line": 16,
+              "line": 17,
               "column": 75
             }
           }
@@ -24651,11 +24651,11 @@
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
-              "line": 17,
+              "line": 18,
               "column": 32
             },
             "end": {
-              "line": 17,
+              "line": 18,
               "column": 61
             }
           }

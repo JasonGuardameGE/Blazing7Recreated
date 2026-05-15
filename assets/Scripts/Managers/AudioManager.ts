@@ -50,7 +50,6 @@ export class AudioManager extends Component {
 
     public Init(): void{
         this.resourceManager = Services.GetService(ResourceManager);
-        console.log('[AudioManager] Initialized');
     }
 
     public async playEffectByName(fileName: string) {

@@ -113,8 +113,6 @@ export class GameManager extends Component {
         Services.Register(WinBroadcastManager, this.winBroadcastManager);
         Services.Register(AudioManager, this.audioManager);
         Services.Register(GameManager, this);
-
-        console.log('[GameManager] Services registered');
     }
 
     private initializeServices(): void {
@@ -128,8 +126,6 @@ export class GameManager extends Component {
         this.popupManager.Init(this.uiRoot);
         this.resourceManager.Init();
         this.audioManager.Init();
-
-        console.log('[GameManager] Services initialized');
     }
 
     public async PurchaseCard(){

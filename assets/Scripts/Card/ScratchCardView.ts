@@ -47,11 +47,6 @@ export class ScratchCardView extends Component {
         this._gameManager.ScratchCard.onPurchaseUpdateCardVisualCallbacks.push(
             this.setCardNumbers.bind(this),
         );
-    
-        // console.log(
-        //     '[ScratchCardView] Registered setCardNumbers callback. Total:',
-        //     gameManager.onPurchaseUpdateCardVisualCallbacks.length,
-        // );
     }
     
     public setCardNumbers(numbers: Array<{value: number, win: number}>){
@@ -78,7 +73,7 @@ export class ScratchCardView extends Component {
 
         if(this._gameManager.GameData.TicketData.currentTicket){
             this.cardPrice.string = `₱${this._gameManager.GameData.TicketData.currentTicket.unitPrice.toString()}`;
-            this.cardNumber.string = `Card NO ${this._gameManager.GameData.TicketData.currentTicket.cardId}`;    
+            this.cardNumber.string = `Card NO: ${this._gameManager.GameData.TicketData.currentTicket.cardNo}`;    
         }else{
             this.cardPrice.string = ``;
             this.cardNumber.string = ``;
