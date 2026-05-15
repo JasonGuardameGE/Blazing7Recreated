@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 21008851.8199,
+      "mTimestamp": 22967956.5908,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -6702,7 +6702,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/SceneManager.ts": {
       "mTimestamp": {
-        "mtime": 1778824473078.798,
+        "mtime": 1778825239405.561,
         "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
       },
       "chunkId": "a466d0397f6d8bdc7e2528816197d20815b0156a",
@@ -8272,7 +8272,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778822922070.1714,
+        "mtime": 1778825518847.5947,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -24303,7 +24303,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/LastWin.ts": {
       "mTimestamp": {
-        "mtime": 1778658048621.3967,
+        "mtime": 1778826586748.9507,
         "uuid": "0336399e-8d15-481b-adaa-d281d22d0c48"
       },
       "chunkId": "d625f1abd789d89922f621f05b7bf9824af57daf",
@@ -24358,6 +24358,20 @@
               "column": 47
             }
           }
+        },
+        {
+          "value": "../utils/NumberFormatter",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 32
+            },
+            "end": {
+              "line": 4,
+              "column": 58
+            }
+          }
         }
       ],
       "type": "esm",
@@ -24401,6 +24415,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/NumberFormatter.ts"
           },
           "messages": []
         }
@@ -24597,7 +24618,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/PopUp/WinPopUp.ts": {
       "mTimestamp": {
-        "mtime": 1778810521313.883,
+        "mtime": 1778826044127.6934,
         "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
       },
       "chunkId": "487b68f0660f01f6fdfb6a9c331b28f264c107fd",

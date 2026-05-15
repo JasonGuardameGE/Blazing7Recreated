@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778804323992.874,
+      "time": 1778826778029.333,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -250,7 +250,7 @@
       "time": 1777534023321.0806
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\SceneManager.ts": {
-      "time": 1778824473078.798,
+      "time": 1778825239405.561,
       "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\ResourceManager.ts.meta": {
@@ -740,7 +740,7 @@
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1778822922070.1714,
+      "time": 1778825518847.5947,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
@@ -852,7 +852,7 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1778814235271.437,
+      "time": 1778826510500.737,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -9263,24 +9263,24 @@
       "uuid": "38b664ab-ff10-483f-b4d8-e8f8f00f8456"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.fnt.meta": {
-      "time": 1778655034180.9304
+      "time": 1778826265837.1516
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.png.meta": {
-      "time": 1778655034192.9314
+      "time": 1778826265853.0984
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.fnt": {
-      "time": 1776242413792.02,
+      "time": 1778747797622.1482,
       "uuid": "1d5cc946-fb0e-4bb2-ab9b-fba45c1b2e31"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Font\\LastWin\\font-last.png": {
-      "time": 1776242413793.02,
+      "time": 1778747797622.1482,
       "uuid": "55c33d00-b1b8-4f10-8689-8085af9cb8cb"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\LastWin.ts.meta": {
       "time": 1778657043107.6528
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\LastWin.ts": {
-      "time": 1778658048621.3967,
+      "time": 1778826586748.9507,
       "uuid": "0336399e-8d15-481b-adaa-d281d22d0c48"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\WinBroadcastManager.ts.meta": {
@@ -9308,7 +9308,7 @@
       "time": 1778055078141.6335
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\WinPopUp.ts": {
-      "time": 1778810521313.883,
+      "time": 1778826044127.6934,
       "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\WinnerBroadcastPopUp.ts.meta": {

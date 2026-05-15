@@ -85,8 +85,6 @@ export default class SceneManager {
         this.SetCurrentScene(nextScene);
         this.CurrentScene = scenePrefabPath;
 
-        console.log(`[SceneManager] Loading Scene: ${this.CurrentScene} Callback: ${this.onSceneChangeCallback.length}`);
-
         EventHandler.emitEvents(this.onSceneChangeCallback);
 
         return nextScene;

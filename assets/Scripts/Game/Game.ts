@@ -180,7 +180,8 @@ export class Game extends Component {
     }
 
     private scratchAll(): void {
-        if (this.gameOptions.scratchAllButton?.disabled) {
+        if (this.gameOptions.scratchAllButton?.disabled &&
+            this.autoAttemptCount <= 0) {
             return;
         }
     
@@ -265,6 +266,8 @@ export class Game extends Component {
     private cardPlayInComplete(): void {
         this.scratchSystem.ToggleTouch(true);
     
+        console.log(`[Game] CardPlayInComplete, AutoCount: ${this.autoAttemptCount}`)
+
         if (this.autoAttemptCount > 0) {
             this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
             this.scratchAll();

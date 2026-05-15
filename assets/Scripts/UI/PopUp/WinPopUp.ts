@@ -274,11 +274,11 @@ export class WinPopUp extends Component {
                         this.winAmountLabel.string =
                             NumberFormatter.formatAmountWithDecimal(currentValue);
 
-                        const pulse = Math.sin(Date.now() * 0.02);
-                        const normalizedPulse = (pulse + 1) * 0.5;
+                        //const pulse = Math.sin(Date.now() * 0.02);
+                        //const normalizedPulse = (pulse + 1) * 0.5;
 
-                        this.winAmountLabel.fontSize =
-                            originalFontSize + (pulseFontSize - originalFontSize) * normalizedPulse;
+                        // this.winAmountLabel.fontSize =
+                        //     originalFontSize + (pulseFontSize - originalFontSize) * normalizedPulse;
                     },
                 },
             )
@@ -311,8 +311,9 @@ export class WinPopUp extends Component {
         Tween.stopAllByTarget(this.incrementTweenTarget);
 
         const targetValue = Math.max(0, this.winAmount);
-
+        
         this.incrementTweenTarget.value = targetValue;
+        this.winAmountLabel.node.active = true;
         this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(targetValue);
         this.winAmountLabel.fontSize = this.originalWinAmountFontSize || this.winAmountLabel.fontSize;
 
