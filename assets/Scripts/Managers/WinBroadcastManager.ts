@@ -18,7 +18,7 @@ export class WinBroadcastManager extends Component {
     private winnerBroadcastPopup: WinnerBroadcastPopUp;
     private isShowingAnnouncement: boolean = false;
 
-    private delayShow: number = 5;
+    private delayShow: number = 15;
     private delayTweenValue = { value: 5 };
 
     private _sceneManager: SceneManager;

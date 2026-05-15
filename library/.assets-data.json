@@ -12,7 +12,8 @@
         "CC3eba29-7abb-723a-f7ab-ae275e2277e8",
         "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f",
         "2df96411-3d08-4355-93ff-7abf0349f531",
-        "7c55f8ae-48ee-41a0-b3bc-9ba08c6d4dd6"
+        "7c55f8ae-48ee-41a0-b3bc-9ba08c6d4dd6",
+        "83414e53-e083-419d-b1c8-ab00ca882c89"
       ]
     },
     "versionCode": 1
@@ -22873,6 +22874,11 @@
   },
   "73e54186-e599-483e-8076-9dedcd12848b": {
     "url": "db://assets/Scripts/utils/NumberFormatter.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "83414e53-e083-419d-b1c8-ab00ca882c89": {
+    "url": "db://assets/Scripts/utils/ResolutionKeeper.ts",
     "value": {},
     "versionCode": 1
   }

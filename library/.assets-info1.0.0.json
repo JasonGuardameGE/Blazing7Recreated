@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1778829408348.7373,
+      "time": 1778831260014.696,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -852,7 +852,7 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1778826510500.737,
+      "time": 1778830608839.2217,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -939,7 +939,7 @@
       "time": 1778030959567.8926
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils": {
-      "time": 1778742069539.348,
+      "time": 1778831223244.2222,
       "uuid": "6465b815-023a-401d-a495-2c2e6aa4191a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\logger.ts": {
@@ -9287,7 +9287,7 @@
       "time": 1778659908015.364
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\WinBroadcastManager.ts": {
-      "time": 1778824624676.993,
+      "time": 1778830995385.176,
       "uuid": "2df96411-3d08-4355-93ff-7abf0349f531"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\broadcast-background.png.meta": {
@@ -9343,7 +9343,7 @@
       "time": 1778629570337.8022
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\NodeMovement.ts": {
-      "time": 1778736834950.7378,
+      "time": 1778831623280.325,
       "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\MaxPrizeToast-background.png.meta": {
@@ -9373,6 +9373,13 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\NumberFormatter.ts": {
       "time": 1778748153560.1792,
       "uuid": "73e54186-e599-483e-8076-9dedcd12848b"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\ResolutionKeeper.ts.meta": {
+      "time": 1778831223252.1921
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\ResolutionKeeper.ts": {
+      "time": 1778831250169.7021,
+      "uuid": "83414e53-e083-419d-b1c8-ab00ca882c89"
     }
   },
   "missing": {

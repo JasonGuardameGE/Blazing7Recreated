@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 26802633.1223,
+      "mTimestamp": 28005842.9959,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1568,7 +1568,7 @@
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/logger.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/ResolutionKeeper.ts",
           "resolved": "__unresolved_60",
           "loc": {
             "start": {
@@ -1577,1375 +1577,1375 @@
             },
             "end": {
               "line": 5,
-              "column": 6602
+              "column": 6612
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/logger.ts",
+          "resolved": "__unresolved_61",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 6628
+            },
+            "end": {
+              "line": 5,
+              "column": 6707
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleBonusItem.ts",
-          "resolved": "__unresolved_61",
+          "resolved": "__unresolved_62",
           "loc": {
             "start": {
               "line": 5,
-              "column": 6618
+              "column": 6723
             },
             "end": {
               "line": 5,
-              "column": 6723
+              "column": 6828
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleBonusTrajectory.ts",
-          "resolved": "__unresolved_62",
+          "resolved": "__unresolved_63",
           "loc": {
             "start": {
               "line": 5,
-              "column": 6739
+              "column": 6844
             },
             "end": {
               "line": 5,
-              "column": 6850
+              "column": 6955
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleCardTrajectory.ts",
-          "resolved": "__unresolved_63",
+          "resolved": "__unresolved_64",
           "loc": {
             "start": {
               "line": 5,
-              "column": 6866
+              "column": 6971
             },
             "end": {
               "line": 5,
-              "column": 6976
+              "column": 7081
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleLeafItem.ts",
-          "resolved": "__unresolved_64",
+          "resolved": "__unresolved_65",
           "loc": {
             "start": {
               "line": 5,
-              "column": 6992
+              "column": 7097
             },
             "end": {
               "line": 5,
-              "column": 7096
+              "column": 7201
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleLeafManagerTrajectory.ts",
-          "resolved": "__unresolved_65",
+          "resolved": "__unresolved_66",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7112
+              "column": 7217
             },
             "end": {
               "line": 5,
-              "column": 7229
+              "column": 7334
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleTrajectory.ts",
-          "resolved": "__unresolved_66",
+          "resolved": "__unresolved_67",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7245
+              "column": 7350
             },
             "end": {
               "line": 5,
-              "column": 7351
+              "column": 7456
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleYourNumberItem.ts",
-          "resolved": "__unresolved_67",
+          "resolved": "__unresolved_68",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7367
+              "column": 7472
             },
             "end": {
               "line": 5,
-              "column": 7477
+              "column": 7582
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BANANACRAZE/script/BundleYourNumbersTrajectory.ts",
-          "resolved": "__unresolved_68",
+          "resolved": "__unresolved_69",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7493
+              "column": 7598
             },
             "end": {
               "line": 5,
-              "column": 7610
+              "column": 7715
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoAudio.ts",
-          "resolved": "__unresolved_69",
+          "resolved": "__unresolved_70",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7626
+              "column": 7731
             },
             "end": {
               "line": 5,
-              "column": 7721
+              "column": 7826
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoBalls.ts",
-          "resolved": "__unresolved_70",
+          "resolved": "__unresolved_71",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7737
+              "column": 7842
             },
             "end": {
               "line": 5,
-              "column": 7832
+              "column": 7937
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoBallsScratch.ts",
-          "resolved": "__unresolved_71",
+          "resolved": "__unresolved_72",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7848
+              "column": 7953
             },
             "end": {
               "line": 5,
-              "column": 7950
+              "column": 8055
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoCard.ts",
-          "resolved": "__unresolved_72",
+          "resolved": "__unresolved_73",
           "loc": {
             "start": {
               "line": 5,
-              "column": 7966
+              "column": 8071
             },
             "end": {
               "line": 5,
-              "column": 8060
+              "column": 8165
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoCardDetails.ts",
-          "resolved": "__unresolved_73",
+          "resolved": "__unresolved_74",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8076
+              "column": 8181
             },
             "end": {
               "line": 5,
-              "column": 8177
+              "column": 8282
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoConfig.ts",
-          "resolved": "__unresolved_74",
+          "resolved": "__unresolved_75",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8193
+              "column": 8298
             },
             "end": {
               "line": 5,
-              "column": 8289
+              "column": 8394
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoExtraball.ts",
-          "resolved": "__unresolved_75",
+          "resolved": "__unresolved_76",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8305
+              "column": 8410
             },
             "end": {
               "line": 5,
-              "column": 8404
+              "column": 8509
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoNumber.ts",
-          "resolved": "__unresolved_76",
+          "resolved": "__unresolved_77",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8420
+              "column": 8525
             },
             "end": {
               "line": 5,
-              "column": 8516
+              "column": 8621
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoRuleItem.ts",
-          "resolved": "__unresolved_77",
+          "resolved": "__unresolved_78",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8532
+              "column": 8637
             },
             "end": {
               "line": 5,
-              "column": 8630
+              "column": 8735
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoRuleSlider.ts",
-          "resolved": "__unresolved_78",
+          "resolved": "__unresolved_79",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8646
+              "column": 8751
             },
             "end": {
               "line": 5,
-              "column": 8746
+              "column": 8851
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoWinAlert.ts",
-          "resolved": "__unresolved_79",
+          "resolved": "__unresolved_80",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8762
+              "column": 8867
             },
             "end": {
               "line": 5,
-              "column": 8860
+              "column": 8965
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoWinLine.ts",
-          "resolved": "__unresolved_80",
+          "resolved": "__unresolved_81",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8876
+              "column": 8981
             },
             "end": {
               "line": 5,
-              "column": 8973
+              "column": 9078
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BINGO2/script/BingoWinRule.ts",
-          "resolved": "__unresolved_81",
+          "resolved": "__unresolved_82",
           "loc": {
             "start": {
               "line": 5,
-              "column": 8989
+              "column": 9094
             },
             "end": {
               "line": 5,
-              "column": 9086
+              "column": 9191
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/BundleTrajectory7s.ts",
-          "resolved": "__unresolved_82",
+          "resolved": "__unresolved_83",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9102
+              "column": 9207
             },
             "end": {
               "line": 5,
-              "column": 9217
+              "column": 9322
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/CardFragmentView.ts",
-          "resolved": "__unresolved_83",
+          "resolved": "__unresolved_84",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9233
+              "column": 9338
             },
             "end": {
               "line": 5,
-              "column": 9346
+              "column": 9451
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/CardReview7s.ts",
-          "resolved": "__unresolved_84",
+          "resolved": "__unresolved_85",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9362
+              "column": 9467
             },
             "end": {
               "line": 5,
-              "column": 9471
+              "column": 9576
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/CardReviewMask.ts",
-          "resolved": "__unresolved_85",
+          "resolved": "__unresolved_86",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9487
+              "column": 9592
             },
             "end": {
               "line": 5,
-              "column": 9598
+              "column": 9703
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/CardReviewRenderer.ts",
-          "resolved": "__unresolved_86",
+          "resolved": "__unresolved_87",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9614
+              "column": 9719
             },
             "end": {
               "line": 5,
-              "column": 9729
+              "column": 9834
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/CardReviewSystemBlazing.ts",
-          "resolved": "__unresolved_87",
+          "resolved": "__unresolved_88",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9745
+              "column": 9850
             },
             "end": {
               "line": 5,
-              "column": 9865
+              "column": 9970
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/CardTypes.ts",
-          "resolved": "__unresolved_88",
+          "resolved": "__unresolved_89",
           "loc": {
             "start": {
               "line": 5,
-              "column": 9881
+              "column": 9986
             },
             "end": {
               "line": 5,
-              "column": 9987
+              "column": 10092
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/FragmentView.ts",
-          "resolved": "__unresolved_89",
+          "resolved": "__unresolved_90",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10003
+              "column": 10108
             },
             "end": {
               "line": 5,
-              "column": 10112
+              "column": 10217
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchAutoPlayer.ts",
-          "resolved": "__unresolved_90",
+          "resolved": "__unresolved_91",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10128
+              "column": 10233
             },
             "end": {
               "line": 5,
-              "column": 10242
+              "column": 10347
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchMask.ts",
-          "resolved": "__unresolved_91",
+          "resolved": "__unresolved_92",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10258
+              "column": 10363
             },
             "end": {
               "line": 5,
-              "column": 10366
+              "column": 10471
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchNumber.ts",
-          "resolved": "__unresolved_92",
+          "resolved": "__unresolved_93",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10382
+              "column": 10487
             },
             "end": {
               "line": 5,
-              "column": 10492
+              "column": 10597
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchRenderer.ts",
-          "resolved": "__unresolved_93",
+          "resolved": "__unresolved_94",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10508
+              "column": 10613
             },
             "end": {
               "line": 5,
-              "column": 10620
+              "column": 10725
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchSound.ts",
-          "resolved": "__unresolved_94",
+          "resolved": "__unresolved_95",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10636
+              "column": 10741
             },
             "end": {
               "line": 5,
-              "column": 10745
+              "column": 10850
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchSystem.ts",
-          "resolved": "__unresolved_95",
+          "resolved": "__unresolved_96",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10761
+              "column": 10866
             },
             "end": {
               "line": 5,
-              "column": 10871
+              "column": 10976
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchTrajectory.ts",
-          "resolved": "__unresolved_96",
+          "resolved": "__unresolved_97",
           "loc": {
             "start": {
               "line": 5,
-              "column": 10887
+              "column": 10992
             },
             "end": {
               "line": 5,
-              "column": 11001
+              "column": 11106
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/ScratchTypes.ts",
-          "resolved": "__unresolved_97",
+          "resolved": "__unresolved_98",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11017
+              "column": 11122
             },
             "end": {
               "line": 5,
-              "column": 11126
+              "column": 11231
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/BLAZING_7S_SCRATCH/script/Trajectory.ts",
-          "resolved": "__unresolved_98",
+          "resolved": "__unresolved_99",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11142
+              "column": 11247
             },
             "end": {
               "line": 5,
-              "column": 11249
+              "column": 11354
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepBonusShells.ts",
-          "resolved": "__unresolved_99",
+          "resolved": "__unresolved_100",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11265
+              "column": 11370
             },
             "end": {
               "line": 5,
-              "column": 11367
+              "column": 11472
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBG.ts",
-          "resolved": "__unresolved_100",
+          "resolved": "__unresolved_101",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11383
+              "column": 11488
             },
             "end": {
               "line": 5,
-              "column": 11479
+              "column": 11584
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBaseUI.ts",
-          "resolved": "__unresolved_101",
+          "resolved": "__unresolved_102",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11495
+              "column": 11600
             },
             "end": {
               "line": 5,
-              "column": 11595
+              "column": 11700
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonus.ts",
-          "resolved": "__unresolved_102",
+          "resolved": "__unresolved_103",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11611
+              "column": 11716
             },
             "end": {
               "line": 5,
-              "column": 11710
+              "column": 11815
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusGame.ts",
-          "resolved": "__unresolved_103",
+          "resolved": "__unresolved_104",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11726
+              "column": 11831
             },
             "end": {
               "line": 5,
-              "column": 11829
+              "column": 11934
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusInfo.ts",
-          "resolved": "__unresolved_104",
+          "resolved": "__unresolved_105",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11845
+              "column": 11950
             },
             "end": {
               "line": 5,
-              "column": 11948
+              "column": 12053
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusJackpot.ts",
-          "resolved": "__unresolved_105",
+          "resolved": "__unresolved_106",
           "loc": {
             "start": {
               "line": 5,
-              "column": 11964
+              "column": 12069
             },
             "end": {
               "line": 5,
-              "column": 12070
+              "column": 12175
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusShellItem.ts",
-          "resolved": "__unresolved_106",
+          "resolved": "__unresolved_107",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12086
+              "column": 12191
             },
             "end": {
               "line": 5,
-              "column": 12194
+              "column": 12299
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusStone.ts",
-          "resolved": "__unresolved_107",
+          "resolved": "__unresolved_108",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12210
+              "column": 12315
             },
             "end": {
               "line": 5,
-              "column": 12314
+              "column": 12419
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusWin.ts",
-          "resolved": "__unresolved_108",
+          "resolved": "__unresolved_109",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12330
+              "column": 12435
             },
             "end": {
               "line": 5,
-              "column": 12432
+              "column": 12537
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBonusWinItem.ts",
-          "resolved": "__unresolved_109",
+          "resolved": "__unresolved_110",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12448
+              "column": 12553
             },
             "end": {
               "line": 5,
-              "column": 12554
+              "column": 12659
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBubbleNumItem.ts",
-          "resolved": "__unresolved_110",
+          "resolved": "__unresolved_111",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12570
+              "column": 12675
             },
             "end": {
               "line": 5,
-              "column": 12677
+              "column": 12782
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBubbleScene.ts",
-          "resolved": "__unresolved_111",
+          "resolved": "__unresolved_112",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12693
+              "column": 12798
             },
             "end": {
               "line": 5,
-              "column": 12798
+              "column": 12903
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaBubbles.ts",
-          "resolved": "__unresolved_112",
+          "resolved": "__unresolved_113",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12814
+              "column": 12919
             },
             "end": {
               "line": 5,
-              "column": 12915
+              "column": 13020
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaCard.ts",
-          "resolved": "__unresolved_113",
+          "resolved": "__unresolved_114",
           "loc": {
             "start": {
               "line": 5,
-              "column": 12931
+              "column": 13036
             },
             "end": {
               "line": 5,
-              "column": 13029
+              "column": 13134
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaCardDetails.ts",
-          "resolved": "__unresolved_114",
+          "resolved": "__unresolved_115",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13045
+              "column": 13150
             },
             "end": {
               "line": 5,
-              "column": 13150
+              "column": 13255
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaCloudFloat.ts",
-          "resolved": "__unresolved_115",
+          "resolved": "__unresolved_116",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13166
+              "column": 13271
             },
             "end": {
               "line": 5,
-              "column": 13270
+              "column": 13375
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaFish.ts",
-          "resolved": "__unresolved_116",
+          "resolved": "__unresolved_117",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13286
+              "column": 13391
             },
             "end": {
               "line": 5,
-              "column": 13384
+              "column": 13489
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaGameRecord.ts",
-          "resolved": "__unresolved_117",
+          "resolved": "__unresolved_118",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13400
+              "column": 13505
             },
             "end": {
               "line": 5,
-              "column": 13504
+              "column": 13609
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaMainGame.ts",
-          "resolved": "__unresolved_118",
+          "resolved": "__unresolved_119",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13520
+              "column": 13625
             },
             "end": {
               "line": 5,
-              "column": 13622
+              "column": 13727
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaMyNumber.ts",
-          "resolved": "__unresolved_119",
+          "resolved": "__unresolved_120",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13638
+              "column": 13743
             },
             "end": {
               "line": 5,
-              "column": 13740
+              "column": 13845
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaReview.ts",
-          "resolved": "__unresolved_120",
+          "resolved": "__unresolved_121",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13756
+              "column": 13861
             },
             "end": {
               "line": 5,
-              "column": 13856
+              "column": 13961
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaSceneTranstion.ts",
-          "resolved": "__unresolved_121",
+          "resolved": "__unresolved_122",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13872
+              "column": 13977
             },
             "end": {
               "line": 5,
-              "column": 13980
+              "column": 14085
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaSuperBonus.ts",
-          "resolved": "__unresolved_122",
+          "resolved": "__unresolved_123",
           "loc": {
             "start": {
               "line": 5,
-              "column": 13996
+              "column": 14101
             },
             "end": {
               "line": 5,
-              "column": 14100
+              "column": 14205
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaSuperBonusGame.ts",
-          "resolved": "__unresolved_123",
+          "resolved": "__unresolved_124",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14116
+              "column": 14221
             },
             "end": {
               "line": 5,
-              "column": 14224
+              "column": 14329
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaWater.ts",
-          "resolved": "__unresolved_124",
+          "resolved": "__unresolved_125",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14240
+              "column": 14345
             },
             "end": {
               "line": 5,
-              "column": 14339
+              "column": 14444
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/DeepSeaWinNum.ts",
-          "resolved": "__unresolved_125",
+          "resolved": "__unresolved_126",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14355
+              "column": 14460
             },
             "end": {
               "line": 5,
-              "column": 14455
+              "column": 14560
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/data/DeepSeaAudio.ts",
-          "resolved": "__unresolved_126",
+          "resolved": "__unresolved_127",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14471
+              "column": 14576
             },
             "end": {
               "line": 5,
-              "column": 14575
+              "column": 14680
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/data/DeepSeaCardData.ts",
-          "resolved": "__unresolved_127",
+          "resolved": "__unresolved_128",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14591
+              "column": 14696
             },
             "end": {
               "line": 5,
-              "column": 14698
+              "column": 14803
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/data/DeepSeaEvent.ts",
-          "resolved": "__unresolved_128",
+          "resolved": "__unresolved_129",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14714
+              "column": 14819
             },
             "end": {
               "line": 5,
-              "column": 14818
+              "column": 14923
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/DEEP_SEA/script/data/DeepSeaRes.ts",
-          "resolved": "__unresolved_129",
+          "resolved": "__unresolved_130",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14834
+              "column": 14939
             },
             "end": {
               "line": 5,
-              "column": 14936
+              "column": 15041
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/BundleTrajectoryGinto.ts",
-          "resolved": "__unresolved_130",
+          "resolved": "__unresolved_131",
           "loc": {
             "start": {
               "line": 5,
-              "column": 14952
+              "column": 15057
             },
             "end": {
               "line": 5,
-              "column": 15063
+              "column": 15168
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/CardFragmentView.ts",
-          "resolved": "__unresolved_131",
+          "resolved": "__unresolved_132",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15079
+              "column": 15184
             },
             "end": {
               "line": 5,
-              "column": 15185
+              "column": 15290
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/CardReviewGinto.ts",
-          "resolved": "__unresolved_132",
+          "resolved": "__unresolved_133",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15201
+              "column": 15306
             },
             "end": {
               "line": 5,
-              "column": 15306
+              "column": 15411
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/CardReviewMask.ts",
-          "resolved": "__unresolved_133",
+          "resolved": "__unresolved_134",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15322
+              "column": 15427
             },
             "end": {
               "line": 5,
-              "column": 15426
+              "column": 15531
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/CardReviewRenderer.ts",
-          "resolved": "__unresolved_134",
+          "resolved": "__unresolved_135",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15442
+              "column": 15547
             },
             "end": {
               "line": 5,
-              "column": 15550
+              "column": 15655
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/CardReviewSystem.ts",
-          "resolved": "__unresolved_135",
+          "resolved": "__unresolved_136",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15566
+              "column": 15671
             },
             "end": {
               "line": 5,
-              "column": 15672
+              "column": 15777
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/CardTypes.ts",
-          "resolved": "__unresolved_136",
+          "resolved": "__unresolved_137",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15688
+              "column": 15793
             },
             "end": {
               "line": 5,
-              "column": 15787
+              "column": 15892
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/FragmentView.ts",
-          "resolved": "__unresolved_137",
+          "resolved": "__unresolved_138",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15803
+              "column": 15908
             },
             "end": {
               "line": 5,
-              "column": 15905
+              "column": 16010
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchAutoPlayer.ts",
-          "resolved": "__unresolved_138",
+          "resolved": "__unresolved_139",
           "loc": {
             "start": {
               "line": 5,
-              "column": 15921
+              "column": 16026
             },
             "end": {
               "line": 5,
-              "column": 16028
+              "column": 16133
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchMask.ts",
-          "resolved": "__unresolved_139",
+          "resolved": "__unresolved_140",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16044
+              "column": 16149
             },
             "end": {
               "line": 5,
-              "column": 16145
+              "column": 16250
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchRenderer.ts",
-          "resolved": "__unresolved_140",
+          "resolved": "__unresolved_141",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16161
+              "column": 16266
             },
             "end": {
               "line": 5,
-              "column": 16266
+              "column": 16371
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchSound.ts",
-          "resolved": "__unresolved_141",
+          "resolved": "__unresolved_142",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16282
+              "column": 16387
             },
             "end": {
               "line": 5,
-              "column": 16384
+              "column": 16489
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchSystem.ts",
-          "resolved": "__unresolved_142",
+          "resolved": "__unresolved_143",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16400
+              "column": 16505
             },
             "end": {
               "line": 5,
-              "column": 16503
+              "column": 16608
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchTrajectory.ts",
-          "resolved": "__unresolved_143",
+          "resolved": "__unresolved_144",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16519
+              "column": 16624
             },
             "end": {
               "line": 5,
-              "column": 16626
+              "column": 16731
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/GINTO_MATCH/script/ScratchTypes.ts",
-          "resolved": "__unresolved_144",
+          "resolved": "__unresolved_145",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16642
+              "column": 16747
             },
             "end": {
               "line": 5,
-              "column": 16744
+              "column": 16849
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_CCFlopCard.ts",
-          "resolved": "__unresolved_145",
+          "resolved": "__unresolved_146",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16760
+              "column": 16865
             },
             "end": {
               "line": 5,
-              "column": 16873
+              "column": 16978
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_Card.ts",
-          "resolved": "__unresolved_146",
+          "resolved": "__unresolved_147",
           "loc": {
             "start": {
               "line": 5,
-              "column": 16889
+              "column": 16994
             },
             "end": {
               "line": 5,
-              "column": 16996
+              "column": 17101
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_CardItemColor.ts",
-          "resolved": "__unresolved_147",
+          "resolved": "__unresolved_148",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17012
+              "column": 17117
             },
             "end": {
               "line": 5,
-              "column": 17128
+              "column": 17233
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_CardReview.ts",
-          "resolved": "__unresolved_148",
+          "resolved": "__unresolved_149",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17144
+              "column": 17249
             },
             "end": {
               "line": 5,
-              "column": 17257
+              "column": 17362
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_Color_Win.ts",
-          "resolved": "__unresolved_149",
+          "resolved": "__unresolved_150",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17273
+              "column": 17378
             },
             "end": {
               "line": 5,
-              "column": 17385
+              "column": 17490
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_Default_Card.ts",
-          "resolved": "__unresolved_150",
+          "resolved": "__unresolved_151",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17401
+              "column": 17506
             },
             "end": {
               "line": 5,
-              "column": 17516
+              "column": 17621
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_HelpView.ts",
-          "resolved": "__unresolved_151",
+          "resolved": "__unresolved_152",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17532
+              "column": 17637
             },
             "end": {
               "line": 5,
-              "column": 17643
+              "column": 17748
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/LUCKY_COLORS2/script/LuckyColor_ScratchBonus.ts",
-          "resolved": "__unresolved_152",
+          "resolved": "__unresolved_153",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17659
+              "column": 17764
             },
             "end": {
               "line": 5,
-              "column": 17774
+              "column": 17879
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/PIKA2/script/BundleCardDetailFoodItem.ts",
-          "resolved": "__unresolved_153",
+          "resolved": "__unresolved_154",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17790
+              "column": 17895
             },
             "end": {
               "line": 5,
-              "column": 17898
+              "column": 18003
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/PIKA2/script/BundleLeafItem.ts",
-          "resolved": "__unresolved_154",
+          "resolved": "__unresolved_155",
           "loc": {
             "start": {
               "line": 5,
-              "column": 17914
+              "column": 18019
             },
             "end": {
               "line": 5,
-              "column": 18012
+              "column": 18117
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/PIKA2/script/BundleLeafManager.ts",
-          "resolved": "__unresolved_155",
+          "resolved": "__unresolved_156",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18028
+              "column": 18133
             },
             "end": {
               "line": 5,
-              "column": 18129
+              "column": 18234
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/PIKA2/script/BundlePikaCardTrajectoryComponent.ts",
-          "resolved": "__unresolved_156",
+          "resolved": "__unresolved_157",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18145
+              "column": 18250
             },
             "end": {
               "line": 5,
-              "column": 18262
+              "column": 18367
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/PIKA2/script/BundleTrajectory.ts",
-          "resolved": "__unresolved_157",
-          "loc": {
-            "start": {
-              "line": 5,
-              "column": 18278
-            },
-            "end": {
-              "line": 5,
-              "column": 18378
-            }
-          }
-        },
-        {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/api/GameApi.ts",
           "resolved": "__unresolved_158",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18394
+              "column": 18383
             },
             "end": {
               "line": 5,
@@ -2954,7 +2954,7 @@
           }
         },
         {
-          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/base/BundleBasePanel.ts",
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/api/GameApi.ts",
           "resolved": "__unresolved_159",
           "loc": {
             "start": {
@@ -2963,399 +2963,413 @@
             },
             "end": {
               "line": 5,
-              "column": 18597
+              "column": 18588
+            }
+          }
+        },
+        {
+          "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/base/BundleBasePanel.ts",
+          "resolved": "__unresolved_160",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 18604
+            },
+            "end": {
+              "line": 5,
+              "column": 18702
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/base/BundleBaseUI.ts",
-          "resolved": "__unresolved_160",
+          "resolved": "__unresolved_161",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18613
+              "column": 18718
             },
             "end": {
               "line": 5,
-              "column": 18708
+              "column": 18813
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/base/BundleSingleButton.ts",
-          "resolved": "__unresolved_161",
+          "resolved": "__unresolved_162",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18724
+              "column": 18829
             },
             "end": {
               "line": 5,
-              "column": 18825
+              "column": 18930
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/eui/BundleUIKeys.ts",
-          "resolved": "__unresolved_162",
+          "resolved": "__unresolved_163",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18841
+              "column": 18946
             },
             "end": {
               "line": 5,
-              "column": 18935
+              "column": 19040
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/interfaces/IMenuDependencies.ts",
-          "resolved": "__unresolved_163",
+          "resolved": "__unresolved_164",
           "loc": {
             "start": {
               "line": 5,
-              "column": 18951
+              "column": 19056
             },
             "end": {
               "line": 5,
-              "column": 19057
+              "column": 19162
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/manager/MessageFlag.ts",
-          "resolved": "__unresolved_164",
+          "resolved": "__unresolved_165",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19073
+              "column": 19178
             },
             "end": {
               "line": 5,
-              "column": 19170
+              "column": 19275
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/types/AniType.ts",
-          "resolved": "__unresolved_165",
+          "resolved": "__unresolved_166",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19186
+              "column": 19291
             },
             "end": {
               "line": 5,
-              "column": 19277
+              "column": 19382
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/utils/BundleGameUtils.ts",
-          "resolved": "__unresolved_166",
+          "resolved": "__unresolved_167",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19293
+              "column": 19398
             },
             "end": {
               "line": 5,
-              "column": 19392
+              "column": 19497
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/utils/analytics_bridge.ts",
-          "resolved": "__unresolved_167",
+          "resolved": "__unresolved_168",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19408
+              "column": 19513
             },
             "end": {
               "line": 5,
-              "column": 19508
+              "column": 19613
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/utils/logger.ts",
-          "resolved": "__unresolved_168",
+          "resolved": "__unresolved_169",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19524
+              "column": 19629
             },
             "end": {
               "line": 5,
-              "column": 19614
+              "column": 19719
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleBigWin.ts",
-          "resolved": "__unresolved_169",
+          "resolved": "__unresolved_170",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19630
+              "column": 19735
             },
             "end": {
               "line": 5,
-              "column": 19725
+              "column": 19830
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleBigWinItem.ts",
-          "resolved": "__unresolved_170",
+          "resolved": "__unresolved_171",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19741
+              "column": 19846
             },
             "end": {
               "line": 5,
-              "column": 19840
+              "column": 19945
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleCardDetail.ts",
-          "resolved": "__unresolved_171",
+          "resolved": "__unresolved_172",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19856
+              "column": 19961
             },
             "end": {
               "line": 5,
-              "column": 19955
+              "column": 20060
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleCardInfoItem.ts",
-          "resolved": "__unresolved_172",
+          "resolved": "__unresolved_173",
           "loc": {
             "start": {
               "line": 5,
-              "column": 19971
+              "column": 20076
             },
             "end": {
               "line": 5,
-              "column": 20072
+              "column": 20177
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleCardSale.ts",
-          "resolved": "__unresolved_173",
+          "resolved": "__unresolved_174",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20088
+              "column": 20193
             },
             "end": {
               "line": 5,
-              "column": 20185
+              "column": 20290
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleCardSaleItem.ts",
-          "resolved": "__unresolved_174",
+          "resolved": "__unresolved_175",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20201
+              "column": 20306
             },
             "end": {
               "line": 5,
-              "column": 20302
+              "column": 20407
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleFiltter.ts",
-          "resolved": "__unresolved_175",
+          "resolved": "__unresolved_176",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20318
+              "column": 20423
             },
             "end": {
               "line": 5,
-              "column": 20414
+              "column": 20519
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleGameItem.ts",
-          "resolved": "__unresolved_176",
+          "resolved": "__unresolved_177",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20430
+              "column": 20535
             },
             "end": {
               "line": 5,
-              "column": 20527
+              "column": 20632
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleGameRecords.ts",
-          "resolved": "__unresolved_177",
+          "resolved": "__unresolved_178",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20543
+              "column": 20648
             },
             "end": {
               "line": 5,
-              "column": 20643
+              "column": 20748
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleGameRules.ts",
-          "resolved": "__unresolved_178",
+          "resolved": "__unresolved_179",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20659
+              "column": 20764
             },
             "end": {
               "line": 5,
-              "column": 20757
+              "column": 20862
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleGrandPirzeItem.ts",
-          "resolved": "__unresolved_179",
+          "resolved": "__unresolved_180",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20773
+              "column": 20878
             },
             "end": {
               "line": 5,
-              "column": 20876
+              "column": 20981
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleGrandPrize.ts",
-          "resolved": "__unresolved_180",
+          "resolved": "__unresolved_181",
           "loc": {
             "start": {
               "line": 5,
-              "column": 20892
+              "column": 20997
             },
             "end": {
               "line": 5,
-              "column": 20991
+              "column": 21096
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleHonorBoard.ts",
-          "resolved": "__unresolved_181",
+          "resolved": "__unresolved_182",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21007
+              "column": 21112
             },
             "end": {
               "line": 5,
-              "column": 21106
+              "column": 21211
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleMenu.ts",
-          "resolved": "__unresolved_182",
+          "resolved": "__unresolved_183",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21122
+              "column": 21227
             },
             "end": {
               "line": 5,
-              "column": 21215
+              "column": 21320
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleOtherGames.ts",
-          "resolved": "__unresolved_183",
+          "resolved": "__unresolved_184",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21231
+              "column": 21336
             },
             "end": {
               "line": 5,
-              "column": 21330
+              "column": 21435
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleRecordItem.ts",
-          "resolved": "__unresolved_184",
+          "resolved": "__unresolved_185",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21346
+              "column": 21451
             },
             "end": {
               "line": 5,
-              "column": 21445
+              "column": 21550
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleTopItem.ts",
-          "resolved": "__unresolved_185",
+          "resolved": "__unresolved_186",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21461
+              "column": 21566
             },
             "end": {
               "line": 5,
-              "column": 21557
+              "column": 21662
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/BundleTopItemCardSale.ts",
-          "resolved": "__unresolved_186",
+          "resolved": "__unresolved_187",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21573
+              "column": 21678
             },
             "end": {
               "line": 5,
-              "column": 21677
+              "column": 21782
             }
           }
         },
         {
           "value": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/menu-bundle/script/view/PopupCardDetail.ts",
-          "resolved": "__unresolved_187",
+          "resolved": "__unresolved_188",
           "loc": {
             "start": {
               "line": 5,
-              "column": 21693
+              "column": 21798
             },
             "end": {
               "line": 5,
-              "column": 21791
+              "column": 21896
             }
           }
         }
@@ -3779,6 +3793,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/NumberFormatter.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/ResolutionKeeper.ts"
           },
           "messages": []
         },
@@ -24723,7 +24744,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/WinBroadcastManager.ts": {
       "mTimestamp": {
-        "mtime": 1778824624676.993,
+        "mtime": 1778830995385.176,
         "uuid": "2df96411-3d08-4355-93ff-7abf0349f531"
       },
       "chunkId": "706a5710be6b5e858b947e825975bacd5c3a1e11",
@@ -25302,7 +25323,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/VisualFx/NodeMovement.ts": {
       "mTimestamp": {
-        "mtime": 1778736834950.7378,
+        "mtime": 1778831623280.325,
         "uuid": "6b853320-3c93-406f-bb74-0fc392874c78"
       },
       "chunkId": "925467d3572d2b8767cc3499d84c91f370f4ea08",
@@ -25318,11 +25339,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 66
+              "column": 75
             },
             "end": {
               "line": 1,
-              "column": 70
+              "column": 79
             }
           }
         }
@@ -25459,6 +25480,58 @@
             "end": {
               "line": 1,
               "column": 31
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/ResolutionKeeper.ts": {
+      "mTimestamp": {
+        "mtime": 1778831250169.7021,
+        "uuid": "83414e53-e083-419d-b1c8-ab00ca882c89"
+      },
+      "chunkId": "7fb47f7d85632a12639e46bd227a2263458c7c4f",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 70
+            },
+            "end": {
+              "line": 1,
+              "column": 74
             }
           }
         }
