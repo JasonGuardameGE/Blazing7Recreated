@@ -148188,3 +148188,147 @@
     at IpcRenderer.emit (node:events:519:28)
     at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
 18-05-2026 15:22:23 - info: [PreviewInEditor] preview process is ready
+18-05-2026 15:35:25 - warn: [Scene] The type of "PricePopUpOptions.enableInfinite" must be CCBoolean, not Boolean.Error: [Scene] The type of "PricePopUpOptions.enableInfinite" must be CCBoolean, not Boolean.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160148:12)
+    at warnID (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160336:5)
+    at parseType (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273012:11)
+    at preprocessAttrs (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273122:11)
+    at declareProperties (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141456:7)
+    at CCClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141485:5)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:270947:21)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:271958:18)
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/ce/cee91858986803de21b8fb0d430d475e16fb194f.js:43:378)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:491:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:13:13
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:8:7)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+18-05-2026 15:35:25 - warn: [Scene] The type of "NodeMovement.startOnLoad" must be CCBoolean, not Boolean.Error: [Scene] The type of "NodeMovement.startOnLoad" must be CCBoolean, not Boolean.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160148:12)
+    at warnID (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160336:5)
+    at parseType (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273012:11)
+    at preprocessAttrs (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273122:11)
+    at declareProperties (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141456:7)
+    at CCClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141485:5)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:270947:21)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:271958:18)
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/92/925467d3572d2b8767cc3499d84c91f370f4ea08.js:37:214)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:491:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:13:13
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:8:7)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+18-05-2026 15:35:25 - warn: [Scene] The type of "NodeMovement.disableOnReach" must be CCBoolean, not Boolean.Error: [Scene] The type of "NodeMovement.disableOnReach" must be CCBoolean, not Boolean.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160148:12)
+    at warnID (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160336:5)
+    at parseType (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273012:11)
+    at preprocessAttrs (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273122:11)
+    at declareProperties (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141456:7)
+    at CCClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141485:5)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:270947:21)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:271958:18)
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/92/925467d3572d2b8767cc3499d84c91f370f4ea08.js:37:214)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:491:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:13:13
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:8:7)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+18-05-2026 15:44:50 - warn: [Scene] The type of "PricePopUpOptions.enableInfinite" must be CCBoolean, not Boolean.Error: [Scene] The type of "PricePopUpOptions.enableInfinite" must be CCBoolean, not Boolean.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160148:12)
+    at warnID (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160336:5)
+    at parseType (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273012:11)
+    at preprocessAttrs (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273122:11)
+    at declareProperties (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141456:7)
+    at CCClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141485:5)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:270947:21)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:271958:18)
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/ce/cee91858986803de21b8fb0d430d475e16fb194f.js:43:378)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:491:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:13:13
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:8:7)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+18-05-2026 15:44:50 - warn: [Scene] The type of "NodeMovement.startOnLoad" must be CCBoolean, not Boolean.Error: [Scene] The type of "NodeMovement.startOnLoad" must be CCBoolean, not Boolean.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160148:12)
+    at warnID (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160336:5)
+    at parseType (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273012:11)
+    at preprocessAttrs (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273122:11)
+    at declareProperties (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141456:7)
+    at CCClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141485:5)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:270947:21)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:271958:18)
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/92/925467d3572d2b8767cc3499d84c91f370f4ea08.js:37:214)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:491:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:13:13
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:8:7)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+18-05-2026 15:44:50 - warn: [Scene] The type of "NodeMovement.disableOnReach" must be CCBoolean, not Boolean.Error: [Scene] The type of "NodeMovement.disableOnReach" must be CCBoolean, not Boolean.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160148:12)
+    at warnID (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160336:5)
+    at parseType (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273012:11)
+    at preprocessAttrs (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:273122:11)
+    at declareProperties (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141456:7)
+    at CCClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:141485:5)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:270947:21)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:271958:18)
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/92/925467d3572d2b8767cc3499d84c91f370f4ea08.js:37:214)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:491:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:13:13
+    at Object.execute (file:///D:/Game-Engine%20Projects/Blazing7Test/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js:8:7)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)

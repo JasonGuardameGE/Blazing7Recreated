@@ -56,7 +56,9 @@ export class HelpView extends Component {
         if (!this.handGuide) return;
 
         // Dont show help if there's no existing ticket
-        if(!this._gameManager.GameData.TicketData.currentTicket){
+        if(!this._gameManager.GameData.TicketData.currentTicket ||
+            this._gameManager.GameData.TicketData.hasSettle
+        ){
             this.resetCountdown();
             return;
         }

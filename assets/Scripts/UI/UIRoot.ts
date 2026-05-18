@@ -36,6 +36,7 @@ export class UIRoot extends Component {
 
     protected start(): void {
         this.detectCanvas();
+        this.onResize();
     }
 
     onResize(){
