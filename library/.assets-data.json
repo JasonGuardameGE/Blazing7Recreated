@@ -4,6 +4,8 @@
     "value": {
       "depends": [
         "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a",
+        "e4964ebc-d263-4bd1-9752-c563d470107b@f9941",
+        "b17626ae-09cb-4e63-9f36-13be47212e09@f9941",
         "1ba6edf3-e479-42eb-b78f-160ccddcdd12"
       ],
       "dependScripts": [
@@ -60,6 +62,7 @@
         "7ba61a6b-11e4-454f-bd82-844057b810d6"
       ],
       "dependScripts": [
+        "f74dc1d5-05c0-4069-a627-ea3bad6cc48e",
         "1ab6e359-d30b-4f00-9acb-12b7e15cd5f8",
         "97ec7068-8675-4806-a9a4-b560f82e2ab7"
       ]
@@ -630,8 +633,8 @@
         "f04cb4f8-37a6-4de7-894a-3924c1554522@f9941",
         "17d2ebf2-ee81-40a8-b148-328593a8b579@f9941",
         "b84d7712-dc9d-4efc-b83f-ed9d199a153b@f9941",
-        "98f6c309-5308-441e-9a94-86fb4238d781@f9941",
         "e92de56d-e857-457a-9c09-6dbb0d948804@f9941",
+        "98f6c309-5308-441e-9a94-86fb4238d781@f9941",
         "f96613df-60d0-4989-80c8-4bbbc4e61f90@f9941",
         "a79c3632-1206-4aa0-87fb-808523a330f2@f9941",
         "4fb19b3f-0b90-425f-bef1-5bf0b8a5ebc8@f9941",
@@ -22879,6 +22882,66 @@
   },
   "83414e53-e083-419d-b1c8-ab00ca882c89": {
     "url": "db://assets/Scripts/utils/ResolutionKeeper.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e4964ebc-d263-4bd1-9752-c563d470107b": {
+    "url": "db://assets/res/Textures/Background/bg_h5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b17626ae-09cb-4e63-9f36-13be47212e09": {
+    "url": "db://assets/res/Textures/Background/bg_pc.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e4964ebc-d263-4bd1-9752-c563d470107b@6c48a": {
+    "url": "db://assets/res/Textures/Background/bg_h5.png@6c48a",
+    "value": {
+      "depends": [
+        "e4964ebc-d263-4bd1-9752-c563d470107b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e4964ebc-d263-4bd1-9752-c563d470107b@f9941": {
+    "url": "db://assets/res/Textures/Background/bg_h5.png@f9941",
+    "value": {
+      "depends": [
+        "e4964ebc-d263-4bd1-9752-c563d470107b@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b17626ae-09cb-4e63-9f36-13be47212e09@6c48a": {
+    "url": "db://assets/res/Textures/Background/bg_pc.png@6c48a",
+    "value": {
+      "depends": [
+        "b17626ae-09cb-4e63-9f36-13be47212e09"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b17626ae-09cb-4e63-9f36-13be47212e09@f9941": {
+    "url": "db://assets/res/Textures/Background/bg_pc.png@f9941",
+    "value": {
+      "depends": [
+        "b17626ae-09cb-4e63-9f36-13be47212e09@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4a066986-1ad3-43b2-ae3f-9681c21395d2": {
+    "url": "db://assets/Scripts/UI/Background",
+    "value": {},
+    "versionCode": 1
+  },
+  "f74dc1d5-05c0-4069-a627-ea3bad6cc48e": {
+    "url": "db://assets/Scripts/UI/Background/BackgroundResize.ts",
     "value": {},
     "versionCode": 1
   }

@@ -18,6 +18,8 @@ export class DragonsEyeIntro extends Component {
     private showIntro(){
         const gameManager = Services.GetService(GameManager);
 
+        console.log(`[DragonEyeIntro][UIROOT] DEVICE TYPE: ${gameManager.GameData.DeviceType}`)
+
         if(gameManager.GameData.DeviceType == 'pc')
         {
             this.web_skeleton.node.active = true;

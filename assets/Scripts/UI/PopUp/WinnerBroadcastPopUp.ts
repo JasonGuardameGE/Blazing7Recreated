@@ -27,15 +27,17 @@ export class WinnerBroadcastPopUp extends Component {
         this.setLabelValue();
 
         // Reset opacity
-        this.opacity.opacity = 255;
+        this.opacity.opacity = 0;
 
         // Stop any existing fade tween to avoid overlap
         tween(this.opacity).stop();
 
+        tween(this.opacity).to(0.5, { opacity: 255}).start();
+
         // Wait 2 seconds, fade out, then trigger callbacks
         tween(this.opacity)
             .delay(3)
-            .to(1, { opacity: 0 })
+            .to(0.5, { opacity: 0 })
             .delay(0.25)
             .call(() => {
                 this.onAnnouncementCompleteCallbacks.forEach(callback => {

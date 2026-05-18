@@ -94,6 +94,9 @@ export class GameManager extends Component {
                 gameData.isAutoPlay = currentGame.autoPlay != null && currentGame.autoPlay != 0;
             });
 
+            this.gameData.DeviceType = this.uiRoot.DetectedDeviceResolution;
+            this.uiRoot.onResize();
+
             this.setupLoaded = true;
             WsManager.getInstance().init();
             await this.scratchCard.RequestRemainingCards();
