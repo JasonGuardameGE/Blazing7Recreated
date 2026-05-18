@@ -2,6 +2,7 @@ import { _decorator, CCFloat, Component, Node, EventHandler, Vec3, Label } from 
 import { NumberCardView } from './NumberCardView';
 import { Services } from '../Managers/Services';
 import { GameManager } from '../Managers/GameManager';
+import { NumberFormatter } from '../utils/NumberFormatter';
 const { ccclass, property } = _decorator;
 
 @ccclass('ScratchCardView')
@@ -72,7 +73,8 @@ export class ScratchCardView extends Component {
         }
 
         if(this._gameManager.GameData.TicketData.currentTicket){
-            this.cardPrice.string = `₱${this._gameManager.GameData.TicketData.currentTicket.unitPrice.toString()}`;
+            const moneyVal = NumberFormatter.formatUnit(this._gameManager.GameData.TicketData.currentTicket.unitPrice);
+            this.cardPrice.string = `₱${moneyVal}`;
             this.cardNumber.string = `Card NO: ${this._gameManager.GameData.TicketData.currentTicket.cardNo}`;    
         }else{
             this.cardPrice.string = ``;

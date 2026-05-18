@@ -102,12 +102,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           if (visibleSize.height / visibleSize.width > designSize.height / designSize.width) {
             // 长屏
-            console.log(`[UIROOT][DragonEyeIntro] Adjusting Canvas to H5`);
             view.setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy.FIXED_WIDTH);
             this.detectedDeviceResolution = 'h5';
           } else {
             // 宽屏
-            console.log(`[UIROOT][DragonEyeIntro] Adjusting Canvas to PC`);
             view.setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy.FIXED_HEIGHT);
             this.detectedDeviceResolution = 'pc';
           }

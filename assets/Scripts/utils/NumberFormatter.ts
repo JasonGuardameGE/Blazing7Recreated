@@ -92,4 +92,13 @@ export class NumberFormatter {
 
         return Number.isFinite(parsed) ? parsed : 0;
     }
+
+    static formatUnit(amount: number, lowercaseK?: boolean): string {
+        if (!amount) return '0';
+        if (amount >= 1000) {
+            const suffix = lowercaseK ? 'k' : 'K';
+            return this.formatFixedNoRound(amount / 1000, 0) + suffix;
+        }
+        return this.formatFixedNoRound(amount, 0);
+    }
 }

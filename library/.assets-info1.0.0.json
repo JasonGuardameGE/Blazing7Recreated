@@ -33,7 +33,7 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\UIRoot.ts": {
-      "time": 1779084735195.5737,
+      "time": 1779085295163.3794,
       "uuid": "1f9054db-351f-4e7a-8020-a416167b637e"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes.meta": {
@@ -236,7 +236,7 @@
       "time": 1777531509777.9043
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes\\Game\\ScrollingBackground.ts": {
-      "time": 1777943269237.7483,
+      "time": 1779088353635.3687,
       "uuid": "0385782a-d100-4ba9-872d-4fc138f9bb8b"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers.meta": {
@@ -572,7 +572,7 @@
       "time": 1777940747036.3904
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts": {
-      "time": 1778822447289.6172,
+      "time": 1779085771483.3672,
       "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts.meta": {
@@ -614,7 +614,7 @@
       "time": 1777961984171.4214
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Card\\ScratchCardView.ts": {
-      "time": 1778808769508.6567,
+      "time": 1779088898670.0613,
       "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Buttons.meta": {
@@ -852,7 +852,7 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1779083638773.8123,
+      "time": 1779087817143.5261,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -9371,7 +9371,7 @@
       "time": 1778742069548.3184
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\NumberFormatter.ts": {
-      "time": 1778748153560.1792,
+      "time": 1779088779815.028,
       "uuid": "73e54186-e599-483e-8076-9dedcd12848b"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\utils\\ResolutionKeeper.ts.meta": {

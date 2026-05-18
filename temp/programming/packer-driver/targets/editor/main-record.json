@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 22448150.7981,
+      "mTimestamp": 26611019.0154,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -5293,7 +5293,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/UIRoot.ts": {
       "mTimestamp": {
-        "mtime": 1779084735195.5737,
+        "mtime": 1779085295163.3794,
         "uuid": "1f9054db-351f-4e7a-8020-a416167b637e"
       },
       "chunkId": "ce221ae86ab9a3df4325b4b80cff91d56ea47b5a",
@@ -6903,7 +6903,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/Scenes/Game/ScrollingBackground.ts": {
       "mTimestamp": {
-        "mtime": 1777943269237.7483,
+        "mtime": 1779088353635.3687,
         "uuid": "0385782a-d100-4ba9-872d-4fc138f9bb8b"
       },
       "chunkId": "54ed4532abed57c6974fa2b8d9e626c17649001c",
@@ -6919,11 +6919,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 72
+              "column": 66
             },
             "end": {
               "line": 1,
-              "column": 76
+              "column": 70
             }
           }
         }
@@ -7923,7 +7923,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Scratch/ScratchSystem.ts": {
       "mTimestamp": {
-        "mtime": 1778822447289.6172,
+        "mtime": 1779085771483.3672,
         "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
       },
       "chunkId": "674535ab1a5501de2c150ec162b176f00f2d6f41",
@@ -8378,7 +8378,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Card/ScratchCardView.ts": {
       "mTimestamp": {
-        "mtime": 1778808769508.6567,
+        "mtime": 1779088898670.0613,
         "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
       },
       "chunkId": "4a7859a70f398272e170d9b89ba58d608912b28e",
@@ -8447,6 +8447,20 @@
               "column": 53
             }
           }
+        },
+        {
+          "value": "../utils/NumberFormatter",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 32
+            },
+            "end": {
+              "line": 5,
+              "column": 58
+            }
+          }
         }
       ],
       "type": "esm",
@@ -8497,6 +8511,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/NumberFormatter.ts"
           },
           "messages": []
         }
@@ -25533,7 +25554,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/utils/NumberFormatter.ts": {
       "mTimestamp": {
-        "mtime": 1778748153560.1792,
+        "mtime": 1779088779815.028,
         "uuid": "73e54186-e599-483e-8076-9dedcd12848b"
       },
       "chunkId": "cd54dfe9b7cccde18232722a8cb9b6419adf2185",

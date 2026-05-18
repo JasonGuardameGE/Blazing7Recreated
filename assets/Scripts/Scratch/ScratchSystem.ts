@@ -67,12 +67,37 @@ export class ScratchSystem extends Component {
     })
     scratchAllFragmentsPerBurst: number = 1;
 
+    @property({
+        type: CCFloat,
+        tooltip: 'How many fragments to spawn while manually scratching.',
+    })
+    manualMoveFragmentsPerSpawn: number = 1;
+
+    @property({
+        type: CCFloat,
+        tooltip: 'Minimum world distance before spawning more manual drag fragments.',
+    })
+    manualFragmentSpawnDistance: number = 25;
+
+    @property({
+        type: CCFloat,
+        tooltip: 'How many random fragment positions to spawn when a manual scratch completes a cell.',
+    })
+    manualCompleteFragmentsPerCell: number = 4;
+
+    @property({
+        type: CCFloat,
+        tooltip: 'How many fragments per burst when a manual scratch completes a cell.',
+    })
+    manualCompleteFragmentsPerBurst: number = 2;
+
     @property([Node])
     scratchNumberNodes: Node[] = [];
 
     // ADDED AFK DETECTION
     private helpView: HelpView;
-    set HelpView(value:HelpView){
+
+    set HelpView(value: HelpView) {
         this.helpView = value;
     }
 
@@ -88,8 +113,9 @@ export class ScratchSystem extends Component {
     private textureHeight: number = 0;
 
     private isTouched: boolean = false;
-    
+
     private isAllScratched: boolean = false;
+
     get IsAllScratched(): boolean {
         return this.isAllScratched;
     }
@@ -97,6 +123,7 @@ export class ScratchSystem extends Component {
     private isAutoScratching: boolean = false;
 
     private isGeneratingScratch: boolean = false;
+
     get IsGeneratingScratch(): boolean {
         return this.isGeneratingScratch;
     }
@@ -104,7 +131,9 @@ export class ScratchSystem extends Component {
     private scratchSessionId: number = 0;
 
     private _audioManager: AudioManager;
-    
+
+    private lastFragmentWorldPos: Vec3 | null = null;
+
     protected onLoad(): void {
         if (!this.defaultScratchCover || !this.defaultScratchCover.spriteFrame) {
             console.error('[ScratchSystem] defaultScratchCover or spriteFrame is null');
@@ -156,40 +185,41 @@ export class ScratchSystem extends Component {
         if (this.isGeneratingScratch) {
             return false;
         }
-    
+
         if (!this.scratchRenderer) {
             console.error('[ScratchSystem] scratchRenderer is null');
             return false;
         }
-    
+
         this.scratchSessionId++;
         const sessionId = this.scratchSessionId;
-    
+
         this.isGeneratingScratch = true;
-    
+
         try {
             this.isTouched = false;
             this.isAllScratched = false;
             this.isAutoScratching = false;
-    
+            this.lastFragmentWorldPos = null;
+
             const success = this.scratchRenderer.CreateNewRenderedScratch();
-    
+
             if (!success) {
                 return false;
             }
-    
+
             await this.waitOneFrame();
-    
+
             if (sessionId !== this.scratchSessionId) {
                 return false;
             }
-    
+
             if (this.defaultScratchCover) {
                 this.defaultScratchCover.node.active = false;
             }
-    
+
             this.calculateGridCellContainers();
-    
+
             return true;
         } finally {
             if (sessionId === this.scratchSessionId) {
@@ -202,58 +232,59 @@ export class ScratchSystem extends Component {
         if (this.isAllScratched || this.isAutoScratching) {
             return;
         }
-    
+
         if (!this.cellScratched || this.cellScratched.length === 0) {
             return;
         }
-    
+
         const sessionId = this.scratchSessionId;
         const unscratchedIndexes: number[] = [];
-    
+
         for (let i = 0; i < this.cellScratched.length; i++) {
             if (!this.cellScratched[i]) {
                 unscratchedIndexes.push(i);
             }
         }
-    
+
         if (unscratchedIndexes.length === 0) {
             return;
         }
-    
+
         this.isAutoScratching = true;
         this.isTouched = false;
+        this.lastFragmentWorldPos = null;
         this.disableTouch();
-    
+
         if (this._audioManager) {
             this._audioManager.playAutoScratchSound();
         }
-    
+
         try {
             for (const index of unscratchedIndexes) {
                 if (sessionId !== this.scratchSessionId) {
                     return;
                 }
-    
+
                 if (this.isAllScratched) {
                     break;
                 }
-    
+
                 if (this.cellScratched[index]) {
                     continue;
                 }
-    
+
                 this.cellScratched[index] = true;
-    
+
                 this.spawnScratchAllFragmentsForCell(index);
-                
+
                 this.autoScratchCell(index, sessionId);
-    
+
                 if (sessionId !== this.scratchSessionId) {
                     return;
                 }
-    
+
                 await this.waitSeconds(this.scratchAllInterval);
-    
+
                 if (sessionId !== this.scratchSessionId) {
                     return;
                 }
@@ -270,6 +301,7 @@ export class ScratchSystem extends Component {
         this.scratchSessionId++;
         this.isAutoScratching = false;
         this.isTouched = false;
+        this.lastFragmentWorldPos = null;
         this.unscheduleAllCallbacks();
         this.disableTouch();
     }
@@ -290,6 +322,37 @@ export class ScratchSystem extends Component {
             return;
         }
 
+        this.spawnFragmentBurstsInsideCell(cellIndex, burstCount, fragmentsPerBurst);
+    }
+
+    private spawnManualCompleteFragmentsForCell(cellIndex: number): void {
+        if (!this.fragmentView) {
+            return;
+        }
+
+        if (cellIndex < 0 || cellIndex >= this.validCells.length) {
+            return;
+        }
+
+        const burstCount = Math.max(0, Math.floor(this.manualCompleteFragmentsPerCell));
+        const fragmentsPerBurst = Math.max(0, Math.floor(this.manualCompleteFragmentsPerBurst));
+
+        if (burstCount <= 0 || fragmentsPerBurst <= 0) {
+            return;
+        }
+
+        this.spawnFragmentBurstsInsideCell(cellIndex, burstCount, fragmentsPerBurst);
+    }
+
+    private spawnFragmentBurstsInsideCell(
+        cellIndex: number,
+        burstCount: number,
+        fragmentsPerBurst: number,
+    ): void {
+        if (!this.fragmentView) {
+            return;
+        }
+
         for (let i = 0; i < burstCount; i++) {
             const worldPos = this.getRandomWorldPositionInsideCell(cellIndex);
 
@@ -302,6 +365,37 @@ export class ScratchSystem extends Component {
                 count: fragmentsPerBurst,
             });
         }
+    }
+
+    private spawnManualMoveFragments(worldPos: Vec3): void {
+        if (!this.fragmentView) {
+            return;
+        }
+
+        const count = Math.max(0, Math.floor(this.manualMoveFragmentsPerSpawn));
+
+        if (count <= 0) {
+            return;
+        }
+
+        if (this.lastFragmentWorldPos) {
+            const dx = worldPos.x - this.lastFragmentWorldPos.x;
+            const dy = worldPos.y - this.lastFragmentWorldPos.y;
+            const distanceSqr = dx * dx + dy * dy;
+
+            const requiredDistance = Math.max(0, this.manualFragmentSpawnDistance);
+
+            if (distanceSqr < requiredDistance * requiredDistance) {
+                return;
+            }
+        }
+
+        this.lastFragmentWorldPos = worldPos.clone();
+
+        this.fragmentView.spawnFragments({
+            worldPos,
+            count,
+        });
     }
 
     private getRandomWorldPositionInsideCell(cellIndex: number): Vec3 | null {
@@ -349,7 +443,7 @@ export class ScratchSystem extends Component {
             }, Math.max(0, seconds));
         });
     }
-    
+
     private calculateGridCellContainers(): void {
         if (!this.scratchMask) {
             console.error('[ScratchSystem] scratchMask is null');
@@ -362,6 +456,7 @@ export class ScratchSystem extends Component {
         }
 
         const coverUI = this.scratchRenderedHolder.getComponent(UITransform);
+
         if (!coverUI) {
             console.error('[ScratchSystem] scratchRenderedHolder is missing UITransform');
             return;
@@ -380,6 +475,7 @@ export class ScratchSystem extends Component {
             }
 
             const ui = n.getComponent(UITransform);
+
             if (!ui) {
                 console.warn(`[ScratchSystem] scratchNumberNodes[${i}] is missing UITransform`);
                 continue;
@@ -433,11 +529,11 @@ export class ScratchSystem extends Component {
         }
 
         this.isTouched = true;
-        this.OnTouchUpdate(e);
+        this.lastFragmentWorldPos = null;
 
         this.helpView?.resetCountdown();
-        const texPos = this.getTextureXYFromTouch(e);
-        this.scratchRenderer.EraseCircle(texPos.x, texPos.y, this.brushSize / 2);
+
+        this.OnTouchUpdate(e);
     }
 
     private onTouchMove(e: EventTouch): void {
@@ -450,24 +546,35 @@ export class ScratchSystem extends Component {
 
     private onTouchEnd(e: EventTouch): void {
         this.isTouched = false;
+        this.lastFragmentWorldPos = null;
     }
 
     private OnTouchUpdate(e: EventTouch): void {
         if (!this.scratchRenderer) {
             return;
         }
-
+    
         const texPos = this.getTextureXYFromTouch(e);
-
+    
         this.scratchRenderer.EraseCircle(
             texPos.x,
             texPos.y,
             this.brushSize / 2,
         );
-
+    
         const worldPos = this.getWorldPositionFromTouch(e);
+    
+        const closestCellIndex = this.getClosestCellIndexFromWorldPosition(worldPos);
+    
+        if (
+            closestCellIndex >= 0 &&
+            !this.cellScratched[closestCellIndex]
+        ) {
+            this.spawnManualMoveFragments(worldPos);
+        }
+    
         this.checkCellInLastPosition(worldPos);
-
+    
         if (this._audioManager) {
             this._audioManager.playScratchEffectOneShot();
         }
@@ -490,19 +597,17 @@ export class ScratchSystem extends Component {
 
         const percent = this.scratchMask.getCellPercent(closestCellIndex);
 
-        if (percent >= this.singleErasedAreaThreshold) {
-            this.cellScratched[closestCellIndex] = true;
-            this.autoScratchCell(closestCellIndex);
+        if (percent < this.singleErasedAreaThreshold) {
+            return;
+        }
 
-            this.CheckScratchProgress();
-        }
-        
-        if (this.fragmentView) {
-            this.fragmentView.spawnFragments({
-                worldPos: worldPosition,
-                count: 1,
-            });
-        }
+        this.cellScratched[closestCellIndex] = true;
+
+        this.spawnManualCompleteFragmentsForCell(closestCellIndex);
+
+        this.autoScratchCell(closestCellIndex);
+
+        this.CheckScratchProgress();
     }
 
     private CheckScratchProgress(): void {
@@ -522,6 +627,7 @@ export class ScratchSystem extends Component {
 
         this.isAllScratched = true;
         this.isTouched = false;
+        this.lastFragmentWorldPos = null;
 
         this.disableTouch();
 
@@ -534,20 +640,20 @@ export class ScratchSystem extends Component {
         if (sessionId !== this.scratchSessionId) {
             return;
         }
-    
+
         if (!this.scratchRenderer) {
             return;
         }
-    
+
         if (index < 0 || index >= this.validCells.length) {
             return;
         }
-    
+
         const cell = this.validCells[index];
         const duration: number = 450;
-    
+
         EventHandler.emitEvents(this.onCardNumberScratchedCallbacks, index);
-    
+
         await this.scratchRenderer.autoScratchDiagonalOptimized(
             cell.x,
             cell.y,
@@ -556,11 +662,11 @@ export class ScratchSystem extends Component {
             this.brushSize / 5,
             duration,
         );
-    
+
         if (sessionId !== this.scratchSessionId) {
             return;
         }
-    
+
         await this.eraseFullCell(index, sessionId);
     }
 
@@ -568,48 +674,48 @@ export class ScratchSystem extends Component {
         if (sessionId !== this.scratchSessionId) {
             return;
         }
-    
+
         if (!this.scratchRenderer) {
             return;
         }
-    
+
         if (index < 0 || index >= this.validCells.length) {
             return;
         }
-    
+
         const cell = this.validCells[index];
-    
+
         const padding = 10;
         const eraseRadius = this.brushSize / 2;
-    
+
         const startX = cell.x - padding;
         const startY = cell.y - padding;
         const endX = cell.x + cell.width + padding;
         const endY = cell.y + cell.height + padding;
-    
+
         const step = Math.max(eraseRadius * 0.75, 8);
-    
+
         let eraseCount = 0;
         const erasePerFrame = 8;
-    
+
         for (let y = startY; y <= endY; y += step) {
             for (let x = startX; x <= endX; x += step) {
                 if (sessionId !== this.scratchSessionId) {
                     return;
                 }
-    
+
                 this.scratchRenderer.EraseCircle(
                     x,
                     y,
                     eraseRadius,
                 );
-    
+
                 eraseCount++;
-    
+
                 if (eraseCount >= erasePerFrame) {
                     eraseCount = 0;
                     await this.waitOneFrame();
-    
+
                     if (sessionId !== this.scratchSessionId) {
                         return;
                     }
@@ -617,7 +723,7 @@ export class ScratchSystem extends Component {
             }
         }
     }
-    
+
     private waitOneFrame(): Promise<void> {
         return new Promise((resolve) => {
             this.scheduleOnce(() => {
