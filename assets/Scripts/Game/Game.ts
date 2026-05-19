@@ -21,73 +21,62 @@ const { ccclass, property } = _decorator;
 export class Game extends Component {
 
     @property(HelpView)
-    helpView: HelpView;
+    helpView: HelpView = null;
 
     @property(LastWin)
-    lastWin: LastWin;
+    lastWin: LastWin = null;
 
     @property(Label)
-    maxWinAmount: Label;
+    maxWinAmount: Label = null;
 
     @property(Node)
     balanceShake: Node = null;
 
     @property(Label)
-    playerBalance: Label;
-
-    private balanceShakeAnim: Animation = null;
+    playerBalance: Label = null;
 
     @property(NodeMovement)
-    private combinationGuide: NodeMovement;
+    private combinationGuide: NodeMovement = null;
 
     @property(GameOptions)
-    gameOptions: GameOptions;
+    gameOptions: GameOptions = null;
 
     @property(PricePopUpOptions)
-    priceOptions: PricePopUpOptions;
+    priceOptions: PricePopUpOptions = null;
 
     @property(PricePopUpOptions)
-    autoAttemptOptions: PricePopUpOptions;
-
-    private autoAttemptCount: number = 0;
-    private readonly infiniteAutoAttemptCount: number = 99999;
+    autoAttemptOptions: PricePopUpOptions = null;
 
     @property(ScratchCardView)
-    scratchCardView: ScratchCardView;
+    scratchCardView: ScratchCardView = null;
 
     @property(ScratchSystem)
-    scratchSystem: ScratchSystem;
+    scratchSystem: ScratchSystem = null;
 
     @property(Node)
-    cardInfoNode: Node;
+    cardInfoNode: Node = null;
+
+    private readonly infiniteAutoAttemptCount: number = 99999;
+    private readonly autoNextCardDelay: number = 0.5;
+
+    private autoAttemptCount: number = 0;
 
     private cardCurrentlyShowing: boolean = false;
-    private cardReady: boolean = false;
-    private _gameManager: GameManager = null;
-    private _audioManager: AudioManager;
-
-    private _popupManager: PopUpManager;
     private isShowingResults: boolean = false;
     private isSettlingCard: boolean = false;
 
+    private balanceShakeAnim: Animation = null;
     private balanceTweenTarget: { value: number } = { value: 0 };
-    private maxWinToaster: MaxWinToasterPopUp;
 
-    public onLoad(): void {
+    private _gameManager: GameManager = null;
+    private _audioManager: AudioManager = null;
+    private _popupManager: PopUpManager = null;
 
-    }
+    private maxWinToaster: MaxWinToasterPopUp = null;
 
     protected start(): void {
-        if (this.balanceShake) {
-            this.balanceShakeAnim = this.balanceShake.getComponent(Animation);
-        }
-
-        this._gameManager = Services.GetService(GameManager);
-        this._popupManager = Services.GetService(PopUpManager);
-        this._audioManager = Services.GetService(AudioManager);
-
-        this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
-        this._popupManager.PreLoadPopUp(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP);
+        this.cacheReferences();
+        this.preloadPopups();
 
         this.setupGameOptions();
         this.setupCardView();
@@ -101,17 +90,43 @@ export class Game extends Component {
         this.unschedule(this.updateAuto);
     }
 
-    private async setupRemainingCard(): Promise<void> {
-        if (this._gameManager.GameData.TicketData.currentTicket != null) {
-            this.combinationGuide.node.active = false;
-            this.gameOptions.DisableAuxillaryOptions(true);
-            await this.showCurrentCard();
+    protected onDestroy(): void {
+        this.unschedule(this.updateAuto);
+        Tween.stopAllByTarget(this.balanceTweenTarget);
+    }
+
+    private cacheReferences(): void {
+        if (this.balanceShake) {
+            this.balanceShakeAnim = this.balanceShake.getComponent(Animation);
         }
+
+        this._gameManager = Services.GetService(GameManager);
+        this._popupManager = Services.GetService(PopUpManager);
+        this._audioManager = Services.GetService(AudioManager);
+    }
+
+    private preloadPopups(): void {
+        this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
+        this._popupManager.PreLoadPopUp(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP);
+    }
+
+    private async setupRemainingCard(): Promise<void> {
+        if (!this.HasCurrentTicket()) {
+            return;
+        }
+
+        if (this.combinationGuide) {
+            this.combinationGuide.node.active = false;
+        }
+
+        this.gameOptions.DisableAuxillaryOptions(true);
+        await this.showCurrentCard();
     }
 
     private setupCardView(): void {
         const cardPlayInComplete = this.NewEventHandler('Game', 'cardPlayInComplete');
         this.scratchCardView.cardFinishedPlayInCallbacks.push(cardPlayInComplete);
+
         this.scratchCardView.SetupEvents();
 
         const updatePlayerBalance = this.NewEventHandler('Game', 'updatePlayerBalance');
@@ -146,6 +161,11 @@ export class Game extends Component {
             return;
         }
 
+        if (!this.gameOptions.scratchAllButton) {
+            console.error('[Game] scratchAllButton is null');
+            return;
+        }
+
         const buyNewCard = this.NewEventHandler('Game', 'buyNewCard');
         this.gameOptions.buyCardButton.clickEndInsideCallbacks.push(buyNewCard);
 
@@ -160,62 +180,46 @@ export class Game extends Component {
             this.gameOptions.pauseButton.node.on(Node.EventType.TOUCH_END, this.onStopButtonClicked, this);
 
             const updateCurrentPrice = this.NewEventHandler('Game', 'updateCurrentPrice');
+
             this.priceOptions.Initialize(this._gameManager.GameData.gamePriceList);
             this.priceOptions.onPriceValueUpdateCallback.push(updateCurrentPrice);
 
-            const toasterNode: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP, false, 999);
+            const toasterNode = await this._popupManager.LoadPopup(
+                PopUpPrefabPath.MAX_WIN_TOASTER_POPUP,
+                false,
+                999,
+            );
+
             this.maxWinToaster = toasterNode.getComponent(MaxWinToasterPopUp);
+
             this.updateCurrentPrice(false);
         } catch (err) {
-            console.error(`[Game] SetupAuxillaryOptions Error:`, err);
+            console.error('[Game] SetupAuxillaryOptions Error:', err);
         }
     }
 
     private SetupWinPopup(winPopup: WinPopUp): void {
         const shakeBalance = this.NewEventHandler('Game', 'shakeBalance');
+
         winPopup.onCoinReachBalanceCallback.push(shakeBalance);
         winPopup.IsPopUpInitialized = true;
     }
 
     private scratchAll(): void {
-        if (this.gameOptions.scratchAllButton?.disabled && this.autoAttemptCount <= 0) {
+        if (!this.CanScratchAll()) {
             return;
         }
 
-        // Keep Scratch All visible and disabled while ScratchAll is running.
-        this.gameOptions.UpdateCenterButton({
-            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
-            disabled: true,
-        });
-
+        this.ShowScratchAllDisabled();
         this.scratchSystem.ScratchAll();
     }
 
     private async buyNewCard(): Promise<void> {
-        if (this.cardCurrentlyShowing) {
+        if (!this.CanBuyNewCard()) {
             return;
         }
 
-        if (this.scratchSystem.IsGeneratingScratch) {
-            return;
-        }
-
-        this.scratchSystem.CancelScratchAll();
-
-        if (this.combinationGuide.node.active) {
-            this.combinationGuide.StartMoving();
-        }
-
-        this.cardCurrentlyShowing = true;
-        this.scratchSystem.ToggleTouch(false);
-
-        // Important:
-        // currentTicket may still be null before PurchaseCard finishes,
-        // so force Scratch All to show during this transition.
-        this.gameOptions.UpdateCenterButton({
-            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
-            disabled: true,
-        });
+        this.prepareNewCardFlow();
 
         try {
             this.gameOptions.DisableAuxillaryOptions(true);
@@ -226,9 +230,7 @@ export class Game extends Component {
 
             if (!didShowCard) {
                 this.cardCurrentlyShowing = false;
-
-                this.gameOptions.UpdateCenterButton();
-                this.gameOptions.DisableAuxillaryOptions(false);
+                this.RestoreNormalControls();
                 return;
             }
 
@@ -239,14 +241,48 @@ export class Game extends Component {
 
             this.cardCurrentlyShowing = false;
 
-            if (this.autoAttemptCount > 0) {
+            if (this.IsAutoRunning()) {
                 this.stopAuto();
                 return;
             }
 
-            this.gameOptions.UpdateCenterButton();
-            this.gameOptions.DisableAuxillaryOptions(false);
+            this.RestoreNormalControls();
         }
+    }
+
+    private CanBuyNewCard(): boolean {
+        if (this.cardCurrentlyShowing) {
+            return false;
+        }
+
+        if (this.scratchSystem.IsGeneratingScratch) {
+            return false;
+        }
+
+        return true;
+    }
+
+    private CanScratchAll(): boolean {
+        const scratchAllButton = this.gameOptions.scratchAllButton;
+
+        if (scratchAllButton?.disabled && !this.IsAutoRunning()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    private prepareNewCardFlow(): void {
+        this.scratchSystem.CancelScratchAll();
+
+        if (this.combinationGuide?.node.active) {
+            this.combinationGuide.StartMoving();
+        }
+
+        this.cardCurrentlyShowing = true;
+        this.scratchSystem.ToggleTouch(false);
+
+        this.ShowScratchAllDisabled();
     }
 
     private async showCurrentCard(): Promise<boolean> {
@@ -258,14 +294,13 @@ export class Game extends Component {
 
         this.scratchCardView.StartCardPlayIn();
 
-        // Keep Scratch All visible but disabled while the card is still moving in.
-        this.gameOptions.UpdateCenterButton({
-            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
-            disabled: true,
-        });
+        this.ShowScratchAllDisabled();
 
         this._gameManager.ScratchCard.SetupCurrentCardNumbers();
-        this.cardInfoNode.active = true;
+
+        if (this.cardInfoNode) {
+            this.cardInfoNode.active = true;
+        }
 
         return true;
     }
@@ -273,30 +308,24 @@ export class Game extends Component {
     private cardPlayInComplete(): void {
         this.scratchSystem.ToggleTouch(true);
 
-        console.log(`[Game] CardPlayInComplete, AutoCount: ${this.autoAttemptCount}`);
-
-        if (this.autoAttemptCount > 0) {
-            this.gameOptions.UpdateCenterButton({
-                forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
-                disabled: true,
-            });
-
-            this.scratchAll();
-
-            this.autoAttemptCount--;
-            this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
-
-            // Important:
-            // Do NOT call SetAutoModeUI(false) here when autoAttemptCount reaches 0.
-            // The final auto card is still being scratched/settled.
-            this.gameOptions.SetAutoModeUI(true);
-            this.gameOptions.DisableAuxillaryOptions(true);
-
+        if (this.IsAutoRunning()) {
+            this.handleAutoCardPlayInComplete();
             return;
         }
 
-        // Manual mode only: card has arrived, allow player to scratch.
         this.gameOptions.UpdateCenterButton();
+    }
+
+    private handleAutoCardPlayInComplete(): void {
+        this.ShowScratchAllDisabled();
+
+        this.scratchAll();
+
+        this.DecreaseAutoAttemptCount();
+        this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
+
+        this.gameOptions.SetAutoModeUI(true);
+        this.gameOptions.DisableAuxillaryOptions(true);
     }
 
     private async cardAllScratched(): Promise<void> {
@@ -305,25 +334,20 @@ export class Game extends Component {
         }
 
         this.isSettlingCard = true;
+        this.cardCurrentlyShowing = false;
 
         try {
-            this.cardCurrentlyShowing = false;
-
             await this._gameManager.SettleCard();
 
-            const settleRes = this._gameManager.GameData.TicketData.settleInfo as SettleRes;
+            const settleRes = this.GetSettleResult();
+
+            if (!settleRes) {
+                this.RestoreNormalControls();
+                return;
+            }
 
             if (settleRes.totalPayout <= 0) {
-                if (this.autoAttemptCount > 0) {
-                    this.checkAutoCall();
-                    return;
-                }
-
-                // Final auto card is now fully scratched and settled.
-                // Only now should controls be enabled again.
-                this.gameOptions.SetAutoModeUI(false);
-                this.gameOptions.UpdateCenterButton();
-                this.gameOptions.DisableAuxillaryOptions(false);
+                this.handleNoWinSettlement();
                 return;
             }
 
@@ -335,45 +359,13 @@ export class Game extends Component {
         }
     }
 
-    private updatePlayerBalance(): void {
-        this.playerBalance.string =
-            NumberFormatter.formatAmountWithDecimal(this._gameManager.GameUserInfo.balance) || '0';
-    }
-
-    private cardNumberScratched(index: number): void {
-        this.scratchCardView.OnCardNumberFullyScratched(index);
-    }
-
-    private disableAuxillaryPopUpOptions(): void {
-        this.priceOptions.node.active = false;
-        this.autoAttemptOptions.node.active = false;
-    }
-
-    private NewEventHandler(component: string, handler: string): EventHandler {
-        const eventHandler = new EventHandler();
-        eventHandler.target = this.node;
-        eventHandler.component = component;
-        eventHandler.handler = handler;
-
-        return eventHandler;
-    }
-
-    private updateMaximumAmount(showToaster: boolean = true): void {
-        if (!this.maxWinAmount) {
-            console.warn('[Game] Trying to update Maximum Amount Label, not set properly');
+    private handleNoWinSettlement(): void {
+        if (this.IsAutoRunning()) {
+            this.checkAutoCall();
             return;
         }
 
-        this._gameManager.UpdateCardPrice(this.priceOptions.CurrentPriceValue);
-
-        const newValue = this._gameManager.GameData.unitPrice * this._gameManager.GameData?.maxWinMultiple;
-        const newAmount = NumberFormatter.formatAmount(newValue);
-
-        this.maxWinAmount.string = `p${newAmount}`;
-
-        if (this.maxWinToaster && showToaster) {
-            this.maxWinToaster.showValue(newValue);
-        }
+        this.RestoreNormalControls();
     }
 
     private async showWinResult(settleRes: SettleRes): Promise<void> {
@@ -383,7 +375,7 @@ export class Game extends Component {
 
         this.isShowingResults = true;
 
-        const node: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.WIN_POPUP);
+        const node = await this._popupManager.LoadPopup(PopUpPrefabPath.WIN_POPUP);
         const winPopUp = node.getComponent(WinPopUp);
 
         if (!winPopUp.IsPopUpInitialized) {
@@ -393,12 +385,10 @@ export class Game extends Component {
         winPopUp.StartShowing(settleRes.totalPayout, settleRes.winType, () => {
             this.isShowingResults = false;
 
-            if (this.autoAttemptCount > 0) {
+            if (this.IsAutoRunning()) {
                 this.checkAutoCall();
             } else {
-                this.gameOptions.SetAutoModeUI(false);
-                this.gameOptions.UpdateCenterButton();
-                this.gameOptions.DisableAuxillaryOptions(false);
+                this.RestoreNormalControls();
             }
 
             this.lastWin.CheckLastWin();
@@ -410,7 +400,7 @@ export class Game extends Component {
             return;
         }
 
-        if (this.autoAttemptCount > 0) {
+        if (this.IsAutoRunning()) {
             return;
         }
 
@@ -437,21 +427,10 @@ export class Game extends Component {
         this.stopAuto();
     }
 
-    private updateCurrentPrice(showToaster: boolean = true): void {
-        this.gameOptions.setPriceButton.label.string = this.priceOptions.CurrentPriceValue.toString();
-        this.updateMaximumAmount(showToaster);
-    }
-
     private setAutoValue(): void {
-        const selectedAutoValue = this.autoAttemptOptions.CurrentPriceValue;
+        this.autoAttemptCount = this.GetSelectedAutoAttemptCount();
 
-        if (selectedAutoValue === -1) {
-            this.autoAttemptCount = this.infiniteAutoAttemptCount;
-        } else {
-            this.autoAttemptCount = selectedAutoValue;
-        }
-
-        if (this.autoAttemptCount <= 0) {
+        if (!this.IsAutoRunning()) {
             this.stopAuto();
             return;
         }
@@ -459,53 +438,59 @@ export class Game extends Component {
         this.unschedule(this.updateAuto);
 
         this.gameOptions.SetAutoModeUI(true);
-
         this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
 
-        this.buyNewCard();
+        this.RunAutoStep();
     }
 
     private checkAutoCall(): void {
         this.unschedule(this.updateAuto);
 
-        if (this.autoAttemptCount > 0) {
-            this.scheduleOnce(this.updateAuto, 0.5);
+        if (this.IsAutoRunning()) {
+            this.scheduleOnce(this.updateAuto, this.autoNextCardDelay);
         } else {
             this.stopAuto();
         }
     }
 
     private updateAuto = (): void => {
-        if (this.autoAttemptCount <= 0) {
+        if (!this.IsAutoRunning()) {
             this.stopAuto();
             return;
         }
 
-        // Buy Card
         this.helpView.onAutoInput();
-        this.buyNewCard();
+        this.RunAutoStep();
 
-        const isInfiniteAuto = this.autoAttemptOptions.CurrentPriceValue === -1;
+        this.RefreshInfiniteAutoCountIfNeeded();
 
-        if (isInfiniteAuto) {
-            this.autoAttemptCount = this.infiniteAutoAttemptCount;
-        }
-
-        // Set Button
         this.gameOptions.SetAutoModeUI(true);
-
-        // Set Counter
         this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
 
-        if (!isInfiniteAuto && this.autoAttemptCount <= 0) {
+        if (!this.IsAutoInfinite() && !this.IsAutoRunning()) {
             this.stopAuto();
             return;
         }
 
-        if (this.combinationGuide.node.active) {
+        if (this.combinationGuide?.node.active) {
             this.combinationGuide.node.active = false;
         }
     };
+
+    private RunAutoStep(): void {
+        if (this.ShouldBuyNewCardForAuto()) {
+            this.buyNewCard();
+            return;
+        }
+
+        this.scratchAll();
+    }
+
+    private ShouldBuyNewCardForAuto(): boolean {
+        const ticketData = this._gameManager.GameData.TicketData;
+
+        return !ticketData.currentTicket && !ticketData.hasSettle;
+    }
 
     private stopAuto(): void {
         this.unschedule(this.updateAuto);
@@ -521,6 +506,113 @@ export class Game extends Component {
         this.gameOptions.UpdateCenterButton();
     }
 
+    private RestoreNormalControls(): void {
+        this.gameOptions.SetAutoModeUI(false);
+        this.gameOptions.UpdateCenterButton();
+        this.gameOptions.DisableAuxillaryOptions(false);
+    }
+
+    private ShowScratchAllDisabled(): void {
+        this.gameOptions.UpdateCenterButton({
+            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
+            disabled: true,
+        });
+    }
+
+    private DecreaseAutoAttemptCount(): void {
+        if (this.IsAutoInfinite()) {
+            this.autoAttemptCount = this.infiniteAutoAttemptCount;
+            return;
+        }
+
+        this.autoAttemptCount--;
+    }
+
+    private RefreshInfiniteAutoCountIfNeeded(): void {
+        if (this.IsAutoInfinite()) {
+            this.autoAttemptCount = this.infiniteAutoAttemptCount;
+        }
+    }
+
+    private GetSelectedAutoAttemptCount(): number {
+        const selectedAutoValue = this.autoAttemptOptions.CurrentPriceValue;
+
+        if (selectedAutoValue === -1) {
+            return this.infiniteAutoAttemptCount;
+        }
+
+        return selectedAutoValue;
+    }
+
+    private IsAutoInfinite(): boolean {
+        return this.autoAttemptOptions.CurrentPriceValue === -1;
+    }
+
+    private IsAutoRunning(): boolean {
+        return this.autoAttemptCount > 0;
+    }
+
+    private HasCurrentTicket(): boolean {
+        return this._gameManager.GameData.TicketData.currentTicket != null;
+    }
+
+    private GetSettleResult(): SettleRes | null {
+        return this._gameManager.GameData.TicketData.settleInfo as SettleRes;
+    }
+
+    private updatePlayerBalance(): void {
+        if (!this.playerBalance) {
+            return;
+        }
+
+        this.playerBalance.string =
+            NumberFormatter.formatAmountWithDecimal(this._gameManager.GameUserInfo.balance) || '0';
+    }
+
+    private cardNumberScratched(index: number): void {
+        this.scratchCardView.OnCardNumberFullyScratched(index);
+    }
+
+    private disableAuxillaryPopUpOptions(): void {
+        if (this.priceOptions) {
+            this.priceOptions.node.active = false;
+        }
+
+        if (this.autoAttemptOptions) {
+            this.autoAttemptOptions.node.active = false;
+        }
+    }
+
+    private updateCurrentPrice(showToaster: boolean = true): void {
+        if (!this.gameOptions?.setPriceButton?.label) {
+            return;
+        }
+
+        this.gameOptions.setPriceButton.label.string = this.priceOptions.CurrentPriceValue.toString();
+        this.updateMaximumAmount(showToaster);
+    }
+
+    private updateMaximumAmount(showToaster: boolean = true): void {
+        if (!this.maxWinAmount) {
+            console.warn('[Game] Trying to update Maximum Amount Label, not set properly');
+            return;
+        }
+
+        this._gameManager.UpdateCardPrice(this.priceOptions.CurrentPriceValue);
+
+        const newValue =
+            this._gameManager.GameData.unitPrice *
+            this._gameManager.GameData.maxWinMultiple;
+
+        const newAmount = NumberFormatter.formatAmount(newValue);
+
+        this.maxWinAmount.string = `p${newAmount}`;
+
+        if (this.maxWinToaster && showToaster) {
+            this.maxWinToaster.showValue(newValue);
+        }
+    }
+
     private shakeBalance(skipAnimation: boolean = false): void {
         if (!this.playerBalance) {
             console.error('[Game] playerBalance label is null');
@@ -528,7 +620,8 @@ export class Game extends Component {
         }
 
         const finalBalance =
-            this._gameManager.GameUserInfo.balance + this._gameManager.GameData.lastWinAmount;
+            this._gameManager.GameUserInfo.balance +
+            this._gameManager.GameData.lastWinAmount;
 
         if (skipAnimation) {
             Tween.stopAllByTarget(this.balanceTweenTarget);
@@ -572,5 +665,15 @@ export class Game extends Component {
                 this.balanceTweenTarget.value = 0;
             })
             .start();
+    }
+
+    private NewEventHandler(component: string, handler: string): EventHandler {
+        const eventHandler = new EventHandler();
+
+        eventHandler.target = this.node;
+        eventHandler.component = component;
+        eventHandler.handler = handler;
+
+        return eventHandler;
     }
 }
