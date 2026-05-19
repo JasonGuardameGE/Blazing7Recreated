@@ -32,7 +32,7 @@ enum ButtonVisualState {
 export class SingleButton extends Component {
 
     clickEndInsideCallbacks: EventHandler[] = [];
-    
+
     @property({ type: Sprite, tooltip: 'Main button sprite. If empty, will use Sprite on this node.' })
     mainSprite: Sprite = null;
 
@@ -90,15 +90,27 @@ export class SingleButton extends Component {
     @property(CCBoolean)
     autoChange: boolean = false;
 
+    @property(CCBoolean)
+    playClickSound: boolean = true;
+
     @property(CCFloat)
     clickScale: number = 0;
+
+    @property(CCFloat)
+    clickScaleDuration: number = 0.1;
 
     private _isSelect: boolean = false;
     private _disabled: boolean = false;
     private _isPressed: boolean = false;
 
     private _originScale: Vec3 = new Vec3();
-    private audioManager: AudioManager = null;
+    private _targetScale: Vec3 = new Vec3();
+
+    private _uiTransform: UITransform | null = null;
+    private _audioManager: AudioManager | null = null;
+
+    private _currentVisualState: ButtonVisualState | null = null;
+    private _isBlinking: boolean = false;
 
     @property(CCBoolean)
     get isSelect(): boolean {
@@ -106,7 +118,9 @@ export class SingleButton extends Component {
     }
 
     set isSelect(value: boolean) {
-        if (this._isSelect === value) return;
+        if (this._isSelect === value) {
+            return;
+        }
 
         this._isSelect = value;
         this.updateState();
@@ -118,7 +132,9 @@ export class SingleButton extends Component {
     }
 
     set disabled(value: boolean) {
-        if (this._disabled === value) return;
+        if (this._disabled === value) {
+            return;
+        }
 
         this._disabled = value;
 
@@ -134,18 +150,22 @@ export class SingleButton extends Component {
             this.mainSprite = this.node.getComponent(Sprite);
         }
 
+        this._uiTransform = this.node.getComponent(UITransform);
         this._originScale.set(this.node.scale);
-        this.updateState();
+
+        this.updateState(true);
     }
 
     protected start(): void {
-        this.audioManager = Services.GetService(AudioManager);
+        this._audioManager = Services.GetService(AudioManager);
     }
 
     protected onEnable(): void {
         this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this);
         this.node.on(Node.EventType.TOUCH_END, this.onTouchEnd, this);
         this.node.on(Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
+
+        this.updateState(true);
     }
 
     protected onDisable(): void {
@@ -154,7 +174,17 @@ export class SingleButton extends Component {
         this.node.off(Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
 
         this._isPressed = false;
-        this.updateState();
+
+        this.stopBlinkerTween();
+        Tween.stopAllByTarget(this.node);
+        this.node.setScale(this._originScale);
+
+        this.updateState(true);
+    }
+
+    protected onDestroy(): void {
+        this.stopBlinkerTween();
+        Tween.stopAllByTarget(this.node);
     }
 
     private onTouchStart(): void {
@@ -175,28 +205,29 @@ export class SingleButton extends Component {
 
         this._isPressed = false;
 
-        if (isInside) {
-            if (this.audioManager) {
-                this.audioManager.playEffectByName('click');
-            }
-
-            if (this.autoChange) {
-                this.isSelect = !this.isSelect;
-            } else {
-                this._isSelect = false;
-                this.updateState();
-            }
-
-            this.playClickScaleAnimation();
-
-            EventHandler.emitEvents(this.clickEndInsideCallbacks, this);
-        } else {
+        if (!isInside) {
             if (!this.autoChange) {
                 this._isSelect = false;
             }
 
             this.updateState();
+            return;
         }
+
+        if (this.playClickSound) {
+            this._audioManager?.playEffectByName('click');
+        }
+
+        if (this.autoChange) {
+            this._isSelect = !this._isSelect;
+        } else {
+            this._isSelect = false;
+        }
+
+        this.updateState();
+        this.playClickScaleAnimation();
+
+        EventHandler.emitEvents(this.clickEndInsideCallbacks, this);
     }
 
     private onTouchCancel(): void {
@@ -214,21 +245,19 @@ export class SingleButton extends Component {
     }
 
     private isTouchInsideButton(event: EventTouch): boolean {
-        const uiTransform = this.node.getComponent(UITransform);
-
-        if (!uiTransform) {
+        if (!this._uiTransform) {
             console.warn('[SingleButton] Missing UITransform. Cannot check touch bounds.');
             return false;
         }
 
         const uiLocation = event.getUILocation();
 
-        const localPos = uiTransform.convertToNodeSpaceAR(
+        const localPos = this._uiTransform.convertToNodeSpaceAR(
             new Vec3(uiLocation.x, uiLocation.y, 0),
         );
 
-        const halfWidth = uiTransform.width * 0.5;
-        const halfHeight = uiTransform.height * 0.5;
+        const halfWidth = this._uiTransform.width * 0.5;
+        const halfHeight = this._uiTransform.height * 0.5;
 
         return (
             localPos.x >= -halfWidth &&
@@ -238,41 +267,20 @@ export class SingleButton extends Component {
         );
     }
 
-    private updateState(): void {
-        const state = this.getCurrentVisualState();
-    
-        this.applyMainSprite(state);
-        this.applyTagSprite(state);
-        this.applyTag2Sprite(state);
-        this.applyLabelFont(state);
-        this.updateBlinker(state);
-    }
+    private updateState(forceRefresh: boolean = false): void {
+        const newState = this.getCurrentVisualState();
 
-    private updateBlinker(state: ButtonVisualState): void {
-        if (!this.blinker) {
+        if (!forceRefresh && this._currentVisualState === newState) {
             return;
         }
-    
-        
-        Tween.stopAllByTarget(this.blinker);
-    
-        const shouldBlink =
-            this.enableBlinker &&
-            state === ButtonVisualState.Normal;
-    
-        if (!shouldBlink) {
-            this.blinker.opacity = 0;
-            return;
-        }
-    
-        this.blinker.opacity = 0;
-    
-        tween(this.blinker)
-            .to(0.6, { opacity: 200 })
-            .to(0.6, { opacity: 0 })
-            .union()
-            .repeatForever()
-            .start();
+
+        this._currentVisualState = newState;
+
+        this.applyMainSprite(newState);
+        this.applyTagSprite(newState);
+        this.applyTag2Sprite(newState);
+        this.applyLabelFont(newState);
+        this.updateBlinker(newState);
     }
 
     private getCurrentVisualState(): ButtonVisualState {
@@ -290,7 +298,9 @@ export class SingleButton extends Component {
     }
 
     private applyMainSprite(state: ButtonVisualState): void {
-        if (!this.mainSprite) return;
+        if (!this.mainSprite) {
+            return;
+        }
 
         const spriteFrame = this.getSpriteFrameByState(
             state,
@@ -299,13 +309,15 @@ export class SingleButton extends Component {
             this.disabledSprite,
         );
 
-        if (spriteFrame) {
+        if (spriteFrame && this.mainSprite.spriteFrame !== spriteFrame) {
             this.mainSprite.spriteFrame = spriteFrame;
         }
     }
 
     private applyTagSprite(state: ButtonVisualState): void {
-        if (!this.tagSprite) return;
+        if (!this.tagSprite) {
+            return;
+        }
 
         const spriteFrame = this.getSpriteFrameByState(
             state,
@@ -314,13 +326,15 @@ export class SingleButton extends Component {
             this.disabled_Tag,
         );
 
-        if (spriteFrame) {
+        if (spriteFrame && this.tagSprite.spriteFrame !== spriteFrame) {
             this.tagSprite.spriteFrame = spriteFrame;
         }
     }
 
     private applyTag2Sprite(state: ButtonVisualState): void {
-        if (!this.tag2Sprite) return;
+        if (!this.tag2Sprite) {
+            return;
+        }
 
         const spriteFrame = this.getSpriteFrameByState(
             state,
@@ -329,13 +343,15 @@ export class SingleButton extends Component {
             this.disabled_Tag2,
         );
 
-        if (spriteFrame) {
+        if (spriteFrame && this.tag2Sprite.spriteFrame !== spriteFrame) {
             this.tag2Sprite.spriteFrame = spriteFrame;
         }
     }
 
     private applyLabelFont(state: ButtonVisualState): void {
-        if (!this.label) return;
+        if (!this.label) {
+            return;
+        }
 
         const font = this.getFontByState(
             state,
@@ -344,9 +360,52 @@ export class SingleButton extends Component {
             this.disabledFont,
         );
 
-        if (font) {
+        if (font && this.label.font !== font) {
             this.label.font = font;
         }
+    }
+
+    private updateBlinker(state: ButtonVisualState): void {
+        if (!this.blinker) {
+            return;
+        }
+    
+        const shouldBlink =
+            this.enableBlinker &&
+            state === ButtonVisualState.Normal;
+    
+        if (!shouldBlink) {
+            this.stopBlinkerTween();
+            this.blinker.opacity = 0;
+            return;
+        }
+    
+        if (this._isBlinking) {
+            return;
+        }
+    
+        this._isBlinking = true;
+        this.blinker.opacity = 0;
+    
+        tween(this.blinker)
+            .to(0.6, { opacity: 200 })
+            .to(0.6, { opacity: 0 })
+            .union()
+            .repeatForever()
+            .start();
+    }
+
+    private stopBlinkerTween(): void {
+        if (!this.blinker) {
+            return;
+        }
+    
+        if (!this._isBlinking) {
+            return;
+        }
+    
+        Tween.stopAllByTarget(this.blinker);
+        this._isBlinking = false;
     }
 
     private getSpriteFrameByState(
@@ -390,18 +449,19 @@ export class SingleButton extends Component {
             return;
         }
 
-        tween(this.node).stop();
+        Tween.stopAllByTarget(this.node);
 
-        const originScale = this._originScale.clone();
-        const targetScale = new Vec3(
-            originScale.x + this.clickScale,
-            originScale.y + this.clickScale,
-            originScale.z,
+        this._targetScale.set(
+            this._originScale.x + this.clickScale,
+            this._originScale.y + this.clickScale,
+            this._originScale.z,
         );
 
+        this.node.setScale(this._originScale);
+
         tween(this.node)
-            .to(0.1, { scale: targetScale }, { easing: 'quartOut' })
-            .to(0.1, { scale: originScale }, { easing: 'quartOut' })
+            .to(this.clickScaleDuration, { scale: this._targetScale }, { easing: 'quartOut' })
+            .to(this.clickScaleDuration, { scale: this._originScale }, { easing: 'quartOut' })
             .start();
     }
 }

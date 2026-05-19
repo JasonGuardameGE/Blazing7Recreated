@@ -2,8 +2,6 @@ import { _decorator, Animation, Component, EventHandler, Label, Node, tween, Twe
 import { CENTERBUTTON, GameOptions } from './GameOptions';
 import { ScratchCardView } from '../Card/ScratchCardView';
 import { ScratchSystem } from '../Scratch/ScratchSystem';
-import { buyCard, mockBuyCard } from '../Api/GameApi';
-import { GameData } from '../Data/GameData';
 import { GameManager } from '../Managers/GameManager';
 import { Services } from '../Managers/Services';
 import { PopUpManager, PopUpPrefabPath } from '../Managers/PopUpManager';
@@ -180,15 +178,16 @@ export class Game extends Component {
     }
 
     private scratchAll(): void {
-        if (this.gameOptions.scratchAllButton?.disabled &&
-            this.autoAttemptCount <= 0) {
+        if (this.gameOptions.scratchAllButton?.disabled && this.autoAttemptCount <= 0) {
             return;
         }
-    
-        // Once Scratch All is clicked, keep it visible but disabled.
-        // Do not switch to Buy yet.
-        this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
-    
+
+        // Keep Scratch All visible and disabled while ScratchAll is running.
+        this.gameOptions.UpdateCenterButton({
+            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
+            disabled: true,
+        });
+
         this.scratchSystem.ScratchAll();
     }
 
@@ -196,131 +195,141 @@ export class Game extends Component {
         if (this.cardCurrentlyShowing) {
             return;
         }
-    
+
         if (this.scratchSystem.IsGeneratingScratch) {
             return;
         }
-    
+
         this.scratchSystem.CancelScratchAll();
-    
+
         if (this.combinationGuide.node.active) {
             this.combinationGuide.StartMoving();
         }
-    
+
         this.cardCurrentlyShowing = true;
         this.scratchSystem.ToggleTouch(false);
-    
-        // Immediately switch from Buy to Scratch All, but keep Scratch All disabled
-        // until the card play-in has completed.
-        this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
-    
+
+        // Important:
+        // currentTicket may still be null before PurchaseCard finishes,
+        // so force Scratch All to show during this transition.
+        this.gameOptions.UpdateCenterButton({
+            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
+            disabled: true,
+        });
+
         try {
             this.gameOptions.DisableAuxillaryOptions(true);
-    
-            await this._gameManager.PurchaseCard();
-    
-            const didShowCard = await this.showCurrentCard();
 
+            await this._gameManager.PurchaseCard();
+
+            const didShowCard = await this.showCurrentCard();
 
             if (!didShowCard) {
                 this.cardCurrentlyShowing = false;
-                this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
+
+                this.gameOptions.UpdateCenterButton();
                 this.gameOptions.DisableAuxillaryOptions(false);
                 return;
             }
-    
+
             this.disableAuxillaryPopUpOptions();
-    
+
         } catch (error) {
             console.error('[Game] buyNewCard failed:', error);
-    
+
             this.cardCurrentlyShowing = false;
-    
+
             if (this.autoAttemptCount > 0) {
                 this.stopAuto();
                 return;
             }
-    
-            this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
+
+            this.gameOptions.UpdateCenterButton();
             this.gameOptions.DisableAuxillaryOptions(false);
         }
     }
 
     private async showCurrentCard(): Promise<boolean> {
         const generated = await this.scratchSystem.GenerateScratchRenderer();
-    
+
         if (!generated) {
             return false;
         }
-    
+
         this.scratchCardView.StartCardPlayIn();
-    
+
         // Keep Scratch All visible but disabled while the card is still moving in.
-        this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
-    
+        this.gameOptions.UpdateCenterButton({
+            forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
+            disabled: true,
+        });
+
         this._gameManager.ScratchCard.SetupCurrentCardNumbers();
         this.cardInfoNode.active = true;
-    
+
         return true;
     }
 
     private cardPlayInComplete(): void {
         this.scratchSystem.ToggleTouch(true);
-    
+
         console.log(`[Game] CardPlayInComplete, AutoCount: ${this.autoAttemptCount}`);
-    
+
         if (this.autoAttemptCount > 0) {
-            this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, true);
-    
+            this.gameOptions.UpdateCenterButton({
+                forceButton: CENTERBUTTON.SCRATCH_ALL_BUTTON,
+                disabled: true,
+            });
+
             this.scratchAll();
-    
+
             this.autoAttemptCount--;
             this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
-    
+
             // Important:
             // Do NOT call SetAutoModeUI(false) here when autoAttemptCount reaches 0.
             // The final auto card is still being scratched/settled.
             this.gameOptions.SetAutoModeUI(true);
             this.gameOptions.DisableAuxillaryOptions(true);
-    
+
             return;
         }
-    
+
         // Manual mode only: card has arrived, allow player to scratch.
-        this.gameOptions.ShowCenterButton(CENTERBUTTON.SCRATCH_ALL_BUTTON, false);
+        this.gameOptions.UpdateCenterButton();
     }
 
     private async cardAllScratched(): Promise<void> {
         if (this.isSettlingCard) {
             return;
         }
-    
+
         this.isSettlingCard = true;
-    
+
         try {
             this.cardCurrentlyShowing = false;
-    
+
             await this._gameManager.SettleCard();
-    
+
             const settleRes = this._gameManager.GameData.TicketData.settleInfo as SettleRes;
-    
+
             if (settleRes.totalPayout <= 0) {
                 if (this.autoAttemptCount > 0) {
                     this.checkAutoCall();
                     return;
                 }
-            
+
                 // Final auto card is now fully scratched and settled.
                 // Only now should controls be enabled again.
                 this.gameOptions.SetAutoModeUI(false);
-                this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
+                this.gameOptions.UpdateCenterButton();
                 this.gameOptions.DisableAuxillaryOptions(false);
                 return;
             }
-    
+
             this.scratchCardView.RevealWins();
             await this.showWinResult(settleRes);
-    
+
         } finally {
             this.isSettlingCard = false;
         }
@@ -371,27 +380,27 @@ export class Game extends Component {
         if (this.isShowingResults) {
             return;
         }
-    
+
         this.isShowingResults = true;
-    
+
         const node: Node = await this._popupManager.LoadPopup(PopUpPrefabPath.WIN_POPUP);
         const winPopUp = node.getComponent(WinPopUp);
-    
+
         if (!winPopUp.IsPopUpInitialized) {
             this.SetupWinPopup(winPopUp);
         }
-    
+
         winPopUp.StartShowing(settleRes.totalPayout, settleRes.winType, () => {
             this.isShowingResults = false;
-        
+
             if (this.autoAttemptCount > 0) {
                 this.checkAutoCall();
             } else {
                 this.gameOptions.SetAutoModeUI(false);
-                this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
+                this.gameOptions.UpdateCenterButton();
                 this.gameOptions.DisableAuxillaryOptions(false);
             }
-        
+
             this.lastWin.CheckLastWin();
         });
     }
@@ -459,12 +468,11 @@ export class Game extends Component {
     private checkAutoCall(): void {
         this.unschedule(this.updateAuto);
 
-        if (this.autoAttemptCount > 0){
+        if (this.autoAttemptCount > 0) {
             this.scheduleOnce(this.updateAuto, 0.5);
-        }else{
+        } else {
             this.stopAuto();
         }
-
     }
 
     private updateAuto = (): void => {
@@ -472,18 +480,20 @@ export class Game extends Component {
             this.stopAuto();
             return;
         }
-        
+
         // Buy Card
         this.helpView.onAutoInput();
         this.buyNewCard();
 
         const isInfiniteAuto = this.autoAttemptOptions.CurrentPriceValue === -1;
+
         if (isInfiniteAuto) {
             this.autoAttemptCount = this.infiniteAutoAttemptCount;
         }
 
         // Set Button
         this.gameOptions.SetAutoModeUI(true);
+
         // Set Counter
         this.gameOptions.SetPauseButtonCount(this.autoAttemptCount);
 
@@ -508,7 +518,7 @@ export class Game extends Component {
 
         this.gameOptions.ToggleAutoButton(true);
         this.gameOptions.DisableAuxillaryOptions(false);
-        this.gameOptions.ShowCenterButton(CENTERBUTTON.BUY_CARD_BUTTON, false);
+        this.gameOptions.UpdateCenterButton();
     }
 
     private shakeBalance(skipAnimation: boolean = false): void {

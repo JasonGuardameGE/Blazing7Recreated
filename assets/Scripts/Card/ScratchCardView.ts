@@ -50,20 +50,24 @@ export class ScratchCardView extends Component {
         );
     }
     
-    public setCardNumbers(numbers: Array<{value: number, win: number}>){
-
-        let idx = 0;
-        this.numberCards.forEach( (numberCard) =>{
+    public setCardNumbers(numbers: Array<{ value: number, win: number }>): void {
+        for (let i = 0; i < this.numberCards.length; i++) {
+            const numberCard = this.numberCards[i];
+            const numberSet = numbers[i];
+    
             numberCard.Reset();
-
-            const numberSet = numbers[idx];
+    
+            if (!numberSet) {
+                continue;
+            }
+    
             numberCard.SetCardValue(numberSet.value);
-            numberCard.ToggleWinBackground(numberSet.value == 7);
-
-            idx++;
-        })
-
-        // Set Card Info
+            numberCard.ToggleWinBackground(numberSet.value === 7);
+    
+            const isWinningCell = numberSet.value === 7 && numberSet.win === 1;
+            numberCard.PartOfWinningTeam(isWinningCell);
+        }
+    
         this.SetCardInfo();
     }
 

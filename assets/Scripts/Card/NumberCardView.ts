@@ -20,9 +20,14 @@ export class NumberCardView extends Component {
     normalBg: SpriteFrame | null = null;
 
     private onScratchSetToWin: boolean = false;
-    
+    private partOfWinningCombination: boolean = false;
+
     public SetCardValue(newValue: number){
         this.cardValueNumber.string = newValue.toString();
+    }
+
+    public PartOfWinningTeam(toggle: boolean){
+        this.partOfWinningCombination = toggle;
     }
 
     public ToggleWinBackground(toggle: boolean){
@@ -30,13 +35,7 @@ export class NumberCardView extends Component {
     }
 
     public PlayWin(){
-        if(this.background.spriteFrame != this.winBg)
-        {
-            this.numberWinNode.active = false;
-            return;
-        }
-
-        this.numberWinNode.active = true;
+        this.numberWinNode.active = this.partOfWinningCombination;
     }
 
     public UpdateBackground(){

@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 10913.4208,
+      "mTimestamp": 10962.3714,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 27997919.8767,
+      "mTimestamp": 5192596.8516,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -5285,7 +5285,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1779062293132,
+      "mTimestamp": 1779149946236,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -6808,7 +6808,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Data/GameData.ts": {
       "mTimestamp": {
-        "mtime": 1779062456190.1702,
+        "mtime": 1779150163642.5613,
         "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
       },
       "chunkId": "d9e989e3911e310821333903950c51538c2c38d9",
@@ -8378,7 +8378,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Card/ScratchCardView.ts": {
       "mTimestamp": {
-        "mtime": 1779088898670.0613,
+        "mtime": 1779155114134.893,
         "uuid": "595cdf1e-fc90-42ef-8068-d25ad5d3b0a9"
       },
       "chunkId": "4a7859a70f398272e170d9b89ba58d608912b28e",
@@ -8577,7 +8577,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/UI/InteractableUIs/SingleButton.ts": {
       "mTimestamp": {
-        "mtime": 1778641915864.6904,
+        "mtime": 1779154277978.8665,
         "uuid": "19973e86-b230-4abf-b825-3c1207bddac5"
       },
       "chunkId": "b612afb9a3f484cd001f905a1d9ee3cb8ce81a2a",
@@ -8682,7 +8682,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/Game.ts": {
       "mTimestamp": {
-        "mtime": 1778829348341.6418,
+        "mtime": 1779153361512.0774,
         "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
       },
       "chunkId": "19fb976c773064c155f3052eadcf4ec1e4854fce",
@@ -8757,11 +8757,11 @@
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
-              "line": 7,
+              "line": 5,
               "column": 28
             },
             "end": {
-              "line": 7,
+              "line": 5,
               "column": 53
             }
           }
@@ -8771,11 +8771,11 @@
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
-              "line": 8,
+              "line": 6,
               "column": 25
             },
             "end": {
-              "line": 8,
+              "line": 6,
               "column": 47
             }
           }
@@ -8785,11 +8785,11 @@
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
-              "line": 9,
+              "line": 7,
               "column": 46
             },
             "end": {
-              "line": 9,
+              "line": 7,
               "column": 72
             }
           }
@@ -8799,11 +8799,11 @@
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
-              "line": 10,
+              "line": 8,
               "column": 25
             },
             "end": {
-              "line": 10,
+              "line": 8,
               "column": 47
             }
           }
@@ -8813,11 +8813,11 @@
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
-              "line": 12,
+              "line": 10,
               "column": 34
             },
             "end": {
-              "line": 12,
+              "line": 10,
               "column": 55
             }
           }
@@ -8827,11 +8827,11 @@
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
-              "line": 13,
+              "line": 11,
               "column": 29
             },
             "end": {
-              "line": 13,
+              "line": 11,
               "column": 55
             }
           }
@@ -8841,11 +8841,11 @@
           "resolved": "__unresolved_10",
           "loc": {
             "start": {
-              "line": 14,
+              "line": 12,
               "column": 25
             },
             "end": {
-              "line": 14,
+              "line": 12,
               "column": 50
             }
           }
@@ -8855,11 +8855,11 @@
           "resolved": "__unresolved_11",
           "loc": {
             "start": {
-              "line": 15,
+              "line": 13,
               "column": 24
             },
             "end": {
-              "line": 15,
+              "line": 13,
               "column": 39
             }
           }
@@ -8869,11 +8869,11 @@
           "resolved": "__unresolved_12",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 14,
               "column": 29
             },
             "end": {
-              "line": 16,
+              "line": 14,
               "column": 58
             }
           }
@@ -8883,11 +8883,11 @@
           "resolved": "__unresolved_13",
           "loc": {
             "start": {
-              "line": 17,
+              "line": 15,
               "column": 32
             },
             "end": {
-              "line": 17,
+              "line": 15,
               "column": 58
             }
           }
@@ -8897,11 +8897,11 @@
           "resolved": "__unresolved_14",
           "loc": {
             "start": {
-              "line": 18,
+              "line": 16,
               "column": 35
             },
             "end": {
-              "line": 18,
+              "line": 16,
               "column": 67
             }
           }
@@ -9039,7 +9039,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/GameOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778822820080.8718,
+        "mtime": 1779153987816.3098,
         "uuid": "d58cc7ed-83e8-454c-9920-0fee57d186ad"
       },
       "chunkId": "95a72159d86e76129be31d7732343a07b5e2446d",
@@ -9108,6 +9108,20 @@
               "column": 47
             }
           }
+        },
+        {
+          "value": "../Managers/GameManager",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 28
+            },
+            "end": {
+              "line": 5,
+              "column": 53
+            }
+          }
         }
       ],
       "type": "esm",
@@ -9158,6 +9172,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/Services.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Managers/GameManager.ts"
           },
           "messages": []
         }
@@ -9932,7 +9953,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Card/NumberCardView.ts": {
       "mTimestamp": {
-        "mtime": 1778049645265.677,
+        "mtime": 1779155137431.8835,
         "uuid": "4b09c795-a9dd-402a-9067-d61794713802"
       },
       "chunkId": "539d26734fee867c629f8e2ebcb794c9dd720a53",
@@ -10451,7 +10472,7 @@
     },
     "file:///D:/Game-Engine%20Projects/Blazing7Test/assets/Scripts/Game/PricePopUpOptions.ts": {
       "mTimestamp": {
-        "mtime": 1778744566241.8035,
+        "mtime": 1779151098530.9512,
         "uuid": "8a334fc8-cb57-4593-adf7-66e85ba752c0"
       },
       "chunkId": "cee91858986803de21b8fb0d430d475e16fb194f",
@@ -10466,11 +10487,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 18,
               "column": 7
             },
             "end": {
-              "line": 16,
+              "line": 18,
               "column": 11
             }
           }
