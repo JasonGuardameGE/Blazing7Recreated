@@ -11,7 +11,10 @@ import {
     UITransform,
     EventHandler,
     Vec2,
+    UIOpacity,
+    BlockInputEvents,
 } from 'cc';
+
 import { AudioManager } from '../../Managers/AudioManager';
 import { Services } from '../../Managers/Services';
 import { PopUpManager, PopUpPrefabPath } from '../../Managers/PopUpManager';
@@ -22,8 +25,8 @@ const { ccclass, property } = _decorator;
 @ccclass('WinPopUp')
 export class WinPopUp extends Component {
 
-    onCoinReachBalanceCallback: EventHandler[] = [];
-    onWinPopUpFinishedCallback: EventHandler[] = [];
+    public onCoinReachBalanceCallback: EventHandler[] = [];
+    public onWinPopUpFinishedCallback: EventHandler[] = [];
 
     @property(Node)
     public coinFlyTarget: Node = null;
@@ -64,47 +67,48 @@ export class WinPopUp extends Component {
     @property(CCFloat)
     public coinEndScale: number = 0.3;
 
+    public IsPopUpInitialized: boolean = false;
+
     private isSuperWin: boolean = false;
     private winAmount: number = 0;
     private originalWinAmountFontSize: number = 0;
+
     private incrementTweenTarget: { value: number } = { value: 0 };
 
     private isIncrementFinished: boolean = false;
     private hasPlayedCoinFly: boolean = false;
+
     private coinOriginalPositions: Vec3[] = [];
 
     private onWinPopupDoneCallback: (() => void) | null = null;
 
-    IsPopUpInitialized: boolean = false;
+    private _audioManager: AudioManager = null;
 
-    private _audioManager: AudioManager;
+    private popupOpacity: UIOpacity | null = null;
+    private blockInput: BlockInputEvents | null = null;
+
+    private isVisible: boolean = false;
 
     protected onLoad(): void {
         this.RegisterPopUp();
+        this.cacheComponents();
+        this.registerInputEvents();
+
         this.cacheCoinOriginalPositions();
         this.resetAnimationState();
+
+        this.hideInstant();
     }
 
     protected start(): void {
         this._audioManager = Services.GetService(AudioManager);
     }
 
-    protected onEnable(): void {
-        if (this.skipButton) {
-            this.skipButton.on(Node.EventType.TOUCH_START, this.onSkipTouched, this);
-        }
-    }
-
-    protected onDisable(): void {
-        if (this.skipButton) {
-            this.skipButton.off(Node.EventType.TOUCH_START, this.onSkipTouched, this);
-        }
+    protected onDestroy(): void {
+        this.unregisterInputEvents();
 
         this.stopAllRunningTweens();
         this.stopCoinTweens();
-        this.resetCoins();
-        this.resetSkeleton(this.normalWin, false);
-        this.resetSkeleton(this.superWin, false);
     }
 
     private RegisterPopUp(): void {
@@ -118,6 +122,37 @@ export class WinPopUp extends Component {
         popupManager.RegisterPopup(PopUpPrefabPath.WIN_POPUP, this.node);
     }
 
+    private cacheComponents(): void {
+        this.popupOpacity = this.node.getComponent(UIOpacity);
+
+        if (!this.popupOpacity) {
+            this.popupOpacity = this.node.addComponent(UIOpacity);
+        }
+
+        this.blockInput = this.node.getComponent(BlockInputEvents);
+
+        if (!this.blockInput) {
+            this.blockInput = this.node.addComponent(BlockInputEvents);
+        }
+    }
+
+    private registerInputEvents(): void {
+        if (!this.skipButton) {
+            return;
+        }
+
+        this.skipButton.off(Node.EventType.TOUCH_START, this.onSkipTouched, this);
+        this.skipButton.on(Node.EventType.TOUCH_START, this.onSkipTouched, this);
+    }
+
+    private unregisterInputEvents(): void {
+        if (!this.skipButton) {
+            return;
+        }
+
+        this.skipButton.off(Node.EventType.TOUCH_START, this.onSkipTouched, this);
+    }
+
     public StartShowing(
         newWinValue: number,
         isSuperWin: number = 0,
@@ -128,8 +163,7 @@ export class WinPopUp extends Component {
         this.onWinPopupDoneCallback = callback;
 
         this.resetAnimationState();
-
-        this.node.active = true;
+        this.showInstant();
 
         this.Play();
     }
@@ -140,16 +174,14 @@ export class WinPopUp extends Component {
                 this._audioManager = Services.GetService(AudioManager);
             }
 
-            this._audioManager.playEffectByName('fire');
+            this._audioManager?.playEffectByName('fire');
 
             this.isIncrementFinished = false;
             this.hasPlayedCoinFly = false;
 
             this.resetCoins();
 
-            if (this.superWin) {
-                this.resetSkeleton(this.superWin, false);
-            }
+            this.resetSkeleton(this.superWin, false);
 
             if (this.normalWin) {
                 this.playSkeletonAnimation(
@@ -159,7 +191,7 @@ export class WinPopUp extends Component {
                     true,
                 );
 
-                this._audioManager.playEffectByName('win');
+                this._audioManager?.playEffectByName('win');
             }
 
             if (this.winAmountLabel) {
@@ -171,17 +203,25 @@ export class WinPopUp extends Component {
             tween(this.node)
                 .delay(0.5)
                 .call(() => {
+                    if (!this.isVisible) {
+                        return;
+                    }
+
                     this.startShowingValue();
                 })
                 .start();
 
             if (this.isSuperWin) {
-                this._audioManager.playEffectByName('superwin');
+                this._audioManager?.playEffectByName('superwin');
                 this.showSuperWin();
             } else {
                 tween(this.node)
                     .delay(2)
                     .call(() => {
+                        if (!this.isVisible) {
+                            return;
+                        }
+
                         if (this.normalWin) {
                             this.playSkeletonAnimation(
                                 this.normalWin,
@@ -202,9 +242,11 @@ export class WinPopUp extends Component {
         tween(this.node)
             .delay(1.25)
             .call(() => {
-                if (this.normalWin) {
-                    this.resetSkeleton(this.normalWin, false);
+                if (!this.isVisible) {
+                    return;
                 }
+
+                this.resetSkeleton(this.normalWin, false);
 
                 if (this.superWin) {
                     this.playSkeletonAnimation(
@@ -220,6 +262,10 @@ export class WinPopUp extends Component {
         tween(this.node)
             .delay(2)
             .call(() => {
+                if (!this.isVisible) {
+                    return;
+                }
+
                 if (this.superWin) {
                     this.playSkeletonAnimation(
                         this.superWin,
@@ -233,7 +279,7 @@ export class WinPopUp extends Component {
     }
 
     private startShowingValue(): void {
-        if (!this.winAmountLabel) {
+        if (!this.winAmountLabel || !this.isVisible) {
             return;
         }
 
@@ -259,8 +305,6 @@ export class WinPopUp extends Component {
         this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(0);
 
         const originalFontSize = this.originalWinAmountFontSize || this.winAmountLabel.fontSize;
-        const pulseFontSize = originalFontSize * 1.5;
-
         this.winAmountLabel.fontSize = originalFontSize;
 
         tween(this.incrementTweenTarget)
@@ -269,26 +313,30 @@ export class WinPopUp extends Component {
                 { value: targetValue },
                 {
                     onUpdate: () => {
-                        const currentValue = this.incrementTweenTarget.value;
+                        if (!this.isVisible || !this.winAmountLabel) {
+                            return;
+                        }
 
                         this.winAmountLabel.string =
-                            NumberFormatter.formatAmountWithDecimal(currentValue);
-
-                        //const pulse = Math.sin(Date.now() * 0.02);
-                        //const normalizedPulse = (pulse + 1) * 0.5;
-
-                        // this.winAmountLabel.fontSize =
-                        //     originalFontSize + (pulseFontSize - originalFontSize) * normalizedPulse;
+                            NumberFormatter.formatAmountWithDecimal(this.incrementTweenTarget.value);
                     },
                 },
             )
             .call(() => {
+                if (!this.isVisible) {
+                    return;
+                }
+
                 this.CompleteIncrementLabel();
             })
             .start();
     }
 
     private onSkipTouched(): void {
+        if (!this.isVisible) {
+            return;
+        }
+
         if (!this.isIncrementFinished) {
             this.CompleteIncrementLabel();
             this.SkipToLoopingAnimation();
@@ -311,7 +359,7 @@ export class WinPopUp extends Component {
         Tween.stopAllByTarget(this.incrementTweenTarget);
 
         const targetValue = Math.max(0, this.winAmount);
-        
+
         this.incrementTweenTarget.value = targetValue;
         this.winAmountLabel.node.active = true;
         this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(targetValue);
@@ -326,9 +374,7 @@ export class WinPopUp extends Component {
         Tween.stopAllByTarget(this.node);
 
         if (this.isSuperWin) {
-            if (this.normalWin) {
-                this.resetSkeleton(this.normalWin, false);
-            }
+            this.resetSkeleton(this.normalWin, false);
 
             if (this.superWin) {
                 this.playSkeletonAnimation(
@@ -342,9 +388,7 @@ export class WinPopUp extends Component {
             return;
         }
 
-        if (this.superWin) {
-            this.resetSkeleton(this.superWin, false);
-        }
+        this.resetSkeleton(this.superWin, false);
 
         if (this.normalWin) {
             this.playSkeletonAnimation(
@@ -366,7 +410,71 @@ export class WinPopUp extends Component {
             callback();
         }
 
-        this.node.active = false;
+        this.hideInstant();
+    }
+
+    private showInstant(): void {
+        this.node.active = true;
+        this.isVisible = true;
+    
+        if (this.popupOpacity) {
+            this.popupOpacity.opacity = 255;
+        }
+    
+        /**
+         * Only block input while popup is visible.
+         */
+        if (this.blockInput) {
+            this.blockInput.enabled = true;
+        }
+    
+        if (this.skipButton) {
+            this.skipButton.active = true;
+        }
+    }
+
+    private hideInstant(): void {
+        this.isVisible = false;
+    
+        this.stopAllRunningTweens();
+        this.stopCoinTweens();
+    
+        this.resetCoins();
+    
+        this.resetSkeleton(this.normalWin, false);
+        this.resetSkeleton(this.superWin, false);
+    
+        if (this.winAmountLabel) {
+            this.winAmountLabel.node.active = false;
+            this.winAmountLabel.string = NumberFormatter.formatAmountWithDecimal(0);
+            this.winAmountLabel.fontSize =
+                this.originalWinAmountFontSize || this.winAmountLabel.fontSize;
+        }
+    
+        if (this.popupOpacity) {
+            this.popupOpacity.opacity = 0;
+        }
+    
+        /**
+         * Important:
+         * Disable this while hidden or it will still block clicks below.
+         */
+        if (this.blockInput) {
+            this.blockInput.enabled = false;
+        }
+    
+        /**
+         * Also disable the skip button while hidden.
+         */
+        if (this.skipButton) {
+            this.skipButton.active = false;
+        }
+    
+        /**
+         * Keep root active for performance,
+         * but make sure it does not intercept touch.
+         */
+        this.node.active = true;
     }
 
     private playCoinFlySequenceOnce(): void {
@@ -460,6 +568,10 @@ export class WinPopUp extends Component {
             tween(coin)
                 .delay(delay)
                 .call(() => {
+                    if (!this.isVisible) {
+                        return;
+                    }
+
                     coin.active = true;
                     coin.setPosition(originalPosition);
                     coin.setScale(
@@ -478,6 +590,10 @@ export class WinPopUp extends Component {
                             {
                                 easing: 'quadInOut',
                                 onUpdate: () => {
+                                    if (!this.isVisible) {
+                                        return;
+                                    }
+
                                     const curvedPosition = this.getQuadraticBezierPoint(
                                         startPoint,
                                         controlPoint,
@@ -523,6 +639,10 @@ export class WinPopUp extends Component {
                         ),
                 )
                 .call(() => {
+                    if (!this.isVisible) {
+                        return;
+                    }
+
                     EventHandler.emitEvents(this.onCoinReachBalanceCallback, false);
 
                     coin.active = false;

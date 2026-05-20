@@ -12,6 +12,7 @@ import {
 } from 'cc';
 import { GridCell } from './ScratchTypes';
 import { ScratchMask } from './ScratchMask';
+import { DevicePerformanceManager } from '../Managers/DevicePerformanceManager';
 
 const { ccclass } = _decorator;
 
@@ -30,24 +31,42 @@ export class ScratchRenderer {
     private originalTextureData: Uint8Array = null;
     private currentSpriteFrame: SpriteFrame = null;
 
-    public Init(newScratchMask: ScratchMask, scratchRenderedHolder: Node, textureCover: Sprite) {
-        this.renderedScratch = scratchRenderedHolder;
+    private autoScratchUploadEveryFrames: number = 2;
+    private scratchFullErasePerFrame: number = 8;
 
+    public Init(newScratchMask: ScratchMask, scratchRenderedHolder: Node, textureCover: Sprite) {
+        this.mask = newScratchMask;
+        this.renderedScratch = scratchRenderedHolder;
+    
+        const settings = DevicePerformanceManager.Instance?.Settings;
+    
+        this.autoScratchUploadEveryFrames = Math.max(
+            1,
+            Math.floor(settings?.autoScratchUploadEveryFrames ?? 2),
+        );
+    
+        this.scratchFullErasePerFrame = Math.max(
+            1,
+            Math.floor(settings?.scratchFullErasePerFrame ?? 8),
+        );
+    
         const spriteFrame = textureCover.spriteFrame;
+    
         if (!spriteFrame) {
             console.error('[ScratchRenderer] spriteFrame is null');
             return;
         }
-
+    
         const texture = spriteFrame.texture as Texture2D;
+    
         if (!texture) {
             console.error('[ScratchRenderer] texture is null');
             return;
         }
-
+    
         this.scratchSpriteFrameReference = spriteFrame;
         this.scratchTextureReference = texture;
-
+    
         this.textureWidth = texture.width;
         this.textureHeight = texture.height;
     }
@@ -206,6 +225,13 @@ export class ScratchRenderer {
       ): Promise<void> {
         if (!this.textureData) return;
       
+        const settings = DevicePerformanceManager.Instance?.Settings;
+
+        const uploadEveryFrames = Math.max(
+            1,
+            Math.floor(settings?.autoScratchUploadEveryFrames ?? this.autoScratchUploadEveryFrames ?? 2),
+        );
+
         const dx = width;
         const dy = height;
         const len = Math.hypot(dx, dy);
@@ -224,7 +250,6 @@ export class ScratchRenderer {
       
         let frame = 0;
         let uploadCounter = 0;
-        let effectStepCounter = 0;
       
         const left   = x + brushRadius;
         const right  = x + width  - brushRadius;
@@ -258,17 +283,11 @@ export class ScratchRenderer {
               }
     
               this.EraseCircle(cx, cy, brushRadius, false);
-    
-              effectStepCounter++;
-              if (effectStepCounter % 6 === 0) {
-                const worldPos = this.textureToWorld(cx, cy);
-                //PLK.event.emit(MessageFlag.SCRATCH_ERASE, { worldPos, count: 1 });
-              }
             }
       
             uploadCounter++;
-            if (uploadCounter % 2 === 0) {
-              this.workingTexture?.uploadData(this.textureData!);
+            if (uploadCounter % uploadEveryFrames === 0) {
+                this.workingTexture?.uploadData(this.textureData!);
             }
       
             if (frame < frames) {

@@ -1,4 +1,14 @@
-import { _decorator, Animation, Component, EventHandler, Label, Node, tween, Tween } from 'cc';
+import {
+    _decorator,
+    Animation,
+    Component,
+    EventHandler,
+    Label,
+    Node,
+    tween,
+    Tween,
+} from 'cc';
+
 import { CENTERBUTTON, GameOptions } from './GameOptions';
 import { ScratchCardView } from '../Card/ScratchCardView';
 import { ScratchSystem } from '../Scratch/ScratchSystem';
@@ -74,16 +84,21 @@ export class Game extends Component {
 
     private maxWinToaster: MaxWinToasterPopUp = null;
 
+    private hasPrewarmed: boolean = false;
+    private isPrewarming: boolean = false;
+    private hasShown: boolean = false;
+    private isShowing: boolean = false;
+
+    /**
+     * Fallback only.
+     *
+     * Ideally, SceneManager should call:
+     * await game.Prewarm();
+     * then later:
+     * await game.Show();
+     */
     protected start(): void {
-        this.cacheReferences();
-        this.preloadPopups();
-
-        this.setupGameOptions();
-        this.setupCardView();
-        this.setupScratchSystem();
-
-        this.updatePlayerBalance();
-        this.setupRemainingCard();
+        this.Show();
     }
 
     protected onDisable(): void {
@@ -95,19 +110,148 @@ export class Game extends Component {
         Tween.stopAllByTarget(this.balanceTweenTarget);
     }
 
+    /**
+     * Call this while the Game scene node is already instantiated,
+     * preferably already added under SceneRoot, but still inactive.
+     *
+     * This moves setup cost away from the exact frame where the scene appears.
+     */
+    public async Prewarm(): Promise<void> {
+        if (this.hasPrewarmed || this.isPrewarming) {
+            return;
+        }
+
+        this.isPrewarming = true;
+
+        try {
+            this.cacheReferences();
+
+            await this.preloadPopupsAsync();
+
+            this.setupGameOptions();
+            this.setupCardView();
+            this.setupScratchSystem();
+
+            this.updatePlayerBalance();
+
+            this.hasPrewarmed = true;
+        } catch (error) {
+            console.error('[Game] Prewarm failed:', error);
+        } finally {
+            this.isPrewarming = false;
+        }
+    }
+
+    /**
+     * Call this when the Game scene is actually displayed.
+     *
+     * This should contain only the things that must happen when visible,
+     * such as showing/restoring the current card.
+     */
+    public async Show(): Promise<void> {
+        if (this.hasShown || this.isShowing) {
+            return;
+        }
+    
+        this.isShowing = true;
+    
+        try {
+            if (!this.hasPrewarmed) {
+                await this.Prewarm();
+            }
+    
+            /**
+             * Let scene activation finish first.
+             */
+            await this.waitNextFrame();
+    
+            if (!this.HasCurrentTicket()) {
+                this.hasShown = true;
+                return;
+            }
+    
+            if (this.combinationGuide) {
+                this.combinationGuide.node.active = false;
+            }
+    
+            await this.waitNextFrame();
+    
+            this.gameOptions.DisableAuxillaryOptions(true);
+    
+            await this.waitNextFrame();
+    
+            const generated = await this.scratchSystem.GenerateScratchRenderer();
+    
+            if (!generated) {
+                this.hasShown = true;
+                return;
+            }
+    
+            await this.waitNextFrame();
+    
+            this.helpView.resetCountdown();
+    
+            await this.waitNextFrame();
+    
+            this.scratchCardView.StartCardPlayIn();
+    
+            await this.waitNextFrame();
+    
+            this.ShowScratchAllDisabled();
+    
+            await this.waitNextFrame();
+    
+            this._gameManager.ScratchCard.SetupCurrentCardNumbers();
+    
+            await this.waitNextFrame();
+    
+            if (this.cardInfoNode) {
+                this.cardInfoNode.active = true;
+            }
+    
+            this.hasShown = true;
+        } catch (error) {
+            console.error('[Game] Show failed:', error);
+        } finally {
+            this.isShowing = false;
+        }
+    }
+
     private cacheReferences(): void {
-        if (this.balanceShake) {
+        if (this.balanceShake && !this.balanceShakeAnim) {
             this.balanceShakeAnim = this.balanceShake.getComponent(Animation);
         }
 
-        this._gameManager = Services.GetService(GameManager);
-        this._popupManager = Services.GetService(PopUpManager);
-        this._audioManager = Services.GetService(AudioManager);
+        if (!this._gameManager) {
+            this._gameManager = Services.GetService(GameManager);
+        }
+
+        if (!this._popupManager) {
+            this._popupManager = Services.GetService(PopUpManager);
+        }
+
+        if (!this._audioManager) {
+            this._audioManager = Services.GetService(AudioManager);
+        }
     }
 
-    private preloadPopups(): void {
-        this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
-        this._popupManager.PreLoadPopUp(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP);
+    private async preloadPopupsAsync(): Promise<void> {
+        if (!this._popupManager) {
+            return;
+        }
+
+        await this._popupManager.PreLoadPopUp(PopUpPrefabPath.WIN_POPUP);
+        await this._popupManager.PreLoadPopUp(PopUpPrefabPath.MAX_WIN_TOASTER_POPUP);
+
+        if (!this.maxWinToaster) {
+            const toasterNode = await this._popupManager.LoadPopup(
+                PopUpPrefabPath.MAX_WIN_TOASTER_POPUP,
+                false,
+                999,
+            );
+
+            this.maxWinToaster = toasterNode?.getComponent(MaxWinToasterPopUp);
+        }
     }
 
     private async setupRemainingCard(): Promise<void> {
@@ -120,10 +264,15 @@ export class Game extends Component {
         }
 
         this.gameOptions.DisableAuxillaryOptions(true);
+
         await this.showCurrentCard();
     }
 
     private setupCardView(): void {
+        if (!this.scratchCardView || !this._gameManager) {
+            return;
+        }
+
         const cardPlayInComplete = this.NewEventHandler('Game', 'cardPlayInComplete');
         this.scratchCardView.cardFinishedPlayInCallbacks.push(cardPlayInComplete);
 
@@ -134,6 +283,10 @@ export class Game extends Component {
     }
 
     private setupScratchSystem(): void {
+        if (!this.scratchSystem) {
+            return;
+        }
+
         const cardAllScratched = this.NewEventHandler('Game', 'cardAllScratched');
         this.scratchSystem.allCardScratchedCallbacks.push(cardAllScratched);
 
@@ -173,7 +326,7 @@ export class Game extends Component {
         this.gameOptions.scratchAllButton.clickEndInsideCallbacks.push(scratchAll);
     }
 
-    private async SetupAuxillaryOptions(): Promise<void> {
+    private SetupAuxillaryOptions(): void {
         try {
             this.gameOptions.setPriceButton.node.on(Node.EventType.TOUCH_END, this.showPriceOptions, this);
             this.gameOptions.setAutoButton.node.on(Node.EventType.TOUCH_END, this.onAutoButtonClicked, this);
@@ -184,17 +337,9 @@ export class Game extends Component {
             this.priceOptions.Initialize(this._gameManager.GameData.gamePriceList);
             this.priceOptions.onPriceValueUpdateCallback.push(updateCurrentPrice);
 
-            const toasterNode = await this._popupManager.LoadPopup(
-                PopUpPrefabPath.MAX_WIN_TOASTER_POPUP,
-                false,
-                999,
-            );
-
-            this.maxWinToaster = toasterNode.getComponent(MaxWinToasterPopUp);
-
             this.updateCurrentPrice(false);
-        } catch (err) {
-            console.error('[Game] SetupAuxillaryOptions Error:', err);
+        } catch (error) {
+            console.error('[Game] SetupAuxillaryOptions Error:', error);
         }
     }
 
@@ -210,6 +355,7 @@ export class Game extends Component {
             return;
         }
 
+        this.helpView.resetCountdown();
         this.ShowScratchAllDisabled();
         this.scratchSystem.ScratchAll();
     }
@@ -292,6 +438,7 @@ export class Game extends Component {
             return false;
         }
 
+        this.helpView.resetCountdown();
         this.scratchCardView.StartCardPlayIn();
 
         this.ShowScratchAllDisabled();
@@ -665,6 +812,14 @@ export class Game extends Component {
                 this.balanceTweenTarget.value = 0;
             })
             .start();
+    }
+
+    private waitNextFrame(): Promise<void> {
+        return new Promise((resolve) => {
+            this.scheduleOnce(() => {
+                resolve();
+            }, 0);
+        });
     }
 
     private NewEventHandler(component: string, handler: string): EventHandler {

@@ -5,7 +5,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Game.scene": {
-      "time": 1779091844365.1619,
+      "time": 1779167481617.0034,
       "uuid": "fc754bdf-eb93-4ec8-a2dc-92de2a2add1a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources.meta": {
@@ -19,7 +19,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts": {
-      "time": 1778032339885.1252,
+      "time": 1779239001988.0508,
       "uuid": "9eb31a56-ed12-4146-8430-5f45a5042369"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI.meta": {
@@ -33,7 +33,7 @@
       "time": 1777527178109.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\UIRoot.ts": {
-      "time": 1779089723864.608,
+      "time": 1779236382749.4443,
       "uuid": "1f9054db-351f-4e7a-8020-a416167b637e"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Scenes.meta": {
@@ -201,7 +201,7 @@
       "time": 1777527178107.1682
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\GameData.ts": {
-      "time": 1779150163642.5613,
+      "time": 1779235492188.2034,
       "uuid": "e8a67a97-c75a-49b3-9558-afadaa2f7a50"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Data\\TicketItem.ts.meta": {
@@ -243,14 +243,14 @@
       "time": 1777535514833.22
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers": {
-      "time": 1778722498748.2583,
+      "time": 1779239001988.0508,
       "uuid": "238c0e9e-457d-4287-82a9-e8d733becb7a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\SceneManager.ts.meta": {
       "time": 1777534023321.0806
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\SceneManager.ts": {
-      "time": 1778825239405.561,
+      "time": 1779237547255.1006,
       "uuid": "a2a142bf-1a4b-4cf9-bcd9-af0bda1e7d37"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\ResourceManager.ts.meta": {
@@ -271,7 +271,7 @@
       "time": 1777538291008.8777
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\GameManager.ts": {
-      "time": 1779084739715.02,
+      "time": 1779236716576.935,
       "uuid": "e69e56c3-c4a5-4010-a5d5-6ce94d3123eb"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs.meta": {
@@ -341,7 +341,7 @@
       "time": 1777855811897.6313
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\AudioManager.ts": {
-      "time": 1778808768693.3538,
+      "time": 1779236598286.811,
       "uuid": "7bd6afd1-f58f-4ab5-9cd0-9cdf9689b52f"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\mp3.meta": {
@@ -432,14 +432,14 @@
       "time": 1777876742612.9158
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch": {
-      "time": 1777941462527.576,
+      "time": 1779244344481.5056,
       "uuid": "8b1cf3e4-cdea-4c59-97cb-33dc3bbde85c"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\FragmentView.ts.meta": {
       "time": 1777878241852.3093
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\FragmentView.ts": {
-      "time": 1778808754330.1548,
+      "time": 1779242069875.2935,
       "uuid": "4ce0e872-5d22-4533-a403-6c80a08b3c7f"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Particle.meta": {
@@ -572,14 +572,14 @@
       "time": 1777940747036.3904
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchSystem.ts": {
-      "time": 1779085771483.3672,
+      "time": 1779244344481.5056,
       "uuid": "57de9ce9-f649-41bf-8555-4d178229c5c3"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts.meta": {
       "time": 1777940855304.3716
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchRenderer.ts": {
-      "time": 1777960227487.0032,
+      "time": 1779244876666.3303,
       "uuid": "0ba9cf86-c88a-47b3-b371-a764ed63d35b"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Scratch\\ScratchMask.ts.meta": {
@@ -740,7 +740,7 @@
       "time": 1777965163833.1677
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\Game.ts": {
-      "time": 1779155691957.4114,
+      "time": 1779237940537.785,
       "uuid": "e6f142da-2203-4097-b483-6c047c4bf6da"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Game\\GameOptions.ts.meta": {
@@ -852,7 +852,7 @@
       "time": 1777530481278.8496
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Game-Scene.prefab": {
-      "time": 1779087817143.5261,
+      "time": 1779178800880.3452,
       "uuid": "dafdd998-8f62-4f33-bdb0-adbead612ea2"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\Scenes\\Loading-Scene.prefab.meta": {
@@ -873,7 +873,7 @@
       "time": 1778029025437.4387
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\Win-PopUp.prefab": {
-      "time": 1778748019281.815,
+      "time": 1779238551958.348,
       "uuid": "3064321a-3c62-4bb7-87d6-ce34f36d1dbb"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\ClickVisualEffects.meta": {
@@ -2925,7 +2925,7 @@
       "uuid": "c235fe74-7a10-4444-8c6d-e518305f1b21"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\GINTO_MATCH\\script\\ScratchSystem.ts": {
-      "time": 1778808764001.443,
+      "time": 1779245122693.6465,
       "uuid": "b11a3d25-7581-428f-9b4b-6b83ddfa72ea"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\menu-bundle\\LUCKY_COLORS2\\res\\common": {
@@ -9287,7 +9287,7 @@
       "time": 1778659908015.364
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\WinBroadcastManager.ts": {
-      "time": 1778830995385.176,
+      "time": 1779241037107.257,
       "uuid": "2df96411-3d08-4355-93ff-7abf0349f531"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\res\\Textures\\Background\\broadcast-background.png.meta": {
@@ -9308,21 +9308,21 @@
       "time": 1778055078141.6335
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\WinPopUp.ts": {
-      "time": 1778826044127.6934,
+      "time": 1779238413743.4922,
       "uuid": "466bd5ad-b1a1-4ee1-b5f2-11344d7989de"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\WinnerBroadcastPopUp.ts.meta": {
       "time": 1778661375808.7827
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\PopUp\\WinnerBroadcastPopUp.ts": {
-      "time": 1779065968535.43,
+      "time": 1779242297563.235,
       "uuid": "846d1362-06ae-4790-94d8-2347521d1ab3"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\WinnerBroadcast-PopUp.prefab.meta": {
       "time": 1778717045185.4602
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\resources\\prefabs\\PopUps\\WinnerBroadcast-PopUp.prefab": {
-      "time": 1778738715547.6233,
+      "time": 1779239852797.8052,
       "uuid": "89909021-78ae-4102-b4bc-e7f14c9f839a"
     },
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\WebsocketManager.ts.meta": {
@@ -9408,6 +9408,13 @@
     "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\Background\\BackgroundResize.ts": {
       "time": 1779074579765.301,
       "uuid": "f74dc1d5-05c0-4069-a627-ea3bad6cc48e"
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\DevicePerformanceManager.ts.meta": {
+      "time": 1779238998549.997
+    },
+    "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\Managers\\DevicePerformanceManager.ts": {
+      "time": 1779244002628.9944,
+      "uuid": "f9c5fb7f-d415-4ea7-a8d7-598bdda5365d"
     }
   },
   "missing": {
@@ -14130,6 +14137,11 @@
       "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\UI\\VisualFx\\DragonMovement.ts",
       "time": 1778736509394.0146,
       "removeTime": 1778736522889
+    },
+    "f9c5fb7f-d415-4ea7-a8d7-598bdda5365d": {
+      "path": "D:\\Game-Engine Projects\\Blazing7Test\\assets\\Scripts\\DevicePerformanceManager.ts",
+      "time": 1779238998542.025,
+      "removeTime": 1779239001989
     }
   }
 }

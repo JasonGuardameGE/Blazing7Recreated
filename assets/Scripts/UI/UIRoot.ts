@@ -60,7 +60,7 @@ export class UIRoot extends Component {
         if (visibleSize.height / visibleSize.width > designSize.height / designSize.width) { // 长屏
             view.setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy.FIXED_WIDTH);
             this.detectedDeviceResolution = 'h5';
-        } else { // 宽屏
+        } else {
             view.setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy.FIXED_HEIGHT);
             this.detectedDeviceResolution = 'pc';
         }

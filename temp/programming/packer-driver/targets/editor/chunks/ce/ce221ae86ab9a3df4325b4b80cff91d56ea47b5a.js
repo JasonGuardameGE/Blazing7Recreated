@@ -106,7 +106,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             view.setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy.FIXED_WIDTH);
             this.detectedDeviceResolution = 'h5';
           } else {
-            // 宽屏
             view.setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy.FIXED_HEIGHT);
             this.detectedDeviceResolution = 'pc';
           }

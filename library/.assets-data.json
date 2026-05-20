@@ -22944,5 +22944,10 @@
     "url": "db://assets/Scripts/UI/Background/BackgroundResize.ts",
     "value": {},
     "versionCode": 1
+  },
+  "f9c5fb7f-d415-4ea7-a8d7-598bdda5365d": {
+    "url": "db://assets/Scripts/Managers/DevicePerformanceManager.ts",
+    "value": {},
+    "versionCode": 1
   }
 }
