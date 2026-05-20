@@ -8254,6 +8254,12 @@
         "__expectedType__": "cc.SpriteFrame"
       }
     ],
+    "initialPoolSize": 40,
+    "maxPoolSize": 80,
+    "warmupPerFrame": 8,
+    "allowRuntimeInstantiate": false,
+    "prewarmToMaxPoolSize": true,
+    "fallbackFragmentsPerScratch": 2,
     "_id": ""
   },
   {
@@ -8478,7 +8484,7 @@
     "scratchRenderedHolder": {
       "__id__": 343
     },
-    "brushSize": 90,
+    "brushSize": 50,
     "singleErasedAreaThreshold": 0,
     "scratchAllFragmentsPerCell": 5,
     "scratchAllFragmentsPerBurst": 2,

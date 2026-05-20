@@ -74,9 +74,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           this.contentItemDelay = 50;
           this.topToContentDelay = 100;
           //#region  big and top Amounts
-          //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
           this._bigAmount = "100,2000";
-          //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
           this._topAmount = "20,40";
         }
 
@@ -125,7 +123,6 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         }
 
         get currentPlayType() {
-          // 当前游戏id对应的玩法
           this._gameList.forEach(game => {
             if (game.gameId === this._gameId) {
               this._currentPlayType = game.playType;

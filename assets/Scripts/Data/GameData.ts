@@ -63,7 +63,6 @@ export class GameData {
     this._currentPlayType = value;
   }
   get currentPlayType() {
-    // 当前游戏id对应的玩法
     this._gameList.forEach((game) => {
       if (game.gameId === this._gameId) {
         this._currentPlayType = game.playType;
@@ -281,9 +280,9 @@ export class GameData {
   }
 
   //#region  big and top Amounts
-  //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
+  
   private _bigAmount: string = "100,2000";
-  //TODO: VALUES ARE TEMPORARY, REMOVE INITIAL VALUE ONCE WE CONNECT TO API
+  
   private _topAmount: string = "20,40";
 
   initTopAndBigAmount(bigAmount: string, topAmount: string){
